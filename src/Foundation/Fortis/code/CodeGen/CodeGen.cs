@@ -1,7 +1,7 @@
 ﻿
 /*
  * Fortis Template Models for Habitat, based on Unicorn serialization.
- * Generated at 04/12/2017 15:32:55
+ * Generated at 04/12/2017 16:42:00
  *
  * To regenerate after template changes, right-click on CodeGen.tt and select Run Custom Tool.
  */
@@ -15,7 +15,7 @@ using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq.Common;
 
 #region _UserProfile (/sitecore/templates/Feature/Accounts/_UserProfile)
-namespace CodeGen.Templates.Feature.Accounts.UserProfile
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.UserProfile
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -96,9 +96,9 @@ namespace CodeGen.Templates.Feature.Accounts.UserProfile
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_UserProfile</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{696D276B-786A-4D1E-B8BB-8E139DB7BE7C}");
+		public static ID ID => new ID("{696D276B-786A-4D1E-B8BB-8E139DB7BE7C}");
 	}
 
     /// <summary>
@@ -221,7 +221,7 @@ namespace CodeGen.Templates.Feature.Accounts.UserProfile
 #endregion
 
 #region _AccountsSettings (/sitecore/templates/Feature/Accounts/_AccountsSettings)
-namespace CodeGen.Templates.Feature.Accounts.AccountsSettings
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.AccountsSettings
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -305,9 +305,9 @@ namespace CodeGen.Templates.Feature.Accounts.AccountsSettings
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_AccountsSettings</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
+		public static ID ID => new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
 	}
 
     /// <summary>
@@ -490,7 +490,7 @@ namespace CodeGen.Templates.Feature.Accounts.AccountsSettings
 #endregion
 
 #region _Interest (/sitecore/templates/Feature/Accounts/_Interest)
-namespace CodeGen.Templates.Feature.Accounts.Interest
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.Interest
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -526,9 +526,9 @@ namespace CodeGen.Templates.Feature.Accounts.Interest
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_Interest</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{C9B1855E-CA80-4414-B5BA-956CB67DC5A9}");
+		public static ID ID => new ID("{C9B1855E-CA80-4414-B5BA-956CB67DC5A9}");
 	}
 
     /// <summary>
@@ -579,7 +579,7 @@ namespace CodeGen.Templates.Feature.Accounts.Interest
 #endregion
 
 #region _LoginTeaser (/sitecore/templates/Feature/Accounts/_LoginTeaser)
-namespace CodeGen.Templates.Feature.Accounts.LoginTeaser
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.LoginTeaser
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -660,9 +660,9 @@ namespace CodeGen.Templates.Feature.Accounts.LoginTeaser
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_LoginTeaser</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{EF38D9E6-313C-491C-8648-79436D10091C}");
+		public static ID ID => new ID("{EF38D9E6-313C-491C-8648-79436D10091C}");
 	}
 
     /// <summary>
@@ -785,7 +785,7 @@ namespace CodeGen.Templates.Feature.Accounts.LoginTeaser
 #endregion
 
 #region _MailTemplate (/sitecore/templates/Feature/Accounts/_MailTemplate)
-namespace CodeGen.Templates.Feature.Accounts.MailTemplate
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.MailTemplate
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -851,9 +851,9 @@ namespace CodeGen.Templates.Feature.Accounts.MailTemplate
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_MailTemplate</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{26DF8F38-7E1B-43D2-85DD-68DF05FA276B}");
+		public static ID ID => new ID("{26DF8F38-7E1B-43D2-85DD-68DF05FA276B}");
 	}
 
     /// <summary>
@@ -952,7 +952,7 @@ namespace CodeGen.Templates.Feature.Accounts.MailTemplate
 #endregion
 
 #region _ProfileSettings (/sitecore/templates/Feature/Accounts/_ProfileSettings)
-namespace CodeGen.Templates.Feature.Accounts.ProfileSettings
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.ProfileSettings
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1003,9 +1003,9 @@ namespace CodeGen.Templates.Feature.Accounts.ProfileSettings
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_ProfileSettings</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
+		public static ID ID => new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
 	}
 
     /// <summary>
@@ -1080,7 +1080,7 @@ namespace CodeGen.Templates.Feature.Accounts.ProfileSettings
 #endregion
 
 #region _CampaignToken (/sitecore/templates/Feature/Demo/_CampaignToken)
-namespace CodeGen.Templates.Feature.Demo.CampaignToken
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.CampaignToken
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1116,9 +1116,9 @@ namespace CodeGen.Templates.Feature.Demo.CampaignToken
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Demo/_CampaignToken</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{01628DCB-611F-495E-A1DA-E89027AB7035}");
+		public static ID ID => new ID("{01628DCB-611F-495E-A1DA-E89027AB7035}");
 	}
 
     /// <summary>
@@ -1169,7 +1169,7 @@ namespace CodeGen.Templates.Feature.Demo.CampaignToken
 #endregion
 
 #region _DemoContent (/sitecore/templates/Feature/Demo/_DemoContent)
-namespace CodeGen.Templates.Feature.Demo.DemoContent
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.DemoContent
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1205,9 +1205,9 @@ namespace CodeGen.Templates.Feature.Demo.DemoContent
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Demo/_DemoContent</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}");
+		public static ID ID => new ID("{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}");
 	}
 
     /// <summary>
@@ -1258,7 +1258,7 @@ namespace CodeGen.Templates.Feature.Demo.DemoContent
 #endregion
 
 #region _LinkToken (/sitecore/templates/Feature/Demo/_LinkToken)
-namespace CodeGen.Templates.Feature.Demo.LinkToken
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.LinkToken
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1294,9 +1294,9 @@ namespace CodeGen.Templates.Feature.Demo.LinkToken
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Demo/_LinkToken</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}");
+		public static ID ID => new ID("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}");
 	}
 
     /// <summary>
@@ -1347,7 +1347,7 @@ namespace CodeGen.Templates.Feature.Demo.LinkToken
 #endregion
 
 #region _ProfilingSettings (/sitecore/templates/Feature/Demo/_ProfilingSettings)
-namespace CodeGen.Templates.Feature.Demo.ProfilingSettings
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.ProfilingSettings
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1383,9 +1383,9 @@ namespace CodeGen.Templates.Feature.Demo.ProfilingSettings
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Demo/_ProfilingSettings</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{C6D4DDD5-B912-4C1A-A3A3-E1D90E4D0939}");
+		public static ID ID => new ID("{C6D4DDD5-B912-4C1A-A3A3-E1D90E4D0939}");
 	}
 
     /// <summary>
@@ -1436,7 +1436,7 @@ namespace CodeGen.Templates.Feature.Demo.ProfilingSettings
 #endregion
 
 #region _TextToken (/sitecore/templates/Feature/Demo/_TextToken)
-namespace CodeGen.Templates.Feature.Demo.TextToken
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.TextToken
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1472,9 +1472,9 @@ namespace CodeGen.Templates.Feature.Demo.TextToken
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Demo/_TextToken</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{327D6873-A384-435A-BE87-7E869782B243}");
+		public static ID ID => new ID("{327D6873-A384-435A-BE87-7E869782B243}");
 	}
 
     /// <summary>
@@ -1525,7 +1525,7 @@ namespace CodeGen.Templates.Feature.Demo.TextToken
 #endregion
 
 #region _Token (/sitecore/templates/Feature/Demo/_Token)
-namespace CodeGen.Templates.Feature.Demo.Token
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.Token
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1546,9 +1546,9 @@ namespace CodeGen.Templates.Feature.Demo.Token
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Demo/_Token</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{A7EBF38A-5F66-4579-92D1-568A8BA50293}");
+		public static ID ID => new ID("{A7EBF38A-5F66-4579-92D1-568A8BA50293}");
 	}
 
     /// <summary>
@@ -1575,7 +1575,7 @@ namespace CodeGen.Templates.Feature.Demo.Token
 #endregion
 
 #region _FAQ Group (/sitecore/templates/Feature/FAQ/_FAQ Group)
-namespace CodeGen.Templates.Feature.FAQ.FAQGroup
+namespace Fortis.Foundation.CodeGen.Templates.Feature.FAQ.FAQGroup
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1611,9 +1611,9 @@ namespace CodeGen.Templates.Feature.FAQ.FAQGroup
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/FAQ/_FAQ Group</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{3AF7DB6C-A602-4ABC-8D63-19E2D2C6726B}");
+		public static ID ID => new ID("{3AF7DB6C-A602-4ABC-8D63-19E2D2C6726B}");
 	}
 
     /// <summary>
@@ -1664,7 +1664,7 @@ namespace CodeGen.Templates.Feature.FAQ.FAQGroup
 #endregion
 
 #region _FAQ (/sitecore/templates/Feature/FAQ/_FAQ)
-namespace CodeGen.Templates.Feature.FAQ.FAQ
+namespace Fortis.Foundation.CodeGen.Templates.Feature.FAQ.FAQ
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1715,9 +1715,9 @@ namespace CodeGen.Templates.Feature.FAQ.FAQ
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/FAQ/_FAQ</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{9544F0B3-FD5E-4301-9DDE-9E73D2C3F7BA}");
+		public static ID ID => new ID("{9544F0B3-FD5E-4301-9DDE-9E73D2C3F7BA}");
 	}
 
     /// <summary>
@@ -1792,7 +1792,7 @@ namespace CodeGen.Templates.Feature.FAQ.FAQ
 #endregion
 
 #region _Identity (/sitecore/templates/Feature/Identity/_Identity)
-namespace CodeGen.Templates.Feature.Identity.Identity
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Identity.Identity
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -1904,9 +1904,9 @@ namespace CodeGen.Templates.Feature.Identity.Identity
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Identity/_Identity</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
+		public static ID ID => new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
 	}
 
     /// <summary>
@@ -2097,7 +2097,7 @@ namespace CodeGen.Templates.Feature.Identity.Identity
 #endregion
 
 #region _LanguageSettings (/sitecore/templates/Feature/Language/_LanguageSettings)
-namespace CodeGen.Templates.Feature.Language.LanguageSettings
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Language.LanguageSettings
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -2133,9 +2133,9 @@ namespace CodeGen.Templates.Feature.Language.LanguageSettings
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Language/_LanguageSettings</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{748EBA96-3F0C-4F45-8AFB-DE8DCC707B84}");
+		public static ID ID => new ID("{748EBA96-3F0C-4F45-8AFB-DE8DCC707B84}");
 	}
 
     /// <summary>
@@ -2186,7 +2186,7 @@ namespace CodeGen.Templates.Feature.Language.LanguageSettings
 #endregion
 
 #region Map Type (/sitecore/templates/Feature/Maps/Map Type)
-namespace CodeGen.Templates.Feature.Maps.MapType
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapType
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -2222,9 +2222,9 @@ namespace CodeGen.Templates.Feature.Maps.MapType
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Maps/Map Type</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{04C34CF5-B7EA-4408-88E8-5FC851173DBD}");
+		public static ID ID => new ID("{04C34CF5-B7EA-4408-88E8-5FC851173DBD}");
 	}
 
     /// <summary>
@@ -2275,7 +2275,7 @@ namespace CodeGen.Templates.Feature.Maps.MapType
 #endregion
 
 #region _MapPoint (/sitecore/templates/Feature/Maps/_MapPoint)
-namespace CodeGen.Templates.Feature.Maps.MapPoint
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapPoint
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -2334,9 +2334,9 @@ namespace CodeGen.Templates.Feature.Maps.MapPoint
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapPoint</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{1E6A8C8C-6646-4776-8AB4-615265669633}");
+		public static ID ID => new ID("{1E6A8C8C-6646-4776-8AB4-615265669633}");
 	}
 
     /// <summary>
@@ -2433,7 +2433,7 @@ namespace CodeGen.Templates.Feature.Maps.MapPoint
 #endregion
 
 #region _MapPoints Folder (/sitecore/templates/Feature/Maps/_MapPoints Folder)
-namespace CodeGen.Templates.Feature.Maps.MapPointsFolder
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapPointsFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -2454,9 +2454,9 @@ namespace CodeGen.Templates.Feature.Maps.MapPointsFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapPoints Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{31713995-C6BF-4CCB-8807-198493508AFA}");
+		public static ID ID => new ID("{31713995-C6BF-4CCB-8807-198493508AFA}");
 	}
 
     /// <summary>
@@ -2483,7 +2483,7 @@ namespace CodeGen.Templates.Feature.Maps.MapPointsFolder
 #endregion
 
 #region _MapRenderingParameters (/sitecore/templates/Feature/Maps/_MapRenderingParameters)
-namespace CodeGen.Templates.Feature.Maps.MapRenderingParameters
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapRenderingParameters
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -2632,9 +2632,9 @@ namespace CodeGen.Templates.Feature.Maps.MapRenderingParameters
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapRenderingParameters</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{D77856C3-8A5E-452C-8854-F2965EDF25E0}");
+		public static ID ID => new ID("{D77856C3-8A5E-452C-8854-F2965EDF25E0}");
 	}
 
     /// <summary>
@@ -2875,7 +2875,7 @@ namespace CodeGen.Templates.Feature.Maps.MapRenderingParameters
 #endregion
 
 #region Background Type Folder (/sitecore/templates/Feature/Media/Background Type Folder)
-namespace CodeGen.Templates.Feature.Media.BackgroundTypeFolder
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.BackgroundTypeFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -2896,9 +2896,9 @@ namespace CodeGen.Templates.Feature.Media.BackgroundTypeFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/Background Type Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{1FD75C49-F524-4C15-9F82-DCB2D4CF2FA9}");
+		public static ID ID => new ID("{1FD75C49-F524-4C15-9F82-DCB2D4CF2FA9}");
 	}
 
     /// <summary>
@@ -2925,7 +2925,7 @@ namespace CodeGen.Templates.Feature.Media.BackgroundTypeFolder
 #endregion
 
 #region Background Type (/sitecore/templates/Feature/Media/Background Type)
-namespace CodeGen.Templates.Feature.Media.BackgroundType
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.BackgroundType
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -2961,9 +2961,9 @@ namespace CodeGen.Templates.Feature.Media.BackgroundType
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/Background Type</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{55A5BDAD-EB69-40F5-8195-CDA182E48EE4}");
+		public static ID ID => new ID("{55A5BDAD-EB69-40F5-8195-CDA182E48EE4}");
 	}
 
     /// <summary>
@@ -3014,7 +3014,7 @@ namespace CodeGen.Templates.Feature.Media.BackgroundType
 #endregion
 
 #region ParametersTemplate_SectionBackground (/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground)
-namespace CodeGen.Templates.Feature.Media.ParametersTemplates.ParametersTemplateSectionBackground
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.ParametersTemplateSectionBackground
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3073,9 +3073,9 @@ namespace CodeGen.Templates.Feature.Media.ParametersTemplates.ParametersTemplate
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{B962A806-D708-4001-B0A3-3FA31F2263C5}");
+		public static ID ID => new ID("{B962A806-D708-4001-B0A3-3FA31F2263C5}");
 	}
 
     /// <summary>
@@ -3172,7 +3172,7 @@ namespace CodeGen.Templates.Feature.Media.ParametersTemplates.ParametersTemplate
 #endregion
 
 #region _MediaParameters (/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters)
-namespace CodeGen.Templates.Feature.Media.ParametersTemplates.MediaParameters
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.MediaParameters
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3193,9 +3193,9 @@ namespace CodeGen.Templates.Feature.Media.ParametersTemplates.MediaParameters
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}");
+		public static ID ID => new ID("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}");
 	}
 
     /// <summary>
@@ -3246,7 +3246,7 @@ namespace CodeGen.Templates.Feature.Media.ParametersTemplates.MediaParameters
 #endregion
 
 #region _HasMedia (/sitecore/templates/Feature/Media/_HasMedia)
-namespace CodeGen.Templates.Feature.Media.HasMedia
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMedia
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3305,9 +3305,9 @@ namespace CodeGen.Templates.Feature.Media.HasMedia
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMedia</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{A44E450E-BA3F-4FAF-9C53-C63241CC34EB}");
+		public static ID ID => new ID("{A44E450E-BA3F-4FAF-9C53-C63241CC34EB}");
 	}
 
     /// <summary>
@@ -3404,7 +3404,7 @@ namespace CodeGen.Templates.Feature.Media.HasMedia
 #endregion
 
 #region _HasMediaImage (/sitecore/templates/Feature/Media/_HasMediaImage)
-namespace CodeGen.Templates.Feature.Media.HasMediaImage
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaImage
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3433,9 +3433,9 @@ namespace CodeGen.Templates.Feature.Media.HasMediaImage
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaImage</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
+		public static ID ID => new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
 	}
 
     /// <summary>
@@ -3554,7 +3554,7 @@ namespace CodeGen.Templates.Feature.Media.HasMediaImage
 #endregion
 
 #region _HasMediaSelector (/sitecore/templates/Feature/Media/_HasMediaSelector)
-namespace CodeGen.Templates.Feature.Media.HasMediaSelector
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaSelector
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3590,9 +3590,9 @@ namespace CodeGen.Templates.Feature.Media.HasMediaSelector
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaSelector</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{AE4635AF-CFBF-4BF6-9B50-00BE23A910C0}");
+		public static ID ID => new ID("{AE4635AF-CFBF-4BF6-9B50-00BE23A910C0}");
 	}
 
     /// <summary>
@@ -3643,7 +3643,7 @@ namespace CodeGen.Templates.Feature.Media.HasMediaSelector
 #endregion
 
 #region _HasMediaVideo (/sitecore/templates/Feature/Media/_HasMediaVideo)
-namespace CodeGen.Templates.Feature.Media.HasMediaVideo
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaVideo
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3672,9 +3672,9 @@ namespace CodeGen.Templates.Feature.Media.HasMediaVideo
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaVideo</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
+		public static ID ID => new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
 	}
 
     /// <summary>
@@ -3793,7 +3793,7 @@ namespace CodeGen.Templates.Feature.Media.HasMediaVideo
 #endregion
 
 #region _MediaSiteExtension (/sitecore/templates/Feature/Media/_MediaSiteExtension)
-namespace CodeGen.Templates.Feature.Media.MediaSiteExtension
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.MediaSiteExtension
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3829,9 +3829,9 @@ namespace CodeGen.Templates.Feature.Media.MediaSiteExtension
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Media/_MediaSiteExtension</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{D339E56B-6A8A-46BD-A7D3-C9725D50DD4A}");
+		public static ID ID => new ID("{D339E56B-6A8A-46BD-A7D3-C9725D50DD4A}");
 	}
 
     /// <summary>
@@ -3882,7 +3882,7 @@ namespace CodeGen.Templates.Feature.Media.MediaSiteExtension
 #endregion
 
 #region _Keyword (/sitecore/templates/Feature/Metadata/_Keyword)
-namespace CodeGen.Templates.Feature.Metadata.Keyword
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.Keyword
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3918,9 +3918,9 @@ namespace CodeGen.Templates.Feature.Metadata.Keyword
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_Keyword</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{409F883A-0DC8-431A-9508-7316B59B92BE}");
+		public static ID ID => new ID("{409F883A-0DC8-431A-9508-7316B59B92BE}");
 	}
 
     /// <summary>
@@ -3971,7 +3971,7 @@ namespace CodeGen.Templates.Feature.Metadata.Keyword
 #endregion
 
 #region _PageMetadata (/sitecore/templates/Feature/Metadata/_PageMetadata)
-namespace CodeGen.Templates.Feature.Metadata.PageMetadata
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -4082,9 +4082,9 @@ namespace CodeGen.Templates.Feature.Metadata.PageMetadata
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_PageMetadata</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{D88CCD80-D851-470D-AF11-701FF23504E7}");
+		public static ID ID => new ID("{D88CCD80-D851-470D-AF11-701FF23504E7}");
 	}
 
     /// <summary>
@@ -4255,7 +4255,7 @@ namespace CodeGen.Templates.Feature.Metadata.PageMetadata
 #endregion
 
 #region _SiteMetadata (/sitecore/templates/Feature/Metadata/_SiteMetadata)
-namespace CodeGen.Templates.Feature.Metadata.SiteMetadata
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.SiteMetadata
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -4291,9 +4291,9 @@ namespace CodeGen.Templates.Feature.Metadata.SiteMetadata
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_SiteMetadata</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{CF38E914-9298-47CC-9205-210553E79F97}");
+		public static ID ID => new ID("{CF38E914-9298-47CC-9205-210553E79F97}");
 	}
 
     /// <summary>
@@ -4344,7 +4344,7 @@ namespace CodeGen.Templates.Feature.Metadata.SiteMetadata
 #endregion
 
 #region _SiteConfiguration (/sitecore/templates/Feature/Multisite/_SiteConfiguration)
-namespace CodeGen.Templates.Feature.Multisite.SiteConfiguration
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Multisite.SiteConfiguration
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -4395,9 +4395,9 @@ namespace CodeGen.Templates.Feature.Multisite.SiteConfiguration
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Multisite/_SiteConfiguration</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}");
+		public static ID ID => new ID("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}");
 	}
 
     /// <summary>
@@ -4472,7 +4472,7 @@ namespace CodeGen.Templates.Feature.Multisite.SiteConfiguration
 #endregion
 
 #region _Link (/sitecore/templates/Feature/Navigation/_Link)
-namespace CodeGen.Templates.Feature.Navigation.Link
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.Link
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -4508,9 +4508,9 @@ namespace CodeGen.Templates.Feature.Navigation.Link
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_Link</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{A16B74E9-01B8-439C-B44E-42B3FB2EE14B}");
+		public static ID ID => new ID("{A16B74E9-01B8-439C-B44E-42B3FB2EE14B}");
 	}
 
     /// <summary>
@@ -4561,7 +4561,7 @@ namespace CodeGen.Templates.Feature.Navigation.Link
 #endregion
 
 #region _LinkMenuItem (/sitecore/templates/Feature/Navigation/_LinkMenuItem)
-namespace CodeGen.Templates.Feature.Navigation.LinkMenuItem
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.LinkMenuItem
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -4612,9 +4612,9 @@ namespace CodeGen.Templates.Feature.Navigation.LinkMenuItem
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_LinkMenuItem</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}");
+		public static ID ID => new ID("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}");
 	}
 
     /// <summary>
@@ -4713,7 +4713,7 @@ namespace CodeGen.Templates.Feature.Navigation.LinkMenuItem
 #endregion
 
 #region _Navigable (/sitecore/templates/Feature/Navigation/_Navigable)
-namespace CodeGen.Templates.Feature.Navigation.Navigable
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.Navigable
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -4779,9 +4779,9 @@ namespace CodeGen.Templates.Feature.Navigation.Navigable
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_Navigable</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{A1CBA309-D22B-46D5-80F8-2972C185363F}");
+		public static ID ID => new ID("{A1CBA309-D22B-46D5-80F8-2972C185363F}");
 	}
 
     /// <summary>
@@ -4880,7 +4880,7 @@ namespace CodeGen.Templates.Feature.Navigation.Navigable
 #endregion
 
 #region _NavigationRoot (/sitecore/templates/Feature/Navigation/_NavigationRoot)
-namespace CodeGen.Templates.Feature.Navigation.NavigationRoot
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.NavigationRoot
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -4901,9 +4901,9 @@ namespace CodeGen.Templates.Feature.Navigation.NavigationRoot
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_NavigationRoot</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{F9F4FC05-98D0-4C62-860F-F08AE7F0EE25}");
+		public static ID ID => new ID("{F9F4FC05-98D0-4C62-860F-F08AE7F0EE25}");
 	}
 
     /// <summary>
@@ -4930,7 +4930,7 @@ namespace CodeGen.Templates.Feature.Navigation.NavigationRoot
 #endregion
 
 #region _NewsArticle (/sitecore/templates/Feature/News/_NewsArticle)
-namespace CodeGen.Templates.Feature.News.NewsArticle
+namespace Fortis.Foundation.CodeGen.Templates.Feature.News.NewsArticle
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -5019,9 +5019,9 @@ namespace CodeGen.Templates.Feature.News.NewsArticle
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/News/_NewsArticle</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{2F75C8AF-35FC-4A88-B585-7595203F442C}");
+		public static ID ID => new ID("{2F75C8AF-35FC-4A88-B585-7595203F442C}");
 	}
 
     /// <summary>
@@ -5166,7 +5166,7 @@ namespace CodeGen.Templates.Feature.News.NewsArticle
 #endregion
 
 #region _NewsFolder (/sitecore/templates/Feature/News/_NewsFolder)
-namespace CodeGen.Templates.Feature.News.NewsFolder
+namespace Fortis.Foundation.CodeGen.Templates.Feature.News.NewsFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -5187,9 +5187,9 @@ namespace CodeGen.Templates.Feature.News.NewsFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/News/_NewsFolder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{74889B26-061C-4D6A-8CDB-422665FC34EC}");
+		public static ID ID => new ID("{74889B26-061C-4D6A-8CDB-422665FC34EC}");
 	}
 
     /// <summary>
@@ -5216,7 +5216,7 @@ namespace CodeGen.Templates.Feature.News.NewsFolder
 #endregion
 
 #region _HasPageContent (/sitecore/templates/Feature/PageContent/_HasPageContent)
-namespace CodeGen.Templates.Feature.PageContent.HasPageContent
+namespace Fortis.Foundation.CodeGen.Templates.Feature.PageContent.HasPageContent
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -5290,9 +5290,9 @@ namespace CodeGen.Templates.Feature.PageContent.HasPageContent
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/PageContent/_HasPageContent</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}");
+		public static ID ID => new ID("{AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}");
 	}
 
     /// <summary>
@@ -5413,7 +5413,7 @@ namespace CodeGen.Templates.Feature.PageContent.HasPageContent
 #endregion
 
 #region _Employee (/sitecore/templates/Feature/Person/_Employee)
-namespace CodeGen.Templates.Feature.Person.Employee
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Employee
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -5554,9 +5554,9 @@ namespace CodeGen.Templates.Feature.Person.Employee
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Person/_Employee</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{745652AE-3298-48B1-9BE1-99012D91F3AC}");
+		public static ID ID => new ID("{745652AE-3298-48B1-9BE1-99012D91F3AC}");
 	}
 
     /// <summary>
@@ -5869,7 +5869,7 @@ namespace CodeGen.Templates.Feature.Person.Employee
 #endregion
 
 #region _Person (/sitecore/templates/Feature/Person/_Person)
-namespace CodeGen.Templates.Feature.Person.Person
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Person
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -5943,9 +5943,9 @@ namespace CodeGen.Templates.Feature.Person.Person
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Person/_Person</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{7ACA6ECF-1A80-4E35-97F5-DBAA8E3EC617}");
+		public static ID ID => new ID("{7ACA6ECF-1A80-4E35-97F5-DBAA8E3EC617}");
 	}
 
     /// <summary>
@@ -6066,7 +6066,7 @@ namespace CodeGen.Templates.Feature.Person.Person
 #endregion
 
 #region _Quote (/sitecore/templates/Feature/Person/_Quote)
-namespace CodeGen.Templates.Feature.Person.Quote
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Quote
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -6117,9 +6117,9 @@ namespace CodeGen.Templates.Feature.Person.Quote
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Person/_Quote</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{755F1188-D385-4717-8681-EF45F2258575}");
+		public static ID ID => new ID("{755F1188-D385-4717-8681-EF45F2258575}");
 	}
 
     /// <summary>
@@ -6288,7 +6288,7 @@ namespace CodeGen.Templates.Feature.Person.Quote
 #endregion
 
 #region _PagedSearchResultsParameters (/sitecore/templates/Feature/Search/_PagedSearchResultsParameters)
-namespace CodeGen.Templates.Feature.Search.PagedSearchResultsParameters
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.PagedSearchResultsParameters
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -6339,9 +6339,9 @@ namespace CodeGen.Templates.Feature.Search.PagedSearchResultsParameters
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Search/_PagedSearchResultsParameters</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{D1D3E60F-E571-48D2-84CF-B053EE660C13}");
+		public static ID ID => new ID("{D1D3E60F-E571-48D2-84CF-B053EE660C13}");
 	}
 
     /// <summary>
@@ -6416,7 +6416,7 @@ namespace CodeGen.Templates.Feature.Search.PagedSearchResultsParameters
 #endregion
 
 #region _SearchContext (/sitecore/templates/Feature/Search/_SearchContext)
-namespace CodeGen.Templates.Feature.Search.SearchContext
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.SearchContext
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -6445,9 +6445,9 @@ namespace CodeGen.Templates.Feature.Search.SearchContext
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Search/_SearchContext</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{B524E8BE-A099-4A63-BE3F-DD4C42FD4185}");
+		public static ID ID => new ID("{B524E8BE-A099-4A63-BE3F-DD4C42FD4185}");
 	}
 
     /// <summary>
@@ -6496,7 +6496,7 @@ namespace CodeGen.Templates.Feature.Search.SearchContext
 #endregion
 
 #region _SearchResults (/sitecore/templates/Feature/Search/_SearchResults)
-namespace CodeGen.Templates.Feature.Search.SearchResults
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.SearchResults
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -6547,9 +6547,9 @@ namespace CodeGen.Templates.Feature.Search.SearchResults
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Search/_SearchResults</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{14E452CA-064D-48A8-9FF2-2744D10437A1}");
+		public static ID ID => new ID("{14E452CA-064D-48A8-9FF2-2744D10437A1}");
 	}
 
     /// <summary>
@@ -6624,7 +6624,7 @@ namespace CodeGen.Templates.Feature.Search.SearchResults
 #endregion
 
 #region _OpenGraph (/sitecore/templates/Feature/Social/_OpenGraph)
-namespace CodeGen.Templates.Feature.Social.OpenGraph
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.OpenGraph
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -6683,9 +6683,9 @@ namespace CodeGen.Templates.Feature.Social.OpenGraph
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Social/_OpenGraph</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{BDD24F35-05E8-4466-8798-7D3DD6A6C991}");
+		public static ID ID => new ID("{BDD24F35-05E8-4466-8798-7D3DD6A6C991}");
 	}
 
     /// <summary>
@@ -6782,7 +6782,7 @@ namespace CodeGen.Templates.Feature.Social.OpenGraph
 #endregion
 
 #region _TwitterFeed (/sitecore/templates/Feature/Social/_TwitterFeed)
-namespace CodeGen.Templates.Feature.Social.TwitterFeed
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeed
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -6848,9 +6848,9 @@ namespace CodeGen.Templates.Feature.Social.TwitterFeed
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Social/_TwitterFeed</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{89D988BC-A9A7-43F5-A9FD-A05B0B164720}");
+		public static ID ID => new ID("{89D988BC-A9A7-43F5-A9FD-A05B0B164720}");
 	}
 
     /// <summary>
@@ -6949,7 +6949,7 @@ namespace CodeGen.Templates.Feature.Social.TwitterFeed
 #endregion
 
 #region _TwitterFeedRenderingProperties (/sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties)
-namespace CodeGen.Templates.Feature.Social.TwitterFeedRenderingProperties
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeedRenderingProperties
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -6985,9 +6985,9 @@ namespace CodeGen.Templates.Feature.Social.TwitterFeedRenderingProperties
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}");
+		public static ID ID => new ID("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}");
 	}
 
     /// <summary>
@@ -7062,7 +7062,7 @@ namespace CodeGen.Templates.Feature.Social.TwitterFeedRenderingProperties
 #endregion
 
 #region Icon (/sitecore/templates/Feature/Teasers/Icon)
-namespace CodeGen.Templates.Feature.Teasers.Icon
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.Icon
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -7098,9 +7098,9 @@ namespace CodeGen.Templates.Feature.Teasers.Icon
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Teasers/Icon</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{E90D00B6-0BE9-48E0-9C3F-047274024270}");
+		public static ID ID => new ID("{E90D00B6-0BE9-48E0-9C3F-047274024270}");
 	}
 
     /// <summary>
@@ -7151,7 +7151,7 @@ namespace CodeGen.Templates.Feature.Teasers.Icon
 #endregion
 
 #region _DynamicTeaser (/sitecore/templates/Feature/Teasers/_DynamicTeaser)
-namespace CodeGen.Templates.Feature.Teasers.DynamicTeaser
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.DynamicTeaser
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -7202,9 +7202,9 @@ namespace CodeGen.Templates.Feature.Teasers.DynamicTeaser
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_DynamicTeaser</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{20A56D46-F5E3-4DB8-8B96-081575363D44}");
+		public static ID ID => new ID("{20A56D46-F5E3-4DB8-8B96-081575363D44}");
 	}
 
     /// <summary>
@@ -7279,7 +7279,7 @@ namespace CodeGen.Templates.Feature.Teasers.DynamicTeaser
 #endregion
 
 #region _Headline (/sitecore/templates/Feature/Teasers/_Headline)
-namespace CodeGen.Templates.Feature.Teasers.Headline
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.Headline
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -7330,9 +7330,9 @@ namespace CodeGen.Templates.Feature.Teasers.Headline
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_Headline</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}");
+		public static ID ID => new ID("{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}");
 	}
 
     /// <summary>
@@ -7407,7 +7407,7 @@ namespace CodeGen.Templates.Feature.Teasers.Headline
 #endregion
 
 #region _TeaserContent (/sitecore/templates/Feature/Teasers/_TeaserContent)
-namespace CodeGen.Templates.Feature.Teasers.TeaserContent
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserContent
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -7481,9 +7481,9 @@ namespace CodeGen.Templates.Feature.Teasers.TeaserContent
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeaserContent</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
+		public static ID ID => new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
 	}
 
     /// <summary>
@@ -7652,7 +7652,7 @@ namespace CodeGen.Templates.Feature.Teasers.TeaserContent
 #endregion
 
 #region _TeasersParameters (/sitecore/templates/Feature/Teasers/_TeasersParameters)
-namespace CodeGen.Templates.Feature.Teasers.TeasersParameters
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeasersParameters
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -7673,9 +7673,9 @@ namespace CodeGen.Templates.Feature.Teasers.TeasersParameters
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeasersParameters</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{20748D57-4EF6-49A8-B7E6-13818795E3B5}");
+		public static ID ID => new ID("{20748D57-4EF6-49A8-B7E6-13818795E3B5}");
 	}
 
     /// <summary>
@@ -7750,7 +7750,7 @@ namespace CodeGen.Templates.Feature.Teasers.TeasersParameters
 #endregion
 
 #region _TeaserVideoContent (/sitecore/templates/Feature/Teasers/_TeaserVideoContent)
-namespace CodeGen.Templates.Feature.Teasers.TeaserVideoContent
+namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserVideoContent
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -7779,9 +7779,9 @@ namespace CodeGen.Templates.Feature.Teasers.TeaserVideoContent
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeaserVideoContent</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}");
+		public static ID ID => new ID("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}");
 	}
 
     /// <summary>
@@ -7972,7 +7972,7 @@ namespace CodeGen.Templates.Feature.Teasers.TeaserVideoContent
 #endregion
 
 #region Theme Folder (/sitecore/templates/Foundation/Assets/Theme Folder)
-namespace CodeGen.Templates.Foundation.Assets.ThemeFolder
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.ThemeFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -7993,9 +7993,9 @@ namespace CodeGen.Templates.Foundation.Assets.ThemeFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Assets/Theme Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{10059264-CD0B-47B9-8350-A31A90815921}");
+		public static ID ID => new ID("{10059264-CD0B-47B9-8350-A31A90815921}");
 	}
 
     /// <summary>
@@ -8022,7 +8022,7 @@ namespace CodeGen.Templates.Foundation.Assets.ThemeFolder
 #endregion
 
 #region Theme (/sitecore/templates/Foundation/Assets/Theme)
-namespace CodeGen.Templates.Foundation.Assets.Theme
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.Theme
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8043,9 +8043,9 @@ namespace CodeGen.Templates.Foundation.Assets.Theme
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Assets/Theme</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}");
+		public static ID ID => new ID("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}");
 	}
 
     /// <summary>
@@ -8168,7 +8168,7 @@ namespace CodeGen.Templates.Foundation.Assets.Theme
 #endregion
 
 #region _HasTheme (/sitecore/templates/Foundation/Assets/_HasTheme)
-namespace CodeGen.Templates.Foundation.Assets.HasTheme
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.HasTheme
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8204,9 +8204,9 @@ namespace CodeGen.Templates.Foundation.Assets.HasTheme
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_HasTheme</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{5B6F8720-3A93-4DA1-92A0-C3E85E01219A}");
+		public static ID ID => new ID("{5B6F8720-3A93-4DA1-92A0-C3E85E01219A}");
 	}
 
     /// <summary>
@@ -8257,7 +8257,7 @@ namespace CodeGen.Templates.Foundation.Assets.HasTheme
 #endregion
 
 #region _PageAssets (/sitecore/templates/Foundation/Assets/_PageAssets)
-namespace CodeGen.Templates.Foundation.Assets.PageAssets
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.PageAssets
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8338,9 +8338,9 @@ namespace CodeGen.Templates.Foundation.Assets.PageAssets
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_PageAssets</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{91962B60-25F6-428F-8D10-02AA1E49D6A5}");
+		public static ID ID => new ID("{91962B60-25F6-428F-8D10-02AA1E49D6A5}");
 	}
 
     /// <summary>
@@ -8463,7 +8463,7 @@ namespace CodeGen.Templates.Foundation.Assets.PageAssets
 #endregion
 
 #region _RenderingAssets (/sitecore/templates/Foundation/Assets/_RenderingAssets)
-namespace CodeGen.Templates.Foundation.Assets.RenderingAssets
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.RenderingAssets
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8544,9 +8544,9 @@ namespace CodeGen.Templates.Foundation.Assets.RenderingAssets
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_RenderingAssets</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{7CEAC341-B953-4C69-B907-EE44302BF6AE}");
+		public static ID ID => new ID("{7CEAC341-B953-4C69-B907-EE44302BF6AE}");
 	}
 
     /// <summary>
@@ -8669,7 +8669,7 @@ namespace CodeGen.Templates.Foundation.Assets.RenderingAssets
 #endregion
 
 #region DictionaryEntry (/sitecore/templates/Foundation/Dictionary/DictionaryEntry)
-namespace CodeGen.Templates.Foundation.Dictionary.DictionaryEntry
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Dictionary.DictionaryEntry
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8705,9 +8705,9 @@ namespace CodeGen.Templates.Foundation.Dictionary.DictionaryEntry
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryEntry</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{EC4DD3F2-590D-404B-9189-2A12679749CC}");
+		public static ID ID => new ID("{EC4DD3F2-590D-404B-9189-2A12679749CC}");
 	}
 
     /// <summary>
@@ -8758,7 +8758,7 @@ namespace CodeGen.Templates.Foundation.Dictionary.DictionaryEntry
 #endregion
 
 #region DictionaryFolder (/sitecore/templates/Foundation/Dictionary/DictionaryFolder)
-namespace CodeGen.Templates.Foundation.Dictionary.DictionaryFolder
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Dictionary.DictionaryFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8779,9 +8779,9 @@ namespace CodeGen.Templates.Foundation.Dictionary.DictionaryFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryFolder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}");
+		public static ID ID => new ID("{98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}");
 	}
 
     /// <summary>
@@ -8808,7 +8808,7 @@ namespace CodeGen.Templates.Foundation.Dictionary.DictionaryFolder
 #endregion
 
 #region _IndexedItem (/sitecore/templates/Foundation/Indexing/_IndexedItem)
-namespace CodeGen.Templates.Foundation.Indexing.IndexedItem
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Indexing.IndexedItem
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8844,9 +8844,9 @@ namespace CodeGen.Templates.Foundation.Indexing.IndexedItem
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Indexing/_IndexedItem</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}");
+		public static ID ID => new ID("{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}");
 	}
 
     /// <summary>
@@ -8897,7 +8897,7 @@ namespace CodeGen.Templates.Foundation.Indexing.IndexedItem
 #endregion
 
 #region Local Datasource Folder (/sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder)
-namespace CodeGen.Templates.Foundation.LocalDatasource.LocalDatasourceFolder
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.LocalDatasource.LocalDatasourceFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8918,9 +8918,9 @@ namespace CodeGen.Templates.Foundation.LocalDatasource.LocalDatasourceFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{FFF5F245-FFC0-4022-A998-9B07AA5E761F}");
+		public static ID ID => new ID("{FFF5F245-FFC0-4022-A998-9B07AA5E761F}");
 	}
 
     /// <summary>
@@ -8947,7 +8947,7 @@ namespace CodeGen.Templates.Foundation.LocalDatasource.LocalDatasourceFolder
 #endregion
 
 #region Datasource Configuration (/sitecore/templates/Foundation/Multisite/Datasource Configuration)
-namespace CodeGen.Templates.Foundation.Multisite.DatasourceConfiguration
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceConfiguration
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -8984,9 +8984,9 @@ namespace CodeGen.Templates.Foundation.Multisite.DatasourceConfiguration
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Configuration</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}");
+		public static ID ID => new ID("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}");
 	}
 
     /// <summary>
@@ -9057,7 +9057,7 @@ namespace CodeGen.Templates.Foundation.Multisite.DatasourceConfiguration
 #endregion
 
 #region Datasource Settings Folder (/sitecore/templates/Foundation/Multisite/Datasource Settings Folder)
-namespace CodeGen.Templates.Foundation.Multisite.DatasourceSettingsFolder
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceSettingsFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9078,9 +9078,9 @@ namespace CodeGen.Templates.Foundation.Multisite.DatasourceSettingsFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Settings Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{7A98BE60-9F59-4064-82C2-58DA63562FA5}");
+		public static ID ID => new ID("{7A98BE60-9F59-4064-82C2-58DA63562FA5}");
 	}
 
     /// <summary>
@@ -9107,7 +9107,7 @@ namespace CodeGen.Templates.Foundation.Multisite.DatasourceSettingsFolder
 #endregion
 
 #region Site Settings Root (/sitecore/templates/Foundation/Multisite/Site Settings Root)
-namespace CodeGen.Templates.Foundation.Multisite.SiteSettingsRoot
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.SiteSettingsRoot
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9128,9 +9128,9 @@ namespace CodeGen.Templates.Foundation.Multisite.SiteSettingsRoot
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Site Settings Root</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{4C82B6DD-FE7C-4144-BCB3-F21B4080568F}");
+		public static ID ID => new ID("{4C82B6DD-FE7C-4144-BCB3-F21B4080568F}");
 	}
 
     /// <summary>
@@ -9157,7 +9157,7 @@ namespace CodeGen.Templates.Foundation.Multisite.SiteSettingsRoot
 #endregion
 
 #region _Site (/sitecore/templates/Foundation/Multisite/_Site)
-namespace CodeGen.Templates.Foundation.Multisite.Site
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.Site
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9178,9 +9178,9 @@ namespace CodeGen.Templates.Foundation.Multisite.Site
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/_Site</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{BB85C5C2-9F87-48CE-8012-AF67CF4F765D}");
+		public static ID ID => new ID("{BB85C5C2-9F87-48CE-8012-AF67CF4F765D}");
 	}
 
     /// <summary>
@@ -9207,7 +9207,7 @@ namespace CodeGen.Templates.Foundation.Multisite.Site
 #endregion
 
 #region _SiteSettings (/sitecore/templates/Foundation/Multisite/_SiteSettings)
-namespace CodeGen.Templates.Foundation.Multisite.SiteSettings
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.SiteSettings
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9228,9 +9228,9 @@ namespace CodeGen.Templates.Foundation.Multisite.SiteSettings
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/_SiteSettings</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{BCCFEBEA-DCCB-48FE-9570-6503829EC03F}");
+		public static ID ID => new ID("{BCCFEBEA-DCCB-48FE-9570-6503829EC03F}");
 	}
 
     /// <summary>
@@ -9257,7 +9257,7 @@ namespace CodeGen.Templates.Foundation.Multisite.SiteSettings
 #endregion
 
 #region ParametersTemplate_HasDynamicPlaceholder (/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder)
-namespace CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateHasDynamicPlaceholder
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateHasDynamicPlaceholder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9278,9 +9278,9 @@ namespace CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateHasD
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{8373E4E5-C79C-4123-9284-BABD9601C565}");
+		public static ID ID => new ID("{8373E4E5-C79C-4123-9284-BABD9601C565}");
 	}
 
     /// <summary>
@@ -9307,7 +9307,7 @@ namespace CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateHasD
 #endregion
 
 #region ParametersTemplate_QueryableDatasourceRendering (/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering)
-namespace CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateQueryableDatasourceRendering
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateQueryableDatasourceRendering
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9328,9 +9328,9 @@ namespace CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateQuer
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}");
+		public static ID ID => new ID("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}");
 	}
 
     /// <summary>
@@ -9357,7 +9357,7 @@ namespace CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateQuer
 #endregion
 
 #region ParametersTemplate_FixedHeight (/sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight)
-namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateFixedHeight
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTemplateFixedHeight
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9393,9 +9393,9 @@ namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateFixedHeight
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}");
+		public static ID ID => new ID("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}");
 	}
 
     /// <summary>
@@ -9446,7 +9446,7 @@ namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateFixedHeight
 #endregion
 
 #region ParametersTemplate_HasBackground (/sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground)
-namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasBackground
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTemplateHasBackground
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9482,9 +9482,9 @@ namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasBackground
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}");
+		public static ID ID => new ID("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}");
 	}
 
     /// <summary>
@@ -9535,7 +9535,7 @@ namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasBackground
 #endregion
 
 #region ParametersTemplate_HasContainer (/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer)
-namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainer
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainer
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9571,9 +9571,9 @@ namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainer
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{29299E73-6841-44C1-A65F-0889011E2EEC}");
+		public static ID ID => new ID("{29299E73-6841-44C1-A65F-0889011E2EEC}");
 	}
 
     /// <summary>
@@ -9624,7 +9624,7 @@ namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainer
 #endregion
 
 #region ParametersTemplate_HasContainerWithBackground (/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground)
-namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainerWithBackground
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainerWithBackground
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9645,9 +9645,9 @@ namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainerWit
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}");
+		public static ID ID => new ID("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}");
 	}
 
     /// <summary>
@@ -9722,7 +9722,7 @@ namespace CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainerWit
 #endregion
 
 #region Style (/sitecore/templates/Foundation/Theming/Style)
-namespace CodeGen.Templates.Foundation.Theming.Style
+namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.Style
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9758,9 +9758,9 @@ namespace CodeGen.Templates.Foundation.Theming.Style
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Foundation/Theming/Style</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{C2AC5C42-A05C-4F51-854E-730C9BCA06D1}");
+		public static ID ID => new ID("{C2AC5C42-A05C-4F51-854E-730C9BCA06D1}");
 	}
 
     /// <summary>
@@ -9811,7 +9811,7 @@ namespace CodeGen.Templates.Foundation.Theming.Style
 #endregion
 
 #region Demo Teaser (/sitecore/templates/Project/Common/Content Types/Demo Teaser)
-namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTeaser
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTeaser
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9832,9 +9832,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTeaser
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Teaser</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}");
+		public static ID ID => new ID("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}");
 	}
 
     /// <summary>
@@ -9885,7 +9885,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTeaser
 #endregion
 
 #region Campaign Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token)
-namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.CampaignToken
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.CampaignToken
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9906,9 +9906,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.CampaignToken
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{51B1726B-4290-4908-A2DA-B169194AE80C}");
+		public static ID ID => new ID("{51B1726B-4290-4908-A2DA-B169194AE80C}");
 	}
 
     /// <summary>
@@ -9959,7 +9959,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.CampaignToken
 #endregion
 
 #region Link Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token)
-namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.LinkToken
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.LinkToken
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -9980,9 +9980,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.LinkToken
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}");
+		public static ID ID => new ID("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}");
 	}
 
     /// <summary>
@@ -10033,7 +10033,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.LinkToken
 #endregion
 
 #region Text Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token)
-namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.TextToken
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.TextToken
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10054,9 +10054,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.TextToken
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}");
+		public static ID ID => new ID("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}");
 	}
 
     /// <summary>
@@ -10107,7 +10107,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.TextToken
 #endregion
 
 #region Employee Folder (/sitecore/templates/Project/Common/Content Types/Employee Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.EmployeeFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.EmployeeFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10128,9 +10128,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.EmployeeFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Employee Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{F94F28F6-5B19-42F2-9164-1E21023E03EE}");
+		public static ID ID => new ID("{F94F28F6-5B19-42F2-9164-1E21023E03EE}");
 	}
 
     /// <summary>
@@ -10157,7 +10157,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.EmployeeFolder
 #endregion
 
 #region Employee (/sitecore/templates/Project/Common/Content Types/Employee)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Employee
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Employee
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10178,9 +10178,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Employee
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Employee</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}");
+		public static ID ID => new ID("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}");
 	}
 
     /// <summary>
@@ -10493,7 +10493,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Employee
 #endregion
 
 #region FAQ Folder (/sitecore/templates/Project/Common/Content Types/FAQ Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.FAQFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10514,9 +10514,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.FAQFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{41DA2D61-D85A-40F1-BE69-DDD18DD1BC93}");
+		public static ID ID => new ID("{41DA2D61-D85A-40F1-BE69-DDD18DD1BC93}");
 	}
 
     /// <summary>
@@ -10543,7 +10543,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.FAQFolder
 #endregion
 
 #region FAQ Group (/sitecore/templates/Project/Common/Content Types/FAQ Group)
-namespace CodeGen.Templates.Project.Common.ContentTypes.FAQGroup
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQGroup
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10564,9 +10564,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.FAQGroup
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Group</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}");
+		public static ID ID => new ID("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}");
 	}
 
     /// <summary>
@@ -10617,7 +10617,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.FAQGroup
 #endregion
 
 #region FAQ (/sitecore/templates/Project/Common/Content Types/FAQ)
-namespace CodeGen.Templates.Project.Common.ContentTypes.FAQ
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQ
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10638,9 +10638,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.FAQ
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{BFDC1F27-3D2D-495F-89A3-0951F882420B}");
+		public static ID ID => new ID("{BFDC1F27-3D2D-495F-89A3-0951F882420B}");
 	}
 
     /// <summary>
@@ -10715,7 +10715,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.FAQ
 #endregion
 
 #region Global Folder (/sitecore/templates/Project/Common/Content Types/Global Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.GlobalFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.GlobalFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10736,9 +10736,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.GlobalFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Global Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{FD075CBC-572E-4D27-A09F-B780E8FF4741}");
+		public static ID ID => new ID("{FD075CBC-572E-4D27-A09F-B780E8FF4741}");
 	}
 
     /// <summary>
@@ -10765,7 +10765,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.GlobalFolder
 #endregion
 
 #region Interest (/sitecore/templates/Project/Common/Content Types/Interest)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Interest
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Interest
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10786,9 +10786,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Interest
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Interest</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}");
+		public static ID ID => new ID("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}");
 	}
 
     /// <summary>
@@ -10839,7 +10839,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Interest
 #endregion
 
 #region Interests Folder (/sitecore/templates/Project/Common/Content Types/Interests Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.InterestsFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.InterestsFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10860,9 +10860,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.InterestsFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Interests Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{0DB13819-7DF3-4136-A4B9-0A22B1023EF7}");
+		public static ID ID => new ID("{0DB13819-7DF3-4136-A4B9-0A22B1023EF7}");
 	}
 
     /// <summary>
@@ -10889,7 +10889,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.InterestsFolder
 #endregion
 
 #region Link Menu Item (/sitecore/templates/Project/Common/Content Types/Link Menu Item)
-namespace CodeGen.Templates.Project.Common.ContentTypes.LinkMenuItem
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMenuItem
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10910,9 +10910,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.LinkMenuItem
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu Item</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{390333C8-751B-4332-84A3-6360B969A19F}");
+		public static ID ID => new ID("{390333C8-751B-4332-84A3-6360B969A19F}");
 	}
 
     /// <summary>
@@ -11083,7 +11083,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.LinkMenuItem
 #endregion
 
 #region Link Menu (/sitecore/templates/Project/Common/Content Types/Link Menu)
-namespace CodeGen.Templates.Project.Common.ContentTypes.LinkMenu
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMenu
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11104,9 +11104,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.LinkMenu
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}");
+		public static ID ID => new ID("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}");
 	}
 
     /// <summary>
@@ -11133,7 +11133,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.LinkMenu
 #endregion
 
 #region Login Teaser (/sitecore/templates/Project/Common/Content Types/Login Teaser)
-namespace CodeGen.Templates.Project.Common.ContentTypes.LoginTeaser
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LoginTeaser
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11154,9 +11154,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.LoginTeaser
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Login Teaser</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{6E686B1C-1675-4263-AF03-DCE07827AFDD}");
+		public static ID ID => new ID("{6E686B1C-1675-4263-AF03-DCE07827AFDD}");
 	}
 
     /// <summary>
@@ -11279,7 +11279,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.LoginTeaser
 #endregion
 
 #region Map Point (/sitecore/templates/Project/Common/Content Types/Map Point)
-namespace CodeGen.Templates.Project.Common.ContentTypes.MapPoint
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MapPoint
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11300,9 +11300,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.MapPoint
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Map Point</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{11C28D16-9B88-456E-A42B-D4B5A82867E3}");
+		public static ID ID => new ID("{11C28D16-9B88-456E-A42B-D4B5A82867E3}");
 	}
 
     /// <summary>
@@ -11399,7 +11399,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.MapPoint
 #endregion
 
 #region Map Points Folder (/sitecore/templates/Project/Common/Content Types/Map Points Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.MapPointsFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MapPointsFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11420,9 +11420,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.MapPointsFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Map Points Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{067EC866-B3FB-485B-BB49-6151FB086E78}");
+		public static ID ID => new ID("{067EC866-B3FB-485B-BB49-6151FB086E78}");
 	}
 
     /// <summary>
@@ -11449,7 +11449,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.MapPointsFolder
 #endregion
 
 #region Carousel (/sitecore/templates/Project/Common/Content Types/Media/Carousel)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Carousel
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.Carousel
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11470,9 +11470,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Carousel
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Carousel</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{C18D3794-D126-4548-BFC8-89358DE6E9C1}");
+		public static ID ID => new ID("{C18D3794-D126-4548-BFC8-89358DE6E9C1}");
 	}
 
     /// <summary>
@@ -11523,7 +11523,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Carousel
 #endregion
 
 #region Image (/sitecore/templates/Project/Common/Content Types/Media/Image)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Image
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.Image
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11544,9 +11544,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Image
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Image</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{F0369E1A-9030-4A05-A09C-EF09B664ED27}");
+		public static ID ID => new ID("{F0369E1A-9030-4A05-A09C-EF09B664ED27}");
 	}
 
     /// <summary>
@@ -11665,7 +11665,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Image
 #endregion
 
 #region Media Background Folder (/sitecore/templates/Project/Common/Content Types/Media/Media Background Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackgroundFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackgroundFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11686,9 +11686,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackgroundFol
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{82A6F39C-53E1-4ECA-8C27-69937CFF3B47}");
+		public static ID ID => new ID("{82A6F39C-53E1-4ECA-8C27-69937CFF3B47}");
 	}
 
     /// <summary>
@@ -11715,7 +11715,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackgroundFol
 #endregion
 
 #region Media Background (/sitecore/templates/Project/Common/Content Types/Media/Media Background)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackground
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackground
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11736,9 +11736,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackground
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{42A10C41-5186-4A1E-AA7E-54EA00199C3F}");
+		public static ID ID => new ID("{42A10C41-5186-4A1E-AA7E-54EA00199C3F}");
 	}
 
     /// <summary>
@@ -11765,7 +11765,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackground
 #endregion
 
 #region Media Folder (/sitecore/templates/Project/Common/Content Types/Media/Media Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.MediaFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11786,9 +11786,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{920A1781-559F-4E1C-BB2E-6B9A2113FE6B}");
+		public static ID ID => new ID("{920A1781-559F-4E1C-BB2E-6B9A2113FE6B}");
 	}
 
     /// <summary>
@@ -11815,7 +11815,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.MediaFolder
 #endregion
 
 #region Video (/sitecore/templates/Project/Common/Content Types/Media/Video)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Video
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.Video
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11836,9 +11836,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Video
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Video</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}");
+		public static ID ID => new ID("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}");
 	}
 
     /// <summary>
@@ -11957,7 +11957,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Media.Video
 #endregion
 
 #region MetaKeyword Folder (/sitecore/templates/Project/Common/Content Types/MetaKeyword Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.MetaKeywordFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MetaKeywordFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11978,9 +11978,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.MetaKeywordFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{CD047791-C29A-4596-AEEE-DB5E70421C1F}");
+		public static ID ID => new ID("{CD047791-C29A-4596-AEEE-DB5E70421C1F}");
 	}
 
     /// <summary>
@@ -12007,7 +12007,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.MetaKeywordFolder
 #endregion
 
 #region MetaKeyword (/sitecore/templates/Project/Common/Content Types/MetaKeyword)
-namespace CodeGen.Templates.Project.Common.ContentTypes.MetaKeyword
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MetaKeyword
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12028,9 +12028,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.MetaKeyword
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}");
+		public static ID ID => new ID("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}");
 	}
 
     /// <summary>
@@ -12081,7 +12081,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.MetaKeyword
 #endregion
 
 #region Navigation Link (/sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Navigation.NavigationLink
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Navigation.NavigationLink
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12102,9 +12102,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Navigation.NavigationLin
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}");
+		public static ID ID => new ID("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}");
 	}
 
     /// <summary>
@@ -12227,7 +12227,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Navigation.NavigationLin
 #endregion
 
 #region Registration Folder (/sitecore/templates/Project/Common/Content Types/Registration Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.RegistrationFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.RegistrationFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12248,9 +12248,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.RegistrationFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Registration Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{689BA377-E538-49ED-9DFC-4DCC398AB9AC}");
+		public static ID ID => new ID("{689BA377-E538-49ED-9DFC-4DCC398AB9AC}");
 	}
 
     /// <summary>
@@ -12277,7 +12277,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.RegistrationFolder
 #endregion
 
 #region Service Email (/sitecore/templates/Project/Common/Content Types/Service Email)
-namespace CodeGen.Templates.Project.Common.ContentTypes.ServiceEmail
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.ServiceEmail
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12298,9 +12298,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.ServiceEmail
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Service Email</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{6DB3BA22-5715-4529-A527-35B3AF083AE4}");
+		public static ID ID => new ID("{6DB3BA22-5715-4529-A527-35B3AF083AE4}");
 	}
 
     /// <summary>
@@ -12399,7 +12399,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.ServiceEmail
 #endregion
 
 #region Social Feeds Folder (/sitecore/templates/Project/Common/Content Types/Social/Social Feeds Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Social.SocialFeedsFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Social.SocialFeedsFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12420,9 +12420,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Social.SocialFeedsFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Social Feeds Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{4DE2D9D9-0781-47AD-8F5D-52F2AD920D83}");
+		public static ID ID => new ID("{4DE2D9D9-0781-47AD-8F5D-52F2AD920D83}");
 	}
 
     /// <summary>
@@ -12449,7 +12449,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Social.SocialFeedsFolder
 #endregion
 
 #region Twitter Feed (/sitecore/templates/Project/Common/Content Types/Social/Twitter Feed)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Social.TwitterFeed
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Social.TwitterFeed
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12470,9 +12470,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Social.TwitterFeed
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Twitter Feed</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}");
+		public static ID ID => new ID("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}");
 	}
 
     /// <summary>
@@ -12571,7 +12571,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Social.TwitterFeed
 #endregion
 
 #region Dynamic Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.DynamicTeaser
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.DynamicTeaser
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12592,9 +12592,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.DynamicTeaser
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}");
+		public static ID ID => new ID("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}");
 	}
 
     /// <summary>
@@ -12669,7 +12669,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.DynamicTeaser
 #endregion
 
 #region Headline (/sitecore/templates/Project/Common/Content Types/Teasers/Headline)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Headline
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.Headline
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12690,9 +12690,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Headline
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Headline</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{061574E1-59DD-4B62-9680-1C84EFBE6773}");
+		public static ID ID => new ID("{061574E1-59DD-4B62-9680-1C84EFBE6773}");
 	}
 
     /// <summary>
@@ -12767,7 +12767,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Headline
 #endregion
 
 #region Quote Folder (/sitecore/templates/Project/Common/Content Types/Teasers/Quote Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.QuoteFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.QuoteFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12788,9 +12788,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.QuoteFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{A8F1B162-041F-46BF-81EB-5213AE8BC579}");
+		public static ID ID => new ID("{A8F1B162-041F-46BF-81EB-5213AE8BC579}");
 	}
 
     /// <summary>
@@ -12817,7 +12817,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.QuoteFolder
 #endregion
 
 #region Quote (/sitecore/templates/Project/Common/Content Types/Teasers/Quote)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Quote
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.Quote
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12838,9 +12838,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Quote
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}");
+		public static ID ID => new ID("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}");
 	}
 
     /// <summary>
@@ -13009,7 +13009,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Quote
 #endregion
 
 #region Teaser Folder (/sitecore/templates/Project/Common/Content Types/Teasers/Teaser Folder)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.TeaserFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.TeaserFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13030,9 +13030,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.TeaserFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser Folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{29D4B405-39EB-487D-9D6B-3F8467AB167D}");
+		public static ID ID => new ID("{29D4B405-39EB-487D-9D6B-3F8467AB167D}");
 	}
 
     /// <summary>
@@ -13059,7 +13059,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.TeaserFolder
 #endregion
 
 #region Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Teaser)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Teaser
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.Teaser
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13080,9 +13080,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Teaser
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{C7D9D293-4EF8-4380-8E10-C4632E729F39}");
+		public static ID ID => new ID("{C7D9D293-4EF8-4380-8E10-C4632E729F39}");
 	}
 
     /// <summary>
@@ -13251,7 +13251,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.Teaser
 #endregion
 
 #region Video Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser)
-namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.VideoTeaser
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.VideoTeaser
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13272,9 +13272,9 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.VideoTeaser
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{DDBBF170-CFBD-439F-958C-A090BDF66D94}");
+		public static ID ID => new ID("{DDBBF170-CFBD-439F-958C-A090BDF66D94}");
 	}
 
     /// <summary>
@@ -13465,7 +13465,7 @@ namespace CodeGen.Templates.Project.Common.ContentTypes.Teasers.VideoTeaser
 #endregion
 
 #region Demo Page (/sitecore/templates/Project/Common/Page Types/Demo Page)
-namespace CodeGen.Templates.Project.Common.PageTypes.DemoPage
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.PageTypes.DemoPage
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13486,9 +13486,9 @@ namespace CodeGen.Templates.Project.Common.PageTypes.DemoPage
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Page Types/Demo Page</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}");
+		public static ID ID => new ID("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}");
 	}
 
     /// <summary>
@@ -13587,7 +13587,7 @@ namespace CodeGen.Templates.Project.Common.PageTypes.DemoPage
 #endregion
 
 #region ParametersTemplate_HasContainerWithDynamicPlaceholder (/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder)
-namespace CodeGen.Templates.Project.Common.Parameters.ParametersTemplateHasContainerWithDynamicPlaceholder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Common.Parameters.ParametersTemplateHasContainerWithDynamicPlaceholder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13608,9 +13608,9 @@ namespace CodeGen.Templates.Project.Common.Parameters.ParametersTemplateHasConta
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{4654D5F0-9B39-426A-992D-1D42E356FB0A}");
+		public static ID ID => new ID("{4654D5F0-9B39-426A-992D-1D42E356FB0A}");
 	}
 
     /// <summary>
@@ -13685,7 +13685,7 @@ namespace CodeGen.Templates.Project.Common.Parameters.ParametersTemplateHasConta
 #endregion
 
 #region Site Root (/sitecore/templates/Project/Habitat/Content Types/Site Root)
-namespace CodeGen.Templates.Project.Habitat.ContentTypes.SiteRoot
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.ContentTypes.SiteRoot
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13706,9 +13706,9 @@ namespace CodeGen.Templates.Project.Habitat.ContentTypes.SiteRoot
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Content Types/Site Root</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}");
+		public static ID ID => new ID("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}");
 	}
 
     /// <summary>
@@ -14269,7 +14269,7 @@ namespace CodeGen.Templates.Project.Habitat.ContentTypes.SiteRoot
 #endregion
 
 #region Article (/sitecore/templates/Project/Habitat/Page Types/Article)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.Article
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Article
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -14290,9 +14290,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.Article
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Article</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{94A8C8E9-690B-4E65-98E7-F95800222767}");
+		public static ID ID => new ID("{94A8C8E9-690B-4E65-98E7-F95800222767}");
 	}
 
     /// <summary>
@@ -14819,7 +14819,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.Article
 #endregion
 
 #region Edit Profile Page (/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.EditProfilePage
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.EditProfilePage
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -14840,9 +14840,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.EditProfilePage
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{867F774A-195E-49D3-8E40-01F18410BB02}");
+		public static ID ID => new ID("{867F774A-195E-49D3-8E40-01F18410BB02}");
 	}
 
     /// <summary>
@@ -15273,7 +15273,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.EditProfilePage
 #endregion
 
 #region Employee (/sitecore/templates/Project/Habitat/Page Types/Employee)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.Employee
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Employee
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -15294,9 +15294,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.Employee
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employee</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{467C2144-4454-4518-B1DE-E31B4CBBFF33}");
+		public static ID ID => new ID("{467C2144-4454-4518-B1DE-E31B4CBBFF33}");
 	}
 
     /// <summary>
@@ -16015,7 +16015,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.Employee
 #endregion
 
 #region Employees folder (/sitecore/templates/Project/Habitat/Page Types/Employees folder)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.EmployeesFolder
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.EmployeesFolder
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -16036,9 +16036,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.EmployeesFolder
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employees folder</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}");
+		public static ID ID => new ID("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}");
 	}
 
     /// <summary>
@@ -16565,7 +16565,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.EmployeesFolder
 #endregion
 
 #region Forgot Password Page (/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.ForgotPasswordPage
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.ForgotPasswordPage
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -16586,9 +16586,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.ForgotPasswordPage
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}");
+		public static ID ID => new ID("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}");
 	}
 
     /// <summary>
@@ -17019,7 +17019,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.ForgotPasswordPage
 #endregion
 
 #region Home (/sitecore/templates/Project/Habitat/Page Types/Home)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.Home
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Home
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -17040,9 +17040,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.Home
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Home</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}");
+		public static ID ID => new ID("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}");
 	}
 
     /// <summary>
@@ -17355,7 +17355,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.Home
 #endregion
 
 #region Login Page (/sitecore/templates/Project/Habitat/Page Types/Login Page)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.LoginPage
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.LoginPage
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -17376,9 +17376,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.LoginPage
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Login Page</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}");
+		public static ID ID => new ID("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}");
 	}
 
     /// <summary>
@@ -17809,7 +17809,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.LoginPage
 #endregion
 
 #region Map Page (/sitecore/templates/Project/Habitat/Page Types/Map Page)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.MapPage
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.MapPage
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -17830,9 +17830,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.MapPage
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Map Page</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}");
+		public static ID ID => new ID("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}");
 	}
 
     /// <summary>
@@ -18429,7 +18429,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.MapPage
 #endregion
 
 #region News Article (/sitecore/templates/Project/Habitat/Page Types/News Article)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.NewsArticle
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.NewsArticle
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -18450,9 +18450,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.NewsArticle
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/News Article</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{B69277AD-E917-4B9F-9136-A12E0A3E462F}");
+		public static ID ID => new ID("{B69277AD-E917-4B9F-9136-A12E0A3E462F}");
 	}
 
     /// <summary>
@@ -18931,7 +18931,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.NewsArticle
 #endregion
 
 #region News List (/sitecore/templates/Project/Habitat/Page Types/News List)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.NewsList
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.NewsList
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -18952,9 +18952,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.NewsList
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/News List</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}");
+		public static ID ID => new ID("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}");
 	}
 
     /// <summary>
@@ -19457,7 +19457,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.NewsList
 #endregion
 
 #region Register Page (/sitecore/templates/Project/Habitat/Page Types/Register Page)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.RegisterPage
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.RegisterPage
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -19478,9 +19478,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.RegisterPage
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Register Page</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{6EF8F8A0-C567-495B-9E00-8775A268A486}");
+		public static ID ID => new ID("{6EF8F8A0-C567-495B-9E00-8775A268A486}");
 	}
 
     /// <summary>
@@ -19911,7 +19911,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.RegisterPage
 #endregion
 
 #region Search Results (/sitecore/templates/Project/Habitat/Page Types/Search Results)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.SearchResults
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.SearchResults
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -19932,9 +19932,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.SearchResults
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Search Results</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{92168572-385B-45F0-B40F-3D987AD20E5C}");
+		public static ID ID => new ID("{92168572-385B-45F0-B40F-3D987AD20E5C}");
 	}
 
     /// <summary>
@@ -20485,7 +20485,7 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.SearchResults
 #endregion
 
 #region Section (/sitecore/templates/Project/Habitat/Page Types/Section)
-namespace CodeGen.Templates.Project.Habitat.PageTypes.Section
+namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Section
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -20506,9 +20506,9 @@ namespace CodeGen.Templates.Project.Habitat.PageTypes.Section
 	/// <para>Constants struct</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Section</para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("{8EE208F9-A6A6-41E2-88A0-C188737A178C}");
+		public static ID ID => new ID("{8EE208F9-A6A6-41E2-88A0-C188737A178C}");
 	}
 
     /// <summary>

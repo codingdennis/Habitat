@@ -40,7 +40,7 @@ using Sitecore.ContentSearch.Linq.Common;
 	{
 #>
 #region <#=template.Name#> (<#=template.Path#>)
-namespace CodeGen.Templates.<#=FullNamespace(template.Path)#>
+namespace Fortis.Foundation.CodeGen.Templates.<#=FullNamespace(template.Path)#>
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -119,9 +119,9 @@ public void GenerateTemplate(ITemplate template)
 	/// <para>Constants struct</para>
 	/// <para><#= template.Path #></para>
 	/// <summary>
-	public struct Constants
+	public struct Static
 	{
-		public ID ID => new ID("<#=template.Id.ToUpper()#>");
+		public static ID ID => new ID("<#=template.Id.ToUpper()#>");
 	}
 
     /// <summary>
