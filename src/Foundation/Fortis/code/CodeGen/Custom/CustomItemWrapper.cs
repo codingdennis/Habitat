@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Fortis.Model;
 using Fortis.Providers;
 using Sitecore.Data.Items;
+using Sitecore.Data;
+using System.Linq;
 
 namespace Fortis.Foundation.CodeGen.Custom
 {
@@ -67,6 +69,11 @@ namespace Fortis.Foundation.CodeGen.Custom
                 var original = GetItem();
                 return original != null ? original.Statistics.Updated : DateTime.Today;
             }
+        }
+
+        public bool IsDerived(ID templateId)
+        {
+            return (this.TemplateId == templateId.Guid || this.TemplateIds.Any(o => o == templateId.Guid));
         }
 
         private Item GetItem()

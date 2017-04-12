@@ -1,5 +1,6 @@
 ﻿using System;
 using Fortis.Model;
+using Sitecore.Data;
 
 namespace Fortis.Foundation.CodeGen.Custom
 {
@@ -10,5 +11,6 @@ namespace Fortis.Foundation.CodeGen.Custom
         DateTime CreatedDate { get; }
         DateTime UpdatedDate { get; }
         bool IsHidden { get; }
+        bool IsDerived(ID templateId);
     }
 }
