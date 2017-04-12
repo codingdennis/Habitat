@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using Fortis.Model;
+using Fortis.Providers;
+using Sitecore.Data.Items;
+
+namespace Fortis.Foundation.CodeGen.Custom
+{
+    public class CustomItemWrapper : ItemWrapper, ICustomItemWrapper, IFortisItem
+    {
+        public CustomItemWrapper(ISpawnProvider spawnProvider) : base(spawnProvider)
+        {
+        }
+
+        public CustomItemWrapper(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        {
+        }
+
+        public CustomItemWrapper(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider)
+        {
+        }
+
+        public CustomItemWrapper(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider)
+        {
+        }
+
+        public string TemplateName
+        {
+            get
+            {
+                var original = GetItem();
+                return original != null ? original.TemplateName : string.Empty;
+            }
+        }
+
+        public DateTime CreatedDate
+        {
+            get
+            {
+                var original = GetItem();
+                return original != null ? original.Statistics.Created : DateTime.Today;
+            }
+        }
+
+        public bool IsHidden
+        {
+            get
+            {
+                var original = GetItem();
+                return original != null && original.Appearance.Hidden;
+            }
+        }
+
+        public int SortOrder
+        {
+            get
+            {
+                var original = GetItem();
+                return original != null ? original.Appearance.Sortorder : 100;
+            }
+        }
+
+        public DateTime UpdatedDate
+        {
+            get
+            {
+                var original = GetItem();
+                return original != null ? original.Statistics.Updated : DateTime.Today;
+            }
+        }
+
+        private Item GetItem()
+        {
+            return Original as Item;
+        }
+    }
+}
