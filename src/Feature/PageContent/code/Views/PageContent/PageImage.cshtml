@@ -1,20 +1,20 @@
-﻿@using Sitecore.Feature.PageContent
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.PageContent.HasPageContent
+@model IRenderingModel<IHasPageContent, IHasPageContent>
 
-@if (!Model?.Item?.IsDerived(Templates.HasPageContent.ID) ?? true)
+@if (!Model?.PageItem?.IsDerived(Static.ID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageContent.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Static.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
-@if (!Sitecore.Context.PageMode.IsExperienceEditor && !Html.Sitecore().HasValue(Templates.HasPageContent.Fields.Image.ToString()))
+@if (!Sitecore.Context.PageMode.IsExperienceEditor && !Model.PageItem.Image.HasValue))
 {
   return;
 }
 
 <div class="article image">
-  @Html.Sitecore().ImageField(Templates.HasPageContent.Fields.Image, Model.Item, mw: 1000, cssClass: "img-responsive")
+  @Model.PageItem.Image.Render(new { @class = "img-responsive", mw = 1000 })
 </div>

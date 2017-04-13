@@ -162,7 +162,11 @@
     <Compile Include="CodeGen\Custom\ICustomItemWrapper.cs" />
     <Compile Include="CodeGen\Custom\ICustomRenderingParameterWrapper.cs" />
     <Compile Include="CodeGen\Custom\IFortisItem.cs" />
-    <Compile Include="CodeGen\CodeGen.cs" />
+    <Compile Include="CodeGen\CodeGen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodeGen.tt</DependentUpon>
+    </Compile>
     <Compile Include="FortisConfigurator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

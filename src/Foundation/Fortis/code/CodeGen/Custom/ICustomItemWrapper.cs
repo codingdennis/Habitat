@@ -12,5 +12,6 @@ namespace Fortis.Foundation.CodeGen.Custom
         DateTime UpdatedDate { get; }
         bool IsHidden { get; }
         bool IsDerived(ID templateId);
+        bool HasContextLanguage();
     }
 }

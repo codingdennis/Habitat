@@ -116,12 +116,28 @@ public void GenerateTemplate(ITemplate template)
     }
 
 	/// <summary>
-	/// <para>Constants struct</para>
+	/// <para>Static struct for accessing template ID and field ID and names.</para>
 	/// <para><#= template.Path #></para>
 	/// <summary>
 	public struct Static
 	{
 		public static ID ID => new ID("<#=template.Id.ToUpper()#>");
+
+		public struct Fields
+		{
+<#+
+	foreach(var field in template.CombinedFields)
+	{
+#>
+			public struct <#=TitleCase(field.Name)#>
+			{
+				public static ID ID = new ID("<#=field.Id.ToUpper()#>");
+				public static string FieldName = "<#=field.Name#>";
+			}
+<#+
+	}
+#>
+		}
 	}
 
     /// <summary>

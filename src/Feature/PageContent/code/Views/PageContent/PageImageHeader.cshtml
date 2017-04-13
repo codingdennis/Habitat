@@ -1,10 +1,10 @@
-﻿@using Sitecore.Feature.PageContent
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+﻿@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.PageContent.HasPageContent
+@model IRenderingModel<IHasPageContent, IHasPageContent>
 
-@if (Html.Sitecore().HasValue(Templates.HasPageContent.Fields.Image.ToString()))
+@if (Model.PageItem.Image.HasValue)
 {
-  var image = Model.Item.ImageUrl(Templates.HasPageContent.Fields.Image);
+  var image = Model.PageItem.Image.GetSourceUri();
   <header class="page-header bg-media bg-parallax" style="background-image: url('@image')">
     @Html.Sitecore().Placeholder("page-header")
   </header>

@@ -71,14 +71,10 @@ namespace Fortis.Foundation.CodeGen.Custom
             }
         }
 
-        public bool IsDerived(ID templateId)
-        {
-            return (this.TemplateId == templateId.Guid || this.TemplateIds.Any(o => o == templateId.Guid));
-        }
+        public bool IsDerived(ID templateId) => (this.TemplateId == templateId.Guid || this.TemplateIds.Any(o => o == templateId.Guid));
 
-        private Item GetItem()
-        {
-            return Original as Item;
-        }
+        public bool HasContextLanguage() => (GetItem().Versions.GetLatestVersion()?.Versions.Count > 0);
+
+        private Item GetItem() => (Original as Item);
     }
 }

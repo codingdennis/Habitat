@@ -10,6 +10,7 @@
   using Sitecore.Foundation.Indexing.Infrastructure;
   using Sitecore.Foundation.Indexing.Models;
   using Sitecore.Web.UI.WebControls;
+  using Fortis.Foundation.CodeGen.Templates.Feature.PageContent.HasPageContent;
 
   public class PageContentIndexingProvider : ProviderBase, ISearchResultFormatter, IQueryPredicateProvider
   {
@@ -17,20 +18,24 @@
 
     public IEnumerable<ID> SupportedTemplates => new[]
     {
-      Templates.HasPageContent.ID
+      Static.ID
     };
 
     public Expression<Func<SearchResultItem, bool>> GetQueryPredicate(IQuery query)
     {
-      var fieldNames = new[] { Templates.HasPageContent.Fields.Title_FieldName, Templates.HasPageContent.Fields.Summary_FieldName, Templates.HasPageContent.Fields.Body_FieldName };
+      var fieldNames = new[] {
+          Static.Fields.Title.FieldName,
+          Static.Fields.Summary.FieldName,
+          Static.Fields.Body.FieldName
+      };
       return GetFreeTextPredicateService.GetFreeTextPredicate(fieldNames, query);
     }
 
     public void FormatResult(SearchResultItem item, ISearchResult formattedResult)
     {
       var contentItem = item.GetItem();
-      formattedResult.Title = FieldRenderer.Render(contentItem, Templates.HasPageContent.Fields.Title.ToString());
-      formattedResult.Description = FieldRenderer.Render(contentItem, Templates.HasPageContent.Fields.Summary.ToString());
+      formattedResult.Title = FieldRenderer.Render(contentItem, Static.Fields.Title.FieldName);
+      formattedResult.Description = FieldRenderer.Render(contentItem, Static.Fields.Summary.FieldName);
     }
   }
 }
