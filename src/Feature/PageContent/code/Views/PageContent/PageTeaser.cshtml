@@ -7,24 +7,24 @@
 @using Fortis.Foundation.CodeGen.Templates.Feature.PageContent.HasPageContent
 @model IRenderingModel<IHasPageContent, IHasPageContent>
 
-@if (!Model?.PageItem?.IsDerived(Static.ID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(Static.ID) ?? true)
 {
   @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Static.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 
 <div class="thumbnail">
-  <a href="@Model.PageItem.GenerateUrl()">
-    @Model.PageItem.Image.Render(new { @class = "img-responsive", mw = 500 })
+  <a href="@Model.RenderingItem.GenerateUrl()">
+    @Model.RenderingItem.Image.Render(new { @class = "img-responsive", mw = 500 })
   </a>
   <div class="caption">
     <h3 class="teaser-heading">
-      @Model.PageItem.Title
+      @Model.RenderingItem.Title
     </h3>
     <p>
-      @Model.PageItem.Summary
+      @Model.RenderingItem.Summary
     </p>
-    <a href="@Model.PageItem.GenerateUrl()" class="btn btn-default">
+    <a href="@Model.RenderingItem.GenerateUrl()" class="btn btn-default">
             @Html.Sitecore().Dictionary("/PageContent/Teaser/Read more", "Read more")
     </a>
   </div>
