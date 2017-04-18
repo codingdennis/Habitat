@@ -4,26 +4,30 @@
 @using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
-@if (!Model?.Item?.IsDerived(Templates.PageMetadata.ID) ?? true)
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata
+@model IRenderingModel<IPageMetadata, IPageMetadata>
+
+@if (!Model?.PageItem?.IsDerived(Static.ID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.PageMetadata.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
-  return;
-}
-@{
-  //TODO: Fall back to Title / DisplayName etc
-  //TODO: Move to Controller Rendering
-  var siteMetadata = MetadataRepository.Get(Model.Item);
-  if (siteMetadata == null)
-  {
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Static.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
-  }
 }
-<title>@Html.Sitecore().Field(Templates.PageMetadata.Fields.BrowserTitle, Model.Item) @Html.Sitecore().Field(Templates.SiteMetadata.Fields.SiteBrowserTitle, siteMetadata)</title>
-<meta name="keywords" content="@MetadataRepository.GetKeywords(Model.Item)"/>
-<meta name="description" content="@Html.Sitecore().Field(Templates.PageMetadata.Fields.Description, Model.Item)"/>
 @{
-  if (!MainUtil.GetBool(Model.Item[Templates.PageMetadata.Fields.CanIndex], true))
+    //TODO: Move to Controller Rendering
+    var title = Model.PageItem.BrowserTitle.Value;
+
+    var siteMetadata = MetadataRepository.Get(Model.PageItem);
+    if (siteMetadata != null)
+    {
+        title += " " + siteMetadata.SiteBrowserTitle.Value;
+    }
+}
+<title>@title</title>
+<meta name="keywords" content="@MetadataRepository.GetKeywords(Model.PageItem)"/>
+<meta name="description" content="@Model.PageItem.MetaDescription"/>
+@{
+  if (!Model.PageItem.CanIndex.Value)
   {
     <meta name="robots" content="noindex"/>
   }

@@ -1,39 +1,32 @@
 ﻿namespace Sitecore.Feature.Metadata.Repositories
 {
-  using System.Linq;
-  using Sitecore.Data.Fields;
-  using Sitecore.Data.Items;
-  using Sitecore.Feature.Metadata.Models;
-  using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using System.Linq;
+    using Sitecore.Feature.Metadata.Models;
+    using PageMetadata = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata;
+    using SiteMetadata = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.SiteMetadata;
+    using Keyword = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.Keyword;
 
-  public static class MetadataRepository
-  {
-    public static Item Get(Item contextItem)
+    public static class MetadataRepository
     {
-      return contextItem.GetAncestorOrSelfOfTemplate(Templates.SiteMetadata.ID) ?? Context.Site.GetContextItem(Templates.SiteMetadata.ID);
-    }
-
-    public static MetaKeywordsModel GetKeywords(Item item)
-    {
-      if (item.IsDerived(Templates.PageMetadata.ID))
-      {
-        var keywordsField = item.Fields[Templates.PageMetadata.Fields.Keywords];
-        if (keywordsField == null)
+        public static SiteMetadata.ISiteMetadata Get(PageMetadata.IPageMetadata contextItem)
         {
-          return null;
+            return contextItem.AncestorOrSelf<SiteMetadata.ISiteMetadata>();
         }
 
-        var keywordMultilist = new MultilistField(keywordsField);
-        var keywords = keywordMultilist.GetItems().Select(keywrdItem => keywrdItem[Templates.Keyword.Fields.Keyword]);
-        var metaKeywordModel = new MetaKeywordsModel
-                               {
-                                 Keywords = keywords.ToList()
-                               };
+        public static MetaKeywordsModel GetKeywords(PageMetadata.IPageMetadata item)
+        {
+            if (item?.MetaKeywords.Value == null)
+            {
+                return null;
+            }
 
-        return metaKeywordModel;
-      }
+            var keywords = item.MetaKeywords.GetItems<Keyword.IKeyword>()?.Select(k=> k.Keyword.Value);
+            var metaKeywordModel = new MetaKeywordsModel
+            {
+                Keywords = keywords
+            };
 
-      return null;
+            return metaKeywordModel;
+        }
     }
-  }
 }
