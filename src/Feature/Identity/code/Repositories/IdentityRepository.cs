@@ -1,17 +1,19 @@
 ﻿namespace Sitecore.Feature.Identity.Repositories
 {
-  using System;
-  using Sitecore.Data.Items;
-  using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using System;
+    using Sitecore.Data.Items;
+    using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Identity;
+    using Fortis.Model;
 
-  public static class IdentityRepository
-  {
-    public static Item Get([NotNull] Item contextItem)
+    public static class IdentityRepository
     {
-      if (contextItem == null)
-        throw new ArgumentNullException(nameof(contextItem));
+        public static IIdentity Get([NotNull] IItemWrapper contextItem)
+        {
+            if (contextItem == null)
+                throw new ArgumentNullException(nameof(contextItem));
 
-      return contextItem.GetAncestorOrSelfOfTemplate(Templates.Identity.ID) ?? Context.Site.GetContextItem(Templates.Identity.ID);
+            return contextItem.AncestorOrSelf<IIdentity>() ?? null;
+        }
     }
-  }
 }

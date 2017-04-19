@@ -1,27 +1,26 @@
-﻿@using Sitecore.Feature.Identity
-@using Sitecore.Feature.Identity.Repositories
+﻿@using Sitecore.Feature.Identity.Repositories
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
-@using Sitecore.Links
-@model Sitecore.Mvc.Presentation.RenderingModel
-
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Identity
+@model IRenderingModel<IItemWrapper, IItemWrapper>
 
 @{
-  var identity = IdentityRepository.Get(Model.Item);
-  if (identity == null)
-  {
-    return;
-  }
-  //TODO: Resolve context site from item (implement in Foundation.Multisite)
-  var homeUrl = Sitecore.Context.Site?.GetStartItem()?.Url() ?? "/";
-  var hasTagline = identity.FieldHasValue(Templates.Identity.Fields.LogoTagLine);
+    var identity = IdentityRepository.Get(Model.PageItem);
+    if (identity == null)
+    {
+        return;
+    }
+    //TODO: Resolve context site from item (implement in Foundation.Multisite)
+    var homeUrl = Sitecore.Context.Site?.GetStartItem()?.Url() ?? "/";
+    var hasTagline = identity.LogoTagline.HasValue;
 }
 
 <a class="navbar-brand @(hasTagline ? "has-tagline" : "")" href="@homeUrl">
   <span class="logo">
-    @Html.Sitecore().ImageField(Templates.Identity.Fields.Logo, identity, mh: 50)
+    @identity.Logo.Render(new { mh = 50 })
     @if (hasTagline)
     {
-      <small class="tagline">@Html.Sitecore().Field(Templates.Identity.Fields.LogoTagLine, identity)</small>
+      <small class="tagline">@identity.LogoTagline</small>
     }
   </span>
 </a>

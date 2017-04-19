@@ -1,43 +1,44 @@
-﻿@using Sitecore.Feature.Identity
-@using Sitecore.Feature.Identity.Repositories
+﻿@using Sitecore.Feature.Identity.Repositories
 @using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.Theming.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Identity
+@using Fortis.Foundation.CodeGen.Templates.Foundation.Theming
+@model IRenderingModel<IItemWrapper, IItemWrapper, IParametersTemplateHasBackground>
 
 @{
-  var identity = IdentityRepository.Get(Model.Item);
-  if (identity == null)
-  {
-    return;
-  }
+    var identity = IdentityRepository.Get(Model.PageItem);
+    if (identity == null)
+    {
+        return;
+    }
+
+    var cssClass = Model.RenderingParametersItem.Background.GetTarget<IStyle>()?.ClassValue;
 }
 
-<div class="well @Model.Rendering.GetBackgroundClass()">
+<div class="well @cssClass">
   <h4>@Html.Sitecore().Dictionary("/identity/contact information/title", "Contact information")</h4>
 
   <address>
     <p>
-      @if (Sitecore.Context.PageMode.IsExperienceEditor || identity.FieldHasValue(Templates.Identity.Fields.OrganisationName))
+      @if (Sitecore.Context.PageMode.IsExperienceEditor || identity.OrganisationName.HasValue)
       {
-        <strong>@Html.Sitecore().Field(Templates.Identity.Fields.OrganisationName, identity)</strong>
+        <strong>@identity.OrganisationName</strong>
       }
-      <br/>
-      @Html.Sitecore().Field(Templates.Identity.Fields.OrganisationAddress, identity, new
-                                                                                      {
-                                                                                        linebreaks = "<br/>"
-                                                                                      })
+      <br>
+      @identity.OrganisationAddress.Render(new {linebreaks = "<br>"})
     </p>
     <p>
-      @if (Sitecore.Context.PageMode.IsExperienceEditor || identity.FieldHasValue(Templates.Identity.Fields.OrganisationPhone))
+      @if (Sitecore.Context.PageMode.IsExperienceEditor || identity.OrganisationPhone.HasValue)
       {
-        <br />
-        <i class="fa fa-phone"></i> @Html.Sitecore().Field(Templates.Identity.Fields.OrganisationPhone, identity)
+        <br>
+        <i class="fa fa-phone"></i> @identity.OrganisationPhone
       }
-      @if (Sitecore.Context.PageMode.IsExperienceEditor || identity.FieldHasValue(Templates.Identity.Fields.OrganisationEmail))
+      @if (Sitecore.Context.PageMode.IsExperienceEditor || identity.OrganisationEmail.HasValue)
       {
-        <br />
-        <i class="fa fa-envelope"></i> @Html.Sitecore().Field(Templates.Identity.Fields.OrganisationEmail, identity)
+        <br>
+        <i class="fa fa-envelope"></i> @identity.OrganisationEmail
       }
     </p>
   </address>

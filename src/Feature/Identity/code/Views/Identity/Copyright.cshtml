@@ -1,15 +1,15 @@
-﻿@using Sitecore.Feature.Identity
-@using Sitecore.Feature.Identity.Repositories
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+﻿@using Sitecore.Feature.Identity.Repositories
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Identity
+@model IRenderingModel<IItemWrapper, IItemWrapper>
 
 @{
-  var identity = IdentityRepository.Get(Model.Item);
+  var identity = IdentityRepository.Get(Model.PageItem);
   if (identity == null)
   {
     return;
   }
 }
 <small class="copyright">
-  @Html.Sitecore().Field(Templates.Identity.Fields.Copyright, identity)
+  @identity.Copyright
 </small>
