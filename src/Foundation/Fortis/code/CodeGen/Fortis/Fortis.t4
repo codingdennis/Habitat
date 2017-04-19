@@ -23,9 +23,7 @@ public void GenerateUnicornFortisModels(List<string> serializationFolders)
         items.AddRange(deserializedItems);
     }
 
-    // Only care about templates in master database 
-    // (There is a bug in Transitus.Rainbow which hardcoded all item to be master at the moment)
-	var templates = Transitus.Rainbow.TransitusProvider.TemplateFactory.Create(items.Where(o=> o.DatabaseName == "master"));
+	var templates = Transitus.Rainbow.TransitusProvider.TemplateFactory.Create(items);
 #>
 using System;
 using System.Diagnostics;

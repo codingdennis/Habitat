@@ -1,7 +1,7 @@
 ﻿
 /*
  * Fortis Template Models for Habitat, based on Unicorn serialization.
- * Generated at 04/19/2017 10:00:18
+ * Generated at 04/19/2017 11:09:12
  *
  * To regenerate after template changes, right-click on CodeGen.tt and select Run Custom Tool.
  */
