@@ -11,17 +11,18 @@
     using Sitecore.Feature.Demo.Models;
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
     using Sitecore.Resources.Media;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Demo;
 
     public class ProfileProvider : IProfileProvider
     {
         public IEnumerable<ProfileItem> GetSiteProfiles()
         {
-            var settingsItem = Context.Site.GetContextItem(Templates.ProfilingSettings.ID);
+            var settingsItem = Context.Site.GetContextItem(ProfilingSettingsItemConstants.TemplateID);
             if (settingsItem == null)
             {
                 return Enumerable.Empty<ProfileItem>();
             }
-            MultilistField profiles = settingsItem.Fields[Templates.ProfilingSettings.Fields.SiteProfiles];
+            MultilistField profiles = settingsItem.Fields[ProfilingSettingsItemConstants.Fields.SiteProfiles.ID];
             return profiles.GetItems().Select(i => new ProfileItem(i));
         }
 

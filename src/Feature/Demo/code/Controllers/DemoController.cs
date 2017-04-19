@@ -15,6 +15,7 @@ namespace Sitecore.Feature.Demo.Controllers
     using Sitecore.Mvc.Controllers;
     using Sitecore.Mvc.Presentation;
     using Sitecore.Sites;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Demo;
 
     [SkipAnalyticsTracking]
     public class DemoController : SitecoreController
@@ -54,9 +55,9 @@ namespace Sitecore.Feature.Demo.Controllers
         public ActionResult DemoContent()
         {
             var item = RenderingContext.Current?.Rendering?.Item ?? RenderingContext.Current?.ContextItem;
-            if (item == null || !item.IsDerived(Templates.DemoContent.ID))
+            if (item == null || !item.IsDerived(DemoContentItemConstants.TemplateID))
             {
-                throw new InvalidDataSourceItemException($"Item should be not null and derived from {nameof(Templates.DemoContent)} {Templates.DemoContent.ID} template");
+                throw new InvalidDataSourceItemException($"Item should be not null and derived from {DemoContentItemConstants.TemplateName} {DemoContentItemConstants.TemplateID} template");
             }
 
             return this.View("DemoContent", new DemoContent(item));
