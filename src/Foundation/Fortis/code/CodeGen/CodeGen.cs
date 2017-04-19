@@ -1,7 +1,7 @@
 ﻿
 /*
  * Fortis Template Models for Habitat, based on Unicorn serialization.
- * Generated at 04/19/2017 13:23:55
+ * Generated at 04/19/2017 15:32:09
  *
  * To regenerate after template changes, right-click on CodeGen.tt and select Run Custom Tool.
  */
@@ -2791,28 +2791,22 @@ namespace Feature.Maps
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _MapRenderingParameters</para>
     /// <para>ID: {d77856c3-8a5e-452c-8854-f2965edf25e0}</para>
     /// <para>Path: /sitecore/templates/Feature/Maps/_MapRenderingParameters</para>
     /// </summary>
-    [TemplateMapping("{D77856C3-8A5E-452C-8854-F2965EDF25E0}", "InterfaceMap")]
-	public partial interface IMapRenderingParameters : ICustomItemWrapper
+    [TemplateMapping("{D77856C3-8A5E-452C-8854-F2965EDF25E0}", "InterfaceRenderingParameter")]
+	public partial interface IMapRenderingParameters : IRenderingParameterWrapper
     {
         /// <summary>
         /// <para>Template: _MapRenderingParameters</para>
         /// <para>Field: CenterLocation</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-        [IndexField("centerlocation")]
         ITextFieldWrapper CenterLocation { get; }
-		/// <summary>
-		/// <para>Template: _MapRenderingParameters</para>
-        /// <para>Field: CenterLocation</para>
-        /// <para>Data type: Single-Line Text</para>
-		/// </summary>
-		[IndexField("centerlocation")]
 		string CenterLocationValue { get; }
 
         /// <summary>
@@ -2820,14 +2814,7 @@ namespace Feature.Maps
         /// <para>Field: EnableCenterMapControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("enablecentermapcontrol")]
         IBooleanFieldWrapper EnableCenterMapControl { get; }
-		/// <summary>
-		/// <para>Template: _MapRenderingParameters</para>
-        /// <para>Field: EnableCenterMapControl</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("enablecentermapcontrol")]
 		bool EnableCenterMapControlValue { get; }
 
         /// <summary>
@@ -2835,14 +2822,7 @@ namespace Feature.Maps
         /// <para>Field: EnableMapTypeControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("enablemaptypecontrol")]
         IBooleanFieldWrapper EnableMapTypeControl { get; }
-		/// <summary>
-		/// <para>Template: _MapRenderingParameters</para>
-        /// <para>Field: EnableMapTypeControl</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("enablemaptypecontrol")]
 		bool EnableMapTypeControlValue { get; }
 
         /// <summary>
@@ -2850,14 +2830,7 @@ namespace Feature.Maps
         /// <para>Field: EnableRotateControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("enablerotatecontrol")]
         IBooleanFieldWrapper EnableRotateControl { get; }
-		/// <summary>
-		/// <para>Template: _MapRenderingParameters</para>
-        /// <para>Field: EnableRotateControl</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("enablerotatecontrol")]
 		bool EnableRotateControlValue { get; }
 
         /// <summary>
@@ -2865,14 +2838,7 @@ namespace Feature.Maps
         /// <para>Field: EnableScaleControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("enablescalecontrol")]
         IBooleanFieldWrapper EnableScaleControl { get; }
-		/// <summary>
-		/// <para>Template: _MapRenderingParameters</para>
-        /// <para>Field: EnableScaleControl</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("enablescalecontrol")]
 		bool EnableScaleControlValue { get; }
 
         /// <summary>
@@ -2880,14 +2846,7 @@ namespace Feature.Maps
         /// <para>Field: EnableStreetViewControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("enablestreetviewcontrol")]
         IBooleanFieldWrapper EnableStreetViewControl { get; }
-		/// <summary>
-		/// <para>Template: _MapRenderingParameters</para>
-        /// <para>Field: EnableStreetViewControl</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("enablestreetviewcontrol")]
 		bool EnableStreetViewControlValue { get; }
 
         /// <summary>
@@ -2895,14 +2854,7 @@ namespace Feature.Maps
         /// <para>Field: EnableZoomControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("enablezoomcontrol")]
         IBooleanFieldWrapper EnableZoomControl { get; }
-		/// <summary>
-		/// <para>Template: _MapRenderingParameters</para>
-        /// <para>Field: EnableZoomControl</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("enablezoomcontrol")]
 		bool EnableZoomControlValue { get; }
 
         /// <summary>
@@ -2918,14 +2870,7 @@ namespace Feature.Maps
         /// <para>Field: ZoomLevel</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-        [IndexField("zoomlevel")]
         ITextFieldWrapper ZoomLevel { get; }
-		/// <summary>
-		/// <para>Template: _MapRenderingParameters</para>
-        /// <para>Field: ZoomLevel</para>
-        /// <para>Data type: Single-Line Text</para>
-		/// </summary>
-		[IndexField("zoomlevel")]
 		string ZoomLevelValue { get; }
 
     }
@@ -2994,16 +2939,11 @@ namespace Feature.Maps
     /// <para>/sitecore/templates/Feature/Maps/_MapRenderingParameters</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{D77856C3-8A5E-452C-8854-F2965EDF25E0}", typeof(Guid))]
-	[TemplateMapping("{D77856C3-8A5E-452C-8854-F2965EDF25E0}", "")]
-	internal partial class MapRenderingParametersItem : CustomItemWrapper, IMapRenderingParameters
+	[TemplateMapping("{D77856C3-8A5E-452C-8854-F2965EDF25E0}", "RenderingParameter")]
+	internal partial class MapRenderingParametersItem : CustomRenderingParameterWrapper, IMapRenderingParameters
 	{
-        private Item _item = null;
-        public MapRenderingParametersItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public MapRenderingParametersItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public MapRenderingParametersItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public MapRenderingParametersItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public MapRenderingParametersItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -3011,11 +2951,10 @@ namespace Feature.Maps
         /// <para>Field: CenterLocation</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("centerlocation")]
         public virtual ITextFieldWrapper CenterLocation
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("CenterLocation", "centerlocation"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.TextFieldWrapper)GetField("CenterLocation", "single-line text"); }
         }
 
         /// <summary>
@@ -3023,7 +2962,6 @@ namespace Feature.Maps
         /// <para>Field: CenterLocation</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("centerlocation")]
         public string CenterLocationValue
         {
             [DebuggerStepThrough]
@@ -3035,11 +2973,10 @@ namespace Feature.Maps
         /// <para>Field: EnableCenterMapControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablecentermapcontrol")]
         public virtual IBooleanFieldWrapper EnableCenterMapControl
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("EnableCenterMapControl", "enablecentermapcontrol"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("EnableCenterMapControl", "checkbox"); }
         }
 
         /// <summary>
@@ -3047,7 +2984,6 @@ namespace Feature.Maps
         /// <para>Field: EnableCenterMapControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablecentermapcontrol")]
         public bool EnableCenterMapControlValue
         {
             [DebuggerStepThrough]
@@ -3059,11 +2995,10 @@ namespace Feature.Maps
         /// <para>Field: EnableMapTypeControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablemaptypecontrol")]
         public virtual IBooleanFieldWrapper EnableMapTypeControl
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("EnableMapTypeControl", "enablemaptypecontrol"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("EnableMapTypeControl", "checkbox"); }
         }
 
         /// <summary>
@@ -3071,7 +3006,6 @@ namespace Feature.Maps
         /// <para>Field: EnableMapTypeControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablemaptypecontrol")]
         public bool EnableMapTypeControlValue
         {
             [DebuggerStepThrough]
@@ -3083,11 +3017,10 @@ namespace Feature.Maps
         /// <para>Field: EnableRotateControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablerotatecontrol")]
         public virtual IBooleanFieldWrapper EnableRotateControl
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("EnableRotateControl", "enablerotatecontrol"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("EnableRotateControl", "checkbox"); }
         }
 
         /// <summary>
@@ -3095,7 +3028,6 @@ namespace Feature.Maps
         /// <para>Field: EnableRotateControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablerotatecontrol")]
         public bool EnableRotateControlValue
         {
             [DebuggerStepThrough]
@@ -3107,11 +3039,10 @@ namespace Feature.Maps
         /// <para>Field: EnableScaleControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablescalecontrol")]
         public virtual IBooleanFieldWrapper EnableScaleControl
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("EnableScaleControl", "enablescalecontrol"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("EnableScaleControl", "checkbox"); }
         }
 
         /// <summary>
@@ -3119,7 +3050,6 @@ namespace Feature.Maps
         /// <para>Field: EnableScaleControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablescalecontrol")]
         public bool EnableScaleControlValue
         {
             [DebuggerStepThrough]
@@ -3131,11 +3061,10 @@ namespace Feature.Maps
         /// <para>Field: EnableStreetViewControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablestreetviewcontrol")]
         public virtual IBooleanFieldWrapper EnableStreetViewControl
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("EnableStreetViewControl", "enablestreetviewcontrol"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("EnableStreetViewControl", "checkbox"); }
         }
 
         /// <summary>
@@ -3143,7 +3072,6 @@ namespace Feature.Maps
         /// <para>Field: EnableStreetViewControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablestreetviewcontrol")]
         public bool EnableStreetViewControlValue
         {
             [DebuggerStepThrough]
@@ -3155,11 +3083,10 @@ namespace Feature.Maps
         /// <para>Field: EnableZoomControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablezoomcontrol")]
         public virtual IBooleanFieldWrapper EnableZoomControl
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("EnableZoomControl", "enablezoomcontrol"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("EnableZoomControl", "checkbox"); }
         }
 
         /// <summary>
@@ -3167,7 +3094,6 @@ namespace Feature.Maps
         /// <para>Field: EnableZoomControl</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("enablezoomcontrol")]
         public bool EnableZoomControlValue
         {
             [DebuggerStepThrough]
@@ -3182,7 +3108,7 @@ namespace Feature.Maps
         public virtual ITextFieldWrapper MapType
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("MapType"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.TextFieldWrapper)GetField("MapType", "droplist"); }
         }
 
         /// <summary>
@@ -3201,11 +3127,10 @@ namespace Feature.Maps
         /// <para>Field: ZoomLevel</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("zoomlevel")]
         public virtual ITextFieldWrapper ZoomLevel
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("ZoomLevel", "zoomlevel"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.TextFieldWrapper)GetField("ZoomLevel", "single-line text"); }
         }
 
         /// <summary>
@@ -3213,7 +3138,6 @@ namespace Feature.Maps
         /// <para>Field: ZoomLevel</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("zoomlevel")]
         public string ZoomLevelValue
         {
             [DebuggerStepThrough]
@@ -3387,28 +3311,22 @@ namespace Feature.Media
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_SectionBackground</para>
     /// <para>ID: {b962a806-d708-4001-b0a3-3fa31f2263c5}</para>
     /// <para>Path: /sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground</para>
     /// </summary>
-    [TemplateMapping("{B962A806-D708-4001-B0A3-3FA31F2263C5}", "InterfaceMap")]
-	public partial interface IParametersTemplateSectionBackground : ICustomItemWrapper, Foundation.SitecoreExtensions.IParametersTemplateHasDynamicPlaceholder
+    [TemplateMapping("{B962A806-D708-4001-B0A3-3FA31F2263C5}", "InterfaceRenderingParameter")]
+	public partial interface IParametersTemplateSectionBackground : IRenderingParameterWrapper, Foundation.SitecoreExtensions.IParametersTemplateHasDynamicPlaceholder
     {
         /// <summary>
         /// <para>Template: ParametersTemplate_SectionBackground</para>
         /// <para>Field: Media</para>
         /// <para>Data type: Droptree</para>
         /// </summary>
-        [IndexField("media")]
         ILinkFieldWrapper Media { get; }
-		/// <summary>
-		/// <para>Template: ParametersTemplate_SectionBackground</para>
-        /// <para>Field: Media</para>
-        /// <para>Data type: Droptree</para>
-		/// </summary>
-		[IndexField("media")]
 		Guid MediaValue { get; }
 
         /// <summary>
@@ -3416,14 +3334,7 @@ namespace Feature.Media
         /// <para>Field: Parallax</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("parallax")]
         IBooleanFieldWrapper Parallax { get; }
-		/// <summary>
-		/// <para>Template: ParametersTemplate_SectionBackground</para>
-        /// <para>Field: Parallax</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("parallax")]
 		bool ParallaxValue { get; }
 
         /// <summary>
@@ -3470,16 +3381,11 @@ namespace Feature.Media
     /// <para>/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{B962A806-D708-4001-B0A3-3FA31F2263C5}", typeof(Guid))]
-	[TemplateMapping("{B962A806-D708-4001-B0A3-3FA31F2263C5}", "")]
-	internal partial class ParametersTemplateSectionBackgroundItem : CustomItemWrapper, IParametersTemplateSectionBackground
+	[TemplateMapping("{B962A806-D708-4001-B0A3-3FA31F2263C5}", "RenderingParameter")]
+	internal partial class ParametersTemplateSectionBackgroundItem : CustomRenderingParameterWrapper, IParametersTemplateSectionBackground
 	{
-        private Item _item = null;
-        public ParametersTemplateSectionBackgroundItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public ParametersTemplateSectionBackgroundItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public ParametersTemplateSectionBackgroundItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public ParametersTemplateSectionBackgroundItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public ParametersTemplateSectionBackgroundItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -3487,11 +3393,10 @@ namespace Feature.Media
         /// <para>Field: Media</para>
         /// <para>Data type: Droptree</para>
         /// </summary>
-		[IndexField("media")]
         public virtual ILinkFieldWrapper Media
         {
             [DebuggerStepThrough]
-            get { return GetField<LinkFieldWrapper>("Media", "media"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.LinkFieldWrapper)GetField("Media", "droptree"); }
         }
 
         /// <summary>
@@ -3499,7 +3404,6 @@ namespace Feature.Media
         /// <para>Field: Media</para>
         /// <para>Data type: Droptree</para>
         /// </summary>
-		[IndexField("media")]
         public Guid MediaValue
         {
             [DebuggerStepThrough]
@@ -3511,11 +3415,10 @@ namespace Feature.Media
         /// <para>Field: Parallax</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("parallax")]
         public virtual IBooleanFieldWrapper Parallax
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("Parallax", "parallax"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("Parallax", "checkbox"); }
         }
 
         /// <summary>
@@ -3523,7 +3426,6 @@ namespace Feature.Media
         /// <para>Field: Parallax</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("parallax")]
         public bool ParallaxValue
         {
             [DebuggerStepThrough]
@@ -3538,7 +3440,7 @@ namespace Feature.Media
         public virtual ITextFieldWrapper Type
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("Type"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.TextFieldWrapper)GetField("Type", "droplist"); }
         }
 
         /// <summary>
@@ -3565,14 +3467,15 @@ namespace Feature.Media
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _MediaParameters</para>
     /// <para>ID: {5df30dc0-e2fc-4921-b8f2-c54fac1bd03e}</para>
     /// <para>Path: /sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters</para>
     /// </summary>
-    [TemplateMapping("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}", "InterfaceMap")]
-	public partial interface IMediaParameters : ICustomItemWrapper, Foundation.Theming.IParametersTemplateFixedHeight
+    [TemplateMapping("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}", "InterfaceRenderingParameter")]
+	public partial interface IMediaParameters : IRenderingParameterWrapper, Foundation.Theming.IParametersTemplateFixedHeight
     {
     }
 
@@ -3600,16 +3503,11 @@ namespace Feature.Media
     /// <para>/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}", typeof(Guid))]
-	[TemplateMapping("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}", "")]
-	internal partial class MediaParametersItem : CustomItemWrapper, IMediaParameters
+	[TemplateMapping("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}", "RenderingParameter")]
+	internal partial class MediaParametersItem : CustomRenderingParameterWrapper, IMediaParameters
 	{
-        private Item _item = null;
-        public MediaParametersItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public MediaParametersItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public MediaParametersItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public MediaParametersItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public MediaParametersItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -3617,11 +3515,10 @@ namespace Feature.Media
         /// <para>Field: FixedHeight</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("fixed_height")]
         public virtual IBooleanFieldWrapper FixedHeight
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("Fixed height", "fixed_height"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("Fixed height", "checkbox"); }
         }
 
         /// <summary>
@@ -3629,7 +3526,6 @@ namespace Feature.Media
         /// <para>Field: FixedHeight</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("fixed_height")]
         public bool FixedHeightValue
         {
             [DebuggerStepThrough]
@@ -7091,28 +6987,22 @@ namespace Feature.Search
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _PagedSearchResultsParameters</para>
     /// <para>ID: {d1d3e60f-e571-48d2-84cf-b053ee660c13}</para>
     /// <para>Path: /sitecore/templates/Feature/Search/_PagedSearchResultsParameters</para>
     /// </summary>
-    [TemplateMapping("{D1D3E60F-E571-48D2-84CF-B053EE660C13}", "InterfaceMap")]
-	public partial interface IPagedSearchResultsParameters : ICustomItemWrapper
+    [TemplateMapping("{D1D3E60F-E571-48D2-84CF-B053EE660C13}", "InterfaceRenderingParameter")]
+	public partial interface IPagedSearchResultsParameters : IRenderingParameterWrapper
     {
         /// <summary>
         /// <para>Template: _PagedSearchResultsParameters</para>
         /// <para>Field: PagesToShow</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-        [IndexField("pagestoshow")]
         ITextFieldWrapper PagesToShow { get; }
-		/// <summary>
-		/// <para>Template: _PagedSearchResultsParameters</para>
-        /// <para>Field: PagesToShow</para>
-        /// <para>Data type: Single-Line Text</para>
-		/// </summary>
-		[IndexField("pagestoshow")]
 		string PagesToShowValue { get; }
 
         /// <summary>
@@ -7120,14 +7010,7 @@ namespace Feature.Search
         /// <para>Field: ResultsOnPage</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-        [IndexField("resultsonpage")]
         ITextFieldWrapper ResultsOnPage { get; }
-		/// <summary>
-		/// <para>Template: _PagedSearchResultsParameters</para>
-        /// <para>Field: ResultsOnPage</para>
-        /// <para>Data type: Single-Line Text</para>
-		/// </summary>
-		[IndexField("resultsonpage")]
 		string ResultsOnPageValue { get; }
 
     }
@@ -7161,16 +7044,11 @@ namespace Feature.Search
     /// <para>/sitecore/templates/Feature/Search/_PagedSearchResultsParameters</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{D1D3E60F-E571-48D2-84CF-B053EE660C13}", typeof(Guid))]
-	[TemplateMapping("{D1D3E60F-E571-48D2-84CF-B053EE660C13}", "")]
-	internal partial class PagedSearchResultsParametersItem : CustomItemWrapper, IPagedSearchResultsParameters
+	[TemplateMapping("{D1D3E60F-E571-48D2-84CF-B053EE660C13}", "RenderingParameter")]
+	internal partial class PagedSearchResultsParametersItem : CustomRenderingParameterWrapper, IPagedSearchResultsParameters
 	{
-        private Item _item = null;
-        public PagedSearchResultsParametersItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public PagedSearchResultsParametersItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public PagedSearchResultsParametersItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public PagedSearchResultsParametersItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public PagedSearchResultsParametersItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -7178,11 +7056,10 @@ namespace Feature.Search
         /// <para>Field: PagesToShow</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("pagestoshow")]
         public virtual ITextFieldWrapper PagesToShow
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("PagesToShow", "pagestoshow"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.TextFieldWrapper)GetField("PagesToShow", "single-line text"); }
         }
 
         /// <summary>
@@ -7190,7 +7067,6 @@ namespace Feature.Search
         /// <para>Field: PagesToShow</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("pagestoshow")]
         public string PagesToShowValue
         {
             [DebuggerStepThrough]
@@ -7202,11 +7078,10 @@ namespace Feature.Search
         /// <para>Field: ResultsOnPage</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("resultsonpage")]
         public virtual ITextFieldWrapper ResultsOnPage
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("ResultsOnPage", "resultsonpage"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.TextFieldWrapper)GetField("ResultsOnPage", "single-line text"); }
         }
 
         /// <summary>
@@ -7214,7 +7089,6 @@ namespace Feature.Search
         /// <para>Field: ResultsOnPage</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("resultsonpage")]
         public string ResultsOnPageValue
         {
             [DebuggerStepThrough]
@@ -7832,28 +7706,22 @@ namespace Feature.Social
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _TwitterFeedRenderingProperties</para>
     /// <para>ID: {9eee8077-990f-4fde-95fb-c7b9819df913}</para>
     /// <para>Path: /sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties</para>
     /// </summary>
-    [TemplateMapping("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}", "InterfaceMap")]
-	public partial interface ITwitterFeedRenderingProperties : ICustomItemWrapper, Foundation.Theming.IParametersTemplateHasBackground
+    [TemplateMapping("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}", "InterfaceRenderingParameter")]
+	public partial interface ITwitterFeedRenderingProperties : IRenderingParameterWrapper, Foundation.Theming.IParametersTemplateHasBackground
     {
         /// <summary>
         /// <para>Template: _TwitterFeedRenderingProperties</para>
         /// <para>Field: TweetsToShow</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-        [IndexField("tweetstoshow")]
         ITextFieldWrapper TweetsToShow { get; }
-		/// <summary>
-		/// <para>Template: _TwitterFeedRenderingProperties</para>
-        /// <para>Field: TweetsToShow</para>
-        /// <para>Data type: Single-Line Text</para>
-		/// </summary>
-		[IndexField("tweetstoshow")]
 		string TweetsToShowValue { get; }
 
     }
@@ -7887,16 +7755,11 @@ namespace Feature.Social
     /// <para>/sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{9EEE8077-990F-4FDE-95FB-C7B9819DF913}", typeof(Guid))]
-	[TemplateMapping("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}", "")]
-	internal partial class TwitterFeedRenderingPropertiesItem : CustomItemWrapper, ITwitterFeedRenderingProperties
+	[TemplateMapping("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}", "RenderingParameter")]
+	internal partial class TwitterFeedRenderingPropertiesItem : CustomRenderingParameterWrapper, ITwitterFeedRenderingProperties
 	{
-        private Item _item = null;
-        public TwitterFeedRenderingPropertiesItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public TwitterFeedRenderingPropertiesItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public TwitterFeedRenderingPropertiesItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public TwitterFeedRenderingPropertiesItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public TwitterFeedRenderingPropertiesItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -7904,11 +7767,10 @@ namespace Feature.Social
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public virtual ILinkFieldWrapper Background
         {
             [DebuggerStepThrough]
-            get { return GetField<LinkFieldWrapper>("Background", "background"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.LinkFieldWrapper)GetField("Background", "droplink"); }
         }
 
         /// <summary>
@@ -7916,7 +7778,6 @@ namespace Feature.Social
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public Guid BackgroundValue
         {
             [DebuggerStepThrough]
@@ -7928,11 +7789,10 @@ namespace Feature.Social
         /// <para>Field: TweetsToShow</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("tweetstoshow")]
         public virtual ITextFieldWrapper TweetsToShow
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("TweetsToShow", "tweetstoshow"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.TextFieldWrapper)GetField("TweetsToShow", "single-line text"); }
         }
 
         /// <summary>
@@ -7940,7 +7800,6 @@ namespace Feature.Social
         /// <para>Field: TweetsToShow</para>
         /// <para>Data type: Single-Line Text</para>
         /// </summary>
-		[IndexField("tweetstoshow")]
         public string TweetsToShowValue
         {
             [DebuggerStepThrough]
@@ -8625,14 +8484,15 @@ namespace Feature.Teasers
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _TeasersParameters</para>
     /// <para>ID: {20748d57-4ef6-49a8-b7e6-13818795e3b5}</para>
     /// <para>Path: /sitecore/templates/Feature/Teasers/_TeasersParameters</para>
     /// </summary>
-    [TemplateMapping("{20748D57-4EF6-49A8-B7E6-13818795E3B5}", "InterfaceMap")]
-	public partial interface ITeasersParameters : ICustomItemWrapper, Foundation.Theming.IParametersTemplateFixedHeight, Foundation.Theming.IParametersTemplateHasBackground
+    [TemplateMapping("{20748D57-4EF6-49A8-B7E6-13818795E3B5}", "InterfaceRenderingParameter")]
+	public partial interface ITeasersParameters : IRenderingParameterWrapper, Foundation.Theming.IParametersTemplateFixedHeight, Foundation.Theming.IParametersTemplateHasBackground
     {
     }
 
@@ -8665,16 +8525,11 @@ namespace Feature.Teasers
     /// <para>/sitecore/templates/Feature/Teasers/_TeasersParameters</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{20748D57-4EF6-49A8-B7E6-13818795E3B5}", typeof(Guid))]
-	[TemplateMapping("{20748D57-4EF6-49A8-B7E6-13818795E3B5}", "")]
-	internal partial class TeasersParametersItem : CustomItemWrapper, ITeasersParameters
+	[TemplateMapping("{20748D57-4EF6-49A8-B7E6-13818795E3B5}", "RenderingParameter")]
+	internal partial class TeasersParametersItem : CustomRenderingParameterWrapper, ITeasersParameters
 	{
-        private Item _item = null;
-        public TeasersParametersItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public TeasersParametersItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public TeasersParametersItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public TeasersParametersItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public TeasersParametersItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -8682,11 +8537,10 @@ namespace Feature.Teasers
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public virtual ILinkFieldWrapper Background
         {
             [DebuggerStepThrough]
-            get { return GetField<LinkFieldWrapper>("Background", "background"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.LinkFieldWrapper)GetField("Background", "droplink"); }
         }
 
         /// <summary>
@@ -8694,7 +8548,6 @@ namespace Feature.Teasers
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public Guid BackgroundValue
         {
             [DebuggerStepThrough]
@@ -8706,11 +8559,10 @@ namespace Feature.Teasers
         /// <para>Field: FixedHeight</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("fixed_height")]
         public virtual IBooleanFieldWrapper FixedHeight
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("Fixed height", "fixed_height"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("Fixed height", "checkbox"); }
         }
 
         /// <summary>
@@ -8718,7 +8570,6 @@ namespace Feature.Teasers
         /// <para>Field: FixedHeight</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("fixed_height")]
         public bool FixedHeightValue
         {
             [DebuggerStepThrough]
@@ -10440,14 +10291,15 @@ namespace Foundation.SitecoreExtensions
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasDynamicPlaceholder</para>
     /// <para>ID: {8373e4e5-c79c-4123-9284-babd9601c565}</para>
     /// <para>Path: /sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder</para>
     /// </summary>
-    [TemplateMapping("{8373E4E5-C79C-4123-9284-BABD9601C565}", "InterfaceMap")]
-	public partial interface IParametersTemplateHasDynamicPlaceholder : ICustomItemWrapper
+    [TemplateMapping("{8373E4E5-C79C-4123-9284-BABD9601C565}", "InterfaceRenderingParameter")]
+	public partial interface IParametersTemplateHasDynamicPlaceholder : IRenderingParameterWrapper
     {
     }
 
@@ -10470,16 +10322,11 @@ namespace Foundation.SitecoreExtensions
     /// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{8373E4E5-C79C-4123-9284-BABD9601C565}", typeof(Guid))]
-	[TemplateMapping("{8373E4E5-C79C-4123-9284-BABD9601C565}", "")]
-	internal partial class ParametersTemplateHasDynamicPlaceholderItem : CustomItemWrapper, IParametersTemplateHasDynamicPlaceholder
+	[TemplateMapping("{8373E4E5-C79C-4123-9284-BABD9601C565}", "RenderingParameter")]
+	internal partial class ParametersTemplateHasDynamicPlaceholderItem : CustomRenderingParameterWrapper, IParametersTemplateHasDynamicPlaceholder
 	{
-        private Item _item = null;
-        public ParametersTemplateHasDynamicPlaceholderItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public ParametersTemplateHasDynamicPlaceholderItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public ParametersTemplateHasDynamicPlaceholderItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public ParametersTemplateHasDynamicPlaceholderItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public ParametersTemplateHasDynamicPlaceholderItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
 	
@@ -10495,14 +10342,15 @@ namespace Foundation.SitecoreExtensions
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_QueryableDatasourceRendering</para>
     /// <para>ID: {4738312c-22b8-4e77-9b9c-86bcdcee6635}</para>
     /// <para>Path: /sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering</para>
     /// </summary>
-    [TemplateMapping("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}", "InterfaceMap")]
-	public partial interface IParametersTemplateQueryableDatasourceRendering : ICustomItemWrapper
+    [TemplateMapping("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}", "InterfaceRenderingParameter")]
+	public partial interface IParametersTemplateQueryableDatasourceRendering : IRenderingParameterWrapper
     {
     }
 
@@ -10525,16 +10373,11 @@ namespace Foundation.SitecoreExtensions
     /// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{4738312C-22B8-4E77-9B9C-86BCDCEE6635}", typeof(Guid))]
-	[TemplateMapping("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}", "")]
-	internal partial class ParametersTemplateQueryableDatasourceRenderingItem : CustomItemWrapper, IParametersTemplateQueryableDatasourceRendering
+	[TemplateMapping("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}", "RenderingParameter")]
+	internal partial class ParametersTemplateQueryableDatasourceRenderingItem : CustomRenderingParameterWrapper, IParametersTemplateQueryableDatasourceRendering
 	{
-        private Item _item = null;
-        public ParametersTemplateQueryableDatasourceRenderingItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public ParametersTemplateQueryableDatasourceRenderingItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public ParametersTemplateQueryableDatasourceRenderingItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public ParametersTemplateQueryableDatasourceRenderingItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public ParametersTemplateQueryableDatasourceRenderingItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
 	
@@ -10550,28 +10393,22 @@ namespace Foundation.Theming
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_FixedHeight</para>
     /// <para>ID: {329421cf-b99c-4e7a-af71-f7fa7dc42bf1}</para>
     /// <para>Path: /sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight</para>
     /// </summary>
-    [TemplateMapping("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}", "InterfaceMap")]
-	public partial interface IParametersTemplateFixedHeight : ICustomItemWrapper
+    [TemplateMapping("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}", "InterfaceRenderingParameter")]
+	public partial interface IParametersTemplateFixedHeight : IRenderingParameterWrapper
     {
         /// <summary>
         /// <para>Template: ParametersTemplate_FixedHeight</para>
         /// <para>Field: FixedHeight</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("fixed_height")]
         IBooleanFieldWrapper FixedHeight { get; }
-		/// <summary>
-		/// <para>Template: ParametersTemplate_FixedHeight</para>
-        /// <para>Field: FixedHeight</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("fixed_height")]
 		bool FixedHeightValue { get; }
 
     }
@@ -10600,16 +10437,11 @@ namespace Foundation.Theming
     /// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}", typeof(Guid))]
-	[TemplateMapping("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}", "")]
-	internal partial class ParametersTemplateFixedHeightItem : CustomItemWrapper, IParametersTemplateFixedHeight
+	[TemplateMapping("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}", "RenderingParameter")]
+	internal partial class ParametersTemplateFixedHeightItem : CustomRenderingParameterWrapper, IParametersTemplateFixedHeight
 	{
-        private Item _item = null;
-        public ParametersTemplateFixedHeightItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public ParametersTemplateFixedHeightItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public ParametersTemplateFixedHeightItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public ParametersTemplateFixedHeightItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public ParametersTemplateFixedHeightItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -10617,11 +10449,10 @@ namespace Foundation.Theming
         /// <para>Field: FixedHeight</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("fixed_height")]
         public virtual IBooleanFieldWrapper FixedHeight
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("Fixed height", "fixed_height"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("Fixed height", "checkbox"); }
         }
 
         /// <summary>
@@ -10629,7 +10460,6 @@ namespace Foundation.Theming
         /// <para>Field: FixedHeight</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("fixed_height")]
         public bool FixedHeightValue
         {
             [DebuggerStepThrough]
@@ -10649,28 +10479,22 @@ namespace Foundation.Theming
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasBackground</para>
     /// <para>ID: {a2a233a1-6701-48a9-b5f8-efeab74b655f}</para>
     /// <para>Path: /sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground</para>
     /// </summary>
-    [TemplateMapping("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}", "InterfaceMap")]
-	public partial interface IParametersTemplateHasBackground : ICustomItemWrapper
+    [TemplateMapping("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}", "InterfaceRenderingParameter")]
+	public partial interface IParametersTemplateHasBackground : IRenderingParameterWrapper
     {
         /// <summary>
         /// <para>Template: ParametersTemplate_HasBackground</para>
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-        [IndexField("background")]
         ILinkFieldWrapper Background { get; }
-		/// <summary>
-		/// <para>Template: ParametersTemplate_HasBackground</para>
-        /// <para>Field: Background</para>
-        /// <para>Data type: Droplink</para>
-		/// </summary>
-		[IndexField("background")]
 		Guid BackgroundValue { get; }
 
     }
@@ -10699,16 +10523,11 @@ namespace Foundation.Theming
     /// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}", typeof(Guid))]
-	[TemplateMapping("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}", "")]
-	internal partial class ParametersTemplateHasBackgroundItem : CustomItemWrapper, IParametersTemplateHasBackground
+	[TemplateMapping("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}", "RenderingParameter")]
+	internal partial class ParametersTemplateHasBackgroundItem : CustomRenderingParameterWrapper, IParametersTemplateHasBackground
 	{
-        private Item _item = null;
-        public ParametersTemplateHasBackgroundItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public ParametersTemplateHasBackgroundItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public ParametersTemplateHasBackgroundItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public ParametersTemplateHasBackgroundItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public ParametersTemplateHasBackgroundItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -10716,11 +10535,10 @@ namespace Foundation.Theming
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public virtual ILinkFieldWrapper Background
         {
             [DebuggerStepThrough]
-            get { return GetField<LinkFieldWrapper>("Background", "background"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.LinkFieldWrapper)GetField("Background", "droplink"); }
         }
 
         /// <summary>
@@ -10728,7 +10546,6 @@ namespace Foundation.Theming
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public Guid BackgroundValue
         {
             [DebuggerStepThrough]
@@ -10748,28 +10565,22 @@ namespace Foundation.Theming
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasContainer</para>
     /// <para>ID: {29299e73-6841-44c1-a65f-0889011e2eec}</para>
     /// <para>Path: /sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer</para>
     /// </summary>
-    [TemplateMapping("{29299E73-6841-44C1-A65F-0889011E2EEC}", "InterfaceMap")]
-	public partial interface IParametersTemplateHasContainer : ICustomItemWrapper
+    [TemplateMapping("{29299E73-6841-44C1-A65F-0889011E2EEC}", "InterfaceRenderingParameter")]
+	public partial interface IParametersTemplateHasContainer : IRenderingParameterWrapper
     {
         /// <summary>
         /// <para>Template: ParametersTemplate_HasContainer</para>
         /// <para>Field: ContainerIsFluid</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-        [IndexField("containerisfluid")]
         IBooleanFieldWrapper ContainerIsFluid { get; }
-		/// <summary>
-		/// <para>Template: ParametersTemplate_HasContainer</para>
-        /// <para>Field: ContainerIsFluid</para>
-        /// <para>Data type: Checkbox</para>
-		/// </summary>
-		[IndexField("containerisfluid")]
 		bool ContainerIsFluidValue { get; }
 
     }
@@ -10798,16 +10609,11 @@ namespace Foundation.Theming
     /// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{29299E73-6841-44C1-A65F-0889011E2EEC}", typeof(Guid))]
-	[TemplateMapping("{29299E73-6841-44C1-A65F-0889011E2EEC}", "")]
-	internal partial class ParametersTemplateHasContainerItem : CustomItemWrapper, IParametersTemplateHasContainer
+	[TemplateMapping("{29299E73-6841-44C1-A65F-0889011E2EEC}", "RenderingParameter")]
+	internal partial class ParametersTemplateHasContainerItem : CustomRenderingParameterWrapper, IParametersTemplateHasContainer
 	{
-        private Item _item = null;
-        public ParametersTemplateHasContainerItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public ParametersTemplateHasContainerItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public ParametersTemplateHasContainerItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public ParametersTemplateHasContainerItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public ParametersTemplateHasContainerItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -10815,11 +10621,10 @@ namespace Foundation.Theming
         /// <para>Field: ContainerIsFluid</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("containerisfluid")]
         public virtual IBooleanFieldWrapper ContainerIsFluid
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("ContainerIsFluid", "containerisfluid"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("ContainerIsFluid", "checkbox"); }
         }
 
         /// <summary>
@@ -10827,7 +10632,6 @@ namespace Foundation.Theming
         /// <para>Field: ContainerIsFluid</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("containerisfluid")]
         public bool ContainerIsFluidValue
         {
             [DebuggerStepThrough]
@@ -10847,14 +10651,15 @@ namespace Foundation.Theming
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasContainerWithBackground</para>
     /// <para>ID: {3ca3a190-897a-4ec9-8eb5-9de2c3636569}</para>
     /// <para>Path: /sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground</para>
     /// </summary>
-    [TemplateMapping("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}", "InterfaceMap")]
-	public partial interface IParametersTemplateHasContainerWithBackground : ICustomItemWrapper, Foundation.Theming.IParametersTemplateHasBackground, Foundation.Theming.IParametersTemplateHasContainer
+    [TemplateMapping("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}", "InterfaceRenderingParameter")]
+	public partial interface IParametersTemplateHasContainerWithBackground : IRenderingParameterWrapper, Foundation.Theming.IParametersTemplateHasBackground, Foundation.Theming.IParametersTemplateHasContainer
     {
     }
 
@@ -10887,16 +10692,11 @@ namespace Foundation.Theming
     /// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}", typeof(Guid))]
-	[TemplateMapping("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}", "")]
-	internal partial class ParametersTemplateHasContainerWithBackgroundItem : CustomItemWrapper, IParametersTemplateHasContainerWithBackground
+	[TemplateMapping("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}", "RenderingParameter")]
+	internal partial class ParametersTemplateHasContainerWithBackgroundItem : CustomRenderingParameterWrapper, IParametersTemplateHasContainerWithBackground
 	{
-        private Item _item = null;
-        public ParametersTemplateHasContainerWithBackgroundItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public ParametersTemplateHasContainerWithBackgroundItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public ParametersTemplateHasContainerWithBackgroundItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public ParametersTemplateHasContainerWithBackgroundItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public ParametersTemplateHasContainerWithBackgroundItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -10904,11 +10704,10 @@ namespace Foundation.Theming
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public virtual ILinkFieldWrapper Background
         {
             [DebuggerStepThrough]
-            get { return GetField<LinkFieldWrapper>("Background", "background"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.LinkFieldWrapper)GetField("Background", "droplink"); }
         }
 
         /// <summary>
@@ -10916,7 +10715,6 @@ namespace Foundation.Theming
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public Guid BackgroundValue
         {
             [DebuggerStepThrough]
@@ -10928,11 +10726,10 @@ namespace Foundation.Theming
         /// <para>Field: ContainerIsFluid</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("containerisfluid")]
         public virtual IBooleanFieldWrapper ContainerIsFluid
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("ContainerIsFluid", "containerisfluid"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("ContainerIsFluid", "checkbox"); }
         }
 
         /// <summary>
@@ -10940,7 +10737,6 @@ namespace Foundation.Theming
         /// <para>Field: ContainerIsFluid</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("containerisfluid")]
         public bool ContainerIsFluidValue
         {
             [DebuggerStepThrough]
@@ -15420,14 +15216,15 @@ namespace Project.Common
     using Fortis.Model.Fields;
     using Fortis.Providers;
     using CustomWrappers;
+    using Fortis.Model.RenderingParameters;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
     /// <para>ID: {4654d5f0-9b39-426a-992d-1d42e356fb0a}</para>
     /// <para>Path: /sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
     /// </summary>
-    [TemplateMapping("{4654D5F0-9B39-426A-992D-1D42E356FB0A}", "InterfaceMap")]
-	public partial interface IParametersTemplateHasContainerWithDynamicPlaceholder : ICustomItemWrapper, Foundation.SitecoreExtensions.IParametersTemplateHasDynamicPlaceholder, Foundation.Theming.IParametersTemplateHasBackground, Foundation.Theming.IParametersTemplateHasContainer, Foundation.Theming.IParametersTemplateHasContainerWithBackground
+    [TemplateMapping("{4654D5F0-9B39-426A-992D-1D42E356FB0A}", "InterfaceRenderingParameter")]
+	public partial interface IParametersTemplateHasContainerWithDynamicPlaceholder : IRenderingParameterWrapper, Foundation.SitecoreExtensions.IParametersTemplateHasDynamicPlaceholder, Foundation.Theming.IParametersTemplateHasBackground, Foundation.Theming.IParametersTemplateHasContainer, Foundation.Theming.IParametersTemplateHasContainerWithBackground
     {
     }
 
@@ -15460,16 +15257,11 @@ namespace Project.Common
     /// <para>/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
     /// </summary>
 	[PredefinedQuery("TemplateId", ComparisonType.Equal, "{4654D5F0-9B39-426A-992D-1D42E356FB0A}", typeof(Guid))]
-	[TemplateMapping("{4654D5F0-9B39-426A-992D-1D42E356FB0A}", "")]
-	internal partial class ParametersTemplateHasContainerWithDynamicPlaceholderItem : CustomItemWrapper, IParametersTemplateHasContainerWithDynamicPlaceholder
+	[TemplateMapping("{4654D5F0-9B39-426A-992D-1D42E356FB0A}", "RenderingParameter")]
+	internal partial class ParametersTemplateHasContainerWithDynamicPlaceholderItem : CustomRenderingParameterWrapper, IParametersTemplateHasContainerWithDynamicPlaceholder
 	{
-        private Item _item = null;
-        public ParametersTemplateHasContainerWithDynamicPlaceholderItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
-        public ParametersTemplateHasContainerWithDynamicPlaceholderItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
-        public ParametersTemplateHasContainerWithDynamicPlaceholderItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
-        public ParametersTemplateHasContainerWithDynamicPlaceholderItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+        public ParametersTemplateHasContainerWithDynamicPlaceholderItem(Dictionary<string, string> parameters, ISpawnProvider spawnProvider) : base(parameters, spawnProvider)
         {
-            _item = item;
         }
 
         /// <summary>
@@ -15477,11 +15269,10 @@ namespace Project.Common
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public virtual ILinkFieldWrapper Background
         {
             [DebuggerStepThrough]
-            get { return GetField<LinkFieldWrapper>("Background", "background"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.LinkFieldWrapper)GetField("Background", "droplink"); }
         }
 
         /// <summary>
@@ -15489,7 +15280,6 @@ namespace Project.Common
         /// <para>Field: Background</para>
         /// <para>Data type: Droplink</para>
         /// </summary>
-		[IndexField("background")]
         public Guid BackgroundValue
         {
             [DebuggerStepThrough]
@@ -15501,11 +15291,10 @@ namespace Project.Common
         /// <para>Field: ContainerIsFluid</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("containerisfluid")]
         public virtual IBooleanFieldWrapper ContainerIsFluid
         {
             [DebuggerStepThrough]
-            get { return GetField<BooleanFieldWrapper>("ContainerIsFluid", "containerisfluid"); }
+            get { return (Fortis.Model.RenderingParameters.Fields.BooleanFieldWrapper)GetField("ContainerIsFluid", "checkbox"); }
         }
 
         /// <summary>
@@ -15513,7 +15302,6 @@ namespace Project.Common
         /// <para>Field: ContainerIsFluid</para>
         /// <para>Data type: Checkbox</para>
         /// </summary>
-		[IndexField("containerisfluid")]
         public bool ContainerIsFluidValue
         {
             [DebuggerStepThrough]

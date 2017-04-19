@@ -11,7 +11,7 @@
 <#@ assembly name="$(ProjectDir)$(OutDir)Transitus.Rainbow.dll" #>
 <#@ import namespace="Transitus.Rainbow" #>
 <#+
-string BaseRenderingParametersTemplateId = "{E13DB450-F493-42D5-B1C1-536A57AED2A6}";
+string BaseRenderingParametersTemplateId = "{8CA06D6A-B353-44E8-BC31-B528C7306971}";
 
 public void GenerateUnicornFortisModels(List<string> serializationFolders)
 {
@@ -47,7 +47,7 @@ namespace <#=ModuleNamespace(template.Path)#>
     using Fortis.Providers;
     using CustomWrappers;
 <#+
-		var isRenderingParametersTemplate = HasRenderingOptionsBase(template.BaseTemplates, template.Id); 
+		var isRenderingParametersTemplate = HasRenderingOptionsBase(template.BaseTemplateIds, template.Id); 
 	    if (isRenderingParametersTemplate)
 	    {
 #>
@@ -67,15 +67,15 @@ namespace <#=ModuleNamespace(template.Path)#>
 } // End of GenerateUnicornFortisModels method
 #>
 <#+
-public bool HasRenderingOptionsBase(IEnumerable<ITemplate> templateItems, string templateId)
+public bool HasRenderingOptionsBase(IEnumerable<string> templateItemIds, string templateId)
 {
-	  var renderingParameterTemplateId = BaseRenderingParametersTemplateId.ToLower();
-	  return templateId.ToLower() == renderingParameterTemplateId || templateItems.Any(t => t.Id.ToLower() == renderingParameterTemplateId);
+	var renderingParameterTemplateId = BaseRenderingParametersTemplateId.ToLower();
+    return templateId.ToLower() == renderingParameterTemplateId || templateItemIds.Any(t => t.ToLower() == renderingParameterTemplateId);
 }
 
 public void GenerateTemplate(ITemplate template)
 {
-    var isRenderingParametersTemplate = HasRenderingOptionsBase(template.BaseTemplates, template.Id); 
+    var isRenderingParametersTemplate = HasRenderingOptionsBase(template.BaseTemplateIds, template.Id); 
 #>
     /// <summary>
     /// <para>Template interface</para>
@@ -83,8 +83,8 @@ public void GenerateTemplate(ITemplate template)
     /// <para>ID: <#= template.Id #></para>
     /// <para>Path: <#= template.Path #></para>
     /// </summary>
-    [TemplateMapping("<#= template.Id.ToUpper() #>", "InterfaceMap")]
-	public partial interface <#= InterfaceName(template.Name) #> : ICustomItemWrapper<#+
+    [TemplateMapping("<#= template.Id.ToUpper() #>", "<#=isRenderingParametersTemplate? "InterfaceRenderingParameter" : "InterfaceMap" #>")]
+	public partial interface <#= InterfaceName(template.Name) #> : <#=isRenderingParametersTemplate? "IRenderingParameterWrapper" : "ICustomItemWrapper" #><#+
     foreach (var baseTemplate in template.BaseTemplates)
     {
 		#>, <#= ModuleNamespace(baseTemplate.Path) + "." + InterfaceName(baseTemplate.Name)  #><#+
