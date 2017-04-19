@@ -125,6 +125,7 @@ public void GenerateTemplate(ITemplate template)
 	public struct <#=ClassItemName(template.Name)#>Constants
 	{
 		public static ID TemplateID => new ID("<#=template.Id.ToUpper()#>");
+		public static string TemplateName = "<#=template.Name#>";
 
 		public struct Fields
 		{

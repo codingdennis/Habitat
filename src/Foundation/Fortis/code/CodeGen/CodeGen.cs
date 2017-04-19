@@ -1,7 +1,7 @@
 ﻿
 /*
  * Fortis Template Models for Habitat, based on Unicorn serialization.
- * Generated at 04/19/2017 11:09:12
+ * Generated at 04/19/2017 13:23:55
  *
  * To regenerate after template changes, right-click on CodeGen.tt and select Run Custom Tool.
  */
@@ -101,6 +101,7 @@ namespace Feature.Accounts
 	public struct UserProfileItemConstants
 	{
 		public static ID TemplateID => new ID("{696D276B-786A-4D1E-B8BB-8E139DB7BE7C}");
+		public static string TemplateName = "_UserProfile";
 
 		public struct Fields
 		{
@@ -334,6 +335,7 @@ namespace Feature.Accounts
 	public struct AccountsSettingsItemConstants
 	{
 		public static ID TemplateID => new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
+		public static string TemplateName = "_AccountsSettings";
 
 		public struct Fields
 		{
@@ -594,6 +596,7 @@ namespace Feature.Accounts
 	public struct InterestItemConstants
 	{
 		public static ID TemplateID => new ID("{C9B1855E-CA80-4414-B5BA-956CB67DC5A9}");
+		public static string TemplateName = "_Interest";
 
 		public struct Fields
 		{
@@ -737,6 +740,7 @@ namespace Feature.Accounts
 	public struct LoginTeaserItemConstants
 	{
 		public static ID TemplateID => new ID("{EF38D9E6-313C-491C-8648-79436D10091C}");
+		public static string TemplateName = "_LoginTeaser";
 
 		public struct Fields
 		{
@@ -952,6 +956,7 @@ namespace Feature.Accounts
 	public struct MailTemplateItemConstants
 	{
 		public static ID TemplateID => new ID("{26DF8F38-7E1B-43D2-85DD-68DF05FA276B}");
+		public static string TemplateName = "_MailTemplate";
 
 		public struct Fields
 		{
@@ -1123,6 +1128,7 @@ namespace Feature.Accounts
 	public struct ProfileSettingsItemConstants
 	{
 		public static ID TemplateID => new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
+		public static string TemplateName = "_ProfileSettings";
 
 		public struct Fields
 		{
@@ -1250,6 +1256,7 @@ namespace Feature.Demo
 	public struct CampaignTokenItemConstants
 	{
 		public static ID TemplateID => new ID("{01628DCB-611F-495E-A1DA-E89027AB7035}");
+		public static string TemplateName = "_CampaignToken";
 
 		public struct Fields
 		{
@@ -1348,6 +1355,7 @@ namespace Feature.Demo
 	public struct DemoContentItemConstants
 	{
 		public static ID TemplateID => new ID("{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}");
+		public static string TemplateName = "_DemoContent";
 
 		public struct Fields
 		{
@@ -1446,6 +1454,7 @@ namespace Feature.Demo
 	public struct LinkTokenItemConstants
 	{
 		public static ID TemplateID => new ID("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}");
+		public static string TemplateName = "_LinkToken";
 
 		public struct Fields
 		{
@@ -1544,6 +1553,7 @@ namespace Feature.Demo
 	public struct ProfilingSettingsItemConstants
 	{
 		public static ID TemplateID => new ID("{C6D4DDD5-B912-4C1A-A3A3-E1D90E4D0939}");
+		public static string TemplateName = "_ProfilingSettings";
 
 		public struct Fields
 		{
@@ -1642,6 +1652,7 @@ namespace Feature.Demo
 	public struct TextTokenItemConstants
 	{
 		public static ID TemplateID => new ID("{327D6873-A384-435A-BE87-7E869782B243}");
+		public static string TemplateName = "_TextToken";
 
 		public struct Fields
 		{
@@ -1725,6 +1736,7 @@ namespace Feature.Demo
 	public struct TokenItemConstants
 	{
 		public static ID TemplateID => new ID("{A7EBF38A-5F66-4579-92D1-568A8BA50293}");
+		public static string TemplateName = "_Token";
 
 		public struct Fields
 		{
@@ -1794,6 +1806,7 @@ namespace Feature.FAQ
 	public struct FAQGroupItemConstants
 	{
 		public static ID TemplateID => new ID("{3AF7DB6C-A602-4ABC-8D63-19E2D2C6726B}");
+		public static string TemplateName = "_FAQ Group";
 
 		public struct Fields
 		{
@@ -1907,6 +1920,7 @@ namespace Feature.FAQ
 	public struct FAQItemConstants
 	{
 		public static ID TemplateID => new ID("{9544F0B3-FD5E-4301-9DDE-9E73D2C3F7BA}");
+		public static string TemplateName = "_FAQ";
 
 		public struct Fields
 		{
@@ -2110,6 +2124,7 @@ namespace Feature.Identity
 	public struct IdentityItemConstants
 	{
 		public static ID TemplateID => new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
+		public static string TemplateName = "_Identity";
 
 		public struct Fields
 		{
@@ -2378,6 +2393,7 @@ namespace Feature.Language
 	public struct LanguageSettingsItemConstants
 	{
 		public static ID TemplateID => new ID("{748EBA96-3F0C-4F45-8AFB-DE8DCC707B84}");
+		public static string TemplateName = "_LanguageSettings";
 
 		public struct Fields
 		{
@@ -2476,6 +2492,7 @@ namespace Feature.Maps
 	public struct MapTypeItemConstants
 	{
 		public static ID TemplateID => new ID("{04C34CF5-B7EA-4408-88E8-5FC851173DBD}");
+		public static string TemplateName = "Map Type";
 
 		public struct Fields
 		{
@@ -2597,6 +2614,7 @@ namespace Feature.Maps
 	public struct MapPointItemConstants
 	{
 		public static ID TemplateID => new ID("{1E6A8C8C-6646-4776-8AB4-615265669633}");
+		public static string TemplateName = "_MapPoint";
 
 		public struct Fields
 		{
@@ -2736,6 +2754,7 @@ namespace Feature.Maps
 	public struct MapPointsFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{31713995-C6BF-4CCB-8807-198493508AFA}");
+		public static string TemplateName = "_MapPoints Folder";
 
 		public struct Fields
 		{
@@ -2918,6 +2937,7 @@ namespace Feature.Maps
 	public struct MapRenderingParametersItemConstants
 	{
 		public static ID TemplateID => new ID("{D77856C3-8A5E-452C-8854-F2965EDF25E0}");
+		public static string TemplateName = "_MapRenderingParameters";
 
 		public struct Fields
 		{
@@ -3231,6 +3251,7 @@ namespace Feature.Media
 	public struct BackgroundTypeFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{1FD75C49-F524-4C15-9F82-DCB2D4CF2FA9}");
+		public static string TemplateName = "Background Type Folder";
 
 		public struct Fields
 		{
@@ -3300,6 +3321,7 @@ namespace Feature.Media
 	public struct BackgroundTypeItemConstants
 	{
 		public static ID TemplateID => new ID("{55A5BDAD-EB69-40F5-8195-CDA182E48EE4}");
+		public static string TemplateName = "Background Type";
 
 		public struct Fields
 		{
@@ -3421,6 +3443,7 @@ namespace Feature.Media
 	public struct ParametersTemplateSectionBackgroundItemConstants
 	{
 		public static ID TemplateID => new ID("{B962A806-D708-4001-B0A3-3FA31F2263C5}");
+		public static string TemplateName = "ParametersTemplate_SectionBackground";
 
 		public struct Fields
 		{
@@ -3560,6 +3583,7 @@ namespace Feature.Media
 	public struct MediaParametersItemConstants
 	{
 		public static ID TemplateID => new ID("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}");
+		public static string TemplateName = "_MediaParameters";
 
 		public struct Fields
 		{
@@ -3681,6 +3705,7 @@ namespace Feature.Media
 	public struct HasMediaItemConstants
 	{
 		public static ID TemplateID => new ID("{A44E450E-BA3F-4FAF-9C53-C63241CC34EB}");
+		public static string TemplateName = "_HasMedia";
 
 		public struct Fields
 		{
@@ -3828,6 +3853,7 @@ namespace Feature.Media
 	public struct HasMediaImageItemConstants
 	{
 		public static ID TemplateID => new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
+		public static string TemplateName = "_HasMediaImage";
 
 		public struct Fields
 		{
@@ -4009,6 +4035,7 @@ namespace Feature.Media
 	public struct HasMediaSelectorItemConstants
 	{
 		public static ID TemplateID => new ID("{AE4635AF-CFBF-4BF6-9B50-00BE23A910C0}");
+		public static string TemplateName = "_HasMediaSelector";
 
 		public struct Fields
 		{
@@ -4100,6 +4127,7 @@ namespace Feature.Media
 	public struct HasMediaVideoItemConstants
 	{
 		public static ID TemplateID => new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
+		public static string TemplateName = "_HasMediaVideo";
 
 		public struct Fields
 		{
@@ -4281,6 +4309,7 @@ namespace Feature.Media
 	public struct MediaSiteExtensionItemConstants
 	{
 		public static ID TemplateID => new ID("{D339E56B-6A8A-46BD-A7D3-C9725D50DD4A}");
+		public static string TemplateName = "_MediaSiteExtension";
 
 		public struct Fields
 		{
@@ -4379,6 +4408,7 @@ namespace Feature.Metadata
 	public struct KeywordItemConstants
 	{
 		public static ID TemplateID => new ID("{409F883A-0DC8-431A-9508-7316B59B92BE}");
+		public static string TemplateName = "_Keyword";
 
 		public struct Fields
 		{
@@ -4552,6 +4582,7 @@ namespace Feature.Metadata
 	public struct PageMetadataItemConstants
 	{
 		public static ID TemplateID => new ID("{D88CCD80-D851-470D-AF11-701FF23504E7}");
+		public static string TemplateName = "_PageMetadata";
 
 		public struct Fields
 		{
@@ -4795,6 +4826,7 @@ namespace Feature.Metadata
 	public struct SiteMetadataItemConstants
 	{
 		public static ID TemplateID => new ID("{CF38E914-9298-47CC-9205-210553E79F97}");
+		public static string TemplateName = "_SiteMetadata";
 
 		public struct Fields
 		{
@@ -4908,6 +4940,7 @@ namespace Feature.Multisite
 	public struct SiteConfigurationItemConstants
 	{
 		public static ID TemplateID => new ID("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}");
+		public static string TemplateName = "_SiteConfiguration";
 
 		public struct Fields
 		{
@@ -5035,6 +5068,7 @@ namespace Feature.Navigation
 	public struct LinkItemConstants
 	{
 		public static ID TemplateID => new ID("{A16B74E9-01B8-439C-B44E-42B3FB2EE14B}");
+		public static string TemplateName = "_Link";
 
 		public struct Fields
 		{
@@ -5148,6 +5182,7 @@ namespace Feature.Navigation
 	public struct LinkMenuItemItemConstants
 	{
 		public static ID TemplateID => new ID("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}");
+		public static string TemplateName = "_LinkMenuItem";
 
 		public struct Fields
 		{
@@ -5334,6 +5369,7 @@ namespace Feature.Navigation
 	public struct NavigableItemConstants
 	{
 		public static ID TemplateID => new ID("{A1CBA309-D22B-46D5-80F8-2972C185363F}");
+		public static string TemplateName = "_Navigable";
 
 		public struct Fields
 		{
@@ -5475,6 +5511,7 @@ namespace Feature.Navigation
 	public struct NavigationRootItemConstants
 	{
 		public static ID TemplateID => new ID("{F9F4FC05-98D0-4C62-860F-F08AE7F0EE25}");
+		public static string TemplateName = "_NavigationRoot";
 
 		public struct Fields
 		{
@@ -5597,6 +5634,7 @@ namespace Feature.News
 	public struct NewsArticleItemConstants
 	{
 		public static ID TemplateID => new ID("{2F75C8AF-35FC-4A88-B585-7595203F442C}");
+		public static string TemplateName = "_NewsArticle";
 
 		public struct Fields
 		{
@@ -5794,6 +5832,7 @@ namespace Feature.News
 	public struct NewsFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{74889B26-061C-4D6A-8CDB-422665FC34EC}");
+		public static string TemplateName = "_NewsFolder";
 
 		public struct Fields
 		{
@@ -5901,6 +5940,7 @@ namespace Feature.PageContent
 	public struct HasPageContentItemConstants
 	{
 		public static ID TemplateID => new ID("{AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}");
+		public static string TemplateName = "_HasPageContent";
 
 		public struct Fields
 		{
@@ -6189,6 +6229,7 @@ namespace Feature.Person
 	public struct EmployeeItemConstants
 	{
 		public static ID TemplateID => new ID("{745652AE-3298-48B1-9BE1-99012D91F3AC}");
+		public static string TemplateName = "_Employee";
 
 		public struct Fields
 		{
@@ -6642,6 +6683,7 @@ namespace Feature.Person
 	public struct PersonItemConstants
 	{
 		public static ID TemplateID => new ID("{7ACA6ECF-1A80-4E35-97F5-DBAA8E3EC617}");
+		public static string TemplateName = "_Person";
 
 		public struct Fields
 		{
@@ -6840,6 +6882,7 @@ namespace Feature.Person
 	public struct QuoteItemConstants
 	{
 		public static ID TemplateID => new ID("{755F1188-D385-4717-8681-EF45F2258575}");
+		public static string TemplateName = "_Quote";
 
 		public struct Fields
 		{
@@ -7096,6 +7139,7 @@ namespace Feature.Search
 	public struct PagedSearchResultsParametersItemConstants
 	{
 		public static ID TemplateID => new ID("{D1D3E60F-E571-48D2-84CF-B053EE660C13}");
+		public static string TemplateName = "_PagedSearchResultsParameters";
 
 		public struct Fields
 		{
@@ -7216,6 +7260,7 @@ namespace Feature.Search
 	public struct SearchContextItemConstants
 	{
 		public static ID TemplateID => new ID("{B524E8BE-A099-4A63-BE3F-DD4C42FD4185}");
+		public static string TemplateName = "_SearchContext";
 
 		public struct Fields
 		{
@@ -7327,6 +7372,7 @@ namespace Feature.Search
 	public struct SearchResultsItemConstants
 	{
 		public static ID TemplateID => new ID("{14E452CA-064D-48A8-9FF2-2744D10437A1}");
+		public static string TemplateName = "_SearchResults";
 
 		public struct Fields
 		{
@@ -7477,6 +7523,7 @@ namespace Feature.Social
 	public struct OpenGraphItemConstants
 	{
 		public static ID TemplateID => new ID("{BDD24F35-05E8-4466-8798-7D3DD6A6C991}");
+		public static string TemplateName = "_OpenGraph";
 
 		public struct Fields
 		{
@@ -7661,6 +7708,7 @@ namespace Feature.Social
 	public struct TwitterFeedItemConstants
 	{
 		public static ID TemplateID => new ID("{89D988BC-A9A7-43F5-A9FD-A05B0B164720}");
+		public static string TemplateName = "_TwitterFeed";
 
 		public struct Fields
 		{
@@ -7817,6 +7865,7 @@ namespace Feature.Social
 	public struct TwitterFeedRenderingPropertiesItemConstants
 	{
 		public static ID TemplateID => new ID("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}");
+		public static string TemplateName = "_TwitterFeedRenderingProperties";
 
 		public struct Fields
 		{
@@ -7944,6 +7993,7 @@ namespace Feature.Teasers
 	public struct IconItemConstants
 	{
 		public static ID TemplateID => new ID("{E90D00B6-0BE9-48E0-9C3F-047274024270}");
+		public static string TemplateName = "Icon";
 
 		public struct Fields
 		{
@@ -8057,6 +8107,7 @@ namespace Feature.Teasers
 	public struct DynamicTeaserItemConstants
 	{
 		public static ID TemplateID => new ID("{20A56D46-F5E3-4DB8-8B96-081575363D44}");
+		public static string TemplateName = "_DynamicTeaser";
 
 		public struct Fields
 		{
@@ -8199,6 +8250,7 @@ namespace Feature.Teasers
 	public struct HeadlineItemConstants
 	{
 		public static ID TemplateID => new ID("{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}");
+		public static string TemplateName = "_Headline";
 
 		public struct Fields
 		{
@@ -8364,6 +8416,7 @@ namespace Feature.Teasers
 	public struct TeaserContentItemConstants
 	{
 		public static ID TemplateID => new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
+		public static string TemplateName = "_TeaserContent";
 
 		public struct Fields
 		{
@@ -8590,6 +8643,7 @@ namespace Feature.Teasers
 	public struct TeasersParametersItemConstants
 	{
 		public static ID TemplateID => new ID("{20748D57-4EF6-49A8-B7E6-13818795E3B5}");
+		public static string TemplateName = "_TeasersParameters";
 
 		public struct Fields
 		{
@@ -8710,6 +8764,7 @@ namespace Feature.Teasers
 	public struct TeaserVideoContentItemConstants
 	{
 		public static ID TemplateID => new ID("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}");
+		public static string TemplateName = "_TeaserVideoContent";
 
 		public struct Fields
 		{
@@ -8963,6 +9018,7 @@ namespace Foundation.Assets
 	public struct ThemeFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{10059264-CD0B-47B9-8350-A31A90815921}");
+		public static string TemplateName = "Theme Folder";
 
 		public struct Fields
 		{
@@ -9017,6 +9073,7 @@ namespace Foundation.Assets
 	public struct ThemeItemConstants
 	{
 		public static ID TemplateID => new ID("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}");
+		public static string TemplateName = "Theme";
 
 		public struct Fields
 		{
@@ -9202,6 +9259,7 @@ namespace Foundation.Assets
 	public struct HasThemeItemConstants
 	{
 		public static ID TemplateID => new ID("{5B6F8720-3A93-4DA1-92A0-C3E85E01219A}");
+		public static string TemplateName = "_HasTheme";
 
 		public struct Fields
 		{
@@ -9345,6 +9403,7 @@ namespace Foundation.Assets
 	public struct PageAssetsItemConstants
 	{
 		public static ID TemplateID => new ID("{91962B60-25F6-428F-8D10-02AA1E49D6A5}");
+		public static string TemplateName = "_PageAssets";
 
 		public struct Fields
 		{
@@ -9575,6 +9634,7 @@ namespace Foundation.Assets
 	public struct RenderingAssetsItemConstants
 	{
 		public static ID TemplateID => new ID("{7CEAC341-B953-4C69-B907-EE44302BF6AE}");
+		public static string TemplateName = "_RenderingAssets";
 
 		public struct Fields
 		{
@@ -9760,6 +9820,7 @@ namespace Foundation.Dictionary
 	public struct DictionaryEntryItemConstants
 	{
 		public static ID TemplateID => new ID("{EC4DD3F2-590D-404B-9189-2A12679749CC}");
+		public static string TemplateName = "DictionaryEntry";
 
 		public struct Fields
 		{
@@ -9843,6 +9904,7 @@ namespace Foundation.Dictionary
 	public struct DictionaryFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}");
+		public static string TemplateName = "DictionaryFolder";
 
 		public struct Fields
 		{
@@ -9912,6 +9974,7 @@ namespace Foundation.Indexing
 	public struct IndexedItemItemConstants
 	{
 		public static ID TemplateID => new ID("{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}");
+		public static string TemplateName = "_IndexedItem";
 
 		public struct Fields
 		{
@@ -9995,6 +10058,7 @@ namespace Foundation.LocalDatasource
 	public struct LocalDatasourceFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{FFF5F245-FFC0-4022-A998-9B07AA5E761F}");
+		public static string TemplateName = "Local Datasource Folder";
 
 		public struct Fields
 		{
@@ -10065,6 +10129,7 @@ namespace Foundation.Multisite
 	public struct DatasourceConfigurationItemConstants
 	{
 		public static ID TemplateID => new ID("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}");
+		public static string TemplateName = "Datasource Configuration";
 
 		public struct Fields
 		{
@@ -10173,6 +10238,7 @@ namespace Foundation.Multisite
 	public struct DatasourceSettingsFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{7A98BE60-9F59-4064-82C2-58DA63562FA5}");
+		public static string TemplateName = "Datasource Settings Folder";
 
 		public struct Fields
 		{
@@ -10227,6 +10293,7 @@ namespace Foundation.Multisite
 	public struct SiteSettingsRootItemConstants
 	{
 		public static ID TemplateID => new ID("{4C82B6DD-FE7C-4144-BCB3-F21B4080568F}");
+		public static string TemplateName = "Site Settings Root";
 
 		public struct Fields
 		{
@@ -10281,6 +10348,7 @@ namespace Foundation.Multisite
 	public struct SiteItemConstants
 	{
 		public static ID TemplateID => new ID("{BB85C5C2-9F87-48CE-8012-AF67CF4F765D}");
+		public static string TemplateName = "_Site";
 
 		public struct Fields
 		{
@@ -10335,6 +10403,7 @@ namespace Foundation.Multisite
 	public struct SiteSettingsItemConstants
 	{
 		public static ID TemplateID => new ID("{BCCFEBEA-DCCB-48FE-9570-6503829EC03F}");
+		public static string TemplateName = "_SiteSettings";
 
 		public struct Fields
 		{
@@ -10389,6 +10458,7 @@ namespace Foundation.SitecoreExtensions
 	public struct ParametersTemplateHasDynamicPlaceholderItemConstants
 	{
 		public static ID TemplateID => new ID("{8373E4E5-C79C-4123-9284-BABD9601C565}");
+		public static string TemplateName = "ParametersTemplate_HasDynamicPlaceholder";
 
 		public struct Fields
 		{
@@ -10443,6 +10513,7 @@ namespace Foundation.SitecoreExtensions
 	public struct ParametersTemplateQueryableDatasourceRenderingItemConstants
 	{
 		public static ID TemplateID => new ID("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}");
+		public static string TemplateName = "ParametersTemplate_QueryableDatasourceRendering";
 
 		public struct Fields
 		{
@@ -10512,6 +10583,7 @@ namespace Foundation.Theming
 	public struct ParametersTemplateFixedHeightItemConstants
 	{
 		public static ID TemplateID => new ID("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}");
+		public static string TemplateName = "ParametersTemplate_FixedHeight";
 
 		public struct Fields
 		{
@@ -10610,6 +10682,7 @@ namespace Foundation.Theming
 	public struct ParametersTemplateHasBackgroundItemConstants
 	{
 		public static ID TemplateID => new ID("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}");
+		public static string TemplateName = "ParametersTemplate_HasBackground";
 
 		public struct Fields
 		{
@@ -10708,6 +10781,7 @@ namespace Foundation.Theming
 	public struct ParametersTemplateHasContainerItemConstants
 	{
 		public static ID TemplateID => new ID("{29299E73-6841-44C1-A65F-0889011E2EEC}");
+		public static string TemplateName = "ParametersTemplate_HasContainer";
 
 		public struct Fields
 		{
@@ -10791,6 +10865,7 @@ namespace Foundation.Theming
 	public struct ParametersTemplateHasContainerWithBackgroundItemConstants
 	{
 		public static ID TemplateID => new ID("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}");
+		public static string TemplateName = "ParametersTemplate_HasContainerWithBackground";
 
 		public struct Fields
 		{
@@ -10918,6 +10993,7 @@ namespace Foundation.Theming
 	public struct StyleItemConstants
 	{
 		public static ID TemplateID => new ID("{C2AC5C42-A05C-4F51-854E-730C9BCA06D1}");
+		public static string TemplateName = "Style";
 
 		public struct Fields
 		{
@@ -11001,6 +11077,7 @@ namespace Project.Common
 	public struct DemoTeaserItemConstants
 	{
 		public static ID TemplateID => new ID("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}");
+		public static string TemplateName = "Demo Teaser";
 
 		public struct Fields
 		{
@@ -11084,6 +11161,7 @@ namespace Project.Common
 	public struct CampaignTokenItemConstants
 	{
 		public static ID TemplateID => new ID("{51B1726B-4290-4908-A2DA-B169194AE80C}");
+		public static string TemplateName = "Campaign Token";
 
 		public struct Fields
 		{
@@ -11167,6 +11245,7 @@ namespace Project.Common
 	public struct LinkTokenItemConstants
 	{
 		public static ID TemplateID => new ID("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}");
+		public static string TemplateName = "Link Token";
 
 		public struct Fields
 		{
@@ -11250,6 +11329,7 @@ namespace Project.Common
 	public struct TextTokenItemConstants
 	{
 		public static ID TemplateID => new ID("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}");
+		public static string TemplateName = "Text Token";
 
 		public struct Fields
 		{
@@ -11333,6 +11413,7 @@ namespace Project.Common
 	public struct EmployeeFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{F94F28F6-5B19-42F2-9164-1E21023E03EE}");
+		public static string TemplateName = "Employee Folder";
 
 		public struct Fields
 		{
@@ -11387,6 +11468,7 @@ namespace Project.Common
 	public struct EmployeeItemConstants
 	{
 		public static ID TemplateID => new ID("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}");
+		public static string TemplateName = "Employee";
 
 		public struct Fields
 		{
@@ -11787,6 +11869,7 @@ namespace Project.Common
 	public struct FAQFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{41DA2D61-D85A-40F1-BE69-DDD18DD1BC93}");
+		public static string TemplateName = "FAQ Folder";
 
 		public struct Fields
 		{
@@ -11841,6 +11924,7 @@ namespace Project.Common
 	public struct FAQGroupItemConstants
 	{
 		public static ID TemplateID => new ID("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}");
+		public static string TemplateName = "FAQ Group";
 
 		public struct Fields
 		{
@@ -11924,6 +12008,7 @@ namespace Project.Common
 	public struct FAQItemConstants
 	{
 		public static ID TemplateID => new ID("{BFDC1F27-3D2D-495F-89A3-0951F882420B}");
+		public static string TemplateName = "FAQ";
 
 		public struct Fields
 		{
@@ -12036,6 +12121,7 @@ namespace Project.Common
 	public struct GlobalFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{FD075CBC-572E-4D27-A09F-B780E8FF4741}");
+		public static string TemplateName = "Global Folder";
 
 		public struct Fields
 		{
@@ -12090,6 +12176,7 @@ namespace Project.Common
 	public struct InterestItemConstants
 	{
 		public static ID TemplateID => new ID("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}");
+		public static string TemplateName = "Interest";
 
 		public struct Fields
 		{
@@ -12173,6 +12260,7 @@ namespace Project.Common
 	public struct InterestsFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{0DB13819-7DF3-4136-A4B9-0A22B1023EF7}");
+		public static string TemplateName = "Interests Folder";
 
 		public struct Fields
 		{
@@ -12227,6 +12315,7 @@ namespace Project.Common
 	public struct LinkMenuItemItemConstants
 	{
 		public static ID TemplateID => new ID("{390333C8-751B-4332-84A3-6360B969A19F}");
+		public static string TemplateName = "Link Menu Item";
 
 		public struct Fields
 		{
@@ -12455,6 +12544,7 @@ namespace Project.Common
 	public struct LinkMenuItemConstants
 	{
 		public static ID TemplateID => new ID("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}");
+		public static string TemplateName = "Link Menu";
 
 		public struct Fields
 		{
@@ -12509,6 +12599,7 @@ namespace Project.Common
 	public struct LoginTeaserItemConstants
 	{
 		public static ID TemplateID => new ID("{6E686B1C-1675-4263-AF03-DCE07827AFDD}");
+		public static string TemplateName = "Login Teaser";
 
 		public struct Fields
 		{
@@ -12679,6 +12770,7 @@ namespace Project.Common
 	public struct MapPointItemConstants
 	{
 		public static ID TemplateID => new ID("{11C28D16-9B88-456E-A42B-D4B5A82867E3}");
+		public static string TemplateName = "Map Point";
 
 		public struct Fields
 		{
@@ -12818,6 +12910,7 @@ namespace Project.Common
 	public struct MapPointsFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{067EC866-B3FB-485B-BB49-6151FB086E78}");
+		public static string TemplateName = "Map Points Folder";
 
 		public struct Fields
 		{
@@ -12872,6 +12965,7 @@ namespace Project.Common
 	public struct CarouselItemConstants
 	{
 		public static ID TemplateID => new ID("{C18D3794-D126-4548-BFC8-89358DE6E9C1}");
+		public static string TemplateName = "Carousel";
 
 		public struct Fields
 		{
@@ -12955,6 +13049,7 @@ namespace Project.Common
 	public struct ImageItemConstants
 	{
 		public static ID TemplateID => new ID("{F0369E1A-9030-4A05-A09C-EF09B664ED27}");
+		public static string TemplateName = "Image";
 
 		public struct Fields
 		{
@@ -13121,6 +13216,7 @@ namespace Project.Common
 	public struct MediaBackgroundFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{82A6F39C-53E1-4ECA-8C27-69937CFF3B47}");
+		public static string TemplateName = "Media Background Folder";
 
 		public struct Fields
 		{
@@ -13175,6 +13271,7 @@ namespace Project.Common
 	public struct MediaBackgroundItemConstants
 	{
 		public static ID TemplateID => new ID("{42A10C41-5186-4A1E-AA7E-54EA00199C3F}");
+		public static string TemplateName = "Media Background";
 
 		public struct Fields
 		{
@@ -13229,6 +13326,7 @@ namespace Project.Common
 	public struct MediaFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{920A1781-559F-4E1C-BB2E-6B9A2113FE6B}");
+		public static string TemplateName = "Media Folder";
 
 		public struct Fields
 		{
@@ -13283,6 +13381,7 @@ namespace Project.Common
 	public struct VideoItemConstants
 	{
 		public static ID TemplateID => new ID("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}");
+		public static string TemplateName = "Video";
 
 		public struct Fields
 		{
@@ -13449,6 +13548,7 @@ namespace Project.Common
 	public struct MetaKeywordFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{CD047791-C29A-4596-AEEE-DB5E70421C1F}");
+		public static string TemplateName = "MetaKeyword Folder";
 
 		public struct Fields
 		{
@@ -13503,6 +13603,7 @@ namespace Project.Common
 	public struct MetaKeywordItemConstants
 	{
 		public static ID TemplateID => new ID("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}");
+		public static string TemplateName = "MetaKeyword";
 
 		public struct Fields
 		{
@@ -13586,6 +13687,7 @@ namespace Project.Common
 	public struct NavigationLinkItemConstants
 	{
 		public static ID TemplateID => new ID("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}");
+		public static string TemplateName = "Navigation Link";
 
 		public struct Fields
 		{
@@ -13756,6 +13858,7 @@ namespace Project.Common
 	public struct RegistrationFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{689BA377-E538-49ED-9DFC-4DCC398AB9AC}");
+		public static string TemplateName = "Registration Folder";
 
 		public struct Fields
 		{
@@ -13810,6 +13913,7 @@ namespace Project.Common
 	public struct ServiceEmailItemConstants
 	{
 		public static ID TemplateID => new ID("{6DB3BA22-5715-4529-A527-35B3AF083AE4}");
+		public static string TemplateName = "Service Email";
 
 		public struct Fields
 		{
@@ -13951,6 +14055,7 @@ namespace Project.Common
 	public struct SocialFeedsFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{4DE2D9D9-0781-47AD-8F5D-52F2AD920D83}");
+		public static string TemplateName = "Social Feeds Folder";
 
 		public struct Fields
 		{
@@ -14005,6 +14110,7 @@ namespace Project.Common
 	public struct TwitterFeedItemConstants
 	{
 		public static ID TemplateID => new ID("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}");
+		public static string TemplateName = "Twitter Feed";
 
 		public struct Fields
 		{
@@ -14146,6 +14252,7 @@ namespace Project.Common
 	public struct DynamicTeaserItemConstants
 	{
 		public static ID TemplateID => new ID("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}");
+		public static string TemplateName = "Dynamic Teaser";
 
 		public struct Fields
 		{
@@ -14258,6 +14365,7 @@ namespace Project.Common
 	public struct HeadlineItemConstants
 	{
 		public static ID TemplateID => new ID("{061574E1-59DD-4B62-9680-1C84EFBE6773}");
+		public static string TemplateName = "Headline";
 
 		public struct Fields
 		{
@@ -14370,6 +14478,7 @@ namespace Project.Common
 	public struct QuoteFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{A8F1B162-041F-46BF-81EB-5213AE8BC579}");
+		public static string TemplateName = "Quote Folder";
 
 		public struct Fields
 		{
@@ -14424,6 +14533,7 @@ namespace Project.Common
 	public struct QuoteItemConstants
 	{
 		public static ID TemplateID => new ID("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}");
+		public static string TemplateName = "Quote";
 
 		public struct Fields
 		{
@@ -14650,6 +14760,7 @@ namespace Project.Common
 	public struct TeaserFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{29D4B405-39EB-487D-9D6B-3F8467AB167D}");
+		public static string TemplateName = "Teaser Folder";
 
 		public struct Fields
 		{
@@ -14704,6 +14815,7 @@ namespace Project.Common
 	public struct TeaserItemConstants
 	{
 		public static ID TemplateID => new ID("{C7D9D293-4EF8-4380-8E10-C4632E729F39}");
+		public static string TemplateName = "Teaser";
 
 		public struct Fields
 		{
@@ -14930,6 +15042,7 @@ namespace Project.Common
 	public struct VideoTeaserItemConstants
 	{
 		public static ID TemplateID => new ID("{DDBBF170-CFBD-439F-958C-A090BDF66D94}");
+		public static string TemplateName = "Video Teaser";
 
 		public struct Fields
 		{
@@ -15183,6 +15296,7 @@ namespace Project.Common
 	public struct DemoPageItemConstants
 	{
 		public static ID TemplateID => new ID("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}");
+		public static string TemplateName = "Demo Page";
 
 		public struct Fields
 		{
@@ -15324,6 +15438,7 @@ namespace Project.Common
 	public struct ParametersTemplateHasContainerWithDynamicPlaceholderItemConstants
 	{
 		public static ID TemplateID => new ID("{4654D5F0-9B39-426A-992D-1D42E356FB0A}");
+		public static string TemplateName = "ParametersTemplate_HasContainerWithDynamicPlaceholder";
 
 		public struct Fields
 		{
@@ -15436,6 +15551,7 @@ namespace Project.Habitat
 	public struct SiteRootItemConstants
 	{
 		public static ID TemplateID => new ID("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}");
+		public static string TemplateName = "Site Root";
 
 		public struct Fields
 		{
@@ -16139,6 +16255,7 @@ namespace Project.Habitat
 	public struct ArticleItemConstants
 	{
 		public static ID TemplateID => new ID("{94A8C8E9-690B-4E65-98E7-F95800222767}");
+		public static string TemplateName = "Article";
 
 		public struct Fields
 		{
@@ -16798,6 +16915,7 @@ namespace Project.Habitat
 	public struct EditProfilePageItemConstants
 	{
 		public static ID TemplateID => new ID("{867F774A-195E-49D3-8E40-01F18410BB02}");
+		public static string TemplateName = "Edit Profile Page";
 
 		public struct Fields
 		{
@@ -17341,6 +17459,7 @@ namespace Project.Habitat
 	public struct EmployeeItemConstants
 	{
 		public static ID TemplateID => new ID("{467C2144-4454-4518-B1DE-E31B4CBBFF33}");
+		public static string TemplateName = "Employee";
 
 		public struct Fields
 		{
@@ -18232,6 +18351,7 @@ namespace Project.Habitat
 	public struct EmployeesFolderItemConstants
 	{
 		public static ID TemplateID => new ID("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}");
+		public static string TemplateName = "Employees folder";
 
 		public struct Fields
 		{
@@ -18891,6 +19011,7 @@ namespace Project.Habitat
 	public struct ForgotPasswordPageItemConstants
 	{
 		public static ID TemplateID => new ID("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}");
+		public static string TemplateName = "Forgot Password Page";
 
 		public struct Fields
 		{
@@ -19434,6 +19555,7 @@ namespace Project.Habitat
 	public struct HomeItemConstants
 	{
 		public static ID TemplateID => new ID("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}");
+		public static string TemplateName = "Home";
 
 		public struct Fields
 		{
@@ -19834,6 +19956,7 @@ namespace Project.Habitat
 	public struct LoginPageItemConstants
 	{
 		public static ID TemplateID => new ID("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}");
+		public static string TemplateName = "Login Page";
 
 		public struct Fields
 		{
@@ -20377,6 +20500,7 @@ namespace Project.Habitat
 	public struct MapPageItemConstants
 	{
 		public static ID TemplateID => new ID("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}");
+		public static string TemplateName = "Map Page";
 
 		public struct Fields
 		{
@@ -21121,6 +21245,7 @@ namespace Project.Habitat
 	public struct NewsArticleItemConstants
 	{
 		public static ID TemplateID => new ID("{B69277AD-E917-4B9F-9136-A12E0A3E462F}");
+		public static string TemplateName = "News Article";
 
 		public struct Fields
 		{
@@ -21722,6 +21847,7 @@ namespace Project.Habitat
 	public struct NewsListItemConstants
 	{
 		public static ID TemplateID => new ID("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}");
+		public static string TemplateName = "News List";
 
 		public struct Fields
 		{
@@ -22352,6 +22478,7 @@ namespace Project.Habitat
 	public struct RegisterPageItemConstants
 	{
 		public static ID TemplateID => new ID("{6EF8F8A0-C567-495B-9E00-8775A268A486}");
+		public static string TemplateName = "Register Page";
 
 		public struct Fields
 		{
@@ -22895,6 +23022,7 @@ namespace Project.Habitat
 	public struct SearchResultsItemConstants
 	{
 		public static ID TemplateID => new ID("{92168572-385B-45F0-B40F-3D987AD20E5C}");
+		public static string TemplateName = "Search Results";
 
 		public struct Fields
 		{
@@ -23583,6 +23711,7 @@ namespace Project.Habitat
 	public struct SectionItemConstants
 	{
 		public static ID TemplateID => new ID("{8EE208F9-A6A6-41E2-88A0-C188737A178C}");
+		public static string TemplateName = "Section";
 
 		public struct Fields
 		{
