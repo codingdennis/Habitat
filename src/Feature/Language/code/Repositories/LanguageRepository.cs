@@ -6,6 +6,7 @@
     using Sitecore.Feature.Language.Models;
     using Sitecore.Foundation.Multisite;
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Language;
 
     public static class LanguageRepository
     {
@@ -26,12 +27,12 @@
             var siteContext = new SiteContext();
             var siteDefinition = siteContext.GetSiteDefinition(Context.Item);
 
-            if (siteDefinition?.Item == null || !siteDefinition.Item.IsDerived(Feature.Language.Templates.LanguageSettings.ID))
+            if (siteDefinition?.Item == null || !siteDefinition.Item.IsDerived(LanguageSettingsItemConstants.TemplateID))
             {
                 return languages;
             }
 
-            var supportedLanguagesField = new MultilistField(siteDefinition.Item.Fields[Feature.Language.Templates.LanguageSettings.Fields.SupportedLanguages]);
+            var supportedLanguagesField = new MultilistField(siteDefinition.Item.Fields[LanguageSettingsItemConstants.Fields.SupportedLanguages.ID]);
             if (supportedLanguagesField.Count == 0)
             {
                 return Enumerable.Empty<Language>();
