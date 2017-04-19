@@ -6,7 +6,7 @@ using Sitecore.Data.Items;
 using Sitecore.Data;
 using System.Linq;
 
-namespace Fortis.Foundation.CodeGen.Custom
+namespace Fortis.Foundation.CustomWrappers
 {
     public class CustomItemWrapper : ItemWrapper, ICustomItemWrapper, IFortisItem
     {

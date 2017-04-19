@@ -35,17 +35,19 @@ using Sitecore.Data.Items;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq.Common;
 
+namespace Fortis.Foundation.CodeGen.Templates
+{
 <#+
 	foreach (var template in templates)
 	{
 #>
 #region <#=template.Name#> (<#=template.Path#>)
-namespace Fortis.Foundation.CodeGen.Templates.<#=FullNamespace(template.Path)#>
+namespace <#=ModuleNamespace(template.Path)#>
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
 <#+
 		var isRenderingParametersTemplate = HasRenderingOptionsBase(template.BaseTemplates, template.Id); 
 	    if (isRenderingParametersTemplate)
@@ -61,6 +63,9 @@ namespace Fortis.Foundation.CodeGen.Templates.<#=FullNamespace(template.Path)#>
 
 <#+
     } // End of templates for loop
+#>
+}
+<#+
 } // End of GenerateUnicornFortisModels method
 #>
 <#+
@@ -84,7 +89,7 @@ public void GenerateTemplate(ITemplate template)
 	public partial interface <#= InterfaceName(template.Name) #> : ICustomItemWrapper<#+
     foreach (var baseTemplate in template.BaseTemplates)
     {
-		#>, <#= FullNamespace(baseTemplate.Path) + "." + InterfaceName(baseTemplate.Name)  #><#+
+		#>, <#= ModuleNamespace(baseTemplate.Path) + "." + InterfaceName(baseTemplate.Name)  #><#+
     }
 #>
 
@@ -116,12 +121,12 @@ public void GenerateTemplate(ITemplate template)
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para><#= template.Path #></para>
 	/// <summary>
-	public struct Static
+	public struct <#=ClassItemName(template.Name)#>Constants
 	{
-		public static ID ID => new ID("<#=template.Id.ToUpper()#>");
+		public static ID TemplateID => new ID("<#=template.Id.ToUpper()#>");
 
 		public struct Fields
 		{
@@ -209,6 +214,12 @@ public string FullNamespace(string path)
 {
     // /sitecore/templates/Layer/Module/xxx
     return string.Join(".", path.Split(new char[] {'/'}, StringSplitOptions.RemoveEmptyEntries).Skip(2).Select(s=> TitleCase(s)));
+}
+
+public string ModuleNamespace(string path)
+{
+	var fullNamespace = FullNamespace(path);
+	return string.Join(".", fullNamespace.Split(new char[] {'.'}).Take(2));
 }
 
 public string TitleCase(string name)

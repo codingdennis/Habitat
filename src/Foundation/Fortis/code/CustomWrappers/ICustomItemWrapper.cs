@@ -2,7 +2,7 @@
 using Fortis.Model;
 using Sitecore.Data;
 
-namespace Fortis.Foundation.CodeGen.Custom
+namespace Fortis.Foundation.CustomWrappers
 {
     public interface ICustomItemWrapper : IItemWrapper, IFortisItem
     {

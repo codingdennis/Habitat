@@ -157,11 +157,11 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeGen\Custom\CustomItemWrapper.cs" />
-    <Compile Include="CodeGen\Custom\CustomRenderingParameterWrapper.cs" />
-    <Compile Include="CodeGen\Custom\ICustomItemWrapper.cs" />
-    <Compile Include="CodeGen\Custom\ICustomRenderingParameterWrapper.cs" />
-    <Compile Include="CodeGen\Custom\IFortisItem.cs" />
+    <Compile Include="CustomWrappers\CustomItemWrapper.cs" />
+    <Compile Include="CustomWrappers\CustomRenderingParameterWrapper.cs" />
+    <Compile Include="CustomWrappers\ICustomItemWrapper.cs" />
+    <Compile Include="CustomWrappers\ICustomRenderingParameterWrapper.cs" />
+    <Compile Include="CustomWrappers\IFortisItem.cs" />
     <Compile Include="CodeGen\CodeGen.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

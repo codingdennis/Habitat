@@ -2,25 +2,23 @@
 {
     using System.Linq;
     using Sitecore.Feature.Metadata.Models;
-    using PageMetadata = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata;
-    using SiteMetadata = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.SiteMetadata;
-    using Keyword = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.Keyword;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Metadata;
 
     public static class MetadataRepository
     {
-        public static SiteMetadata.ISiteMetadata Get(PageMetadata.IPageMetadata contextItem)
+        public static ISiteMetadata Get(IPageMetadata contextItem)
         {
-            return contextItem.AncestorOrSelf<SiteMetadata.ISiteMetadata>();
+            return contextItem.AncestorOrSelf<ISiteMetadata>();
         }
 
-        public static MetaKeywordsModel GetKeywords(PageMetadata.IPageMetadata item)
+        public static MetaKeywordsModel GetKeywords(IPageMetadata item)
         {
             if (item?.MetaKeywords.Value == null)
             {
                 return null;
             }
 
-            var keywords = item.MetaKeywords.GetItems<Keyword.IKeyword>()?.Select(k=> k.Keyword.Value);
+            var keywords = item.MetaKeywords.GetItems<IKeyword>()?.Select(k=> k.Keyword.Value);
             var metaKeywordModel = new MetaKeywordsModel
             {
                 Keywords = keywords

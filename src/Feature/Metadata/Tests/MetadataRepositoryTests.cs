@@ -8,16 +8,11 @@
     using Sitecore.Feature.Metadata.Repositories;
     using Sitecore.Foundation.Testing.Attributes;
     using Xunit;
-    using PageMetadata = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata;
-    using SiteMetadata = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.SiteMetadata;
-    using KeywordAlias = Fortis.Foundation.CodeGen.Templates.Feature.Metadata.Keyword;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Metadata;
+    using Fortis.Foundation.CodeGen.Templates.Project.Common;
     using Fortis.Model;
     using Fortis.Mvc.Providers;
     using Fortis.Providers;
-    using Moq;
-    using Sitecore.Analytics.Rules.Conditions;
-    using Sitecore.Data.Items;
-    using Sitecore.FakeDb.AutoFixture;
 
     public class MetadataRepositoryTests
     {
@@ -29,27 +24,27 @@
             var keyword1Id = ID.NewID;
             var keyword2Id = ID.NewID;
 
-            db.Add(new DbItem(contextItemName, contextItemId, PageMetadata.Static.ID)
+            db.Add(new DbItem(contextItemName, contextItemId, PageMetadataItemConstants.TemplateID)
                 {
-                   new DbField(PageMetadata.Static.Fields.MetaKeywords.FieldName)
+                   new DbField(PageMetadataItemConstants.Fields.MetaKeywords.FieldName)
                    {
                      {"en", $"{keyword1Id}|{keyword2Id}"}
                    }
                 }
             );
 
-            db.Add(new DbItem(keyword1ItemName, keyword1Id, KeywordAlias.Static.ID)
+            db.Add(new DbItem(keyword1ItemName, keyword1Id, MetaKeywordItemConstants.TemplateID)
                 {
-                    new DbField(KeywordAlias.Static.Fields.Keyword.FieldName)
+                    new DbField(MetaKeywordItemConstants.Fields.Keyword.FieldName)
                     {
                         {"en", keyword1ItemName}
                     }
                 }
             );
 
-            db.Add(new DbItem(keyword2ItemName, keyword2Id, KeywordAlias.Static.ID)
+            db.Add(new DbItem(keyword2ItemName, keyword2Id, MetaKeywordItemConstants.TemplateID)
                 {
-                    new DbField(KeywordAlias.Static.Fields.Keyword.FieldName)
+                    new DbField(MetaKeywordItemConstants.Fields.Keyword.FieldName)
                     {
                         {"en", keyword2ItemName}
                     }
@@ -57,7 +52,7 @@
             );
 
             var itemFactory = this.GetItemFactory();
-            var model = itemFactory.Select<PageMetadata.IPageMetadata>(contextItemId.Guid);
+            var model = itemFactory.Select<IPageMetadata>(contextItemId.Guid);
 
             var keywordsModel = MetadataRepository.GetKeywords(model);
             keywordsModel.Should().BeOfType<MetaKeywordsModel>();
@@ -70,10 +65,10 @@
         {
             var contextItemId = ID.NewID;
 
-            db.Add(new DbItem(contextItemName, contextItemId, PageMetadata.Static.ID));
+            db.Add(new DbItem(contextItemName, contextItemId, PageMetadataItemConstants.TemplateID));
 
             var itemFactory = this.GetItemFactory();
-            var contextItem = itemFactory.Select<PageMetadata.IPageMetadata>(contextItemId.Guid);
+            var contextItem = itemFactory.Select<IPageMetadata>(contextItemId.Guid);
             contextItem.ItemID.Should().Be(contextItemId.Guid);
         }
 
@@ -83,11 +78,11 @@
         {
             var contextItemId = ID.NewID;
 
-            db.Add(new DbItem("context", contextItemId, SiteMetadata.Static.ID));
+            db.Add(new DbItem("context", contextItemId, SiteMetadataItemConstants.TemplateID));
             var contextItem = db.GetItem(contextItemId);
-            var child = contextItem.Add("child", new TemplateID(PageMetadata.Static.ID));
+            var child = contextItem.Add("child", new TemplateID(PageMetadataItemConstants.TemplateID));
             var itemFactory = this.GetItemFactory();
-            var keywordsModel = MetadataRepository.Get(itemFactory.Select<PageMetadata.IPageMetadata>(child.ID.Guid));
+            var keywordsModel = MetadataRepository.Get(itemFactory.Select<IPageMetadata>(child.ID.Guid));
 
             keywordsModel.ItemID.Should().Be(contextItemId.Guid);
         }

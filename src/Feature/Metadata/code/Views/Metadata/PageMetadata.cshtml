@@ -1,16 +1,13 @@
-﻿@using Sitecore
-@using Sitecore.Feature.Metadata
-@using Sitecore.Feature.Metadata.Repositories
+﻿@using Sitecore.Feature.Metadata.Repositories
 @using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Fortis.Model
-@using Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata
+@using Fortis.Foundation.CodeGen.Templates.Feature.Metadata
 @model IRenderingModel<IPageMetadata, IPageMetadata>
 
-@if (!Model?.PageItem?.IsDerived(Static.ID) ?? true)
+@if (!Model?.PageItem?.IsDerived(PageMetadataItemConstants.TemplateID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Static.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(PageMetadataItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 @{

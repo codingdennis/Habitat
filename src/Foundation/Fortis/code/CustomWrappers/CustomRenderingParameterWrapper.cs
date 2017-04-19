@@ -2,7 +2,7 @@
 using Fortis.Model;
 using Fortis.Providers;
 
-namespace Fortis.Foundation.CodeGen.Custom
+namespace Fortis.Foundation.CustomWrappers
 {
     public class CustomRenderingParameterWrapper : RenderingParameterWrapper, IFortisItem
     {

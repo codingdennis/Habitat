@@ -1,7 +1,7 @@
 ﻿
 /*
  * Fortis Template Models for Habitat, based on Unicorn serialization.
- * Generated at 04/13/2017 11:09:18
+ * Generated at 04/19/2017 10:00:18
  *
  * To regenerate after template changes, right-click on CodeGen.tt and select Run Custom Tool.
  */
@@ -14,13 +14,15 @@ using Sitecore.Data.Items;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq.Common;
 
+namespace Fortis.Foundation.CodeGen.Templates
+{
 #region _UserProfile (/sitecore/templates/Feature/Accounts/_UserProfile)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.UserProfile
+namespace Feature.Accounts
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _UserProfile</para>
@@ -93,12 +95,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.UserProfile
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_UserProfile</para>
 	/// <summary>
-	public struct Static
+	public struct UserProfileItemConstants
 	{
-		public static ID ID => new ID("{696D276B-786A-4D1E-B8BB-8E139DB7BE7C}");
+		public static ID TemplateID => new ID("{696D276B-786A-4D1E-B8BB-8E139DB7BE7C}");
 
 		public struct Fields
 		{
@@ -245,12 +247,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.UserProfile
 #endregion
 
 #region _AccountsSettings (/sitecore/templates/Feature/Accounts/_AccountsSettings)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.AccountsSettings
+namespace Feature.Accounts
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _AccountsSettings</para>
@@ -326,12 +328,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.AccountsSettings
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_AccountsSettings</para>
 	/// <summary>
-	public struct Static
+	public struct AccountsSettingsItemConstants
 	{
-		public static ID ID => new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
+		public static ID TemplateID => new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
 
 		public struct Fields
 		{
@@ -553,12 +555,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.AccountsSettings
 #endregion
 
 #region _Interest (/sitecore/templates/Feature/Accounts/_Interest)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.Interest
+namespace Feature.Accounts
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Interest</para>
@@ -586,12 +588,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.Interest
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_Interest</para>
 	/// <summary>
-	public struct Static
+	public struct InterestItemConstants
 	{
-		public static ID ID => new ID("{C9B1855E-CA80-4414-B5BA-956CB67DC5A9}");
+		public static ID TemplateID => new ID("{C9B1855E-CA80-4414-B5BA-956CB67DC5A9}");
 
 		public struct Fields
 		{
@@ -651,12 +653,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.Interest
 #endregion
 
 #region _LoginTeaser (/sitecore/templates/Feature/Accounts/_LoginTeaser)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.LoginTeaser
+namespace Feature.Accounts
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _LoginTeaser</para>
@@ -729,12 +731,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.LoginTeaser
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_LoginTeaser</para>
 	/// <summary>
-	public struct Static
+	public struct LoginTeaserItemConstants
 	{
-		public static ID ID => new ID("{EF38D9E6-313C-491C-8648-79436D10091C}");
+		public static ID TemplateID => new ID("{EF38D9E6-313C-491C-8648-79436D10091C}");
 
 		public struct Fields
 		{
@@ -881,12 +883,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.LoginTeaser
 #endregion
 
 #region _MailTemplate (/sitecore/templates/Feature/Accounts/_MailTemplate)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.MailTemplate
+namespace Feature.Accounts
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _MailTemplate</para>
@@ -944,12 +946,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.MailTemplate
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_MailTemplate</para>
 	/// <summary>
-	public struct Static
+	public struct MailTemplateItemConstants
 	{
-		public static ID ID => new ID("{26DF8F38-7E1B-43D2-85DD-68DF05FA276B}");
+		public static ID TemplateID => new ID("{26DF8F38-7E1B-43D2-85DD-68DF05FA276B}");
 
 		public struct Fields
 		{
@@ -1067,12 +1069,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.MailTemplate
 #endregion
 
 #region _ProfileSettings (/sitecore/templates/Feature/Accounts/_ProfileSettings)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.ProfileSettings
+namespace Feature.Accounts
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _ProfileSettings</para>
@@ -1115,12 +1117,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.ProfileSettings
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_ProfileSettings</para>
 	/// <summary>
-	public struct Static
+	public struct ProfileSettingsItemConstants
 	{
-		public static ID ID => new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
+		public static ID TemplateID => new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
 
 		public struct Fields
 		{
@@ -1209,12 +1211,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Accounts.ProfileSettings
 #endregion
 
 #region _CampaignToken (/sitecore/templates/Feature/Demo/_CampaignToken)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.CampaignToken
+namespace Feature.Demo
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _CampaignToken</para>
@@ -1222,7 +1224,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.CampaignToken
     /// <para>Path: /sitecore/templates/Feature/Demo/_CampaignToken</para>
     /// </summary>
     [TemplateMapping("{01628DCB-611F-495E-A1DA-E89027AB7035}", "InterfaceMap")]
-	public partial interface ICampaignToken : ICustomItemWrapper, Feature.Demo.Token.IToken
+	public partial interface ICampaignToken : ICustomItemWrapper, Feature.Demo.IToken
     {
         /// <summary>
         /// <para>Template: _CampaignToken</para>
@@ -1242,12 +1244,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.CampaignToken
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_CampaignToken</para>
 	/// <summary>
-	public struct Static
+	public struct CampaignTokenItemConstants
 	{
-		public static ID ID => new ID("{01628DCB-611F-495E-A1DA-E89027AB7035}");
+		public static ID TemplateID => new ID("{01628DCB-611F-495E-A1DA-E89027AB7035}");
 
 		public struct Fields
 		{
@@ -1307,12 +1309,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.CampaignToken
 #endregion
 
 #region _DemoContent (/sitecore/templates/Feature/Demo/_DemoContent)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.DemoContent
+namespace Feature.Demo
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _DemoContent</para>
@@ -1340,12 +1342,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.DemoContent
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_DemoContent</para>
 	/// <summary>
-	public struct Static
+	public struct DemoContentItemConstants
 	{
-		public static ID ID => new ID("{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}");
+		public static ID TemplateID => new ID("{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}");
 
 		public struct Fields
 		{
@@ -1405,12 +1407,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.DemoContent
 #endregion
 
 #region _LinkToken (/sitecore/templates/Feature/Demo/_LinkToken)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.LinkToken
+namespace Feature.Demo
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _LinkToken</para>
@@ -1418,7 +1420,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.LinkToken
     /// <para>Path: /sitecore/templates/Feature/Demo/_LinkToken</para>
     /// </summary>
     [TemplateMapping("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}", "InterfaceMap")]
-	public partial interface ILinkToken : ICustomItemWrapper, Feature.Demo.Token.IToken
+	public partial interface ILinkToken : ICustomItemWrapper, Feature.Demo.IToken
     {
         /// <summary>
         /// <para>Template: _LinkToken</para>
@@ -1438,12 +1440,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.LinkToken
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_LinkToken</para>
 	/// <summary>
-	public struct Static
+	public struct LinkTokenItemConstants
 	{
-		public static ID ID => new ID("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}");
+		public static ID TemplateID => new ID("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}");
 
 		public struct Fields
 		{
@@ -1503,12 +1505,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.LinkToken
 #endregion
 
 #region _ProfilingSettings (/sitecore/templates/Feature/Demo/_ProfilingSettings)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.ProfilingSettings
+namespace Feature.Demo
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _ProfilingSettings</para>
@@ -1536,12 +1538,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.ProfilingSettings
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_ProfilingSettings</para>
 	/// <summary>
-	public struct Static
+	public struct ProfilingSettingsItemConstants
 	{
-		public static ID ID => new ID("{C6D4DDD5-B912-4C1A-A3A3-E1D90E4D0939}");
+		public static ID TemplateID => new ID("{C6D4DDD5-B912-4C1A-A3A3-E1D90E4D0939}");
 
 		public struct Fields
 		{
@@ -1601,12 +1603,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.ProfilingSettings
 #endregion
 
 #region _TextToken (/sitecore/templates/Feature/Demo/_TextToken)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.TextToken
+namespace Feature.Demo
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _TextToken</para>
@@ -1614,7 +1616,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.TextToken
     /// <para>Path: /sitecore/templates/Feature/Demo/_TextToken</para>
     /// </summary>
     [TemplateMapping("{327D6873-A384-435A-BE87-7E869782B243}", "InterfaceMap")]
-	public partial interface ITextToken : ICustomItemWrapper, Feature.Demo.Token.IToken
+	public partial interface ITextToken : ICustomItemWrapper, Feature.Demo.IToken
     {
         /// <summary>
         /// <para>Template: _TextToken</para>
@@ -1634,12 +1636,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.TextToken
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_TextToken</para>
 	/// <summary>
-	public struct Static
+	public struct TextTokenItemConstants
 	{
-		public static ID ID => new ID("{327D6873-A384-435A-BE87-7E869782B243}");
+		public static ID TemplateID => new ID("{327D6873-A384-435A-BE87-7E869782B243}");
 
 		public struct Fields
 		{
@@ -1699,12 +1701,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.TextToken
 #endregion
 
 #region _Token (/sitecore/templates/Feature/Demo/_Token)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.Token
+namespace Feature.Demo
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Token</para>
@@ -1717,12 +1719,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.Token
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_Token</para>
 	/// <summary>
-	public struct Static
+	public struct TokenItemConstants
 	{
-		public static ID ID => new ID("{A7EBF38A-5F66-4579-92D1-568A8BA50293}");
+		public static ID TemplateID => new ID("{A7EBF38A-5F66-4579-92D1-568A8BA50293}");
 
 		public struct Fields
 		{
@@ -1753,12 +1755,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Demo.Token
 #endregion
 
 #region _FAQ Group (/sitecore/templates/Feature/FAQ/_FAQ Group)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.FAQ.FAQGroup
+namespace Feature.FAQ
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _FAQ Group</para>
@@ -1786,12 +1788,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.FAQ.FAQGroup
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/FAQ/_FAQ Group</para>
 	/// <summary>
-	public struct Static
+	public struct FAQGroupItemConstants
 	{
-		public static ID ID => new ID("{3AF7DB6C-A602-4ABC-8D63-19E2D2C6726B}");
+		public static ID TemplateID => new ID("{3AF7DB6C-A602-4ABC-8D63-19E2D2C6726B}");
 
 		public struct Fields
 		{
@@ -1851,12 +1853,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.FAQ.FAQGroup
 #endregion
 
 #region _FAQ (/sitecore/templates/Feature/FAQ/_FAQ)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.FAQ.FAQ
+namespace Feature.FAQ
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _FAQ</para>
@@ -1899,12 +1901,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.FAQ.FAQ
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/FAQ/_FAQ</para>
 	/// <summary>
-	public struct Static
+	public struct FAQItemConstants
 	{
-		public static ID ID => new ID("{9544F0B3-FD5E-4301-9DDE-9E73D2C3F7BA}");
+		public static ID TemplateID => new ID("{9544F0B3-FD5E-4301-9DDE-9E73D2C3F7BA}");
 
 		public struct Fields
 		{
@@ -1993,12 +1995,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.FAQ.FAQ
 #endregion
 
 #region _Identity (/sitecore/templates/Feature/Identity/_Identity)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Identity.Identity
+namespace Feature.Identity
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Identity</para>
@@ -2102,12 +2104,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Identity.Identity
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Identity/_Identity</para>
 	/// <summary>
-	public struct Static
+	public struct IdentityItemConstants
 	{
-		public static ID ID => new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
+		public static ID TemplateID => new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
 
 		public struct Fields
 		{
@@ -2337,12 +2339,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Identity.Identity
 #endregion
 
 #region _LanguageSettings (/sitecore/templates/Feature/Language/_LanguageSettings)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Language.LanguageSettings
+namespace Feature.Language
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _LanguageSettings</para>
@@ -2370,12 +2372,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Language.LanguageSettings
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Language/_LanguageSettings</para>
 	/// <summary>
-	public struct Static
+	public struct LanguageSettingsItemConstants
 	{
-		public static ID ID => new ID("{748EBA96-3F0C-4F45-8AFB-DE8DCC707B84}");
+		public static ID TemplateID => new ID("{748EBA96-3F0C-4F45-8AFB-DE8DCC707B84}");
 
 		public struct Fields
 		{
@@ -2435,12 +2437,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Language.LanguageSettings
 #endregion
 
 #region Map Type (/sitecore/templates/Feature/Maps/Map Type)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapType
+namespace Feature.Maps
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Map Type</para>
@@ -2468,12 +2470,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapType
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Maps/Map Type</para>
 	/// <summary>
-	public struct Static
+	public struct MapTypeItemConstants
 	{
-		public static ID ID => new ID("{04C34CF5-B7EA-4408-88E8-5FC851173DBD}");
+		public static ID TemplateID => new ID("{04C34CF5-B7EA-4408-88E8-5FC851173DBD}");
 
 		public struct Fields
 		{
@@ -2533,12 +2535,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapType
 #endregion
 
 #region _MapPoint (/sitecore/templates/Feature/Maps/_MapPoint)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapPoint
+namespace Feature.Maps
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _MapPoint</para>
@@ -2589,12 +2591,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapPoint
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapPoint</para>
 	/// <summary>
-	public struct Static
+	public struct MapPointItemConstants
 	{
-		public static ID ID => new ID("{1E6A8C8C-6646-4776-8AB4-615265669633}");
+		public static ID TemplateID => new ID("{1E6A8C8C-6646-4776-8AB4-615265669633}");
 
 		public struct Fields
 		{
@@ -2710,12 +2712,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapPoint
 #endregion
 
 #region _MapPoints Folder (/sitecore/templates/Feature/Maps/_MapPoints Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapPointsFolder
+namespace Feature.Maps
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _MapPoints Folder</para>
@@ -2728,12 +2730,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapPointsFolder
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapPoints Folder</para>
 	/// <summary>
-	public struct Static
+	public struct MapPointsFolderItemConstants
 	{
-		public static ID ID => new ID("{31713995-C6BF-4CCB-8807-198493508AFA}");
+		public static ID TemplateID => new ID("{31713995-C6BF-4CCB-8807-198493508AFA}");
 
 		public struct Fields
 		{
@@ -2764,12 +2766,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapPointsFolder
 #endregion
 
 #region _MapRenderingParameters (/sitecore/templates/Feature/Maps/_MapRenderingParameters)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapRenderingParameters
+namespace Feature.Maps
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _MapRenderingParameters</para>
@@ -2910,12 +2912,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapRenderingParameter
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapRenderingParameters</para>
 	/// <summary>
-	public struct Static
+	public struct MapRenderingParametersItemConstants
 	{
-		public static ID ID => new ID("{D77856C3-8A5E-452C-8854-F2965EDF25E0}");
+		public static ID TemplateID => new ID("{D77856C3-8A5E-452C-8854-F2965EDF25E0}");
 
 		public struct Fields
 		{
@@ -3205,12 +3207,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Maps.MapRenderingParameter
 #endregion
 
 #region Background Type Folder (/sitecore/templates/Feature/Media/Background Type Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.BackgroundTypeFolder
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Background Type Folder</para>
@@ -3223,12 +3225,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.BackgroundTypeFolder
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/Background Type Folder</para>
 	/// <summary>
-	public struct Static
+	public struct BackgroundTypeFolderItemConstants
 	{
-		public static ID ID => new ID("{1FD75C49-F524-4C15-9F82-DCB2D4CF2FA9}");
+		public static ID TemplateID => new ID("{1FD75C49-F524-4C15-9F82-DCB2D4CF2FA9}");
 
 		public struct Fields
 		{
@@ -3259,12 +3261,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.BackgroundTypeFolder
 #endregion
 
 #region Background Type (/sitecore/templates/Feature/Media/Background Type)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.BackgroundType
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Background Type</para>
@@ -3292,12 +3294,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.BackgroundType
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/Background Type</para>
 	/// <summary>
-	public struct Static
+	public struct BackgroundTypeItemConstants
 	{
-		public static ID ID => new ID("{55A5BDAD-EB69-40F5-8195-CDA182E48EE4}");
+		public static ID TemplateID => new ID("{55A5BDAD-EB69-40F5-8195-CDA182E48EE4}");
 
 		public struct Fields
 		{
@@ -3357,12 +3359,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.BackgroundType
 #endregion
 
 #region ParametersTemplate_SectionBackground (/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.ParametersTemplateSectionBackground
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_SectionBackground</para>
@@ -3370,7 +3372,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.
     /// <para>Path: /sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground</para>
     /// </summary>
     [TemplateMapping("{B962A806-D708-4001-B0A3-3FA31F2263C5}", "InterfaceMap")]
-	public partial interface IParametersTemplateSectionBackground : ICustomItemWrapper, Foundation.SitecoreExtensions.ParametersTemplateHasDynamicPlaceholder.IParametersTemplateHasDynamicPlaceholder
+	public partial interface IParametersTemplateSectionBackground : ICustomItemWrapper, Foundation.SitecoreExtensions.IParametersTemplateHasDynamicPlaceholder
     {
         /// <summary>
         /// <para>Template: ParametersTemplate_SectionBackground</para>
@@ -3413,12 +3415,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground</para>
 	/// <summary>
-	public struct Static
+	public struct ParametersTemplateSectionBackgroundItemConstants
 	{
-		public static ID ID => new ID("{B962A806-D708-4001-B0A3-3FA31F2263C5}");
+		public static ID TemplateID => new ID("{B962A806-D708-4001-B0A3-3FA31F2263C5}");
 
 		public struct Fields
 		{
@@ -3534,12 +3536,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.
 #endregion
 
 #region _MediaParameters (/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.MediaParameters
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _MediaParameters</para>
@@ -3547,17 +3549,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.
     /// <para>Path: /sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters</para>
     /// </summary>
     [TemplateMapping("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}", "InterfaceMap")]
-	public partial interface IMediaParameters : ICustomItemWrapper, Foundation.Theming.ParametersTemplateFixedHeight.IParametersTemplateFixedHeight
+	public partial interface IMediaParameters : ICustomItemWrapper, Foundation.Theming.IParametersTemplateFixedHeight
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters</para>
 	/// <summary>
-	public struct Static
+	public struct MediaParametersItemConstants
 	{
-		public static ID ID => new ID("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}");
+		public static ID TemplateID => new ID("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}");
 
 		public struct Fields
 		{
@@ -3617,12 +3619,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.ParametersTemplates.
 #endregion
 
 #region _HasMedia (/sitecore/templates/Feature/Media/_HasMedia)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMedia
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _HasMedia</para>
@@ -3673,12 +3675,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMedia
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMedia</para>
 	/// <summary>
-	public struct Static
+	public struct HasMediaItemConstants
 	{
-		public static ID ID => new ID("{A44E450E-BA3F-4FAF-9C53-C63241CC34EB}");
+		public static ID TemplateID => new ID("{A44E450E-BA3F-4FAF-9C53-C63241CC34EB}");
 
 		public struct Fields
 		{
@@ -3794,12 +3796,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMedia
 #endregion
 
 #region _HasMediaImage (/sitecore/templates/Feature/Media/_HasMediaImage)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaImage
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _HasMediaImage</para>
@@ -3807,7 +3809,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaImage
     /// <para>Path: /sitecore/templates/Feature/Media/_HasMediaImage</para>
     /// </summary>
     [TemplateMapping("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}", "InterfaceMap")]
-	public partial interface IHasMediaImage : ICustomItemWrapper, Feature.Media.HasMedia.IHasMedia
+	public partial interface IHasMediaImage : ICustomItemWrapper, Feature.Media.IHasMedia
     {
         /// <summary>
         /// <para>Template: _HasMediaImage</para>
@@ -3820,12 +3822,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaImage
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaImage</para>
 	/// <summary>
-	public struct Static
+	public struct HasMediaImageItemConstants
 	{
-		public static ID ID => new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
+		public static ID TemplateID => new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
 
 		public struct Fields
 		{
@@ -3968,12 +3970,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaImage
 #endregion
 
 #region _HasMediaSelector (/sitecore/templates/Feature/Media/_HasMediaSelector)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaSelector
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _HasMediaSelector</para>
@@ -4001,12 +4003,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaSelector
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaSelector</para>
 	/// <summary>
-	public struct Static
+	public struct HasMediaSelectorItemConstants
 	{
-		public static ID ID => new ID("{AE4635AF-CFBF-4BF6-9B50-00BE23A910C0}");
+		public static ID TemplateID => new ID("{AE4635AF-CFBF-4BF6-9B50-00BE23A910C0}");
 
 		public struct Fields
 		{
@@ -4066,12 +4068,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaSelector
 #endregion
 
 #region _HasMediaVideo (/sitecore/templates/Feature/Media/_HasMediaVideo)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaVideo
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _HasMediaVideo</para>
@@ -4079,7 +4081,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaVideo
     /// <para>Path: /sitecore/templates/Feature/Media/_HasMediaVideo</para>
     /// </summary>
     [TemplateMapping("{5A1B724B-B396-4C48-A833-655CD19018E1}", "InterfaceMap")]
-	public partial interface IHasMediaVideo : ICustomItemWrapper, Feature.Media.HasMedia.IHasMedia
+	public partial interface IHasMediaVideo : ICustomItemWrapper, Feature.Media.IHasMedia
     {
         /// <summary>
         /// <para>Template: _HasMediaVideo</para>
@@ -4092,12 +4094,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaVideo
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaVideo</para>
 	/// <summary>
-	public struct Static
+	public struct HasMediaVideoItemConstants
 	{
-		public static ID ID => new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
+		public static ID TemplateID => new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
 
 		public struct Fields
 		{
@@ -4240,12 +4242,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.HasMediaVideo
 #endregion
 
 #region _MediaSiteExtension (/sitecore/templates/Feature/Media/_MediaSiteExtension)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.MediaSiteExtension
+namespace Feature.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _MediaSiteExtension</para>
@@ -4273,12 +4275,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.MediaSiteExtension
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_MediaSiteExtension</para>
 	/// <summary>
-	public struct Static
+	public struct MediaSiteExtensionItemConstants
 	{
-		public static ID ID => new ID("{D339E56B-6A8A-46BD-A7D3-C9725D50DD4A}");
+		public static ID TemplateID => new ID("{D339E56B-6A8A-46BD-A7D3-C9725D50DD4A}");
 
 		public struct Fields
 		{
@@ -4338,12 +4340,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Media.MediaSiteExtension
 #endregion
 
 #region _Keyword (/sitecore/templates/Feature/Metadata/_Keyword)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.Keyword
+namespace Feature.Metadata
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Keyword</para>
@@ -4371,12 +4373,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.Keyword
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_Keyword</para>
 	/// <summary>
-	public struct Static
+	public struct KeywordItemConstants
 	{
-		public static ID ID => new ID("{409F883A-0DC8-431A-9508-7316B59B92BE}");
+		public static ID TemplateID => new ID("{409F883A-0DC8-431A-9508-7316B59B92BE}");
 
 		public struct Fields
 		{
@@ -4436,12 +4438,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.Keyword
 #endregion
 
 #region _PageMetadata (/sitecore/templates/Feature/Metadata/_PageMetadata)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata
+namespace Feature.Metadata
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _PageMetadata</para>
@@ -4544,12 +4546,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_PageMetadata</para>
 	/// <summary>
-	public struct Static
+	public struct PageMetadataItemConstants
 	{
-		public static ID ID => new ID("{D88CCD80-D851-470D-AF11-701FF23504E7}");
+		public static ID TemplateID => new ID("{D88CCD80-D851-470D-AF11-701FF23504E7}");
 
 		public struct Fields
 		{
@@ -4754,12 +4756,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.PageMetadata
 #endregion
 
 #region _SiteMetadata (/sitecore/templates/Feature/Metadata/_SiteMetadata)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.SiteMetadata
+namespace Feature.Metadata
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _SiteMetadata</para>
@@ -4787,12 +4789,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.SiteMetadata
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_SiteMetadata</para>
 	/// <summary>
-	public struct Static
+	public struct SiteMetadataItemConstants
 	{
-		public static ID ID => new ID("{CF38E914-9298-47CC-9205-210553E79F97}");
+		public static ID TemplateID => new ID("{CF38E914-9298-47CC-9205-210553E79F97}");
 
 		public struct Fields
 		{
@@ -4852,12 +4854,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Metadata.SiteMetadata
 #endregion
 
 #region _SiteConfiguration (/sitecore/templates/Feature/Multisite/_SiteConfiguration)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Multisite.SiteConfiguration
+namespace Feature.Multisite
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _SiteConfiguration</para>
@@ -4865,7 +4867,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Multisite.SiteConfiguratio
     /// <para>Path: /sitecore/templates/Feature/Multisite/_SiteConfiguration</para>
     /// </summary>
     [TemplateMapping("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}", "InterfaceMap")]
-	public partial interface ISiteConfiguration : ICustomItemWrapper, Foundation.Multisite.Site.ISite
+	public partial interface ISiteConfiguration : ICustomItemWrapper, Foundation.Multisite.ISite
     {
         /// <summary>
         /// <para>Template: _SiteConfiguration</para>
@@ -4900,12 +4902,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Multisite.SiteConfiguratio
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Multisite/_SiteConfiguration</para>
 	/// <summary>
-	public struct Static
+	public struct SiteConfigurationItemConstants
 	{
-		public static ID ID => new ID("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}");
+		public static ID TemplateID => new ID("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}");
 
 		public struct Fields
 		{
@@ -4994,12 +4996,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Multisite.SiteConfiguratio
 #endregion
 
 #region _Link (/sitecore/templates/Feature/Navigation/_Link)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.Link
+namespace Feature.Navigation
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Link</para>
@@ -5027,12 +5029,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.Link
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_Link</para>
 	/// <summary>
-	public struct Static
+	public struct LinkItemConstants
 	{
-		public static ID ID => new ID("{A16B74E9-01B8-439C-B44E-42B3FB2EE14B}");
+		public static ID TemplateID => new ID("{A16B74E9-01B8-439C-B44E-42B3FB2EE14B}");
 
 		public struct Fields
 		{
@@ -5092,12 +5094,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.Link
 #endregion
 
 #region _LinkMenuItem (/sitecore/templates/Feature/Navigation/_LinkMenuItem)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.LinkMenuItem
+namespace Feature.Navigation
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _LinkMenuItem</para>
@@ -5105,7 +5107,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.LinkMenuItem
     /// <para>Path: /sitecore/templates/Feature/Navigation/_LinkMenuItem</para>
     /// </summary>
     [TemplateMapping("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}", "InterfaceMap")]
-	public partial interface ILinkMenuItem : ICustomItemWrapper, Feature.Navigation.Link.ILink
+	public partial interface ILinkMenuItem : ICustomItemWrapper, Feature.Navigation.ILink
     {
         /// <summary>
         /// <para>Template: _LinkMenuItem</para>
@@ -5140,12 +5142,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.LinkMenuItem
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_LinkMenuItem</para>
 	/// <summary>
-	public struct Static
+	public struct LinkMenuItemItemConstants
 	{
-		public static ID ID => new ID("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}");
+		public static ID TemplateID => new ID("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}");
 
 		public struct Fields
 		{
@@ -5263,12 +5265,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.LinkMenuItem
 #endregion
 
 #region _Navigable (/sitecore/templates/Feature/Navigation/_Navigable)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.Navigable
+namespace Feature.Navigation
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Navigable</para>
@@ -5326,12 +5328,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.Navigable
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_Navigable</para>
 	/// <summary>
-	public struct Static
+	public struct NavigableItemConstants
 	{
-		public static ID ID => new ID("{A1CBA309-D22B-46D5-80F8-2972C185363F}");
+		public static ID TemplateID => new ID("{A1CBA309-D22B-46D5-80F8-2972C185363F}");
 
 		public struct Fields
 		{
@@ -5449,12 +5451,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.Navigable
 #endregion
 
 #region _NavigationRoot (/sitecore/templates/Feature/Navigation/_NavigationRoot)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.NavigationRoot
+namespace Feature.Navigation
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _NavigationRoot</para>
@@ -5467,12 +5469,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.NavigationRoot
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_NavigationRoot</para>
 	/// <summary>
-	public struct Static
+	public struct NavigationRootItemConstants
 	{
-		public static ID ID => new ID("{F9F4FC05-98D0-4C62-860F-F08AE7F0EE25}");
+		public static ID TemplateID => new ID("{F9F4FC05-98D0-4C62-860F-F08AE7F0EE25}");
 
 		public struct Fields
 		{
@@ -5503,12 +5505,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Navigation.NavigationRoot
 #endregion
 
 #region _NewsArticle (/sitecore/templates/Feature/News/_NewsArticle)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.News.NewsArticle
+namespace Feature.News
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _NewsArticle</para>
@@ -5589,12 +5591,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.News.NewsArticle
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/News/_NewsArticle</para>
 	/// <summary>
-	public struct Static
+	public struct NewsArticleItemConstants
 	{
-		public static ID ID => new ID("{2F75C8AF-35FC-4A88-B585-7595203F442C}");
+		public static ID TemplateID => new ID("{2F75C8AF-35FC-4A88-B585-7595203F442C}");
 
 		public struct Fields
 		{
@@ -5768,12 +5770,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.News.NewsArticle
 #endregion
 
 #region _NewsFolder (/sitecore/templates/Feature/News/_NewsFolder)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.News.NewsFolder
+namespace Feature.News
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _NewsFolder</para>
@@ -5786,12 +5788,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.News.NewsFolder
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/News/_NewsFolder</para>
 	/// <summary>
-	public struct Static
+	public struct NewsFolderItemConstants
 	{
-		public static ID ID => new ID("{74889B26-061C-4D6A-8CDB-422665FC34EC}");
+		public static ID TemplateID => new ID("{74889B26-061C-4D6A-8CDB-422665FC34EC}");
 
 		public struct Fields
 		{
@@ -5822,12 +5824,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.News.NewsFolder
 #endregion
 
 #region _HasPageContent (/sitecore/templates/Feature/PageContent/_HasPageContent)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.PageContent.HasPageContent
+namespace Feature.PageContent
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _HasPageContent</para>
@@ -5893,12 +5895,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.PageContent.HasPageContent
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/PageContent/_HasPageContent</para>
 	/// <summary>
-	public struct Static
+	public struct HasPageContentItemConstants
 	{
-		public static ID ID => new ID("{AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}");
+		public static ID TemplateID => new ID("{AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}");
 
 		public struct Fields
 		{
@@ -6043,12 +6045,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.PageContent.HasPageContent
 #endregion
 
 #region _Employee (/sitecore/templates/Feature/Person/_Employee)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Employee
+namespace Feature.Person
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Employee</para>
@@ -6056,7 +6058,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Employee
     /// <para>Path: /sitecore/templates/Feature/Person/_Employee</para>
     /// </summary>
     [TemplateMapping("{745652AE-3298-48B1-9BE1-99012D91F3AC}", "InterfaceMap")]
-	public partial interface IEmployee : ICustomItemWrapper, Feature.Person.Person.IPerson
+	public partial interface IEmployee : ICustomItemWrapper, Feature.Person.IPerson
     {
         /// <summary>
         /// <para>Template: _Employee</para>
@@ -6181,12 +6183,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Employee
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Person/_Employee</para>
 	/// <summary>
-	public struct Static
+	public struct EmployeeItemConstants
 	{
-		public static ID ID => new ID("{745652AE-3298-48B1-9BE1-99012D91F3AC}");
+		public static ID TemplateID => new ID("{745652AE-3298-48B1-9BE1-99012D91F3AC}");
 
 		public struct Fields
 		{
@@ -6563,12 +6565,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Employee
 #endregion
 
 #region _Person (/sitecore/templates/Feature/Person/_Person)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Person
+namespace Feature.Person
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Person</para>
@@ -6634,12 +6636,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Person
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Person/_Person</para>
 	/// <summary>
-	public struct Static
+	public struct PersonItemConstants
 	{
-		public static ID ID => new ID("{7ACA6ECF-1A80-4E35-97F5-DBAA8E3EC617}");
+		public static ID TemplateID => new ID("{7ACA6ECF-1A80-4E35-97F5-DBAA8E3EC617}");
 
 		public struct Fields
 		{
@@ -6784,12 +6786,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Person
 #endregion
 
 #region _Quote (/sitecore/templates/Feature/Person/_Quote)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Quote
+namespace Feature.Person
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Quote</para>
@@ -6797,7 +6799,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Quote
     /// <para>Path: /sitecore/templates/Feature/Person/_Quote</para>
     /// </summary>
     [TemplateMapping("{755F1188-D385-4717-8681-EF45F2258575}", "InterfaceMap")]
-	public partial interface IQuote : ICustomItemWrapper, Feature.Person.Person.IPerson
+	public partial interface IQuote : ICustomItemWrapper, Feature.Person.IPerson
     {
         /// <summary>
         /// <para>Template: _Quote</para>
@@ -6832,12 +6834,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Quote
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Person/_Quote</para>
 	/// <summary>
-	public struct Static
+	public struct QuoteItemConstants
 	{
-		public static ID ID => new ID("{755F1188-D385-4717-8681-EF45F2258575}");
+		public static ID TemplateID => new ID("{755F1188-D385-4717-8681-EF45F2258575}");
 
 		public struct Fields
 		{
@@ -7040,12 +7042,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Person.Quote
 #endregion
 
 #region _PagedSearchResultsParameters (/sitecore/templates/Feature/Search/_PagedSearchResultsParameters)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.PagedSearchResultsParameters
+namespace Feature.Search
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _PagedSearchResultsParameters</para>
@@ -7088,12 +7090,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.PagedSearchResultsP
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Search/_PagedSearchResultsParameters</para>
 	/// <summary>
-	public struct Static
+	public struct PagedSearchResultsParametersItemConstants
 	{
-		public static ID ID => new ID("{D1D3E60F-E571-48D2-84CF-B053EE660C13}");
+		public static ID TemplateID => new ID("{D1D3E60F-E571-48D2-84CF-B053EE660C13}");
 
 		public struct Fields
 		{
@@ -7182,12 +7184,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.PagedSearchResultsP
 #endregion
 
 #region _SearchContext (/sitecore/templates/Feature/Search/_SearchContext)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.SearchContext
+namespace Feature.Search
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _SearchContext</para>
@@ -7208,12 +7210,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.SearchContext
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Search/_SearchContext</para>
 	/// <summary>
-	public struct Static
+	public struct SearchContextItemConstants
 	{
-		public static ID ID => new ID("{B524E8BE-A099-4A63-BE3F-DD4C42FD4185}");
+		public static ID TemplateID => new ID("{B524E8BE-A099-4A63-BE3F-DD4C42FD4185}");
 
 		public struct Fields
 		{
@@ -7271,12 +7273,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.SearchContext
 #endregion
 
 #region _SearchResults (/sitecore/templates/Feature/Search/_SearchResults)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.SearchResults
+namespace Feature.Search
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _SearchResults</para>
@@ -7319,12 +7321,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.SearchResults
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Search/_SearchResults</para>
 	/// <summary>
-	public struct Static
+	public struct SearchResultsItemConstants
 	{
-		public static ID ID => new ID("{14E452CA-064D-48A8-9FF2-2744D10437A1}");
+		public static ID TemplateID => new ID("{14E452CA-064D-48A8-9FF2-2744D10437A1}");
 
 		public struct Fields
 		{
@@ -7413,12 +7415,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Search.SearchResults
 #endregion
 
 #region _OpenGraph (/sitecore/templates/Feature/Social/_OpenGraph)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.OpenGraph
+namespace Feature.Social
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _OpenGraph</para>
@@ -7469,12 +7471,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.OpenGraph
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Social/_OpenGraph</para>
 	/// <summary>
-	public struct Static
+	public struct OpenGraphItemConstants
 	{
-		public static ID ID => new ID("{BDD24F35-05E8-4466-8798-7D3DD6A6C991}");
+		public static ID TemplateID => new ID("{BDD24F35-05E8-4466-8798-7D3DD6A6C991}");
 
 		public struct Fields
 		{
@@ -7590,12 +7592,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.OpenGraph
 #endregion
 
 #region _TwitterFeed (/sitecore/templates/Feature/Social/_TwitterFeed)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeed
+namespace Feature.Social
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _TwitterFeed</para>
@@ -7653,12 +7655,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeed
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Social/_TwitterFeed</para>
 	/// <summary>
-	public struct Static
+	public struct TwitterFeedItemConstants
 	{
-		public static ID ID => new ID("{89D988BC-A9A7-43F5-A9FD-A05B0B164720}");
+		public static ID TemplateID => new ID("{89D988BC-A9A7-43F5-A9FD-A05B0B164720}");
 
 		public struct Fields
 		{
@@ -7776,12 +7778,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeed
 #endregion
 
 #region _TwitterFeedRenderingProperties (/sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeedRenderingProperties
+namespace Feature.Social
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _TwitterFeedRenderingProperties</para>
@@ -7789,7 +7791,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeedRenderin
     /// <para>Path: /sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties</para>
     /// </summary>
     [TemplateMapping("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}", "InterfaceMap")]
-	public partial interface ITwitterFeedRenderingProperties : ICustomItemWrapper, Foundation.Theming.ParametersTemplateHasBackground.IParametersTemplateHasBackground
+	public partial interface ITwitterFeedRenderingProperties : ICustomItemWrapper, Foundation.Theming.IParametersTemplateHasBackground
     {
         /// <summary>
         /// <para>Template: _TwitterFeedRenderingProperties</para>
@@ -7809,12 +7811,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeedRenderin
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties</para>
 	/// <summary>
-	public struct Static
+	public struct TwitterFeedRenderingPropertiesItemConstants
 	{
-		public static ID ID => new ID("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}");
+		public static ID TemplateID => new ID("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}");
 
 		public struct Fields
 		{
@@ -7903,12 +7905,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Social.TwitterFeedRenderin
 #endregion
 
 #region Icon (/sitecore/templates/Feature/Teasers/Icon)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.Icon
+namespace Feature.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Icon</para>
@@ -7936,12 +7938,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.Icon
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/Icon</para>
 	/// <summary>
-	public struct Static
+	public struct IconItemConstants
 	{
-		public static ID ID => new ID("{E90D00B6-0BE9-48E0-9C3F-047274024270}");
+		public static ID TemplateID => new ID("{E90D00B6-0BE9-48E0-9C3F-047274024270}");
 
 		public struct Fields
 		{
@@ -8001,12 +8003,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.Icon
 #endregion
 
 #region _DynamicTeaser (/sitecore/templates/Feature/Teasers/_DynamicTeaser)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.DynamicTeaser
+namespace Feature.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _DynamicTeaser</para>
@@ -8049,12 +8051,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.DynamicTeaser
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_DynamicTeaser</para>
 	/// <summary>
-	public struct Static
+	public struct DynamicTeaserItemConstants
 	{
-		public static ID ID => new ID("{20A56D46-F5E3-4DB8-8B96-081575363D44}");
+		public static ID TemplateID => new ID("{20A56D46-F5E3-4DB8-8B96-081575363D44}");
 
 		public struct Fields
 		{
@@ -8143,12 +8145,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.DynamicTeaser
 #endregion
 
 #region _Headline (/sitecore/templates/Feature/Teasers/_Headline)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.Headline
+namespace Feature.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Headline</para>
@@ -8191,12 +8193,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.Headline
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_Headline</para>
 	/// <summary>
-	public struct Static
+	public struct HeadlineItemConstants
 	{
-		public static ID ID => new ID("{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}");
+		public static ID TemplateID => new ID("{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}");
 
 		public struct Fields
 		{
@@ -8285,12 +8287,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.Headline
 #endregion
 
 #region _TeaserContent (/sitecore/templates/Feature/Teasers/_TeaserContent)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserContent
+namespace Feature.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _TeaserContent</para>
@@ -8298,7 +8300,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserContent
     /// <para>Path: /sitecore/templates/Feature/Teasers/_TeaserContent</para>
     /// </summary>
     [TemplateMapping("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}", "InterfaceMap")]
-	public partial interface ITeaserContent : ICustomItemWrapper, Feature.Teasers.Headline.IHeadline
+	public partial interface ITeaserContent : ICustomItemWrapper, Feature.Teasers.IHeadline
     {
         /// <summary>
         /// <para>Template: _TeaserContent</para>
@@ -8356,12 +8358,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserContent
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeaserContent</para>
 	/// <summary>
-	public struct Static
+	public struct TeaserContentItemConstants
 	{
-		public static ID ID => new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
+		public static ID TemplateID => new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
 
 		public struct Fields
 		{
@@ -8564,12 +8566,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserContent
 #endregion
 
 #region _TeasersParameters (/sitecore/templates/Feature/Teasers/_TeasersParameters)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeasersParameters
+namespace Feature.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _TeasersParameters</para>
@@ -8577,17 +8579,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeasersParameters
     /// <para>Path: /sitecore/templates/Feature/Teasers/_TeasersParameters</para>
     /// </summary>
     [TemplateMapping("{20748D57-4EF6-49A8-B7E6-13818795E3B5}", "InterfaceMap")]
-	public partial interface ITeasersParameters : ICustomItemWrapper, Foundation.Theming.ParametersTemplateFixedHeight.IParametersTemplateFixedHeight, Foundation.Theming.ParametersTemplateHasBackground.IParametersTemplateHasBackground
+	public partial interface ITeasersParameters : ICustomItemWrapper, Foundation.Theming.IParametersTemplateFixedHeight, Foundation.Theming.IParametersTemplateHasBackground
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeasersParameters</para>
 	/// <summary>
-	public struct Static
+	public struct TeasersParametersItemConstants
 	{
-		public static ID ID => new ID("{20748D57-4EF6-49A8-B7E6-13818795E3B5}");
+		public static ID TemplateID => new ID("{20748D57-4EF6-49A8-B7E6-13818795E3B5}");
 
 		public struct Fields
 		{
@@ -8676,12 +8678,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeasersParameters
 #endregion
 
 #region _TeaserVideoContent (/sitecore/templates/Feature/Teasers/_TeaserVideoContent)
-namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserVideoContent
+namespace Feature.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _TeaserVideoContent</para>
@@ -8689,7 +8691,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserVideoContent
     /// <para>Path: /sitecore/templates/Feature/Teasers/_TeaserVideoContent</para>
     /// </summary>
     [TemplateMapping("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}", "InterfaceMap")]
-	public partial interface ITeaserVideoContent : ICustomItemWrapper, Feature.Teasers.Headline.IHeadline, Feature.Teasers.TeaserContent.ITeaserContent
+	public partial interface ITeaserVideoContent : ICustomItemWrapper, Feature.Teasers.IHeadline, Feature.Teasers.ITeaserContent
     {
         /// <summary>
         /// <para>Template: _TeaserVideoContent</para>
@@ -8702,12 +8704,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserVideoContent
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeaserVideoContent</para>
 	/// <summary>
-	public struct Static
+	public struct TeaserVideoContentItemConstants
 	{
-		public static ID ID => new ID("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}");
+		public static ID TemplateID => new ID("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}");
 
 		public struct Fields
 		{
@@ -8937,12 +8939,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Feature.Teasers.TeaserVideoContent
 #endregion
 
 #region Theme Folder (/sitecore/templates/Foundation/Assets/Theme Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.ThemeFolder
+namespace Foundation.Assets
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Theme Folder</para>
@@ -8955,12 +8957,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.ThemeFolder
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/Theme Folder</para>
 	/// <summary>
-	public struct Static
+	public struct ThemeFolderItemConstants
 	{
-		public static ID ID => new ID("{10059264-CD0B-47B9-8350-A31A90815921}");
+		public static ID TemplateID => new ID("{10059264-CD0B-47B9-8350-A31A90815921}");
 
 		public struct Fields
 		{
@@ -8991,12 +8993,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.ThemeFolder
 #endregion
 
 #region Theme (/sitecore/templates/Foundation/Assets/Theme)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.Theme
+namespace Foundation.Assets
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Theme</para>
@@ -9004,17 +9006,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.Theme
     /// <para>Path: /sitecore/templates/Foundation/Assets/Theme</para>
     /// </summary>
     [TemplateMapping("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}", "InterfaceMap")]
-	public partial interface ITheme : ICustomItemWrapper, Foundation.Assets.RenderingAssets.IRenderingAssets
+	public partial interface ITheme : ICustomItemWrapper, Foundation.Assets.IRenderingAssets
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/Theme</para>
 	/// <summary>
-	public struct Static
+	public struct ThemeItemConstants
 	{
-		public static ID ID => new ID("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}");
+		public static ID TemplateID => new ID("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}");
 
 		public struct Fields
 		{
@@ -9161,12 +9163,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.Theme
 #endregion
 
 #region _HasTheme (/sitecore/templates/Foundation/Assets/_HasTheme)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.HasTheme
+namespace Foundation.Assets
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _HasTheme</para>
@@ -9194,12 +9196,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.HasTheme
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_HasTheme</para>
 	/// <summary>
-	public struct Static
+	public struct HasThemeItemConstants
 	{
-		public static ID ID => new ID("{5B6F8720-3A93-4DA1-92A0-C3E85E01219A}");
+		public static ID TemplateID => new ID("{5B6F8720-3A93-4DA1-92A0-C3E85E01219A}");
 
 		public struct Fields
 		{
@@ -9259,12 +9261,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.HasTheme
 #endregion
 
 #region _PageAssets (/sitecore/templates/Foundation/Assets/_PageAssets)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.PageAssets
+namespace Foundation.Assets
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _PageAssets</para>
@@ -9337,12 +9339,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.PageAssets
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_PageAssets</para>
 	/// <summary>
-	public struct Static
+	public struct PageAssetsItemConstants
 	{
-		public static ID ID => new ID("{91962B60-25F6-428F-8D10-02AA1E49D6A5}");
+		public static ID TemplateID => new ID("{91962B60-25F6-428F-8D10-02AA1E49D6A5}");
 
 		public struct Fields
 		{
@@ -9489,12 +9491,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.PageAssets
 #endregion
 
 #region _RenderingAssets (/sitecore/templates/Foundation/Assets/_RenderingAssets)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.RenderingAssets
+namespace Foundation.Assets
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _RenderingAssets</para>
@@ -9567,12 +9569,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.RenderingAssets
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_RenderingAssets</para>
 	/// <summary>
-	public struct Static
+	public struct RenderingAssetsItemConstants
 	{
-		public static ID ID => new ID("{7CEAC341-B953-4C69-B907-EE44302BF6AE}");
+		public static ID TemplateID => new ID("{7CEAC341-B953-4C69-B907-EE44302BF6AE}");
 
 		public struct Fields
 		{
@@ -9719,12 +9721,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Assets.RenderingAssets
 #endregion
 
 #region DictionaryEntry (/sitecore/templates/Foundation/Dictionary/DictionaryEntry)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Dictionary.DictionaryEntry
+namespace Foundation.Dictionary
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: DictionaryEntry</para>
@@ -9752,12 +9754,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Dictionary.DictionaryEn
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryEntry</para>
 	/// <summary>
-	public struct Static
+	public struct DictionaryEntryItemConstants
 	{
-		public static ID ID => new ID("{EC4DD3F2-590D-404B-9189-2A12679749CC}");
+		public static ID TemplateID => new ID("{EC4DD3F2-590D-404B-9189-2A12679749CC}");
 
 		public struct Fields
 		{
@@ -9817,12 +9819,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Dictionary.DictionaryEn
 #endregion
 
 #region DictionaryFolder (/sitecore/templates/Foundation/Dictionary/DictionaryFolder)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Dictionary.DictionaryFolder
+namespace Foundation.Dictionary
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: DictionaryFolder</para>
@@ -9835,12 +9837,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Dictionary.DictionaryFo
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryFolder</para>
 	/// <summary>
-	public struct Static
+	public struct DictionaryFolderItemConstants
 	{
-		public static ID ID => new ID("{98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}");
+		public static ID TemplateID => new ID("{98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}");
 
 		public struct Fields
 		{
@@ -9871,12 +9873,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Dictionary.DictionaryFo
 #endregion
 
 #region _IndexedItem (/sitecore/templates/Foundation/Indexing/_IndexedItem)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Indexing.IndexedItem
+namespace Foundation.Indexing
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _IndexedItem</para>
@@ -9904,12 +9906,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Indexing.IndexedItem
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Indexing/_IndexedItem</para>
 	/// <summary>
-	public struct Static
+	public struct IndexedItemItemConstants
 	{
-		public static ID ID => new ID("{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}");
+		public static ID TemplateID => new ID("{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}");
 
 		public struct Fields
 		{
@@ -9969,12 +9971,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Indexing.IndexedItem
 #endregion
 
 #region Local Datasource Folder (/sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.LocalDatasource.LocalDatasourceFolder
+namespace Foundation.LocalDatasource
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Local Datasource Folder</para>
@@ -9987,12 +9989,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.LocalDatasource.LocalDa
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder</para>
 	/// <summary>
-	public struct Static
+	public struct LocalDatasourceFolderItemConstants
 	{
-		public static ID ID => new ID("{FFF5F245-FFC0-4022-A998-9B07AA5E761F}");
+		public static ID TemplateID => new ID("{FFF5F245-FFC0-4022-A998-9B07AA5E761F}");
 
 		public struct Fields
 		{
@@ -10023,12 +10025,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.LocalDatasource.LocalDa
 #endregion
 
 #region Datasource Configuration (/sitecore/templates/Foundation/Multisite/Datasource Configuration)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceConfiguration
+namespace Foundation.Multisite
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Datasource Configuration</para>
@@ -10036,7 +10038,7 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceCon
     /// <para>Path: /sitecore/templates/Foundation/Multisite/Datasource Configuration</para>
     /// </summary>
     [TemplateMapping("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}", "InterfaceMap")]
-	public partial interface IDatasourceConfiguration : ICustomItemWrapper, Foundation.Multisite.SiteSettings.ISiteSettings
+	public partial interface IDatasourceConfiguration : ICustomItemWrapper, Foundation.Multisite.ISiteSettings
     {
         /// <summary>
         /// <para>Template: Datasource Configuration</para>
@@ -10057,12 +10059,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceCon
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Configuration</para>
 	/// <summary>
-	public struct Static
+	public struct DatasourceConfigurationItemConstants
 	{
-		public static ID ID => new ID("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}");
+		public static ID TemplateID => new ID("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}");
 
 		public struct Fields
 		{
@@ -10147,12 +10149,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceCon
 #endregion
 
 #region Datasource Settings Folder (/sitecore/templates/Foundation/Multisite/Datasource Settings Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceSettingsFolder
+namespace Foundation.Multisite
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Datasource Settings Folder</para>
@@ -10160,17 +10162,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceSet
     /// <para>Path: /sitecore/templates/Foundation/Multisite/Datasource Settings Folder</para>
     /// </summary>
     [TemplateMapping("{7A98BE60-9F59-4064-82C2-58DA63562FA5}", "InterfaceMap")]
-	public partial interface IDatasourceSettingsFolder : ICustomItemWrapper, Foundation.Multisite.SiteSettings.ISiteSettings
+	public partial interface IDatasourceSettingsFolder : ICustomItemWrapper, Foundation.Multisite.ISiteSettings
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Settings Folder</para>
 	/// <summary>
-	public struct Static
+	public struct DatasourceSettingsFolderItemConstants
 	{
-		public static ID ID => new ID("{7A98BE60-9F59-4064-82C2-58DA63562FA5}");
+		public static ID TemplateID => new ID("{7A98BE60-9F59-4064-82C2-58DA63562FA5}");
 
 		public struct Fields
 		{
@@ -10201,12 +10203,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.DatasourceSet
 #endregion
 
 #region Site Settings Root (/sitecore/templates/Foundation/Multisite/Site Settings Root)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.SiteSettingsRoot
+namespace Foundation.Multisite
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Site Settings Root</para>
@@ -10219,12 +10221,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.SiteSettingsR
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Site Settings Root</para>
 	/// <summary>
-	public struct Static
+	public struct SiteSettingsRootItemConstants
 	{
-		public static ID ID => new ID("{4C82B6DD-FE7C-4144-BCB3-F21B4080568F}");
+		public static ID TemplateID => new ID("{4C82B6DD-FE7C-4144-BCB3-F21B4080568F}");
 
 		public struct Fields
 		{
@@ -10255,12 +10257,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.SiteSettingsR
 #endregion
 
 #region _Site (/sitecore/templates/Foundation/Multisite/_Site)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.Site
+namespace Foundation.Multisite
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _Site</para>
@@ -10273,12 +10275,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.Site
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/_Site</para>
 	/// <summary>
-	public struct Static
+	public struct SiteItemConstants
 	{
-		public static ID ID => new ID("{BB85C5C2-9F87-48CE-8012-AF67CF4F765D}");
+		public static ID TemplateID => new ID("{BB85C5C2-9F87-48CE-8012-AF67CF4F765D}");
 
 		public struct Fields
 		{
@@ -10309,12 +10311,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.Site
 #endregion
 
 #region _SiteSettings (/sitecore/templates/Foundation/Multisite/_SiteSettings)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.SiteSettings
+namespace Foundation.Multisite
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: _SiteSettings</para>
@@ -10327,12 +10329,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.SiteSettings
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/_SiteSettings</para>
 	/// <summary>
-	public struct Static
+	public struct SiteSettingsItemConstants
 	{
-		public static ID ID => new ID("{BCCFEBEA-DCCB-48FE-9570-6503829EC03F}");
+		public static ID TemplateID => new ID("{BCCFEBEA-DCCB-48FE-9570-6503829EC03F}");
 
 		public struct Fields
 		{
@@ -10363,12 +10365,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Multisite.SiteSettings
 #endregion
 
 #region ParametersTemplate_HasDynamicPlaceholder (/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateHasDynamicPlaceholder
+namespace Foundation.SitecoreExtensions
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasDynamicPlaceholder</para>
@@ -10381,12 +10383,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.SitecoreExtensions.Para
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder</para>
 	/// <summary>
-	public struct Static
+	public struct ParametersTemplateHasDynamicPlaceholderItemConstants
 	{
-		public static ID ID => new ID("{8373E4E5-C79C-4123-9284-BABD9601C565}");
+		public static ID TemplateID => new ID("{8373E4E5-C79C-4123-9284-BABD9601C565}");
 
 		public struct Fields
 		{
@@ -10417,12 +10419,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.SitecoreExtensions.Para
 #endregion
 
 #region ParametersTemplate_QueryableDatasourceRendering (/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.SitecoreExtensions.ParametersTemplateQueryableDatasourceRendering
+namespace Foundation.SitecoreExtensions
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_QueryableDatasourceRendering</para>
@@ -10435,12 +10437,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.SitecoreExtensions.Para
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering</para>
 	/// <summary>
-	public struct Static
+	public struct ParametersTemplateQueryableDatasourceRenderingItemConstants
 	{
-		public static ID ID => new ID("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}");
+		public static ID TemplateID => new ID("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}");
 
 		public struct Fields
 		{
@@ -10471,12 +10473,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.SitecoreExtensions.Para
 #endregion
 
 #region ParametersTemplate_FixedHeight (/sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTemplateFixedHeight
+namespace Foundation.Theming
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_FixedHeight</para>
@@ -10504,12 +10506,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTempl
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight</para>
 	/// <summary>
-	public struct Static
+	public struct ParametersTemplateFixedHeightItemConstants
 	{
-		public static ID ID => new ID("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}");
+		public static ID TemplateID => new ID("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}");
 
 		public struct Fields
 		{
@@ -10569,12 +10571,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTempl
 #endregion
 
 #region ParametersTemplate_HasBackground (/sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTemplateHasBackground
+namespace Foundation.Theming
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasBackground</para>
@@ -10602,12 +10604,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTempl
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground</para>
 	/// <summary>
-	public struct Static
+	public struct ParametersTemplateHasBackgroundItemConstants
 	{
-		public static ID ID => new ID("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}");
+		public static ID TemplateID => new ID("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}");
 
 		public struct Fields
 		{
@@ -10667,12 +10669,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTempl
 #endregion
 
 #region ParametersTemplate_HasContainer (/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainer
+namespace Foundation.Theming
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasContainer</para>
@@ -10700,12 +10702,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTempl
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer</para>
 	/// <summary>
-	public struct Static
+	public struct ParametersTemplateHasContainerItemConstants
 	{
-		public static ID ID => new ID("{29299E73-6841-44C1-A65F-0889011E2EEC}");
+		public static ID TemplateID => new ID("{29299E73-6841-44C1-A65F-0889011E2EEC}");
 
 		public struct Fields
 		{
@@ -10765,12 +10767,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTempl
 #endregion
 
 #region ParametersTemplate_HasContainerWithBackground (/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTemplateHasContainerWithBackground
+namespace Foundation.Theming
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasContainerWithBackground</para>
@@ -10778,17 +10780,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTempl
     /// <para>Path: /sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground</para>
     /// </summary>
     [TemplateMapping("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}", "InterfaceMap")]
-	public partial interface IParametersTemplateHasContainerWithBackground : ICustomItemWrapper, Foundation.Theming.ParametersTemplateHasBackground.IParametersTemplateHasBackground, Foundation.Theming.ParametersTemplateHasContainer.IParametersTemplateHasContainer
+	public partial interface IParametersTemplateHasContainerWithBackground : ICustomItemWrapper, Foundation.Theming.IParametersTemplateHasBackground, Foundation.Theming.IParametersTemplateHasContainer
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground</para>
 	/// <summary>
-	public struct Static
+	public struct ParametersTemplateHasContainerWithBackgroundItemConstants
 	{
-		public static ID ID => new ID("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}");
+		public static ID TemplateID => new ID("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}");
 
 		public struct Fields
 		{
@@ -10877,12 +10879,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.ParametersTempl
 #endregion
 
 #region Style (/sitecore/templates/Foundation/Theming/Style)
-namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.Style
+namespace Foundation.Theming
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Style</para>
@@ -10910,12 +10912,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.Style
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/Style</para>
 	/// <summary>
-	public struct Static
+	public struct StyleItemConstants
 	{
-		public static ID ID => new ID("{C2AC5C42-A05C-4F51-854E-730C9BCA06D1}");
+		public static ID TemplateID => new ID("{C2AC5C42-A05C-4F51-854E-730C9BCA06D1}");
 
 		public struct Fields
 		{
@@ -10975,12 +10977,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Foundation.Theming.Style
 #endregion
 
 #region Demo Teaser (/sitecore/templates/Project/Common/Content Types/Demo Teaser)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTeaser
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Demo Teaser</para>
@@ -10988,17 +10990,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTe
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Demo Teaser</para>
     /// </summary>
     [TemplateMapping("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}", "InterfaceMap")]
-	public partial interface IDemoTeaser : ICustomItemWrapper, Feature.Demo.DemoContent.IDemoContent
+	public partial interface IDemoTeaser : ICustomItemWrapper, Feature.Demo.IDemoContent
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Teaser</para>
 	/// <summary>
-	public struct Static
+	public struct DemoTeaserItemConstants
 	{
-		public static ID ID => new ID("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}");
+		public static ID TemplateID => new ID("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}");
 
 		public struct Fields
 		{
@@ -11058,12 +11060,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTe
 #endregion
 
 #region Campaign Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.CampaignToken
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Campaign Token</para>
@@ -11071,17 +11073,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTo
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token</para>
     /// </summary>
     [TemplateMapping("{51B1726B-4290-4908-A2DA-B169194AE80C}", "InterfaceMap")]
-	public partial interface ICampaignToken : ICustomItemWrapper, Feature.Demo.CampaignToken.ICampaignToken, Feature.Demo.Token.IToken
+	public partial interface ICampaignToken : ICustomItemWrapper, Feature.Demo.ICampaignToken, Feature.Demo.IToken
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token</para>
 	/// <summary>
-	public struct Static
+	public struct CampaignTokenItemConstants
 	{
-		public static ID ID => new ID("{51B1726B-4290-4908-A2DA-B169194AE80C}");
+		public static ID TemplateID => new ID("{51B1726B-4290-4908-A2DA-B169194AE80C}");
 
 		public struct Fields
 		{
@@ -11141,12 +11143,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTo
 #endregion
 
 #region Link Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.LinkToken
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Link Token</para>
@@ -11154,17 +11156,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTo
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token</para>
     /// </summary>
     [TemplateMapping("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}", "InterfaceMap")]
-	public partial interface ILinkToken : ICustomItemWrapper, Feature.Demo.LinkToken.ILinkToken, Feature.Demo.Token.IToken
+	public partial interface ILinkToken : ICustomItemWrapper, Feature.Demo.ILinkToken, Feature.Demo.IToken
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token</para>
 	/// <summary>
-	public struct Static
+	public struct LinkTokenItemConstants
 	{
-		public static ID ID => new ID("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}");
+		public static ID TemplateID => new ID("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}");
 
 		public struct Fields
 		{
@@ -11224,12 +11226,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTo
 #endregion
 
 #region Text Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTokens.TextToken
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Text Token</para>
@@ -11237,17 +11239,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTo
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token</para>
     /// </summary>
     [TemplateMapping("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}", "InterfaceMap")]
-	public partial interface ITextToken : ICustomItemWrapper, Feature.Demo.TextToken.ITextToken, Feature.Demo.Token.IToken
+	public partial interface ITextToken : ICustomItemWrapper, Feature.Demo.ITextToken, Feature.Demo.IToken
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token</para>
 	/// <summary>
-	public struct Static
+	public struct TextTokenItemConstants
 	{
-		public static ID ID => new ID("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}");
+		public static ID TemplateID => new ID("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}");
 
 		public struct Fields
 		{
@@ -11307,12 +11309,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.DemoTo
 #endregion
 
 #region Employee Folder (/sitecore/templates/Project/Common/Content Types/Employee Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.EmployeeFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Employee Folder</para>
@@ -11325,12 +11327,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Employ
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Employee Folder</para>
 	/// <summary>
-	public struct Static
+	public struct EmployeeFolderItemConstants
 	{
-		public static ID ID => new ID("{F94F28F6-5B19-42F2-9164-1E21023E03EE}");
+		public static ID TemplateID => new ID("{F94F28F6-5B19-42F2-9164-1E21023E03EE}");
 
 		public struct Fields
 		{
@@ -11361,12 +11363,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Employ
 #endregion
 
 #region Employee (/sitecore/templates/Project/Common/Content Types/Employee)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Employee
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Employee</para>
@@ -11374,17 +11376,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Employ
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Employee</para>
     /// </summary>
     [TemplateMapping("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}", "InterfaceMap")]
-	public partial interface IEmployee : ICustomItemWrapper, Feature.Person.Employee.IEmployee, Feature.Person.Person.IPerson
+	public partial interface IEmployee : ICustomItemWrapper, Feature.Person.IEmployee, Feature.Person.IPerson
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Employee</para>
 	/// <summary>
-	public struct Static
+	public struct EmployeeItemConstants
 	{
-		public static ID ID => new ID("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}");
+		public static ID TemplateID => new ID("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}");
 
 		public struct Fields
 		{
@@ -11761,12 +11763,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Employ
 #endregion
 
 #region FAQ Folder (/sitecore/templates/Project/Common/Content Types/FAQ Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: FAQ Folder</para>
@@ -11779,12 +11781,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQFol
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Folder</para>
 	/// <summary>
-	public struct Static
+	public struct FAQFolderItemConstants
 	{
-		public static ID ID => new ID("{41DA2D61-D85A-40F1-BE69-DDD18DD1BC93}");
+		public static ID TemplateID => new ID("{41DA2D61-D85A-40F1-BE69-DDD18DD1BC93}");
 
 		public struct Fields
 		{
@@ -11815,12 +11817,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQFol
 #endregion
 
 #region FAQ Group (/sitecore/templates/Project/Common/Content Types/FAQ Group)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQGroup
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: FAQ Group</para>
@@ -11828,17 +11830,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQGro
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/FAQ Group</para>
     /// </summary>
     [TemplateMapping("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}", "InterfaceMap")]
-	public partial interface IFAQGroup : ICustomItemWrapper, Feature.FAQ.FAQGroup.IFAQGroup
+	public partial interface IFAQGroup : ICustomItemWrapper, Feature.FAQ.IFAQGroup
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Group</para>
 	/// <summary>
-	public struct Static
+	public struct FAQGroupItemConstants
 	{
-		public static ID ID => new ID("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}");
+		public static ID TemplateID => new ID("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}");
 
 		public struct Fields
 		{
@@ -11898,12 +11900,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQGro
 #endregion
 
 #region FAQ (/sitecore/templates/Project/Common/Content Types/FAQ)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQ
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: FAQ</para>
@@ -11911,17 +11913,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQ
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/FAQ</para>
     /// </summary>
     [TemplateMapping("{BFDC1F27-3D2D-495F-89A3-0951F882420B}", "InterfaceMap")]
-	public partial interface IFAQ : ICustomItemWrapper, Feature.FAQ.FAQ.IFAQ
+	public partial interface IFAQ : ICustomItemWrapper, Feature.FAQ.IFAQ
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ</para>
 	/// <summary>
-	public struct Static
+	public struct FAQItemConstants
 	{
-		public static ID ID => new ID("{BFDC1F27-3D2D-495F-89A3-0951F882420B}");
+		public static ID TemplateID => new ID("{BFDC1F27-3D2D-495F-89A3-0951F882420B}");
 
 		public struct Fields
 		{
@@ -12010,12 +12012,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.FAQ
 #endregion
 
 #region Global Folder (/sitecore/templates/Project/Common/Content Types/Global Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.GlobalFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Global Folder</para>
@@ -12028,12 +12030,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Global
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Global Folder</para>
 	/// <summary>
-	public struct Static
+	public struct GlobalFolderItemConstants
 	{
-		public static ID ID => new ID("{FD075CBC-572E-4D27-A09F-B780E8FF4741}");
+		public static ID TemplateID => new ID("{FD075CBC-572E-4D27-A09F-B780E8FF4741}");
 
 		public struct Fields
 		{
@@ -12064,12 +12066,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Global
 #endregion
 
 #region Interest (/sitecore/templates/Project/Common/Content Types/Interest)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Interest
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Interest</para>
@@ -12077,17 +12079,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Intere
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Interest</para>
     /// </summary>
     [TemplateMapping("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}", "InterfaceMap")]
-	public partial interface IInterest : ICustomItemWrapper, Feature.Accounts.Interest.IInterest
+	public partial interface IInterest : ICustomItemWrapper, Feature.Accounts.IInterest
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Interest</para>
 	/// <summary>
-	public struct Static
+	public struct InterestItemConstants
 	{
-		public static ID ID => new ID("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}");
+		public static ID TemplateID => new ID("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}");
 
 		public struct Fields
 		{
@@ -12147,12 +12149,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Intere
 #endregion
 
 #region Interests Folder (/sitecore/templates/Project/Common/Content Types/Interests Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.InterestsFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Interests Folder</para>
@@ -12165,12 +12167,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Intere
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Interests Folder</para>
 	/// <summary>
-	public struct Static
+	public struct InterestsFolderItemConstants
 	{
-		public static ID ID => new ID("{0DB13819-7DF3-4136-A4B9-0A22B1023EF7}");
+		public static ID TemplateID => new ID("{0DB13819-7DF3-4136-A4B9-0A22B1023EF7}");
 
 		public struct Fields
 		{
@@ -12201,12 +12203,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Intere
 #endregion
 
 #region Link Menu Item (/sitecore/templates/Project/Common/Content Types/Link Menu Item)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMenuItem
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Link Menu Item</para>
@@ -12214,17 +12216,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMe
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Link Menu Item</para>
     /// </summary>
     [TemplateMapping("{390333C8-751B-4332-84A3-6360B969A19F}", "InterfaceMap")]
-	public partial interface ILinkMenuItem : ICustomItemWrapper, Feature.Navigation.Link.ILink, Feature.Navigation.LinkMenuItem.ILinkMenuItem, Feature.Navigation.Navigable.INavigable
+	public partial interface ILinkMenuItem : ICustomItemWrapper, Feature.Navigation.ILink, Feature.Navigation.ILinkMenuItem, Feature.Navigation.INavigable
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu Item</para>
 	/// <summary>
-	public struct Static
+	public struct LinkMenuItemItemConstants
 	{
-		public static ID ID => new ID("{390333C8-751B-4332-84A3-6360B969A19F}");
+		public static ID TemplateID => new ID("{390333C8-751B-4332-84A3-6360B969A19F}");
 
 		public struct Fields
 		{
@@ -12429,12 +12431,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMe
 #endregion
 
 #region Link Menu (/sitecore/templates/Project/Common/Content Types/Link Menu)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMenu
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Link Menu</para>
@@ -12442,17 +12444,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMe
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Link Menu</para>
     /// </summary>
     [TemplateMapping("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}", "InterfaceMap")]
-	public partial interface ILinkMenu : ICustomItemWrapper, Feature.Navigation.NavigationRoot.INavigationRoot
+	public partial interface ILinkMenu : ICustomItemWrapper, Feature.Navigation.INavigationRoot
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu</para>
 	/// <summary>
-	public struct Static
+	public struct LinkMenuItemConstants
 	{
-		public static ID ID => new ID("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}");
+		public static ID TemplateID => new ID("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}");
 
 		public struct Fields
 		{
@@ -12483,12 +12485,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMe
 #endregion
 
 #region Login Teaser (/sitecore/templates/Project/Common/Content Types/Login Teaser)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LoginTeaser
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Login Teaser</para>
@@ -12496,17 +12498,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LoginT
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Login Teaser</para>
     /// </summary>
     [TemplateMapping("{6E686B1C-1675-4263-AF03-DCE07827AFDD}", "InterfaceMap")]
-	public partial interface ILoginTeaser : ICustomItemWrapper, Feature.Accounts.LoginTeaser.ILoginTeaser
+	public partial interface ILoginTeaser : ICustomItemWrapper, Feature.Accounts.ILoginTeaser
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Login Teaser</para>
 	/// <summary>
-	public struct Static
+	public struct LoginTeaserItemConstants
 	{
-		public static ID ID => new ID("{6E686B1C-1675-4263-AF03-DCE07827AFDD}");
+		public static ID TemplateID => new ID("{6E686B1C-1675-4263-AF03-DCE07827AFDD}");
 
 		public struct Fields
 		{
@@ -12653,12 +12655,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LoginT
 #endregion
 
 #region Map Point (/sitecore/templates/Project/Common/Content Types/Map Point)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MapPoint
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Map Point</para>
@@ -12666,17 +12668,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MapPoi
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Map Point</para>
     /// </summary>
     [TemplateMapping("{11C28D16-9B88-456E-A42B-D4B5A82867E3}", "InterfaceMap")]
-	public partial interface IMapPoint : ICustomItemWrapper, Feature.Maps.MapPoint.IMapPoint
+	public partial interface IMapPoint : ICustomItemWrapper, Feature.Maps.IMapPoint
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Map Point</para>
 	/// <summary>
-	public struct Static
+	public struct MapPointItemConstants
 	{
-		public static ID ID => new ID("{11C28D16-9B88-456E-A42B-D4B5A82867E3}");
+		public static ID TemplateID => new ID("{11C28D16-9B88-456E-A42B-D4B5A82867E3}");
 
 		public struct Fields
 		{
@@ -12792,12 +12794,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MapPoi
 #endregion
 
 #region Map Points Folder (/sitecore/templates/Project/Common/Content Types/Map Points Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MapPointsFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Map Points Folder</para>
@@ -12805,17 +12807,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MapPoi
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Map Points Folder</para>
     /// </summary>
     [TemplateMapping("{067EC866-B3FB-485B-BB49-6151FB086E78}", "InterfaceMap")]
-	public partial interface IMapPointsFolder : ICustomItemWrapper, Feature.Maps.MapPointsFolder.IMapPointsFolder
+	public partial interface IMapPointsFolder : ICustomItemWrapper, Feature.Maps.IMapPointsFolder
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Map Points Folder</para>
 	/// <summary>
-	public struct Static
+	public struct MapPointsFolderItemConstants
 	{
-		public static ID ID => new ID("{067EC866-B3FB-485B-BB49-6151FB086E78}");
+		public static ID TemplateID => new ID("{067EC866-B3FB-485B-BB49-6151FB086E78}");
 
 		public struct Fields
 		{
@@ -12846,12 +12848,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MapPoi
 #endregion
 
 #region Carousel (/sitecore/templates/Project/Common/Content Types/Media/Carousel)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.Carousel
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Carousel</para>
@@ -12859,17 +12861,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Media/Carousel</para>
     /// </summary>
     [TemplateMapping("{C18D3794-D126-4548-BFC8-89358DE6E9C1}", "InterfaceMap")]
-	public partial interface ICarousel : ICustomItemWrapper, Feature.Media.HasMediaSelector.IHasMediaSelector
+	public partial interface ICarousel : ICustomItemWrapper, Feature.Media.IHasMediaSelector
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Carousel</para>
 	/// <summary>
-	public struct Static
+	public struct CarouselItemConstants
 	{
-		public static ID ID => new ID("{C18D3794-D126-4548-BFC8-89358DE6E9C1}");
+		public static ID TemplateID => new ID("{C18D3794-D126-4548-BFC8-89358DE6E9C1}");
 
 		public struct Fields
 		{
@@ -12929,12 +12931,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
 #endregion
 
 #region Image (/sitecore/templates/Project/Common/Content Types/Media/Image)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.Image
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Image</para>
@@ -12942,17 +12944,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Media/Image</para>
     /// </summary>
     [TemplateMapping("{F0369E1A-9030-4A05-A09C-EF09B664ED27}", "InterfaceMap")]
-	public partial interface IImage : ICustomItemWrapper, Feature.Media.HasMedia.IHasMedia, Feature.Media.HasMediaImage.IHasMediaImage
+	public partial interface IImage : ICustomItemWrapper, Feature.Media.IHasMedia, Feature.Media.IHasMediaImage
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Image</para>
 	/// <summary>
-	public struct Static
+	public struct ImageItemConstants
 	{
-		public static ID ID => new ID("{F0369E1A-9030-4A05-A09C-EF09B664ED27}");
+		public static ID TemplateID => new ID("{F0369E1A-9030-4A05-A09C-EF09B664ED27}");
 
 		public struct Fields
 		{
@@ -13095,12 +13097,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
 #endregion
 
 #region Media Background Folder (/sitecore/templates/Project/Common/Content Types/Media/Media Background Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackgroundFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Media Background Folder</para>
@@ -13113,12 +13115,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background Folder</para>
 	/// <summary>
-	public struct Static
+	public struct MediaBackgroundFolderItemConstants
 	{
-		public static ID ID => new ID("{82A6F39C-53E1-4ECA-8C27-69937CFF3B47}");
+		public static ID TemplateID => new ID("{82A6F39C-53E1-4ECA-8C27-69937CFF3B47}");
 
 		public struct Fields
 		{
@@ -13149,12 +13151,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
 #endregion
 
 #region Media Background (/sitecore/templates/Project/Common/Content Types/Media/Media Background)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.MediaBackground
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Media Background</para>
@@ -13167,12 +13169,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background</para>
 	/// <summary>
-	public struct Static
+	public struct MediaBackgroundItemConstants
 	{
-		public static ID ID => new ID("{42A10C41-5186-4A1E-AA7E-54EA00199C3F}");
+		public static ID TemplateID => new ID("{42A10C41-5186-4A1E-AA7E-54EA00199C3F}");
 
 		public struct Fields
 		{
@@ -13203,12 +13205,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
 #endregion
 
 #region Media Folder (/sitecore/templates/Project/Common/Content Types/Media/Media Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.MediaFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Media Folder</para>
@@ -13221,12 +13223,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Folder</para>
 	/// <summary>
-	public struct Static
+	public struct MediaFolderItemConstants
 	{
-		public static ID ID => new ID("{920A1781-559F-4E1C-BB2E-6B9A2113FE6B}");
+		public static ID TemplateID => new ID("{920A1781-559F-4E1C-BB2E-6B9A2113FE6B}");
 
 		public struct Fields
 		{
@@ -13257,12 +13259,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
 #endregion
 
 #region Video (/sitecore/templates/Project/Common/Content Types/Media/Video)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.Video
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Video</para>
@@ -13270,17 +13272,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Media/Video</para>
     /// </summary>
     [TemplateMapping("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}", "InterfaceMap")]
-	public partial interface IVideo : ICustomItemWrapper, Feature.Media.HasMedia.IHasMedia, Feature.Media.HasMediaVideo.IHasMediaVideo
+	public partial interface IVideo : ICustomItemWrapper, Feature.Media.IHasMedia, Feature.Media.IHasMediaVideo
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Video</para>
 	/// <summary>
-	public struct Static
+	public struct VideoItemConstants
 	{
-		public static ID ID => new ID("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}");
+		public static ID TemplateID => new ID("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}");
 
 		public struct Fields
 		{
@@ -13423,12 +13425,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media.
 #endregion
 
 #region MetaKeyword Folder (/sitecore/templates/Project/Common/Content Types/MetaKeyword Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MetaKeywordFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: MetaKeyword Folder</para>
@@ -13441,12 +13443,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MetaKe
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword Folder</para>
 	/// <summary>
-	public struct Static
+	public struct MetaKeywordFolderItemConstants
 	{
-		public static ID ID => new ID("{CD047791-C29A-4596-AEEE-DB5E70421C1F}");
+		public static ID TemplateID => new ID("{CD047791-C29A-4596-AEEE-DB5E70421C1F}");
 
 		public struct Fields
 		{
@@ -13477,12 +13479,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MetaKe
 #endregion
 
 #region MetaKeyword (/sitecore/templates/Project/Common/Content Types/MetaKeyword)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MetaKeyword
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: MetaKeyword</para>
@@ -13490,17 +13492,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MetaKe
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/MetaKeyword</para>
     /// </summary>
     [TemplateMapping("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}", "InterfaceMap")]
-	public partial interface IMetaKeyword : ICustomItemWrapper, Feature.Metadata.Keyword.IKeyword
+	public partial interface IMetaKeyword : ICustomItemWrapper, Feature.Metadata.IKeyword
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword</para>
 	/// <summary>
-	public struct Static
+	public struct MetaKeywordItemConstants
 	{
-		public static ID ID => new ID("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}");
+		public static ID TemplateID => new ID("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}");
 
 		public struct Fields
 		{
@@ -13560,12 +13562,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.MetaKe
 #endregion
 
 #region Navigation Link (/sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Navigation.NavigationLink
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Navigation Link</para>
@@ -13573,17 +13575,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Naviga
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link</para>
     /// </summary>
     [TemplateMapping("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}", "InterfaceMap")]
-	public partial interface INavigationLink : ICustomItemWrapper, Feature.Navigation.Link.ILink, Feature.Navigation.Navigable.INavigable
+	public partial interface INavigationLink : ICustomItemWrapper, Feature.Navigation.ILink, Feature.Navigation.INavigable
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link</para>
 	/// <summary>
-	public struct Static
+	public struct NavigationLinkItemConstants
 	{
-		public static ID ID => new ID("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}");
+		public static ID TemplateID => new ID("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}");
 
 		public struct Fields
 		{
@@ -13730,12 +13732,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Naviga
 #endregion
 
 #region Registration Folder (/sitecore/templates/Project/Common/Content Types/Registration Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.RegistrationFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Registration Folder</para>
@@ -13748,12 +13750,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Regist
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Registration Folder</para>
 	/// <summary>
-	public struct Static
+	public struct RegistrationFolderItemConstants
 	{
-		public static ID ID => new ID("{689BA377-E538-49ED-9DFC-4DCC398AB9AC}");
+		public static ID TemplateID => new ID("{689BA377-E538-49ED-9DFC-4DCC398AB9AC}");
 
 		public struct Fields
 		{
@@ -13784,12 +13786,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Regist
 #endregion
 
 #region Service Email (/sitecore/templates/Project/Common/Content Types/Service Email)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.ServiceEmail
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Service Email</para>
@@ -13797,17 +13799,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Servic
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Service Email</para>
     /// </summary>
     [TemplateMapping("{6DB3BA22-5715-4529-A527-35B3AF083AE4}", "InterfaceMap")]
-	public partial interface IServiceEmail : ICustomItemWrapper, Feature.Accounts.MailTemplate.IMailTemplate
+	public partial interface IServiceEmail : ICustomItemWrapper, Feature.Accounts.IMailTemplate
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Service Email</para>
 	/// <summary>
-	public struct Static
+	public struct ServiceEmailItemConstants
 	{
-		public static ID ID => new ID("{6DB3BA22-5715-4529-A527-35B3AF083AE4}");
+		public static ID TemplateID => new ID("{6DB3BA22-5715-4529-A527-35B3AF083AE4}");
 
 		public struct Fields
 		{
@@ -13925,12 +13927,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Servic
 #endregion
 
 #region Social Feeds Folder (/sitecore/templates/Project/Common/Content Types/Social/Social Feeds Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Social.SocialFeedsFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Social Feeds Folder</para>
@@ -13943,12 +13945,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Social
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Social Feeds Folder</para>
 	/// <summary>
-	public struct Static
+	public struct SocialFeedsFolderItemConstants
 	{
-		public static ID ID => new ID("{4DE2D9D9-0781-47AD-8F5D-52F2AD920D83}");
+		public static ID TemplateID => new ID("{4DE2D9D9-0781-47AD-8F5D-52F2AD920D83}");
 
 		public struct Fields
 		{
@@ -13979,12 +13981,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Social
 #endregion
 
 #region Twitter Feed (/sitecore/templates/Project/Common/Content Types/Social/Twitter Feed)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Social.TwitterFeed
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Twitter Feed</para>
@@ -13992,17 +13994,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Social
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Social/Twitter Feed</para>
     /// </summary>
     [TemplateMapping("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}", "InterfaceMap")]
-	public partial interface ITwitterFeed : ICustomItemWrapper, Feature.Social.TwitterFeed.ITwitterFeed
+	public partial interface ITwitterFeed : ICustomItemWrapper, Feature.Social.ITwitterFeed
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Twitter Feed</para>
 	/// <summary>
-	public struct Static
+	public struct TwitterFeedItemConstants
 	{
-		public static ID ID => new ID("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}");
+		public static ID TemplateID => new ID("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}");
 
 		public struct Fields
 		{
@@ -14120,12 +14122,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Social
 #endregion
 
 #region Dynamic Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.DynamicTeaser
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Dynamic Teaser</para>
@@ -14133,17 +14135,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser</para>
     /// </summary>
     [TemplateMapping("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}", "InterfaceMap")]
-	public partial interface IDynamicTeaser : ICustomItemWrapper, Feature.Teasers.DynamicTeaser.IDynamicTeaser
+	public partial interface IDynamicTeaser : ICustomItemWrapper, Feature.Teasers.IDynamicTeaser
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser</para>
 	/// <summary>
-	public struct Static
+	public struct DynamicTeaserItemConstants
 	{
-		public static ID ID => new ID("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}");
+		public static ID TemplateID => new ID("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}");
 
 		public struct Fields
 		{
@@ -14232,12 +14234,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
 #endregion
 
 #region Headline (/sitecore/templates/Project/Common/Content Types/Teasers/Headline)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.Headline
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Headline</para>
@@ -14245,17 +14247,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Teasers/Headline</para>
     /// </summary>
     [TemplateMapping("{061574E1-59DD-4B62-9680-1C84EFBE6773}", "InterfaceMap")]
-	public partial interface IHeadline : ICustomItemWrapper, Feature.Teasers.Headline.IHeadline
+	public partial interface IHeadline : ICustomItemWrapper, Feature.Teasers.IHeadline
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Headline</para>
 	/// <summary>
-	public struct Static
+	public struct HeadlineItemConstants
 	{
-		public static ID ID => new ID("{061574E1-59DD-4B62-9680-1C84EFBE6773}");
+		public static ID TemplateID => new ID("{061574E1-59DD-4B62-9680-1C84EFBE6773}");
 
 		public struct Fields
 		{
@@ -14344,12 +14346,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
 #endregion
 
 #region Quote Folder (/sitecore/templates/Project/Common/Content Types/Teasers/Quote Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.QuoteFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Quote Folder</para>
@@ -14362,12 +14364,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote Folder</para>
 	/// <summary>
-	public struct Static
+	public struct QuoteFolderItemConstants
 	{
-		public static ID ID => new ID("{A8F1B162-041F-46BF-81EB-5213AE8BC579}");
+		public static ID TemplateID => new ID("{A8F1B162-041F-46BF-81EB-5213AE8BC579}");
 
 		public struct Fields
 		{
@@ -14398,12 +14400,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
 #endregion
 
 #region Quote (/sitecore/templates/Project/Common/Content Types/Teasers/Quote)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.Quote
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Quote</para>
@@ -14411,17 +14413,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Teasers/Quote</para>
     /// </summary>
     [TemplateMapping("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}", "InterfaceMap")]
-	public partial interface IQuote : ICustomItemWrapper, Feature.Person.Person.IPerson, Feature.Person.Quote.IQuote
+	public partial interface IQuote : ICustomItemWrapper, Feature.Person.IPerson, Feature.Person.IQuote
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote</para>
 	/// <summary>
-	public struct Static
+	public struct QuoteItemConstants
 	{
-		public static ID ID => new ID("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}");
+		public static ID TemplateID => new ID("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}");
 
 		public struct Fields
 		{
@@ -14624,12 +14626,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
 #endregion
 
 #region Teaser Folder (/sitecore/templates/Project/Common/Content Types/Teasers/Teaser Folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.TeaserFolder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Teaser Folder</para>
@@ -14642,12 +14644,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser Folder</para>
 	/// <summary>
-	public struct Static
+	public struct TeaserFolderItemConstants
 	{
-		public static ID ID => new ID("{29D4B405-39EB-487D-9D6B-3F8467AB167D}");
+		public static ID TemplateID => new ID("{29D4B405-39EB-487D-9D6B-3F8467AB167D}");
 
 		public struct Fields
 		{
@@ -14678,12 +14680,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
 #endregion
 
 #region Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Teaser)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.Teaser
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Teaser</para>
@@ -14691,17 +14693,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Teasers/Teaser</para>
     /// </summary>
     [TemplateMapping("{C7D9D293-4EF8-4380-8E10-C4632E729F39}", "InterfaceMap")]
-	public partial interface ITeaser : ICustomItemWrapper, Feature.Teasers.Headline.IHeadline, Feature.Teasers.TeaserContent.ITeaserContent
+	public partial interface ITeaser : ICustomItemWrapper, Feature.Teasers.IHeadline, Feature.Teasers.ITeaserContent
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser</para>
 	/// <summary>
-	public struct Static
+	public struct TeaserItemConstants
 	{
-		public static ID ID => new ID("{C7D9D293-4EF8-4380-8E10-C4632E729F39}");
+		public static ID TemplateID => new ID("{C7D9D293-4EF8-4380-8E10-C4632E729F39}");
 
 		public struct Fields
 		{
@@ -14904,12 +14906,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
 #endregion
 
 #region Video Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teasers.VideoTeaser
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Video Teaser</para>
@@ -14917,17 +14919,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
     /// <para>Path: /sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser</para>
     /// </summary>
     [TemplateMapping("{DDBBF170-CFBD-439F-958C-A090BDF66D94}", "InterfaceMap")]
-	public partial interface IVideoTeaser : ICustomItemWrapper, Feature.Teasers.Headline.IHeadline, Feature.Teasers.TeaserContent.ITeaserContent, Feature.Teasers.TeaserVideoContent.ITeaserVideoContent
+	public partial interface IVideoTeaser : ICustomItemWrapper, Feature.Teasers.IHeadline, Feature.Teasers.ITeaserContent, Feature.Teasers.ITeaserVideoContent
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser</para>
 	/// <summary>
-	public struct Static
+	public struct VideoTeaserItemConstants
 	{
-		public static ID ID => new ID("{DDBBF170-CFBD-439F-958C-A090BDF66D94}");
+		public static ID TemplateID => new ID("{DDBBF170-CFBD-439F-958C-A090BDF66D94}");
 
 		public struct Fields
 		{
@@ -15157,12 +15159,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Teaser
 #endregion
 
 #region Demo Page (/sitecore/templates/Project/Common/Page Types/Demo Page)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.PageTypes.DemoPage
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Demo Page</para>
@@ -15170,17 +15172,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.PageTypes.DemoPage
     /// <para>Path: /sitecore/templates/Project/Common/Page Types/Demo Page</para>
     /// </summary>
     [TemplateMapping("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}", "InterfaceMap")]
-	public partial interface IDemoPage : ICustomItemWrapper, Feature.Demo.DemoContent.IDemoContent, Feature.Multisite.SiteConfiguration.ISiteConfiguration, Foundation.Multisite.Site.ISite
+	public partial interface IDemoPage : ICustomItemWrapper, Feature.Demo.IDemoContent, Feature.Multisite.ISiteConfiguration, Foundation.Multisite.ISite
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Page Types/Demo Page</para>
 	/// <summary>
-	public struct Static
+	public struct DemoPageItemConstants
 	{
-		public static ID ID => new ID("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}");
+		public static ID TemplateID => new ID("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}");
 
 		public struct Fields
 		{
@@ -15298,12 +15300,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.PageTypes.DemoPage
 #endregion
 
 #region ParametersTemplate_HasContainerWithDynamicPlaceholder (/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Common.Parameters.ParametersTemplateHasContainerWithDynamicPlaceholder
+namespace Project.Common
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
@@ -15311,17 +15313,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.Parameters.Paramete
     /// <para>Path: /sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
     /// </summary>
     [TemplateMapping("{4654D5F0-9B39-426A-992D-1D42E356FB0A}", "InterfaceMap")]
-	public partial interface IParametersTemplateHasContainerWithDynamicPlaceholder : ICustomItemWrapper, Foundation.SitecoreExtensions.ParametersTemplateHasDynamicPlaceholder.IParametersTemplateHasDynamicPlaceholder, Foundation.Theming.ParametersTemplateHasBackground.IParametersTemplateHasBackground, Foundation.Theming.ParametersTemplateHasContainer.IParametersTemplateHasContainer, Foundation.Theming.ParametersTemplateHasContainerWithBackground.IParametersTemplateHasContainerWithBackground
+	public partial interface IParametersTemplateHasContainerWithDynamicPlaceholder : ICustomItemWrapper, Foundation.SitecoreExtensions.IParametersTemplateHasDynamicPlaceholder, Foundation.Theming.IParametersTemplateHasBackground, Foundation.Theming.IParametersTemplateHasContainer, Foundation.Theming.IParametersTemplateHasContainerWithBackground
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
 	/// <summary>
-	public struct Static
+	public struct ParametersTemplateHasContainerWithDynamicPlaceholderItemConstants
 	{
-		public static ID ID => new ID("{4654D5F0-9B39-426A-992D-1D42E356FB0A}");
+		public static ID TemplateID => new ID("{4654D5F0-9B39-426A-992D-1D42E356FB0A}");
 
 		public struct Fields
 		{
@@ -15410,12 +15412,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Common.Parameters.Paramete
 #endregion
 
 #region Site Root (/sitecore/templates/Project/Habitat/Content Types/Site Root)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.ContentTypes.SiteRoot
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Site Root</para>
@@ -15423,17 +15425,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.ContentTypes.SiteR
     /// <para>Path: /sitecore/templates/Project/Habitat/Content Types/Site Root</para>
     /// </summary>
     [TemplateMapping("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}", "InterfaceMap")]
-	public partial interface ISiteRoot : ICustomItemWrapper, Feature.Accounts.AccountsSettings.IAccountsSettings, Feature.Accounts.ProfileSettings.IProfileSettings, Feature.Demo.ProfilingSettings.IProfilingSettings, Feature.Identity.Identity.IIdentity, Feature.Language.LanguageSettings.ILanguageSettings, Feature.Metadata.SiteMetadata.ISiteMetadata, Feature.Multisite.SiteConfiguration.ISiteConfiguration, Feature.Search.SearchContext.ISearchContext, Foundation.Assets.HasTheme.IHasTheme, Foundation.Multisite.Site.ISite
+	public partial interface ISiteRoot : ICustomItemWrapper, Feature.Accounts.IAccountsSettings, Feature.Accounts.IProfileSettings, Feature.Demo.IProfilingSettings, Feature.Identity.IIdentity, Feature.Language.ILanguageSettings, Feature.Metadata.ISiteMetadata, Feature.Multisite.ISiteConfiguration, Feature.Search.ISearchContext, Foundation.Assets.IHasTheme, Foundation.Multisite.ISite
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Content Types/Site Root</para>
 	/// <summary>
-	public struct Static
+	public struct SiteRootItemConstants
 	{
-		public static ID ID => new ID("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}");
+		public static ID TemplateID => new ID("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}");
 
 		public struct Fields
 		{
@@ -16113,12 +16115,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.ContentTypes.SiteR
 #endregion
 
 #region Article (/sitecore/templates/Project/Habitat/Page Types/Article)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Article
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Article</para>
@@ -16126,17 +16128,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Article
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Article</para>
     /// </summary>
     [TemplateMapping("{94A8C8E9-690B-4E65-98E7-F95800222767}", "InterfaceMap")]
-	public partial interface IArticle : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Assets.PageAssets.IPageAssets, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface IArticle : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Article</para>
 	/// <summary>
-	public struct Static
+	public struct ArticleItemConstants
 	{
-		public static ID ID => new ID("{94A8C8E9-690B-4E65-98E7-F95800222767}");
+		public static ID TemplateID => new ID("{94A8C8E9-690B-4E65-98E7-F95800222767}");
 
 		public struct Fields
 		{
@@ -16772,12 +16774,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Article
 #endregion
 
 #region Edit Profile Page (/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.EditProfilePage
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Edit Profile Page</para>
@@ -16785,17 +16787,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.EditProf
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Edit Profile Page</para>
     /// </summary>
     [TemplateMapping("{867F774A-195E-49D3-8E40-01F18410BB02}", "InterfaceMap")]
-	public partial interface IEditProfilePage : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface IEditProfilePage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page</para>
 	/// <summary>
-	public struct Static
+	public struct EditProfilePageItemConstants
 	{
-		public static ID ID => new ID("{867F774A-195E-49D3-8E40-01F18410BB02}");
+		public static ID TemplateID => new ID("{867F774A-195E-49D3-8E40-01F18410BB02}");
 
 		public struct Fields
 		{
@@ -17315,12 +17317,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.EditProf
 #endregion
 
 #region Employee (/sitecore/templates/Project/Habitat/Page Types/Employee)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Employee
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Employee</para>
@@ -17328,17 +17330,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Employee
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Employee</para>
     /// </summary>
     [TemplateMapping("{467C2144-4454-4518-B1DE-E31B4CBBFF33}", "InterfaceMap")]
-	public partial interface IEmployee : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.Person.Employee.IEmployee, Feature.Person.Person.IPerson, Feature.Social.OpenGraph.IOpenGraph, Foundation.Assets.PageAssets.IPageAssets, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface IEmployee : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.Person.IEmployee, Feature.Person.IPerson, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employee</para>
 	/// <summary>
-	public struct Static
+	public struct EmployeeItemConstants
 	{
-		public static ID ID => new ID("{467C2144-4454-4518-B1DE-E31B4CBBFF33}");
+		public static ID TemplateID => new ID("{467C2144-4454-4518-B1DE-E31B4CBBFF33}");
 
 		public struct Fields
 		{
@@ -18206,12 +18208,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Employee
 #endregion
 
 #region Employees folder (/sitecore/templates/Project/Habitat/Page Types/Employees folder)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.EmployeesFolder
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Employees folder</para>
@@ -18219,17 +18221,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Employee
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Employees folder</para>
     /// </summary>
     [TemplateMapping("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}", "InterfaceMap")]
-	public partial interface IEmployeesFolder : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Assets.PageAssets.IPageAssets, Foundation.Indexing.IndexedItem.IIndexedItem, Project.Habitat.PageTypes.Article.IArticle
+	public partial interface IEmployeesFolder : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem, Project.Habitat.IArticle
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employees folder</para>
 	/// <summary>
-	public struct Static
+	public struct EmployeesFolderItemConstants
 	{
-		public static ID ID => new ID("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}");
+		public static ID TemplateID => new ID("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}");
 
 		public struct Fields
 		{
@@ -18865,12 +18867,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Employee
 #endregion
 
 #region Forgot Password Page (/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.ForgotPasswordPage
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Forgot Password Page</para>
@@ -18878,17 +18880,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.ForgotPa
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Forgot Password Page</para>
     /// </summary>
     [TemplateMapping("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}", "InterfaceMap")]
-	public partial interface IForgotPasswordPage : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface IForgotPasswordPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page</para>
 	/// <summary>
-	public struct Static
+	public struct ForgotPasswordPageItemConstants
 	{
-		public static ID ID => new ID("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}");
+		public static ID TemplateID => new ID("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}");
 
 		public struct Fields
 		{
@@ -19408,12 +19410,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.ForgotPa
 #endregion
 
 #region Home (/sitecore/templates/Project/Habitat/Page Types/Home)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Home
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Home</para>
@@ -19421,17 +19423,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Home
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Home</para>
     /// </summary>
     [TemplateMapping("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}", "InterfaceMap")]
-	public partial interface IHome : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.Navigation.NavigationRoot.INavigationRoot, Feature.Social.OpenGraph.IOpenGraph
+	public partial interface IHome : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.Navigation.INavigationRoot, Feature.Social.IOpenGraph
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Home</para>
 	/// <summary>
-	public struct Static
+	public struct HomeItemConstants
 	{
-		public static ID ID => new ID("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}");
+		public static ID TemplateID => new ID("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}");
 
 		public struct Fields
 		{
@@ -19808,12 +19810,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Home
 #endregion
 
 #region Login Page (/sitecore/templates/Project/Habitat/Page Types/Login Page)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.LoginPage
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Login Page</para>
@@ -19821,17 +19823,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.LoginPag
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Login Page</para>
     /// </summary>
     [TemplateMapping("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}", "InterfaceMap")]
-	public partial interface ILoginPage : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface ILoginPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Login Page</para>
 	/// <summary>
-	public struct Static
+	public struct LoginPageItemConstants
 	{
-		public static ID ID => new ID("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}");
+		public static ID TemplateID => new ID("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}");
 
 		public struct Fields
 		{
@@ -20351,12 +20353,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.LoginPag
 #endregion
 
 #region Map Page (/sitecore/templates/Project/Habitat/Page Types/Map Page)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.MapPage
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Map Page</para>
@@ -20364,17 +20366,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.MapPage
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Map Page</para>
     /// </summary>
     [TemplateMapping("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}", "InterfaceMap")]
-	public partial interface IMapPage : ICustomItemWrapper, Feature.Maps.MapPoint.IMapPoint, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Assets.PageAssets.IPageAssets, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface IMapPage : ICustomItemWrapper, Feature.Maps.IMapPoint, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Map Page</para>
 	/// <summary>
-	public struct Static
+	public struct MapPageItemConstants
 	{
-		public static ID ID => new ID("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}");
+		public static ID TemplateID => new ID("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}");
 
 		public struct Fields
 		{
@@ -21095,12 +21097,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.MapPage
 #endregion
 
 #region News Article (/sitecore/templates/Project/Habitat/Page Types/News Article)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.NewsArticle
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: News Article</para>
@@ -21108,17 +21110,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.NewsArti
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/News Article</para>
     /// </summary>
     [TemplateMapping("{B69277AD-E917-4B9F-9136-A12E0A3E462F}", "InterfaceMap")]
-	public partial interface INewsArticle : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.News.NewsArticle.INewsArticle, Feature.Social.OpenGraph.IOpenGraph, Foundation.Assets.PageAssets.IPageAssets, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface INewsArticle : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.News.INewsArticle, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/News Article</para>
 	/// <summary>
-	public struct Static
+	public struct NewsArticleItemConstants
 	{
-		public static ID ID => new ID("{B69277AD-E917-4B9F-9136-A12E0A3E462F}");
+		public static ID TemplateID => new ID("{B69277AD-E917-4B9F-9136-A12E0A3E462F}");
 
 		public struct Fields
 		{
@@ -21696,12 +21698,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.NewsArti
 #endregion
 
 #region News List (/sitecore/templates/Project/Habitat/Page Types/News List)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.NewsList
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: News List</para>
@@ -21709,17 +21711,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.NewsList
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/News List</para>
     /// </summary>
     [TemplateMapping("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}", "InterfaceMap")]
-	public partial interface INewsList : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.News.NewsFolder.INewsFolder, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Assets.PageAssets.IPageAssets
+	public partial interface INewsList : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.News.INewsFolder, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/News List</para>
 	/// <summary>
-	public struct Static
+	public struct NewsListItemConstants
 	{
-		public static ID ID => new ID("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}");
+		public static ID TemplateID => new ID("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}");
 
 		public struct Fields
 		{
@@ -22326,12 +22328,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.NewsList
 #endregion
 
 #region Register Page (/sitecore/templates/Project/Habitat/Page Types/Register Page)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.RegisterPage
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Register Page</para>
@@ -22339,17 +22341,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Register
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Register Page</para>
     /// </summary>
     [TemplateMapping("{6EF8F8A0-C567-495B-9E00-8775A268A486}", "InterfaceMap")]
-	public partial interface IRegisterPage : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface IRegisterPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Register Page</para>
 	/// <summary>
-	public struct Static
+	public struct RegisterPageItemConstants
 	{
-		public static ID ID => new ID("{6EF8F8A0-C567-495B-9E00-8775A268A486}");
+		public static ID TemplateID => new ID("{6EF8F8A0-C567-495B-9E00-8775A268A486}");
 
 		public struct Fields
 		{
@@ -22869,12 +22871,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Register
 #endregion
 
 #region Search Results (/sitecore/templates/Project/Habitat/Page Types/Search Results)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.SearchResults
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Search Results</para>
@@ -22882,17 +22884,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.SearchRe
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Search Results</para>
     /// </summary>
     [TemplateMapping("{92168572-385B-45F0-B40F-3D987AD20E5C}", "InterfaceMap")]
-	public partial interface ISearchResults : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Search.SearchResults.ISearchResults, Feature.Social.OpenGraph.IOpenGraph, Foundation.Assets.PageAssets.IPageAssets
+	public partial interface ISearchResults : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Search.ISearchResults, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Search Results</para>
 	/// <summary>
-	public struct Static
+	public struct SearchResultsItemConstants
 	{
-		public static ID ID => new ID("{92168572-385B-45F0-B40F-3D987AD20E5C}");
+		public static ID TemplateID => new ID("{92168572-385B-45F0-B40F-3D987AD20E5C}");
 
 		public struct Fields
 		{
@@ -23557,12 +23559,12 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.SearchRe
 #endregion
 
 #region Section (/sitecore/templates/Project/Habitat/Page Types/Section)
-namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Section
+namespace Project.Habitat
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
     using Fortis.Providers;
-    using Fortis.Foundation.CodeGen.Custom;
+    using CustomWrappers;
     /// <summary>
     /// <para>Template interface</para>
     /// <para>Template: Section</para>
@@ -23570,17 +23572,17 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Section
     /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Section</para>
     /// </summary>
     [TemplateMapping("{8EE208F9-A6A6-41E2-88A0-C188737A178C}", "InterfaceMap")]
-	public partial interface ISection : ICustomItemWrapper, Feature.Metadata.PageMetadata.IPageMetadata, Feature.Navigation.Navigable.INavigable, Feature.PageContent.HasPageContent.IHasPageContent, Feature.Social.OpenGraph.IOpenGraph, Foundation.Assets.PageAssets.IPageAssets, Foundation.Indexing.IndexedItem.IIndexedItem
+	public partial interface ISection : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
     {
     }
 
 	/// <summary>
-	/// <para>Static struct for accessing template ID and field ID and names.</para>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Section</para>
 	/// <summary>
-	public struct Static
+	public struct SectionItemConstants
 	{
-		public static ID ID => new ID("{8EE208F9-A6A6-41E2-88A0-C188737A178C}");
+		public static ID TemplateID => new ID("{8EE208F9-A6A6-41E2-88A0-C188737A178C}");
 
 		public struct Fields
 		{
@@ -24215,3 +24217,4 @@ namespace Fortis.Foundation.CodeGen.Templates.Project.Habitat.PageTypes.Section
 }
 #endregion
 
+}
