@@ -1,19 +1,20 @@
-﻿@using Sitecore.Feature.FAQ
-@using Sitecore.Feature.FAQ.Repositories
+﻿@using Sitecore.Feature.FAQ.Repositories
 @using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Mvc
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.FAQ
+@model IRenderingModel<IFAQ, IFAQGroup>
 
-@if (!Model?.Item?.IsDerived(Templates.FaqGroup.ID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(FAQGroupItemConstants.TemplateID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.FaqGroup.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(FAQGroupItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
 @{
-  var elements = FaqRepository.Get(Model.Item).ToArray();
+  var elements = FaqRepository.Get(Model.RenderingItem).ToArray();
 }
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   @foreach (var item in elements)
@@ -24,13 +25,13 @@
         <div class="panel-title">
           <a role="button" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#@id">
             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            @Html.Sitecore().Field(Templates.Faq.Fields.Question, item)
+            @item.Question
           </a>
         </div>
       </div>
       <div id=@id class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingcollapse0">
         <div class="panel-body">
-          @Html.Sitecore().Field(Templates.Faq.Fields.Answer, item)
+          @item.Answer
         </div>
       </div>
     </div>

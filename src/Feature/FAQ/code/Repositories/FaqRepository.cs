@@ -1,19 +1,20 @@
 ﻿namespace Sitecore.Feature.FAQ.Repositories
 {
-  using System;
-  using System.Collections.Generic;
-  using System.Linq;
-  using Sitecore.Data.Items;
-  using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Sitecore.Data.Items;
+    using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using Fortis.Foundation.CodeGen.Templates.Feature.FAQ;
 
-  public static class FaqRepository
-  {
-    public static IEnumerable<Item> Get([NotNull] Item item)
+    public static class FaqRepository
     {
-      if (item == null)
-        throw new ArgumentNullException(nameof(item));
+        public static IEnumerable<IFAQ> Get([NotNull] IFAQGroup item)
+        {
+            if (item == null)
+                throw new ArgumentNullException(nameof(item));
 
-      return item.GetMultiListValueItems(Templates.FaqGroup.Fields.GroupMember).Where(i => i.IsDerived(Templates.Faq.ID));
+            return item.GroupMember.GetItems<IFAQ>();
+        }
     }
-  }
 }
