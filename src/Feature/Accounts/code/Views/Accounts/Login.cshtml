@@ -1,8 +1,8 @@
-﻿@using Sitecore.Feature.Accounts
-@using Sitecore.Feature.Accounts.Services
+﻿@using Sitecore.Feature.Accounts.Services
 @using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Mvc.Configuration
+@using Fortis.Foundation.CodeGen.Templates.Feature.Accounts
 @model Sitecore.Feature.Accounts.Models.LoginInfo
 
 @using (Html.BeginRouteForm(MvcSettings.SitecoreRouteName, FormMethod.Post, new { @class = "form-signin" }))
@@ -51,8 +51,8 @@
             <input type="submit" class="btn btn-primary btn-lg btn-block" value="@Html.Sitecore().Dictionary("/Accounts/Login/Login", "Login")"/>
         </div>
         <div class="col-lg-6">
-            <a href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, Templates.AccountsSettings.Fields.RegisterPage)" class="btn btn-default btn-lg btn-block">@Html.Sitecore().DictionaryField("/Accounts/Login/Register", "Register")</a>
+            <a href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsItemConstants.Fields.RegisterPage.ID)" class="btn btn-default btn-lg btn-block">@Html.Sitecore().DictionaryField("/Accounts/Login/Register", "Register")</a>
         </div>
     </div>
-    <a href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, Templates.AccountsSettings.Fields.ForgotPasswordPage)" class="btn btn-link">@Html.Sitecore().DictionaryField("/Accounts/Login/Forgot Your Password", "Forgot your password?")</a>
+    <a href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsItemConstants.Fields.ForgotPasswordPage.ID)" class="btn btn-link">@Html.Sitecore().DictionaryField("/Accounts/Login/Forgot Your Password", "Forgot your password?")</a>
 }

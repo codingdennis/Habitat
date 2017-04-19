@@ -3,6 +3,7 @@
     using System;
     using System.Web;
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Accounts;
 
     public class GetRedirectUrlService : IGetRedirectUrlService
     {
@@ -39,9 +40,9 @@
             switch (status)
             {
                 case AuthenticationStatus.Unauthenticated:
-                    return this.accountsSettingsService.GetPageLinkOrDefault(Context.Item, Templates.AccountsSettings.Fields.LoginPage, Context.Site.GetRootItem());
+                    return this.accountsSettingsService.GetPageLinkOrDefault(Context.Item, AccountsSettingsItemConstants.Fields.LoginPage.ID, Context.Site.GetRootItem());
                 case AuthenticationStatus.Authenticated:
-                    return this.accountsSettingsService.GetPageLinkOrDefault(Context.Item, Templates.AccountsSettings.Fields.AfterLoginPage, Context.Site.GetRootItem());
+                    return this.accountsSettingsService.GetPageLinkOrDefault(Context.Item, AccountsSettingsItemConstants.Fields.AfterLoginPage.ID, Context.Site.GetRootItem());
                 default:
                     throw new ArgumentOutOfRangeException(nameof(status), status, null);
             }

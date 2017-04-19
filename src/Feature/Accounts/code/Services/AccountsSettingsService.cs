@@ -9,6 +9,7 @@
     using Sitecore.Diagnostics;
     using Sitecore.Exceptions;
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Accounts;
 
     public class AccountsSettingsService : IAccountsSettingsService
     {
@@ -55,14 +56,14 @@
                 throw new ItemNotFoundException("Page with accounts settings isn't specified");
             }
 
-            ReferenceField field = item.Fields[Templates.AccountsSettings.Fields.RegisterOutcome];
+            ReferenceField field = item.Fields[AccountsSettingsItemConstants.Fields.RegisterOutcome.ID];
             return field?.TargetID;
         }
 
         public MailMessage GetForgotPasswordMailTemplate()
         {
             var settingsItem = this.GetAccountsSettingsItem(null);
-            InternalLinkField link = settingsItem.Fields[Templates.AccountsSettings.Fields.ForgotPasswordMailTemplate];
+            InternalLinkField link = settingsItem.Fields[AccountsSettingsItemConstants.Fields.ForgotPasswordMailTemplate.ID];
             var mailTemplateItem = link.TargetItem;
 
             if (mailTemplateItem == null)
@@ -70,15 +71,15 @@
                 throw new ItemNotFoundException($"Could not find mail template item with {link.TargetID} ID");
             }
 
-            var fromMail = mailTemplateItem.Fields[Templates.MailTemplate.Fields.From];
+            var fromMail = mailTemplateItem.Fields[MailTemplateItemConstants.Fields.From.ID];
 
             if (string.IsNullOrEmpty(fromMail.Value))
             {
                 throw new InvalidValueException("'From' field in mail template should be set");
             }
 
-            var body = mailTemplateItem.Fields[Templates.MailTemplate.Fields.Body];
-            var subject = mailTemplateItem.Fields[Templates.MailTemplate.Fields.Subject];
+            var body = mailTemplateItem.Fields[MailTemplateItemConstants.Fields.Body.ID];
+            var subject = mailTemplateItem.Fields[MailTemplateItemConstants.Fields.Subject.ID];
 
             return new MailMessage
             {
@@ -94,9 +95,9 @@
 
             if (contextItem != null)
             {
-                item = contextItem.GetAncestorOrSelfOfTemplate(Templates.AccountsSettings.ID);
+                item = contextItem.GetAncestorOrSelfOfTemplate(AccountsSettingsItemConstants.TemplateID);
             }
-            item = item ?? Context.Site.GetContextItem(Templates.AccountsSettings.ID);
+            item = item ?? Context.Site.GetContextItem(AccountsSettingsItemConstants.TemplateID);
 
             return item;
         }

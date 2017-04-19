@@ -1,7 +1,7 @@
-﻿@using Sitecore.Feature.Accounts
-@using Sitecore.Feature.Accounts.Models
+﻿@using Sitecore.Feature.Accounts.Models
 @using Sitecore.Feature.Accounts.Services
 @using Sitecore.Foundation.Dictionary.Extensions
+@using Fortis.Foundation.CodeGen.Templates.Feature.Accounts
 @model Sitecore.Mvc.Presentation.RenderingModel
 
 @{
@@ -42,7 +42,7 @@
             <label class="control-label">@Html.Sitecore().DictionaryField("/Accounts/Accounts Menu/Email", "E-mail")</label>
             <div class="form-control-static">@Sitecore.Context.User.Profile.Email</div>
           </div>
-          <a class="btn btn-block btn-primary" href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Model.Item, Templates.AccountsSettings.Fields.AccountsDetailsPage)">@Html.Sitecore().DictionaryField("/Accounts/Accounts Menu/Edit Details", "Edit details")</a>
+          <a class="btn btn-block btn-primary" href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Model.Item, AccountsSettingsItemConstants.Fields.AccountsDetailsPage.ID)">@Html.Sitecore().DictionaryField("/Accounts/Accounts Menu/Edit Details", "Edit details")</a>
           <button type="submit" class="btn btn-block btn-default">@Html.Sitecore().Dictionary("/Accounts/Accounts Menu/Logout", "Logout")</button>
         }
       }
