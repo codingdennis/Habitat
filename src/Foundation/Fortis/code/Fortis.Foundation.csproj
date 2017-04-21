@@ -134,6 +134,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Foundation\Foundation.Fortis.Mvc.config" />
     <None Include="CodeGen\CodeGen.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>CodeGen.cs</LastGenOutput>
