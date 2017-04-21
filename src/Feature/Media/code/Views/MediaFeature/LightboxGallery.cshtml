@@ -1,65 +1,69 @@
-﻿@using Sitecore.Feature.Media
-@using Sitecore.Feature.Media.Repositories
+﻿@using Sitecore.Feature.Media.Repositories
 @using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Resources.Media
-@model Sitecore.Mvc.Presentation.RenderingModel
-@if (!Model?.Item?.IsDerived(Templates.HasMediaSelector.ID) ?? true)
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Media
+@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
+@model IRenderingModel<IItemWrapper, ICarousel>
+@if (!Model?.RenderingItem?.IsDerived(CarouselItemConstants.TemplateID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasMediaSelector.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
-  return;
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+    return;
 }
-
 @{
-  var galleryId = "gallery" + Guid.NewGuid().ToString("N");
-  var elements = MediaSelectorElementsRepository.Get(Model.Item).ToArray();
+    var galleryId = "gallery" + Guid.NewGuid().ToString("N");
+    var elements = MediaSelectorElementsRepository.Get(Model.RenderingItem);
+
+    var thumbnailWidth = 750;
+    var maxWidth = 1200;
 }
-
-
 <div class="block-grid-lg-4 block-grid-md-3 block-grid-sm-2 block-grid-xs-1" id="@galleryId">
-  @foreach (var element in elements)
-  {
-    const int ThumbnailWidth = 750;
-    const int maxWidth = 1200;
-    var thumbnailField = element.Item.FieldHasValue(Templates.HasMedia.Fields.Thumbnail) ? Templates.HasMedia.Fields.Thumbnail : Templates.HasMediaImage.Fields.Image;
-    var thumbnail = Html.Sitecore().ImageField(thumbnailField, element.Item, mw: ThumbnailWidth, cssClass: "img-responsive");
-    if (string.IsNullOrWhiteSpace(thumbnail?.ToString()))
+    @foreach (var element in elements)
     {
-      continue;
-    }
+        var isVideo = element.Item.IsDerived(HasMediaVideoItemConstants.TemplateID);
+        var isImage = element.Item.IsDerived(HasMediaImageItemConstants.TemplateID);
 
-    <div class="block-grid-item">
-      <div class="thumbnail mosaic mosaic-circle lightbox-item lightbox-image">
-        <div class="mosaic-overlay mosaic-overlay-no-pointer">
-          @if (element.Item.IsDerived(Templates.HasMediaVideo.ID))
-          {
-            <span class="fa fa-play-circle icon-lg"></span>
-          }
-          else
-          {
-            <span class="fa fa-search-plus icon-lg"></span>
-          }
+        var thumbnail = isImage ? (element.Item as IHasMediaImage)?.MediaImage?.Render(new { @class = "img-responsive", mw = thumbnailWidth }) :
+                                  (element.Item as IHasMedia)?.MediaThumbnail?.Render(new { @class = "img-responsive", mw = thumbnailWidth });
+        if (string.IsNullOrWhiteSpace(thumbnail?.ToString()))
+        {
+            continue;
+        }
+
+        <div class="block-grid-item">
+            <div class="thumbnail mosaic mosaic-circle lightbox-item lightbox-image">
+                <div class="mosaic-overlay mosaic-overlay-no-pointer">
+                    @if (isVideo)
+                    {
+                        <span class="fa fa-play-circle icon-lg"></span>
+                    }
+                    else
+                    {
+                        <span class="fa fa-search-plus icon-lg"></span>
+                    }
+                </div>
+                <div class="mosaic-backdrop">
+                    @if (isVideo)
+                    {
+                        var videoItem = element.Item as IHasMediaVideo;
+                        if (videoItem?.MediaVideoLink != null && videoItem.MediaVideoLink.HasValue)
+                        {
+                            <a href="@videoItem.MediaVideoLink.Url" data-type="image" data-title="@videoItem.MediaTitleValue" data-footer="@Html.Encode(@videoItem.MediaDescriptionValue)" data-toggle="lightbox" data-gallery="@galleryId">
+                                @thumbnail
+                            </a>
+                        }
+                    }
+                    else
+                    {
+                        var imageItem = element.Item as IHasMediaImage;
+                        <a href="@imageItem?.MediaImage.GetSourceUri(new MediaUrlOptions(maxWidth, 0, false))" data-type="image" data-title="@imageItem.MediaTitleValue" data-footer="@Html.Encode(imageItem.MediaDescriptionValue)" data-toggle="lightbox" data-gallery="@galleryId">
+                            @thumbnail
+                        </a>
+                    }
+                </div>
+            </div>
         </div>
-        <div class="mosaic-backdrop">
-          @if (element.Item.IsDerived(Templates.HasMediaVideo.ID))
-          {
-            var linkFieldUrl = element.Item.LinkFieldUrl(Templates.HasMediaVideo.Fields.VideoLink);
-            if (!string.IsNullOrWhiteSpace(linkFieldUrl))
-            {
-          <a href="@linkFieldUrl" data-type="image" data-title="@element.Item[Templates.HasMedia.Fields.Title]" data-footer="@Html.Encode(Html.Sitecore().Field(Templates.HasMedia.Fields.Description, element.Item))" data-toggle="lightbox" data-gallery="@galleryId">
-                @thumbnail
-              </a>
-            }
-          }
-          else
-          {
-        <a href="@element.Item.ImageUrl(Templates.HasMediaImage.Fields.Image, new MediaUrlOptions(maxWidth, 0, false))" data-type="image" data-title="@element.Item[Templates.HasMedia.Fields.Title]" data-footer="@Html.Encode(Html.Sitecore().Field(Templates.HasMedia.Fields.Description, element.Item))" data-toggle="lightbox" data-gallery="@galleryId">
-              @thumbnail
-            </a>
-          }
-        </div>
-      </div>
-    </div>
-  }
+    }
 </div>

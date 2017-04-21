@@ -1,10 +1,10 @@
 ﻿namespace Sitecore.Feature.Media.Models
 {
-  using Sitecore.Data.Items;
+    using Fortis.Foundation.CustomWrappers;
 
-  public class MediaSelectorElement
-  {
-    public Item Item { get; set; }
-    public string Active { get; set; }
-  }
+    public class MediaSelectorElement
+    {
+        public ICustomItemWrapper Item { get; set; }
+        public string Active { get; set; }
+    }
 }

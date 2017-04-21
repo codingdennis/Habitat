@@ -1,13 +1,13 @@
 namespace Sitecore.Feature.Media.Tests.Infrastructure
 {
-  using Sitecore.FakeDb;
+    using Sitecore.FakeDb;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Media;
 
-  public class VideoTemplate : DbTemplate
-  {
-    public VideoTemplate() : base(Templates.HasMediaVideo.ID)
+    public class VideoTemplate : DbTemplate
     {
-      base.Add(Templates.HasMediaVideo.Fields.VideoLink);
-
+        public VideoTemplate() : base(HasMediaVideoItemConstants.TemplateID)
+        {
+            base.Add(HasMediaVideoItemConstants.Fields.MediaVideoLink.ID);
+        }
     }
-  }
 }

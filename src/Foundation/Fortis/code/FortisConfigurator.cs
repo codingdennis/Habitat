@@ -15,13 +15,13 @@ namespace Fortis.Foundation
     {
         public void Configure(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddScoped<IItemFactory, ItemFactory>();
-            serviceCollection.AddScoped<IItemSearchFactory, ItemSearchFactory>();
-            serviceCollection.AddScoped<IContextProvider, ContextProvider>();
+            serviceCollection.AddSingleton<IItemFactory, ItemFactory>();
+            serviceCollection.AddSingleton<IItemSearchFactory, ItemSearchFactory>();
+            serviceCollection.AddSingleton<IContextProvider, ContextProvider>();
             serviceCollection.AddSingleton<IModelAssemblyProvider, ModelAssemblyProvider>();
             serviceCollection.AddSingleton<ISpawnProvider, SpawnProvider>();
             serviceCollection.AddSingleton<ITemplateMapProvider, TemplateMapProvider>();
-            serviceCollection.AddScoped<ISearchResultsAdapter, SearchResultsAdapter>();
+            serviceCollection.AddSingleton<ISearchResultsAdapter, SearchResultsAdapter>();
 
             // Initialise fortis - this is required for places where we can't use DI
             var serviceProvider = serviceCollection.BuildServiceProvider();

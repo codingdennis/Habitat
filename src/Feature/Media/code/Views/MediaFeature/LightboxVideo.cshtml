@@ -1,32 +1,34 @@
-﻿@using Sitecore.Feature.Media
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
+@model IRenderingModel<IItemWrapper, IVideo>
 
-@if (!Model?.Item?.IsDerived(Templates.HasMediaVideo.ID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(VideoItemConstants.TemplateID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasMediaVideo.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(VideoItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 
-@*TODO: Page editor mode*@@{
-                              const int thumbnailWidth = 750;
-                              var thumbnail = Html.Sitecore().ImageField(Templates.HasMedia.Fields.Thumbnail.ToString(), Model.Item, mw: thumbnailWidth, cssClass: "img-responsive");
-                              if (thumbnail == null || string.IsNullOrWhiteSpace(thumbnail.ToString()))
-                              {
-                                  return;
-                              }
+@*TODO: Page editor mode*@
+@{
+    const int ThumbnailWidth = 750;
+    var thumbnail = Model.RenderingItem.MediaThumbnail.Render(new {@class = "img-responsive", mw = ThumbnailWidth});
 
-                              var mediaType = Model.Item.LinkFieldOptions(Templates.HasMediaVideo.Fields.VideoLink, LinkFieldOption.LinkType);
-                          }
+    if (string.IsNullOrWhiteSpace(thumbnail?.ToString()))
+    {
+        return;
+    }
+
+    var mediaType = Model.RenderingItem.MediaVideoLink.IsMediaLink? "video" : "";
+}
 
 <div class="thumbnail mosaic mosaic-circle lightbox-item lightbox-image">
     <div class="mosaic-overlay mosaic-overlay-no-pointer">
         <span class="fa fa-play-circle icon-lg"></span>
     </div>
     <div class="mosaic-backdrop">
-        <a href="@Model.Item.LinkFieldUrl(Templates.HasMediaVideo.Fields.VideoLink)" data-type="@(mediaType == "media" ? "video" : "")" data-title="@Model.Item[Templates.HasMedia.Fields.Title]" data-footer="@Html.Encode(Html.Sitecore().Field(Templates.HasMedia.Fields.Description, Model.Item))" data-toggle="lightbox" data-gallery="page" data-width="@thumbnailWidth">
+        <a href="@Model.RenderingItem.MediaVideoLink.Url" data-type="@mediaType" data-title="@Model.RenderingItem.MediaTitleValue" data-footer="@Html.Encode(Model.RenderingItem.MediaDescriptionValue)" data-toggle="lightbox" data-gallery="page" data-width="@ThumbnailWidth">
             @thumbnail
         </a>
     </div>

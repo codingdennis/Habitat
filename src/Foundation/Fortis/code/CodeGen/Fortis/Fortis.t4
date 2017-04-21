@@ -118,32 +118,6 @@ public void GenerateTemplate(ITemplate template)
 <#+ } #>
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para><#= template.Path #></para>
-	/// <summary>
-	public struct <#=ClassItemName(template.Name)#>Constants
-	{
-		public static ID TemplateID => new ID("<#=template.Id.ToUpper()#>");
-		public static string TemplateName = "<#=template.Name#>";
-
-		public struct Fields
-		{
-<#+
-	foreach(var field in template.CombinedFields)
-	{
-#>
-			public struct <#=TitleCase(field.Name)#>
-			{
-				public static ID ID = new ID("<#=field.Id.ToUpper()#>");
-				public static string FieldName = "<#=field.Name#>";
-			}
-<#+
-	}
-#>
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para><#= template.Path #></para>
@@ -206,6 +180,32 @@ public void GenerateTemplate(ITemplate template)
     } // End of fields loop
 #>	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para><#= template.Path #></para>
+	/// <summary>
+	public struct <#=ClassItemName(template.Name)#>Constants
+	{
+		public static ID TemplateID => new ID("<#=template.Id.ToUpper()#>");
+		public static string TemplateName = "<#=template.Name#>";
+
+		public struct Fields
+		{
+<#+
+	foreach(var field in template.CombinedFields)
+	{
+#>
+			public struct <#=TitleCase(field.Name)#>
+			{
+				public static ID ID = new ID("<#=field.Id.ToUpper()#>");
+				public static string FieldName = "<#=field.Name#>";
+			}
+<#+
+	}
+#>
+		}
+	}
 <#+    
 } // End of GenerateTemplate method
 
@@ -218,7 +218,8 @@ public string FullNamespace(string path)
 public string ModuleNamespace(string path)
 {
 	var fullNamespace = FullNamespace(path);
-	return string.Join(".", fullNamespace.Split(new char[] {'.'}).Take(2));
+	var tokens = fullNamespace.Split(new char[] {'.'});
+	return string.Join(".", fullNamespace.Split(new char[] {'.'}).Take(tokens.Length > 3? tokens.Length - 1 : 2));
 }
 
 public string TitleCase(string name)
@@ -325,7 +326,7 @@ public string GetFieldWrapperType(string typeName)
             wrapperType = "BooleanFieldWrapper";
             break;
         case "image":
-            wrapperType = "ImageFieldWrapper";
+            wrapperType = "CustomImageFieldWrapper";
             break;
         case "file":
             wrapperType = "FileFieldWrapper";
@@ -349,7 +350,8 @@ public string GetFieldWrapperType(string typeName)
             break;
         case "general link":
         case "general link with search":
-            wrapperType = "GeneralLinkFieldWrapper";
+		case "link":
+            wrapperType = "CustomGeneralLinkFieldWrapper";
             break;
         case "text":
         case "single-line text":

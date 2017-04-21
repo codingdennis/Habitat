@@ -1,7 +1,7 @@
 ﻿
 /*
  * Fortis Template Models for Habitat, based on Unicorn serialization.
- * Generated at 04/19/2017 15:32:09
+ * Generated at 04/20/2017 15:00:47
  *
  * To regenerate after template changes, right-click on CodeGen.tt and select Run Custom Tool.
  */
@@ -93,40 +93,6 @@ namespace Feature.Accounts
 		string PhoneValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Accounts/_UserProfile</para>
-	/// <summary>
-	public struct UserProfileItemConstants
-	{
-		public static ID TemplateID => new ID("{696D276B-786A-4D1E-B8BB-8E139DB7BE7C}");
-		public static string TemplateName = "_UserProfile";
-
-		public struct Fields
-		{
-			public struct FirstName
-			{
-				public static ID ID = new ID("{E7BC8A3E-3201-4556-B2FF-FF4DB04DB081}");
-				public static string FieldName = "FirstName";
-			}
-			public struct Interest
-			{
-				public static ID ID = new ID("{A5D0B0AD-CE4E-4E06-B821-F30416B7DEC9}");
-				public static string FieldName = "Interest";
-			}
-			public struct LastName
-			{
-				public static ID ID = new ID("{EE21278F-4F83-4A10-8890-66B957F3D312}");
-				public static string FieldName = "LastName";
-			}
-			public struct Phone
-			{
-				public static ID ID = new ID("{F7A1605F-7BBB-4BC7-BBB4-9E0546648E1D}");
-				public static string FieldName = "Phone";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -243,6 +209,40 @@ namespace Feature.Accounts
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Accounts/_UserProfile</para>
+	/// <summary>
+	public struct UserProfileItemConstants
+	{
+		public static ID TemplateID => new ID("{696D276B-786A-4D1E-B8BB-8E139DB7BE7C}");
+		public static string TemplateName = "_UserProfile";
+
+		public struct Fields
+		{
+			public struct FirstName
+			{
+				public static ID ID = new ID("{E7BC8A3E-3201-4556-B2FF-FF4DB04DB081}");
+				public static string FieldName = "FirstName";
+			}
+			public struct Interest
+			{
+				public static ID ID = new ID("{A5D0B0AD-CE4E-4E06-B821-F30416B7DEC9}");
+				public static string FieldName = "Interest";
+			}
+			public struct LastName
+			{
+				public static ID ID = new ID("{EE21278F-4F83-4A10-8890-66B957F3D312}");
+				public static string FieldName = "LastName";
+			}
+			public struct Phone
+			{
+				public static ID ID = new ID("{F7A1605F-7BBB-4BC7-BBB4-9E0546648E1D}");
+				public static string FieldName = "Phone";
+			}
+		}
+	}
     
 }
 #endregion
@@ -327,55 +327,6 @@ namespace Feature.Accounts
 		string RegisterPageValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Accounts/_AccountsSettings</para>
-	/// <summary>
-	public struct AccountsSettingsItemConstants
-	{
-		public static ID TemplateID => new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
-		public static string TemplateName = "_AccountsSettings";
-
-		public struct Fields
-		{
-			public struct AccountsDetailsPage
-			{
-				public static ID ID = new ID("{ED71D374-8C33-4561-991D-77482AE01330}");
-				public static string FieldName = "Accounts Details Page";
-			}
-			public struct AfterLoginPage
-			{
-				public static ID ID = new ID("{B128E2B3-3865-4F1C-A147-5F248676D3F5}");
-				public static string FieldName = "After Login Page";
-			}
-			public struct ForgotPasswordMailTemplate
-			{
-				public static ID ID = new ID("{365254C4-1C1C-493A-9710-671574717898}");
-				public static string FieldName = "Forgot Password Mail Template";
-			}
-			public struct ForgotPasswordPage
-			{
-				public static ID ID = new ID("{F3CD2BB8-472B-4DF0-87C0-A13098E391CA}");
-				public static string FieldName = "Forgot Password Page";
-			}
-			public struct LoginPage
-			{
-				public static ID ID = new ID("{60745023-FFD5-400E-8F80-4BCA9F2ABB29}");
-				public static string FieldName = "Login Page";
-			}
-			public struct RegisterOutcome
-			{
-				public static ID ID = new ID("{835FA523-D28A-46A2-A589-6AA4A5BF0846}");
-				public static string FieldName = "Register Outcome";
-			}
-			public struct RegisterPage
-			{
-				public static ID ID = new ID("{71962360-10D8-4B98-BB8D-57660CE11127}");
-				public static string FieldName = "Register Page";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -552,6 +503,55 @@ namespace Feature.Accounts
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Accounts/_AccountsSettings</para>
+	/// <summary>
+	public struct AccountsSettingsItemConstants
+	{
+		public static ID TemplateID => new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
+		public static string TemplateName = "_AccountsSettings";
+
+		public struct Fields
+		{
+			public struct AccountsDetailsPage
+			{
+				public static ID ID = new ID("{ED71D374-8C33-4561-991D-77482AE01330}");
+				public static string FieldName = "Accounts Details Page";
+			}
+			public struct AfterLoginPage
+			{
+				public static ID ID = new ID("{B128E2B3-3865-4F1C-A147-5F248676D3F5}");
+				public static string FieldName = "After Login Page";
+			}
+			public struct ForgotPasswordMailTemplate
+			{
+				public static ID ID = new ID("{365254C4-1C1C-493A-9710-671574717898}");
+				public static string FieldName = "Forgot Password Mail Template";
+			}
+			public struct ForgotPasswordPage
+			{
+				public static ID ID = new ID("{F3CD2BB8-472B-4DF0-87C0-A13098E391CA}");
+				public static string FieldName = "Forgot Password Page";
+			}
+			public struct LoginPage
+			{
+				public static ID ID = new ID("{60745023-FFD5-400E-8F80-4BCA9F2ABB29}");
+				public static string FieldName = "Login Page";
+			}
+			public struct RegisterOutcome
+			{
+				public static ID ID = new ID("{835FA523-D28A-46A2-A589-6AA4A5BF0846}");
+				public static string FieldName = "Register Outcome";
+			}
+			public struct RegisterPage
+			{
+				public static ID ID = new ID("{71962360-10D8-4B98-BB8D-57660CE11127}");
+				public static string FieldName = "Register Page";
+			}
+		}
+	}
     
 }
 #endregion
@@ -588,25 +588,6 @@ namespace Feature.Accounts
 		string TitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Accounts/_Interest</para>
-	/// <summary>
-	public struct InterestItemConstants
-	{
-		public static ID TemplateID => new ID("{C9B1855E-CA80-4414-B5BA-956CB67DC5A9}");
-		public static string TemplateName = "_Interest";
-
-		public struct Fields
-		{
-			public struct Title
-			{
-				public static ID ID = new ID("{1FBE5200-2C62-4A32-BA84-CFFE3CF665D3}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -650,6 +631,25 @@ namespace Feature.Accounts
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Accounts/_Interest</para>
+	/// <summary>
+	public struct InterestItemConstants
+	{
+		public static ID TemplateID => new ID("{C9B1855E-CA80-4414-B5BA-956CB67DC5A9}");
+		public static string TemplateName = "_Interest";
+
+		public struct Fields
+		{
+			public struct Title
+			{
+				public static ID ID = new ID("{1FBE5200-2C62-4A32-BA84-CFFE3CF665D3}");
+				public static string FieldName = "Title";
+			}
+		}
 	}
     
 }
@@ -732,40 +732,6 @@ namespace Feature.Accounts
 		string TitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Accounts/_LoginTeaser</para>
-	/// <summary>
-	public struct LoginTeaserItemConstants
-	{
-		public static ID TemplateID => new ID("{EF38D9E6-313C-491C-8648-79436D10091C}");
-		public static string TemplateName = "_LoginTeaser";
-
-		public struct Fields
-		{
-			public struct LoggedInSummary
-			{
-				public static ID ID = new ID("{76183BC1-755C-428B-A35A-1425309990BE}");
-				public static string FieldName = "Logged In Summary";
-			}
-			public struct LoggedInTitle
-			{
-				public static ID ID = new ID("{39AABCF6-426C-4AD1-8B3D-A5135F219455}");
-				public static string FieldName = "Logged In Title";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{FFAB401B-8D7C-4172-A82A-AE32B7D2C6C1}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{D9843186-ED10-47D8-8CC7-511AC670B6B4}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -882,6 +848,40 @@ namespace Feature.Accounts
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Accounts/_LoginTeaser</para>
+	/// <summary>
+	public struct LoginTeaserItemConstants
+	{
+		public static ID TemplateID => new ID("{EF38D9E6-313C-491C-8648-79436D10091C}");
+		public static string TemplateName = "_LoginTeaser";
+
+		public struct Fields
+		{
+			public struct LoggedInSummary
+			{
+				public static ID ID = new ID("{76183BC1-755C-428B-A35A-1425309990BE}");
+				public static string FieldName = "Logged In Summary";
+			}
+			public struct LoggedInTitle
+			{
+				public static ID ID = new ID("{39AABCF6-426C-4AD1-8B3D-A5135F219455}");
+				public static string FieldName = "Logged In Title";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{FFAB401B-8D7C-4172-A82A-AE32B7D2C6C1}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{D9843186-ED10-47D8-8CC7-511AC670B6B4}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
@@ -948,35 +948,6 @@ namespace Feature.Accounts
 		string SubjectValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Accounts/_MailTemplate</para>
-	/// <summary>
-	public struct MailTemplateItemConstants
-	{
-		public static ID TemplateID => new ID("{26DF8F38-7E1B-43D2-85DD-68DF05FA276B}");
-		public static string TemplateName = "_MailTemplate";
-
-		public struct Fields
-		{
-			public struct Body
-			{
-				public static ID ID = new ID("{1519CCAD-ED26-4F60-82CA-22079AF44D16}");
-				public static string FieldName = "Body";
-			}
-			public struct From
-			{
-				public static ID ID = new ID("{8605948C-60FB-46B8-8AAA-4C52561B53BC}");
-				public static string FieldName = "From";
-			}
-			public struct Subject
-			{
-				public static ID ID = new ID("{0F45DF05-546F-462D-97C0-BA4FB2B02564}");
-				public static string FieldName = "Subject";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -1069,6 +1040,35 @@ namespace Feature.Accounts
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Accounts/_MailTemplate</para>
+	/// <summary>
+	public struct MailTemplateItemConstants
+	{
+		public static ID TemplateID => new ID("{26DF8F38-7E1B-43D2-85DD-68DF05FA276B}");
+		public static string TemplateName = "_MailTemplate";
+
+		public struct Fields
+		{
+			public struct Body
+			{
+				public static ID ID = new ID("{1519CCAD-ED26-4F60-82CA-22079AF44D16}");
+				public static string FieldName = "Body";
+			}
+			public struct From
+			{
+				public static ID ID = new ID("{8605948C-60FB-46B8-8AAA-4C52561B53BC}");
+				public static string FieldName = "From";
+			}
+			public struct Subject
+			{
+				public static ID ID = new ID("{0F45DF05-546F-462D-97C0-BA4FB2B02564}");
+				public static string FieldName = "Subject";
+			}
+		}
+	}
     
 }
 #endregion
@@ -1120,30 +1120,6 @@ namespace Feature.Accounts
 		Guid UserProfileValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Accounts/_ProfileSettings</para>
-	/// <summary>
-	public struct ProfileSettingsItemConstants
-	{
-		public static ID TemplateID => new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
-		public static string TemplateName = "_ProfileSettings";
-
-		public struct Fields
-		{
-			public struct InterestsFolder
-			{
-				public static ID ID = new ID("{021AA3F7-206F-4ACC-9538-F6D7FE86B168}");
-				public static string FieldName = "Interests Folder";
-			}
-			public struct UserProfile
-			{
-				public static ID ID = new ID("{378B7D87-5775-4EB6-86B7-282D5359B1C6}");
-				public static string FieldName = "User Profile";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -1212,6 +1188,30 @@ namespace Feature.Accounts
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Accounts/_ProfileSettings</para>
+	/// <summary>
+	public struct ProfileSettingsItemConstants
+	{
+		public static ID TemplateID => new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
+		public static string TemplateName = "_ProfileSettings";
+
+		public struct Fields
+		{
+			public struct InterestsFolder
+			{
+				public static ID ID = new ID("{021AA3F7-206F-4ACC-9538-F6D7FE86B168}");
+				public static string FieldName = "Interests Folder";
+			}
+			public struct UserProfile
+			{
+				public static ID ID = new ID("{378B7D87-5775-4EB6-86B7-282D5359B1C6}");
+				public static string FieldName = "User Profile";
+			}
+		}
+	}
     
 }
 #endregion
@@ -1248,25 +1248,6 @@ namespace Feature.Demo
 		Guid TokenValueValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Demo/_CampaignToken</para>
-	/// <summary>
-	public struct CampaignTokenItemConstants
-	{
-		public static ID TemplateID => new ID("{01628DCB-611F-495E-A1DA-E89027AB7035}");
-		public static string TemplateName = "_CampaignToken";
-
-		public struct Fields
-		{
-			public struct TokenValue
-			{
-				public static ID ID = new ID("{3B485BD9-DEAE-4AAF-9C32-4106C4214162}");
-				public static string FieldName = "Token Value";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -1311,6 +1292,25 @@ namespace Feature.Demo
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Demo/_CampaignToken</para>
+	/// <summary>
+	public struct CampaignTokenItemConstants
+	{
+		public static ID TemplateID => new ID("{01628DCB-611F-495E-A1DA-E89027AB7035}");
+		public static string TemplateName = "_CampaignToken";
+
+		public struct Fields
+		{
+			public struct TokenValue
+			{
+				public static ID ID = new ID("{3B485BD9-DEAE-4AAF-9C32-4106C4214162}");
+				public static string FieldName = "Token Value";
+			}
+		}
+	}
     
 }
 #endregion
@@ -1347,25 +1347,6 @@ namespace Feature.Demo
 		string HTMLContentValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Demo/_DemoContent</para>
-	/// <summary>
-	public struct DemoContentItemConstants
-	{
-		public static ID TemplateID => new ID("{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}");
-		public static string TemplateName = "_DemoContent";
-
-		public struct Fields
-		{
-			public struct HTMLContent
-			{
-				public static ID ID = new ID("{0BC0AEDF-A6D0-4F74-933C-BD1779CD40B2}");
-				public static string FieldName = "HTML Content";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -1410,6 +1391,25 @@ namespace Feature.Demo
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Demo/_DemoContent</para>
+	/// <summary>
+	public struct DemoContentItemConstants
+	{
+		public static ID TemplateID => new ID("{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}");
+		public static string TemplateName = "_DemoContent";
+
+		public struct Fields
+		{
+			public struct HTMLContent
+			{
+				public static ID ID = new ID("{0BC0AEDF-A6D0-4F74-933C-BD1779CD40B2}");
+				public static string FieldName = "HTML Content";
+			}
+		}
+	}
     
 }
 #endregion
@@ -1436,7 +1436,7 @@ namespace Feature.Demo
         /// <para>Data type: General Link</para>
         /// </summary>
         [IndexField("token_value")]
-        IGeneralLinkFieldWrapper TokenValue { get; }
+        ICustomGeneralLinkFieldWrapper TokenValue { get; }
 		/// <summary>
 		/// <para>Template: _LinkToken</para>
         /// <para>Field: TokenValue</para>
@@ -1446,25 +1446,6 @@ namespace Feature.Demo
 		string TokenValueValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Demo/_LinkToken</para>
-	/// <summary>
-	public struct LinkTokenItemConstants
-	{
-		public static ID TemplateID => new ID("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}");
-		public static string TemplateName = "_LinkToken";
-
-		public struct Fields
-		{
-			public struct TokenValue
-			{
-				public static ID ID = new ID("{4A27A4AA-9201-4D1D-B612-F45DDA086C4C}");
-				public static string FieldName = "Token Value";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -1489,10 +1470,10 @@ namespace Feature.Demo
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("token_value")]
-        public virtual IGeneralLinkFieldWrapper TokenValue
+        public virtual ICustomGeneralLinkFieldWrapper TokenValue
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("Token Value", "token_value"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("Token Value", "token_value"); }
         }
 
         /// <summary>
@@ -1508,6 +1489,25 @@ namespace Feature.Demo
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Demo/_LinkToken</para>
+	/// <summary>
+	public struct LinkTokenItemConstants
+	{
+		public static ID TemplateID => new ID("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}");
+		public static string TemplateName = "_LinkToken";
+
+		public struct Fields
+		{
+			public struct TokenValue
+			{
+				public static ID ID = new ID("{4A27A4AA-9201-4D1D-B612-F45DDA086C4C}");
+				public static string FieldName = "Token Value";
+			}
+		}
 	}
     
 }
@@ -1545,25 +1545,6 @@ namespace Feature.Demo
 		IEnumerable<Guid> SiteProfilesValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Demo/_ProfilingSettings</para>
-	/// <summary>
-	public struct ProfilingSettingsItemConstants
-	{
-		public static ID TemplateID => new ID("{C6D4DDD5-B912-4C1A-A3A3-E1D90E4D0939}");
-		public static string TemplateName = "_ProfilingSettings";
-
-		public struct Fields
-		{
-			public struct SiteProfiles
-			{
-				public static ID ID = new ID("{2A84ECA4-68BB-4451-B4AC-98EA71A5A3DC}");
-				public static string FieldName = "SiteProfiles";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -1608,6 +1589,25 @@ namespace Feature.Demo
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Demo/_ProfilingSettings</para>
+	/// <summary>
+	public struct ProfilingSettingsItemConstants
+	{
+		public static ID TemplateID => new ID("{C6D4DDD5-B912-4C1A-A3A3-E1D90E4D0939}");
+		public static string TemplateName = "_ProfilingSettings";
+
+		public struct Fields
+		{
+			public struct SiteProfiles
+			{
+				public static ID ID = new ID("{2A84ECA4-68BB-4451-B4AC-98EA71A5A3DC}");
+				public static string FieldName = "SiteProfiles";
+			}
+		}
+	}
     
 }
 #endregion
@@ -1644,25 +1644,6 @@ namespace Feature.Demo
 		string TokenValueValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Demo/_TextToken</para>
-	/// <summary>
-	public struct TextTokenItemConstants
-	{
-		public static ID TemplateID => new ID("{327D6873-A384-435A-BE87-7E869782B243}");
-		public static string TemplateName = "_TextToken";
-
-		public struct Fields
-		{
-			public struct TokenValue
-			{
-				public static ID ID = new ID("{7B9F4FE3-6285-4969-9784-B96D49973161}");
-				public static string FieldName = "Token Value";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -1707,6 +1688,25 @@ namespace Feature.Demo
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Demo/_TextToken</para>
+	/// <summary>
+	public struct TextTokenItemConstants
+	{
+		public static ID TemplateID => new ID("{327D6873-A384-435A-BE87-7E869782B243}");
+		public static string TemplateName = "_TextToken";
+
+		public struct Fields
+		{
+			public struct TokenValue
+			{
+				public static ID ID = new ID("{7B9F4FE3-6285-4969-9784-B96D49973161}");
+				public static string FieldName = "Token Value";
+			}
+		}
+	}
     
 }
 #endregion
@@ -1729,20 +1729,6 @@ namespace Feature.Demo
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Demo/_Token</para>
-	/// <summary>
-	public struct TokenItemConstants
-	{
-		public static ID TemplateID => new ID("{A7EBF38A-5F66-4579-92D1-568A8BA50293}");
-		public static string TemplateName = "_Token";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Feature/Demo/_Token</para>
@@ -1761,6 +1747,20 @@ namespace Feature.Demo
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Demo/_Token</para>
+	/// <summary>
+	public struct TokenItemConstants
+	{
+		public static ID TemplateID => new ID("{A7EBF38A-5F66-4579-92D1-568A8BA50293}");
+		public static string TemplateName = "_Token";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -1798,25 +1798,6 @@ namespace Feature.FAQ
 		IEnumerable<Guid> GroupMemberValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/FAQ/_FAQ Group</para>
-	/// <summary>
-	public struct FAQGroupItemConstants
-	{
-		public static ID TemplateID => new ID("{3AF7DB6C-A602-4ABC-8D63-19E2D2C6726B}");
-		public static string TemplateName = "_FAQ Group";
-
-		public struct Fields
-		{
-			public struct GroupMember
-			{
-				public static ID ID = new ID("{631DA648-E2A5-4E3B-9733-C9C066C41EAE}");
-				public static string FieldName = "Group Member";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -1860,6 +1841,25 @@ namespace Feature.FAQ
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/FAQ/_FAQ Group</para>
+	/// <summary>
+	public struct FAQGroupItemConstants
+	{
+		public static ID TemplateID => new ID("{3AF7DB6C-A602-4ABC-8D63-19E2D2C6726B}");
+		public static string TemplateName = "_FAQ Group";
+
+		public struct Fields
+		{
+			public struct GroupMember
+			{
+				public static ID ID = new ID("{631DA648-E2A5-4E3B-9733-C9C066C41EAE}");
+				public static string FieldName = "Group Member";
+			}
+		}
 	}
     
 }
@@ -1912,30 +1912,6 @@ namespace Feature.FAQ
 		string QuestionValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/FAQ/_FAQ</para>
-	/// <summary>
-	public struct FAQItemConstants
-	{
-		public static ID TemplateID => new ID("{9544F0B3-FD5E-4301-9DDE-9E73D2C3F7BA}");
-		public static string TemplateName = "_FAQ";
-
-		public struct Fields
-		{
-			public struct Answer
-			{
-				public static ID ID = new ID("{57F39C75-51F0-4888-903E-724DFDCC8A38}");
-				public static string FieldName = "Answer";
-			}
-			public struct Question
-			{
-				public static ID ID = new ID("{9588B6D5-3E6A-4C16-BD37-98DA6F1DDE52}");
-				public static string FieldName = "Question";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -2004,6 +1980,30 @@ namespace Feature.FAQ
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/FAQ/_FAQ</para>
+	/// <summary>
+	public struct FAQItemConstants
+	{
+		public static ID TemplateID => new ID("{9544F0B3-FD5E-4301-9DDE-9E73D2C3F7BA}");
+		public static string TemplateName = "_FAQ";
+
+		public struct Fields
+		{
+			public struct Answer
+			{
+				public static ID ID = new ID("{57F39C75-51F0-4888-903E-724DFDCC8A38}");
+				public static string FieldName = "Answer";
+			}
+			public struct Question
+			{
+				public static ID ID = new ID("{9588B6D5-3E6A-4C16-BD37-98DA6F1DDE52}");
+				public static string FieldName = "Question";
+			}
+		}
+	}
     
 }
 #endregion
@@ -2044,7 +2044,7 @@ namespace Feature.Identity
         /// <para>Field: Logo</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        IImageFieldWrapper Logo { get; }
+        ICustomImageFieldWrapper Logo { get; }
 		string LogoValue { get; }
 
         /// <summary>
@@ -2082,7 +2082,7 @@ namespace Feature.Identity
         /// <para>Field: OrganisationEmail</para>
         /// <para>Data type: link</para>
         /// </summary>
-        ITextFieldWrapper OrganisationEmail { get; }
+        ICustomGeneralLinkFieldWrapper OrganisationEmail { get; }
 		string OrganisationEmailValue { get; }
 
         /// <summary>
@@ -2116,55 +2116,6 @@ namespace Feature.Identity
 		string OrganisationPhoneValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Identity/_Identity</para>
-	/// <summary>
-	public struct IdentityItemConstants
-	{
-		public static ID TemplateID => new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
-		public static string TemplateName = "_Identity";
-
-		public struct Fields
-		{
-			public struct Copyright
-			{
-				public static ID ID = new ID("{02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}");
-				public static string FieldName = "Copyright";
-			}
-			public struct Logo
-			{
-				public static ID ID = new ID("{E748D808-64C1-4DEC-9718-F35CF9689E4B}");
-				public static string FieldName = "Logo";
-			}
-			public struct LogoTagline
-			{
-				public static ID ID = new ID("{31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}");
-				public static string FieldName = "Logo Tagline";
-			}
-			public struct OrganisationAddress
-			{
-				public static ID ID = new ID("{A24DF48F-C8A3-4163-966C-8C24BD8760B2}");
-				public static string FieldName = "OrganisationAddress";
-			}
-			public struct OrganisationEmail
-			{
-				public static ID ID = new ID("{9C428556-5D7B-46AC-B0BB-B06A4F4C9591}");
-				public static string FieldName = "OrganisationEmail";
-			}
-			public struct OrganisationName
-			{
-				public static ID ID = new ID("{EFD4980A-030C-497C-8880-40B6030AC28B}");
-				public static string FieldName = "OrganisationName";
-			}
-			public struct OrganisationPhone
-			{
-				public static ID ID = new ID("{005ED83C-2D2F-4D07-A7A9-EB64D873DE46}");
-				public static string FieldName = "OrganisationPhone";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -2212,10 +2163,10 @@ namespace Feature.Identity
         /// <para>Field: Logo</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Logo
+        public virtual ICustomImageFieldWrapper Logo
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Logo"); }
+            get { return GetField<CustomImageFieldWrapper>("Logo"); }
         }
 
         /// <summary>
@@ -2282,10 +2233,10 @@ namespace Feature.Identity
         /// <para>Field: OrganisationEmail</para>
         /// <para>Data type: link</para>
         /// </summary>
-        public virtual ITextFieldWrapper OrganisationEmail
+        public virtual ICustomGeneralLinkFieldWrapper OrganisationEmail
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("OrganisationEmail"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("OrganisationEmail"); }
         }
 
         /// <summary>
@@ -2349,6 +2300,55 @@ namespace Feature.Identity
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Identity/_Identity</para>
+	/// <summary>
+	public struct IdentityItemConstants
+	{
+		public static ID TemplateID => new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
+		public static string TemplateName = "_Identity";
+
+		public struct Fields
+		{
+			public struct Copyright
+			{
+				public static ID ID = new ID("{02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}");
+				public static string FieldName = "Copyright";
+			}
+			public struct Logo
+			{
+				public static ID ID = new ID("{E748D808-64C1-4DEC-9718-F35CF9689E4B}");
+				public static string FieldName = "Logo";
+			}
+			public struct LogoTagline
+			{
+				public static ID ID = new ID("{31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}");
+				public static string FieldName = "Logo Tagline";
+			}
+			public struct OrganisationAddress
+			{
+				public static ID ID = new ID("{A24DF48F-C8A3-4163-966C-8C24BD8760B2}");
+				public static string FieldName = "OrganisationAddress";
+			}
+			public struct OrganisationEmail
+			{
+				public static ID ID = new ID("{9C428556-5D7B-46AC-B0BB-B06A4F4C9591}");
+				public static string FieldName = "OrganisationEmail";
+			}
+			public struct OrganisationName
+			{
+				public static ID ID = new ID("{EFD4980A-030C-497C-8880-40B6030AC28B}");
+				public static string FieldName = "OrganisationName";
+			}
+			public struct OrganisationPhone
+			{
+				public static ID ID = new ID("{005ED83C-2D2F-4D07-A7A9-EB64D873DE46}");
+				public static string FieldName = "OrganisationPhone";
+			}
+		}
+	}
     
 }
 #endregion
@@ -2385,25 +2385,6 @@ namespace Feature.Language
 		IEnumerable<Guid> SupportedLanguagesValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Language/_LanguageSettings</para>
-	/// <summary>
-	public struct LanguageSettingsItemConstants
-	{
-		public static ID TemplateID => new ID("{748EBA96-3F0C-4F45-8AFB-DE8DCC707B84}");
-		public static string TemplateName = "_LanguageSettings";
-
-		public struct Fields
-		{
-			public struct SupportedLanguages
-			{
-				public static ID ID = new ID("{5F115B6D-6052-4C7E-B442-AE923A7E9BD2}");
-				public static string FieldName = "SupportedLanguages";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -2448,6 +2429,25 @@ namespace Feature.Language
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Language/_LanguageSettings</para>
+	/// <summary>
+	public struct LanguageSettingsItemConstants
+	{
+		public static ID TemplateID => new ID("{748EBA96-3F0C-4F45-8AFB-DE8DCC707B84}");
+		public static string TemplateName = "_LanguageSettings";
+
+		public struct Fields
+		{
+			public struct SupportedLanguages
+			{
+				public static ID ID = new ID("{5F115B6D-6052-4C7E-B442-AE923A7E9BD2}");
+				public static string FieldName = "SupportedLanguages";
+			}
+		}
+	}
     
 }
 #endregion
@@ -2484,25 +2484,6 @@ namespace Feature.Maps
 		string NameValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Maps/Map Type</para>
-	/// <summary>
-	public struct MapTypeItemConstants
-	{
-		public static ID TemplateID => new ID("{04C34CF5-B7EA-4408-88E8-5FC851173DBD}");
-		public static string TemplateName = "Map Type";
-
-		public struct Fields
-		{
-			public struct Name
-			{
-				public static ID ID = new ID("{4A724065-E4CA-4CDD-9027-F56CEEF1B082}");
-				public static string FieldName = "Name";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -2546,6 +2527,25 @@ namespace Feature.Maps
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Maps/Map Type</para>
+	/// <summary>
+	public struct MapTypeItemConstants
+	{
+		public static ID TemplateID => new ID("{04C34CF5-B7EA-4408-88E8-5FC851173DBD}");
+		public static string TemplateName = "Map Type";
+
+		public struct Fields
+		{
+			public struct Name
+			{
+				public static ID ID = new ID("{4A724065-E4CA-4CDD-9027-F56CEEF1B082}");
+				public static string FieldName = "Name";
+			}
+		}
 	}
     
 }
@@ -2606,35 +2606,6 @@ namespace Feature.Maps
 		string MapPointNameValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Maps/_MapPoint</para>
-	/// <summary>
-	public struct MapPointItemConstants
-	{
-		public static ID TemplateID => new ID("{1E6A8C8C-6646-4776-8AB4-615265669633}");
-		public static string TemplateName = "_MapPoint";
-
-		public struct Fields
-		{
-			public struct MapPointAddress
-			{
-				public static ID ID = new ID("{0295C01D-214C-4C23-AFC2-3F0B4E88B643}");
-				public static string FieldName = "MapPointAddress";
-			}
-			public struct MapPointLocation
-			{
-				public static ID ID = new ID("{F686AC8E-1D33-45DB-8E1A-1B40CD491E7A}");
-				public static string FieldName = "MapPointLocation";
-			}
-			public struct MapPointName
-			{
-				public static ID ID = new ID("{F12C22BB-E57D-4FAB-96E1-1229E4E7FF0E}");
-				public static string FieldName = "MapPointName";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -2725,6 +2696,35 @@ namespace Feature.Maps
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Maps/_MapPoint</para>
+	/// <summary>
+	public struct MapPointItemConstants
+	{
+		public static ID TemplateID => new ID("{1E6A8C8C-6646-4776-8AB4-615265669633}");
+		public static string TemplateName = "_MapPoint";
+
+		public struct Fields
+		{
+			public struct MapPointAddress
+			{
+				public static ID ID = new ID("{0295C01D-214C-4C23-AFC2-3F0B4E88B643}");
+				public static string FieldName = "MapPointAddress";
+			}
+			public struct MapPointLocation
+			{
+				public static ID ID = new ID("{F686AC8E-1D33-45DB-8E1A-1B40CD491E7A}");
+				public static string FieldName = "MapPointLocation";
+			}
+			public struct MapPointName
+			{
+				public static ID ID = new ID("{F12C22BB-E57D-4FAB-96E1-1229E4E7FF0E}");
+				public static string FieldName = "MapPointName";
+			}
+		}
+	}
     
 }
 #endregion
@@ -2747,20 +2747,6 @@ namespace Feature.Maps
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Maps/_MapPoints Folder</para>
-	/// <summary>
-	public struct MapPointsFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{31713995-C6BF-4CCB-8807-198493508AFA}");
-		public static string TemplateName = "_MapPoints Folder";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Feature/Maps/_MapPoints Folder</para>
@@ -2779,6 +2765,20 @@ namespace Feature.Maps
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Maps/_MapPoints Folder</para>
+	/// <summary>
+	public struct MapPointsFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{31713995-C6BF-4CCB-8807-198493508AFA}");
+		public static string TemplateName = "_MapPoints Folder";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -2874,65 +2874,6 @@ namespace Feature.Maps
 		string ZoomLevelValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Maps/_MapRenderingParameters</para>
-	/// <summary>
-	public struct MapRenderingParametersItemConstants
-	{
-		public static ID TemplateID => new ID("{D77856C3-8A5E-452C-8854-F2965EDF25E0}");
-		public static string TemplateName = "_MapRenderingParameters";
-
-		public struct Fields
-		{
-			public struct CenterLocation
-			{
-				public static ID ID = new ID("{3016477A-1DAC-460C-A3E2-0E8834E685BD}");
-				public static string FieldName = "CenterLocation";
-			}
-			public struct EnableCenterMapControl
-			{
-				public static ID ID = new ID("{35F8D3E6-887E-4E54-B715-B81459846CBB}");
-				public static string FieldName = "EnableCenterMapControl";
-			}
-			public struct EnableMapTypeControl
-			{
-				public static ID ID = new ID("{3FDDA0EA-96EF-4533-B658-E071A2A8E052}");
-				public static string FieldName = "EnableMapTypeControl";
-			}
-			public struct EnableRotateControl
-			{
-				public static ID ID = new ID("{FD762E2F-71F8-44AC-AE55-22CDB29CDBA2}");
-				public static string FieldName = "EnableRotateControl";
-			}
-			public struct EnableScaleControl
-			{
-				public static ID ID = new ID("{92514B1F-0F21-4A91-AF7F-852E283E1019}");
-				public static string FieldName = "EnableScaleControl";
-			}
-			public struct EnableStreetViewControl
-			{
-				public static ID ID = new ID("{A7862BD0-2DDC-4745-9A03-31D297C12BCD}");
-				public static string FieldName = "EnableStreetViewControl";
-			}
-			public struct EnableZoomControl
-			{
-				public static ID ID = new ID("{C77614FB-8EF2-4418-A486-6CF014B70F22}");
-				public static string FieldName = "EnableZoomControl";
-			}
-			public struct MapType
-			{
-				public static ID ID = new ID("{90D0BBDC-EA74-4D9A-A570-DAFD6EDC5F92}");
-				public static string FieldName = "MapType";
-			}
-			public struct ZoomLevel
-			{
-				public static ID ID = new ID("{405A9441-2F1C-4278-A3DD-3D9F818227BE}");
-				public static string FieldName = "ZoomLevel";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -3146,6 +3087,65 @@ namespace Feature.Maps
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Maps/_MapRenderingParameters</para>
+	/// <summary>
+	public struct MapRenderingParametersItemConstants
+	{
+		public static ID TemplateID => new ID("{D77856C3-8A5E-452C-8854-F2965EDF25E0}");
+		public static string TemplateName = "_MapRenderingParameters";
+
+		public struct Fields
+		{
+			public struct CenterLocation
+			{
+				public static ID ID = new ID("{3016477A-1DAC-460C-A3E2-0E8834E685BD}");
+				public static string FieldName = "CenterLocation";
+			}
+			public struct EnableCenterMapControl
+			{
+				public static ID ID = new ID("{35F8D3E6-887E-4E54-B715-B81459846CBB}");
+				public static string FieldName = "EnableCenterMapControl";
+			}
+			public struct EnableMapTypeControl
+			{
+				public static ID ID = new ID("{3FDDA0EA-96EF-4533-B658-E071A2A8E052}");
+				public static string FieldName = "EnableMapTypeControl";
+			}
+			public struct EnableRotateControl
+			{
+				public static ID ID = new ID("{FD762E2F-71F8-44AC-AE55-22CDB29CDBA2}");
+				public static string FieldName = "EnableRotateControl";
+			}
+			public struct EnableScaleControl
+			{
+				public static ID ID = new ID("{92514B1F-0F21-4A91-AF7F-852E283E1019}");
+				public static string FieldName = "EnableScaleControl";
+			}
+			public struct EnableStreetViewControl
+			{
+				public static ID ID = new ID("{A7862BD0-2DDC-4745-9A03-31D297C12BCD}");
+				public static string FieldName = "EnableStreetViewControl";
+			}
+			public struct EnableZoomControl
+			{
+				public static ID ID = new ID("{C77614FB-8EF2-4418-A486-6CF014B70F22}");
+				public static string FieldName = "EnableZoomControl";
+			}
+			public struct MapType
+			{
+				public static ID ID = new ID("{90D0BBDC-EA74-4D9A-A570-DAFD6EDC5F92}");
+				public static string FieldName = "MapType";
+			}
+			public struct ZoomLevel
+			{
+				public static ID ID = new ID("{405A9441-2F1C-4278-A3DD-3D9F818227BE}");
+				public static string FieldName = "ZoomLevel";
+			}
+		}
+	}
     
 }
 #endregion
@@ -3168,20 +3168,6 @@ namespace Feature.Media
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/Background Type Folder</para>
-	/// <summary>
-	public struct BackgroundTypeFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{1FD75C49-F524-4C15-9F82-DCB2D4CF2FA9}");
-		public static string TemplateName = "Background Type Folder";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Feature/Media/Background Type Folder</para>
@@ -3200,6 +3186,20 @@ namespace Feature.Media
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/Background Type Folder</para>
+	/// <summary>
+	public struct BackgroundTypeFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{1FD75C49-F524-4C15-9F82-DCB2D4CF2FA9}");
+		public static string TemplateName = "Background Type Folder";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -3237,25 +3237,6 @@ namespace Feature.Media
 		string ClassValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/Background Type</para>
-	/// <summary>
-	public struct BackgroundTypeItemConstants
-	{
-		public static ID TemplateID => new ID("{55A5BDAD-EB69-40F5-8195-CDA182E48EE4}");
-		public static string TemplateName = "Background Type";
-
-		public struct Fields
-		{
-			public struct Class
-			{
-				public static ID ID = new ID("{AF6B8E5C-10A2-46BE-8310-407434EC1055}");
-				public static string FieldName = "Class";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -3300,12 +3281,31 @@ namespace Feature.Media
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/Background Type</para>
+	/// <summary>
+	public struct BackgroundTypeItemConstants
+	{
+		public static ID TemplateID => new ID("{55A5BDAD-EB69-40F5-8195-CDA182E48EE4}");
+		public static string TemplateName = "Background Type";
+
+		public struct Fields
+		{
+			public struct Class
+			{
+				public static ID ID = new ID("{AF6B8E5C-10A2-46BE-8310-407434EC1055}");
+				public static string FieldName = "Class";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region ParametersTemplate_SectionBackground (/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground)
-namespace Feature.Media
+namespace Feature.Media.ParametersTemplates
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3346,35 +3346,6 @@ namespace Feature.Media
 		string TypeValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground</para>
-	/// <summary>
-	public struct ParametersTemplateSectionBackgroundItemConstants
-	{
-		public static ID TemplateID => new ID("{B962A806-D708-4001-B0A3-3FA31F2263C5}");
-		public static string TemplateName = "ParametersTemplate_SectionBackground";
-
-		public struct Fields
-		{
-			public struct Media
-			{
-				public static ID ID = new ID("{73D4BA11-BC5C-44DB-B184-8FD59857C8DB}");
-				public static string FieldName = "Media";
-			}
-			public struct Parallax
-			{
-				public static ID ID = new ID("{D598D6DD-3B61-47C3-B84B-8C73211FEF04}");
-				public static string FieldName = "Parallax";
-			}
-			public struct Type
-			{
-				public static ID ID = new ID("{F9588BB9-013E-4C21-B339-5ED379252CDE}");
-				public static string FieldName = "Type";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -3456,12 +3427,41 @@ namespace Feature.Media
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground</para>
+	/// <summary>
+	public struct ParametersTemplateSectionBackgroundItemConstants
+	{
+		public static ID TemplateID => new ID("{B962A806-D708-4001-B0A3-3FA31F2263C5}");
+		public static string TemplateName = "ParametersTemplate_SectionBackground";
+
+		public struct Fields
+		{
+			public struct Media
+			{
+				public static ID ID = new ID("{73D4BA11-BC5C-44DB-B184-8FD59857C8DB}");
+				public static string FieldName = "Media";
+			}
+			public struct Parallax
+			{
+				public static ID ID = new ID("{D598D6DD-3B61-47C3-B84B-8C73211FEF04}");
+				public static string FieldName = "Parallax";
+			}
+			public struct Type
+			{
+				public static ID ID = new ID("{F9588BB9-013E-4C21-B339-5ED379252CDE}");
+				public static string FieldName = "Type";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region _MediaParameters (/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters)
-namespace Feature.Media
+namespace Feature.Media.ParametersTemplates
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -3478,25 +3478,6 @@ namespace Feature.Media
 	public partial interface IMediaParameters : IRenderingParameterWrapper, Foundation.Theming.IParametersTemplateFixedHeight
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters</para>
-	/// <summary>
-	public struct MediaParametersItemConstants
-	{
-		public static ID TemplateID => new ID("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}");
-		public static string TemplateName = "_MediaParameters";
-
-		public struct Fields
-		{
-			public struct FixedHeight
-			{
-				public static ID ID = new ID("{B8965F9D-DDB4-4B8F-BF40-AFCF3C9AE09F}");
-				public static string FieldName = "Fixed height";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -3533,6 +3514,25 @@ namespace Feature.Media
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters</para>
+	/// <summary>
+	public struct MediaParametersItemConstants
+	{
+		public static ID TemplateID => new ID("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}");
+		public static string TemplateName = "_MediaParameters";
+
+		public struct Fields
+		{
+			public struct FixedHeight
+			{
+				public static ID ID = new ID("{B8965F9D-DDB4-4B8F-BF40-AFCF3C9AE09F}");
+				public static string FieldName = "Fixed height";
+			}
+		}
 	}
     
 }
@@ -3574,7 +3574,7 @@ namespace Feature.Media
         /// <para>Field: MediaThumbnail</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        IImageFieldWrapper MediaThumbnail { get; }
+        ICustomImageFieldWrapper MediaThumbnail { get; }
 		string MediaThumbnailValue { get; }
 
         /// <summary>
@@ -3593,35 +3593,6 @@ namespace Feature.Media
 		string MediaTitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/_HasMedia</para>
-	/// <summary>
-	public struct HasMediaItemConstants
-	{
-		public static ID TemplateID => new ID("{A44E450E-BA3F-4FAF-9C53-C63241CC34EB}");
-		public static string TemplateName = "_HasMedia";
-
-		public struct Fields
-		{
-			public struct MediaDescription
-			{
-				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
-				public static string FieldName = "MediaDescription";
-			}
-			public struct MediaThumbnail
-			{
-				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
-				public static string FieldName = "MediaThumbnail";
-			}
-			public struct MediaTitle
-			{
-				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
-				public static string FieldName = "MediaTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -3669,10 +3640,10 @@ namespace Feature.Media
         /// <para>Field: MediaThumbnail</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper MediaThumbnail
+        public virtual ICustomImageFieldWrapper MediaThumbnail
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("MediaThumbnail"); }
+            get { return GetField<CustomImageFieldWrapper>("MediaThumbnail"); }
         }
 
         /// <summary>
@@ -3712,6 +3683,35 @@ namespace Feature.Media
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/_HasMedia</para>
+	/// <summary>
+	public struct HasMediaItemConstants
+	{
+		public static ID TemplateID => new ID("{A44E450E-BA3F-4FAF-9C53-C63241CC34EB}");
+		public static string TemplateName = "_HasMedia";
+
+		public struct Fields
+		{
+			public struct MediaDescription
+			{
+				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
+				public static string FieldName = "MediaDescription";
+			}
+			public struct MediaThumbnail
+			{
+				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
+				public static string FieldName = "MediaThumbnail";
+			}
+			public struct MediaTitle
+			{
+				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
+				public static string FieldName = "MediaTitle";
+			}
+		}
+	}
     
 }
 #endregion
@@ -3737,44 +3737,10 @@ namespace Feature.Media
         /// <para>Field: MediaImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        IImageFieldWrapper MediaImage { get; }
+        ICustomImageFieldWrapper MediaImage { get; }
 		string MediaImageValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/_HasMediaImage</para>
-	/// <summary>
-	public struct HasMediaImageItemConstants
-	{
-		public static ID TemplateID => new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
-		public static string TemplateName = "_HasMediaImage";
-
-		public struct Fields
-		{
-			public struct MediaDescription
-			{
-				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
-				public static string FieldName = "MediaDescription";
-			}
-			public struct MediaImage
-			{
-				public static ID ID = new ID("{9F51DEAD-AD6E-41C2-9759-7BE17EB474A4}");
-				public static string FieldName = "MediaImage";
-			}
-			public struct MediaThumbnail
-			{
-				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
-				public static string FieldName = "MediaThumbnail";
-			}
-			public struct MediaTitle
-			{
-				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
-				public static string FieldName = "MediaTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -3822,10 +3788,10 @@ namespace Feature.Media
         /// <para>Field: MediaImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper MediaImage
+        public virtual ICustomImageFieldWrapper MediaImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("MediaImage"); }
+            get { return GetField<CustomImageFieldWrapper>("MediaImage"); }
         }
 
         /// <summary>
@@ -3844,10 +3810,10 @@ namespace Feature.Media
         /// <para>Field: MediaThumbnail</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper MediaThumbnail
+        public virtual ICustomImageFieldWrapper MediaThumbnail
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("MediaThumbnail"); }
+            get { return GetField<CustomImageFieldWrapper>("MediaThumbnail"); }
         }
 
         /// <summary>
@@ -3887,6 +3853,40 @@ namespace Feature.Media
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/_HasMediaImage</para>
+	/// <summary>
+	public struct HasMediaImageItemConstants
+	{
+		public static ID TemplateID => new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
+		public static string TemplateName = "_HasMediaImage";
+
+		public struct Fields
+		{
+			public struct MediaDescription
+			{
+				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
+				public static string FieldName = "MediaDescription";
+			}
+			public struct MediaImage
+			{
+				public static ID ID = new ID("{9F51DEAD-AD6E-41C2-9759-7BE17EB474A4}");
+				public static string FieldName = "MediaImage";
+			}
+			public struct MediaThumbnail
+			{
+				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
+				public static string FieldName = "MediaThumbnail";
+			}
+			public struct MediaTitle
+			{
+				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
+				public static string FieldName = "MediaTitle";
+			}
+		}
+	}
     
 }
 #endregion
@@ -3923,25 +3923,6 @@ namespace Feature.Media
 		IEnumerable<Guid> MediaSelectorValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/_HasMediaSelector</para>
-	/// <summary>
-	public struct HasMediaSelectorItemConstants
-	{
-		public static ID TemplateID => new ID("{AE4635AF-CFBF-4BF6-9B50-00BE23A910C0}");
-		public static string TemplateName = "_HasMediaSelector";
-
-		public struct Fields
-		{
-			public struct MediaSelector
-			{
-				public static ID ID = new ID("{72EA8682-24D2-4BEB-951C-3E2164974105}");
-				public static string FieldName = "MediaSelector";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -3986,6 +3967,25 @@ namespace Feature.Media
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/_HasMediaSelector</para>
+	/// <summary>
+	public struct HasMediaSelectorItemConstants
+	{
+		public static ID TemplateID => new ID("{AE4635AF-CFBF-4BF6-9B50-00BE23A910C0}");
+		public static string TemplateName = "_HasMediaSelector";
+
+		public struct Fields
+		{
+			public struct MediaSelector
+			{
+				public static ID ID = new ID("{72EA8682-24D2-4BEB-951C-3E2164974105}");
+				public static string FieldName = "MediaSelector";
+			}
+		}
+	}
     
 }
 #endregion
@@ -4011,44 +4011,10 @@ namespace Feature.Media
         /// <para>Field: MediaVideoLink</para>
         /// <para>Data type: link</para>
         /// </summary>
-        ITextFieldWrapper MediaVideoLink { get; }
+        ICustomGeneralLinkFieldWrapper MediaVideoLink { get; }
 		string MediaVideoLinkValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/_HasMediaVideo</para>
-	/// <summary>
-	public struct HasMediaVideoItemConstants
-	{
-		public static ID TemplateID => new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
-		public static string TemplateName = "_HasMediaVideo";
-
-		public struct Fields
-		{
-			public struct MediaDescription
-			{
-				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
-				public static string FieldName = "MediaDescription";
-			}
-			public struct MediaThumbnail
-			{
-				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
-				public static string FieldName = "MediaThumbnail";
-			}
-			public struct MediaTitle
-			{
-				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
-				public static string FieldName = "MediaTitle";
-			}
-			public struct MediaVideoLink
-			{
-				public static ID ID = new ID("{2628705D-9434-4448-978C-C3BF166FA1EB}");
-				public static string FieldName = "MediaVideoLink";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -4096,10 +4062,10 @@ namespace Feature.Media
         /// <para>Field: MediaThumbnail</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper MediaThumbnail
+        public virtual ICustomImageFieldWrapper MediaThumbnail
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("MediaThumbnail"); }
+            get { return GetField<CustomImageFieldWrapper>("MediaThumbnail"); }
         }
 
         /// <summary>
@@ -4142,10 +4108,10 @@ namespace Feature.Media
         /// <para>Field: MediaVideoLink</para>
         /// <para>Data type: link</para>
         /// </summary>
-        public virtual ITextFieldWrapper MediaVideoLink
+        public virtual ICustomGeneralLinkFieldWrapper MediaVideoLink
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("MediaVideoLink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("MediaVideoLink"); }
         }
 
         /// <summary>
@@ -4160,6 +4126,40 @@ namespace Feature.Media
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/_HasMediaVideo</para>
+	/// <summary>
+	public struct HasMediaVideoItemConstants
+	{
+		public static ID TemplateID => new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
+		public static string TemplateName = "_HasMediaVideo";
+
+		public struct Fields
+		{
+			public struct MediaDescription
+			{
+				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
+				public static string FieldName = "MediaDescription";
+			}
+			public struct MediaThumbnail
+			{
+				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
+				public static string FieldName = "MediaThumbnail";
+			}
+			public struct MediaTitle
+			{
+				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
+				public static string FieldName = "MediaTitle";
+			}
+			public struct MediaVideoLink
+			{
+				public static ID ID = new ID("{2628705D-9434-4448-978C-C3BF166FA1EB}");
+				public static string FieldName = "MediaVideoLink";
+			}
+		}
 	}
     
 }
@@ -4197,25 +4197,6 @@ namespace Feature.Media
 		Guid MediafolderValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Media/_MediaSiteExtension</para>
-	/// <summary>
-	public struct MediaSiteExtensionItemConstants
-	{
-		public static ID TemplateID => new ID("{D339E56B-6A8A-46BD-A7D3-C9725D50DD4A}");
-		public static string TemplateName = "_MediaSiteExtension";
-
-		public struct Fields
-		{
-			public struct Mediafolder
-			{
-				public static ID ID = new ID("{E7A63BF6-5A06-498D-B6C1-C8F058ABE2B3}");
-				public static string FieldName = "Mediafolder";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -4260,6 +4241,25 @@ namespace Feature.Media
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Media/_MediaSiteExtension</para>
+	/// <summary>
+	public struct MediaSiteExtensionItemConstants
+	{
+		public static ID TemplateID => new ID("{D339E56B-6A8A-46BD-A7D3-C9725D50DD4A}");
+		public static string TemplateName = "_MediaSiteExtension";
+
+		public struct Fields
+		{
+			public struct Mediafolder
+			{
+				public static ID ID = new ID("{E7A63BF6-5A06-498D-B6C1-C8F058ABE2B3}");
+				public static string FieldName = "Mediafolder";
+			}
+		}
+	}
     
 }
 #endregion
@@ -4296,25 +4296,6 @@ namespace Feature.Metadata
 		string KeywordValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Metadata/_Keyword</para>
-	/// <summary>
-	public struct KeywordItemConstants
-	{
-		public static ID TemplateID => new ID("{409F883A-0DC8-431A-9508-7316B59B92BE}");
-		public static string TemplateName = "_Keyword";
-
-		public struct Fields
-		{
-			public struct Keyword
-			{
-				public static ID ID = new ID("{7BDBBA5F-C7E6-45C2-82F5-010DED013588}");
-				public static string FieldName = "Keyword";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -4358,6 +4339,25 @@ namespace Feature.Metadata
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Metadata/_Keyword</para>
+	/// <summary>
+	public struct KeywordItemConstants
+	{
+		public static ID TemplateID => new ID("{409F883A-0DC8-431A-9508-7316B59B92BE}");
+		public static string TemplateName = "_Keyword";
+
+		public struct Fields
+		{
+			public struct Keyword
+			{
+				public static ID ID = new ID("{7BDBBA5F-C7E6-45C2-82F5-010DED013588}");
+				public static string FieldName = "Keyword";
+			}
+		}
 	}
     
 }
@@ -4470,50 +4470,6 @@ namespace Feature.Metadata
 		bool SeoFollowLinksValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Metadata/_PageMetadata</para>
-	/// <summary>
-	public struct PageMetadataItemConstants
-	{
-		public static ID TemplateID => new ID("{D88CCD80-D851-470D-AF11-701FF23504E7}");
-		public static string TemplateName = "_PageMetadata";
-
-		public struct Fields
-		{
-			public struct BrowserTitle
-			{
-				public static ID ID = new ID("{CA0479CE-0BFE-4522-83DE-BA688B380A78}");
-				public static string FieldName = "BrowserTitle";
-			}
-			public struct CanIndex
-			{
-				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
-				public static string FieldName = "CanIndex";
-			}
-			public struct CustomMetaData
-			{
-				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
-				public static string FieldName = "CustomMetaData";
-			}
-			public struct MetaDescription
-			{
-				public static ID ID = new ID("{BB7A38C0-323C-4F81-8EB9-288ABF7C4638}");
-				public static string FieldName = "MetaDescription";
-			}
-			public struct MetaKeywords
-			{
-				public static ID ID = new ID("{4B16F930-73C9-4643-BB1B-00F06E60A073}");
-				public static string FieldName = "MetaKeywords";
-			}
-			public struct SeoFollowLinks
-			{
-				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
-				public static string FieldName = "SeoFollowLinks";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -4678,6 +4634,50 @@ namespace Feature.Metadata
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Metadata/_PageMetadata</para>
+	/// <summary>
+	public struct PageMetadataItemConstants
+	{
+		public static ID TemplateID => new ID("{D88CCD80-D851-470D-AF11-701FF23504E7}");
+		public static string TemplateName = "_PageMetadata";
+
+		public struct Fields
+		{
+			public struct BrowserTitle
+			{
+				public static ID ID = new ID("{CA0479CE-0BFE-4522-83DE-BA688B380A78}");
+				public static string FieldName = "BrowserTitle";
+			}
+			public struct CanIndex
+			{
+				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
+				public static string FieldName = "CanIndex";
+			}
+			public struct CustomMetaData
+			{
+				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
+				public static string FieldName = "CustomMetaData";
+			}
+			public struct MetaDescription
+			{
+				public static ID ID = new ID("{BB7A38C0-323C-4F81-8EB9-288ABF7C4638}");
+				public static string FieldName = "MetaDescription";
+			}
+			public struct MetaKeywords
+			{
+				public static ID ID = new ID("{4B16F930-73C9-4643-BB1B-00F06E60A073}");
+				public static string FieldName = "MetaKeywords";
+			}
+			public struct SeoFollowLinks
+			{
+				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
+				public static string FieldName = "SeoFollowLinks";
+			}
+		}
+	}
     
 }
 #endregion
@@ -4714,25 +4714,6 @@ namespace Feature.Metadata
 		string SiteBrowserTitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Metadata/_SiteMetadata</para>
-	/// <summary>
-	public struct SiteMetadataItemConstants
-	{
-		public static ID TemplateID => new ID("{CF38E914-9298-47CC-9205-210553E79F97}");
-		public static string TemplateName = "_SiteMetadata";
-
-		public struct Fields
-		{
-			public struct SiteBrowserTitle
-			{
-				public static ID ID = new ID("{235AE392-97AC-4822-BE38-837DA3E7724E}");
-				public static string FieldName = "SiteBrowserTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -4776,6 +4757,25 @@ namespace Feature.Metadata
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Metadata/_SiteMetadata</para>
+	/// <summary>
+	public struct SiteMetadataItemConstants
+	{
+		public static ID TemplateID => new ID("{CF38E914-9298-47CC-9205-210553E79F97}");
+		public static string TemplateName = "_SiteMetadata";
+
+		public struct Fields
+		{
+			public struct SiteBrowserTitle
+			{
+				public static ID ID = new ID("{235AE392-97AC-4822-BE38-837DA3E7724E}");
+				public static string FieldName = "SiteBrowserTitle";
+			}
+		}
 	}
     
 }
@@ -4828,30 +4828,6 @@ namespace Feature.Multisite
 		string TitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Multisite/_SiteConfiguration</para>
-	/// <summary>
-	public struct SiteConfigurationItemConstants
-	{
-		public static ID TemplateID => new ID("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}");
-		public static string TemplateName = "_SiteConfiguration";
-
-		public struct Fields
-		{
-			public struct ShowInMenu
-			{
-				public static ID ID = new ID("{12537182-F35C-403F-AFB5-747D55C450B8}");
-				public static string FieldName = "ShowInMenu";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{F07811D3-41E9-440A-9D81-310C1D78BED6}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -4920,6 +4896,30 @@ namespace Feature.Multisite
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Multisite/_SiteConfiguration</para>
+	/// <summary>
+	public struct SiteConfigurationItemConstants
+	{
+		public static ID TemplateID => new ID("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}");
+		public static string TemplateName = "_SiteConfiguration";
+
+		public struct Fields
+		{
+			public struct ShowInMenu
+			{
+				public static ID ID = new ID("{12537182-F35C-403F-AFB5-747D55C450B8}");
+				public static string FieldName = "ShowInMenu";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{F07811D3-41E9-440A-9D81-310C1D78BED6}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
@@ -4946,7 +4946,7 @@ namespace Feature.Navigation
         /// <para>Data type: General Link</para>
         /// </summary>
         [IndexField("link")]
-        IGeneralLinkFieldWrapper Link { get; }
+        ICustomGeneralLinkFieldWrapper Link { get; }
 		/// <summary>
 		/// <para>Template: _Link</para>
         /// <para>Field: Link</para>
@@ -4956,25 +4956,6 @@ namespace Feature.Navigation
 		string LinkValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Navigation/_Link</para>
-	/// <summary>
-	public struct LinkItemConstants
-	{
-		public static ID TemplateID => new ID("{A16B74E9-01B8-439C-B44E-42B3FB2EE14B}");
-		public static string TemplateName = "_Link";
-
-		public struct Fields
-		{
-			public struct Link
-			{
-				public static ID ID = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
-				public static string FieldName = "Link";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -4999,10 +4980,10 @@ namespace Feature.Navigation
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("link")]
-        public virtual IGeneralLinkFieldWrapper Link
+        public virtual ICustomGeneralLinkFieldWrapper Link
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("Link", "link"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("Link", "link"); }
         }
 
         /// <summary>
@@ -5018,6 +4999,25 @@ namespace Feature.Navigation
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Navigation/_Link</para>
+	/// <summary>
+	public struct LinkItemConstants
+	{
+		public static ID TemplateID => new ID("{A16B74E9-01B8-439C-B44E-42B3FB2EE14B}");
+		public static string TemplateName = "_Link";
+
+		public struct Fields
+		{
+			public struct Link
+			{
+				public static ID ID = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
+				public static string FieldName = "Link";
+			}
+		}
 	}
     
 }
@@ -5070,35 +5070,6 @@ namespace Feature.Navigation
 		string IconValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Navigation/_LinkMenuItem</para>
-	/// <summary>
-	public struct LinkMenuItemItemConstants
-	{
-		public static ID TemplateID => new ID("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}");
-		public static string TemplateName = "_LinkMenuItem";
-
-		public struct Fields
-		{
-			public struct DividerBefore
-			{
-				public static ID ID = new ID("{4231CD60-47C1-42AD-B838-0A6F8F1C4CFB}");
-				public static string FieldName = "DividerBefore";
-			}
-			public struct Icon
-			{
-				public static ID ID = new ID("{2C24649E-4460-4114-B026-886CFBE1A96D}");
-				public static string FieldName = "Icon";
-			}
-			public struct Link
-			{
-				public static ID ID = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
-				public static string FieldName = "Link";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -5171,10 +5142,10 @@ namespace Feature.Navigation
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("link")]
-        public virtual IGeneralLinkFieldWrapper Link
+        public virtual ICustomGeneralLinkFieldWrapper Link
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("Link", "link"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("Link", "link"); }
         }
 
         /// <summary>
@@ -5190,6 +5161,35 @@ namespace Feature.Navigation
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Navigation/_LinkMenuItem</para>
+	/// <summary>
+	public struct LinkMenuItemItemConstants
+	{
+		public static ID TemplateID => new ID("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}");
+		public static string TemplateName = "_LinkMenuItem";
+
+		public struct Fields
+		{
+			public struct DividerBefore
+			{
+				public static ID ID = new ID("{4231CD60-47C1-42AD-B838-0A6F8F1C4CFB}");
+				public static string FieldName = "DividerBefore";
+			}
+			public struct Icon
+			{
+				public static ID ID = new ID("{2C24649E-4460-4114-B026-886CFBE1A96D}");
+				public static string FieldName = "Icon";
+			}
+			public struct Link
+			{
+				public static ID ID = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
+				public static string FieldName = "Link";
+			}
+		}
 	}
     
 }
@@ -5257,35 +5257,6 @@ namespace Feature.Navigation
 		bool ShowInNavigationValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Navigation/_Navigable</para>
-	/// <summary>
-	public struct NavigableItemConstants
-	{
-		public static ID TemplateID => new ID("{A1CBA309-D22B-46D5-80F8-2972C185363F}");
-		public static string TemplateName = "_Navigable";
-
-		public struct Fields
-		{
-			public struct NavigationTitle
-			{
-				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
-				public static string FieldName = "NavigationTitle";
-			}
-			public struct ShowChildren
-			{
-				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
-				public static string FieldName = "ShowChildren";
-			}
-			public struct ShowInNavigation
-			{
-				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
-				public static string FieldName = "ShowInNavigation";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -5378,6 +5349,35 @@ namespace Feature.Navigation
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Navigation/_Navigable</para>
+	/// <summary>
+	public struct NavigableItemConstants
+	{
+		public static ID TemplateID => new ID("{A1CBA309-D22B-46D5-80F8-2972C185363F}");
+		public static string TemplateName = "_Navigable";
+
+		public struct Fields
+		{
+			public struct NavigationTitle
+			{
+				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
+				public static string FieldName = "NavigationTitle";
+			}
+			public struct ShowChildren
+			{
+				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
+				public static string FieldName = "ShowChildren";
+			}
+			public struct ShowInNavigation
+			{
+				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
+				public static string FieldName = "ShowInNavigation";
+			}
+		}
+	}
     
 }
 #endregion
@@ -5400,20 +5400,6 @@ namespace Feature.Navigation
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Navigation/_NavigationRoot</para>
-	/// <summary>
-	public struct NavigationRootItemConstants
-	{
-		public static ID TemplateID => new ID("{F9F4FC05-98D0-4C62-860F-F08AE7F0EE25}");
-		public static string TemplateName = "_NavigationRoot";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Feature/Navigation/_NavigationRoot</para>
@@ -5432,6 +5418,20 @@ namespace Feature.Navigation
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Navigation/_NavigationRoot</para>
+	/// <summary>
+	public struct NavigationRootItemConstants
+	{
+		public static ID TemplateID => new ID("{F9F4FC05-98D0-4C62-860F-F08AE7F0EE25}");
+		public static string TemplateName = "_NavigationRoot";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -5488,7 +5488,7 @@ namespace Feature.News
         /// <para>Field: NewsImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        IImageFieldWrapper NewsImage { get; }
+        ICustomImageFieldWrapper NewsImage { get; }
 		string NewsImageValue { get; }
 
         /// <summary>
@@ -5522,45 +5522,6 @@ namespace Feature.News
 		string NewsTitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/News/_NewsArticle</para>
-	/// <summary>
-	public struct NewsArticleItemConstants
-	{
-		public static ID TemplateID => new ID("{2F75C8AF-35FC-4A88-B585-7595203F442C}");
-		public static string TemplateName = "_NewsArticle";
-
-		public struct Fields
-		{
-			public struct NewsBody
-			{
-				public static ID ID = new ID("{801612C7-5E98-4E3C-80D2-A34D0EEBCBDA}");
-				public static string FieldName = "NewsBody";
-			}
-			public struct NewsDate
-			{
-				public static ID ID = new ID("{C464D2D7-3382-428A-BCDF-0963C60BA0E3}");
-				public static string FieldName = "NewsDate";
-			}
-			public struct NewsImage
-			{
-				public static ID ID = new ID("{3437EAAC-6EE8-460B-A33D-DA1F714B5A93}");
-				public static string FieldName = "NewsImage";
-			}
-			public struct NewsSummary
-			{
-				public static ID ID = new ID("{9D08271A-1672-44DD-B7EF-0A6EC34FCBA7}");
-				public static string FieldName = "NewsSummary";
-			}
-			public struct NewsTitle
-			{
-				public static ID ID = new ID("{BD9ECD4A-C0B0-4233-A3CD-D995519AC87B}");
-				public static string FieldName = "NewsTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -5632,10 +5593,10 @@ namespace Feature.News
         /// <para>Field: NewsImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper NewsImage
+        public virtual ICustomImageFieldWrapper NewsImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("NewsImage"); }
+            get { return GetField<CustomImageFieldWrapper>("NewsImage"); }
         }
 
         /// <summary>
@@ -5699,6 +5660,45 @@ namespace Feature.News
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/News/_NewsArticle</para>
+	/// <summary>
+	public struct NewsArticleItemConstants
+	{
+		public static ID TemplateID => new ID("{2F75C8AF-35FC-4A88-B585-7595203F442C}");
+		public static string TemplateName = "_NewsArticle";
+
+		public struct Fields
+		{
+			public struct NewsBody
+			{
+				public static ID ID = new ID("{801612C7-5E98-4E3C-80D2-A34D0EEBCBDA}");
+				public static string FieldName = "NewsBody";
+			}
+			public struct NewsDate
+			{
+				public static ID ID = new ID("{C464D2D7-3382-428A-BCDF-0963C60BA0E3}");
+				public static string FieldName = "NewsDate";
+			}
+			public struct NewsImage
+			{
+				public static ID ID = new ID("{3437EAAC-6EE8-460B-A33D-DA1F714B5A93}");
+				public static string FieldName = "NewsImage";
+			}
+			public struct NewsSummary
+			{
+				public static ID ID = new ID("{9D08271A-1672-44DD-B7EF-0A6EC34FCBA7}");
+				public static string FieldName = "NewsSummary";
+			}
+			public struct NewsTitle
+			{
+				public static ID ID = new ID("{BD9ECD4A-C0B0-4233-A3CD-D995519AC87B}");
+				public static string FieldName = "NewsTitle";
+			}
+		}
+	}
     
 }
 #endregion
@@ -5721,20 +5721,6 @@ namespace Feature.News
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/News/_NewsFolder</para>
-	/// <summary>
-	public struct NewsFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{74889B26-061C-4D6A-8CDB-422665FC34EC}");
-		public static string TemplateName = "_NewsFolder";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Feature/News/_NewsFolder</para>
@@ -5753,6 +5739,20 @@ namespace Feature.News
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/News/_NewsFolder</para>
+	/// <summary>
+	public struct NewsFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{74889B26-061C-4D6A-8CDB-422665FC34EC}");
+		public static string TemplateName = "_NewsFolder";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -5794,7 +5794,7 @@ namespace Feature.PageContent
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        IImageFieldWrapper Image { get; }
+        ICustomImageFieldWrapper Image { get; }
 		string ImageValue { get; }
 
         /// <summary>
@@ -5828,40 +5828,6 @@ namespace Feature.PageContent
 		string TitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/PageContent/_HasPageContent</para>
-	/// <summary>
-	public struct HasPageContentItemConstants
-	{
-		public static ID TemplateID => new ID("{AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}");
-		public static string TemplateName = "_HasPageContent";
-
-		public struct Fields
-		{
-			public struct Body
-			{
-				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
-				public static string FieldName = "Body";
-			}
-			public struct Image
-			{
-				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
-				public static string FieldName = "Image";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -5909,10 +5875,10 @@ namespace Feature.PageContent
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -5976,6 +5942,40 @@ namespace Feature.PageContent
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/PageContent/_HasPageContent</para>
+	/// <summary>
+	public struct HasPageContentItemConstants
+	{
+		public static ID TemplateID => new ID("{AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}");
+		public static string TemplateName = "_HasPageContent";
+
+		public struct Fields
+		{
+			public struct Body
+			{
+				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
+				public static string FieldName = "Body";
+			}
+			public struct Image
+			{
+				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
+				public static string FieldName = "Image";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
@@ -6017,7 +6017,7 @@ namespace Feature.Person
         /// <para>Data type: General Link</para>
         /// </summary>
         [IndexField("bloglink")]
-        IGeneralLinkFieldWrapper BlogLink { get; }
+        ICustomGeneralLinkFieldWrapper BlogLink { get; }
 		/// <summary>
 		/// <para>Template: _Employee</para>
         /// <para>Field: BlogLink</para>
@@ -6047,7 +6047,7 @@ namespace Feature.Person
         /// <para>Data type: General Link</para>
         /// </summary>
         [IndexField("facebooklink")]
-        IGeneralLinkFieldWrapper FacebookLink { get; }
+        ICustomGeneralLinkFieldWrapper FacebookLink { get; }
 		/// <summary>
 		/// <para>Template: _Employee</para>
         /// <para>Field: FacebookLink</para>
@@ -6062,7 +6062,7 @@ namespace Feature.Person
         /// <para>Data type: General Link</para>
         /// </summary>
         [IndexField("linkedinlink")]
-        IGeneralLinkFieldWrapper LinkedInLink { get; }
+        ICustomGeneralLinkFieldWrapper LinkedInLink { get; }
 		/// <summary>
 		/// <para>Template: _Employee</para>
         /// <para>Field: LinkedInLink</para>
@@ -6107,7 +6107,7 @@ namespace Feature.Person
         /// <para>Data type: General Link</para>
         /// </summary>
         [IndexField("twitterlink")]
-        IGeneralLinkFieldWrapper TwitterLink { get; }
+        ICustomGeneralLinkFieldWrapper TwitterLink { get; }
 		/// <summary>
 		/// <para>Template: _Employee</para>
         /// <para>Field: TwitterLink</para>
@@ -6117,80 +6117,6 @@ namespace Feature.Person
 		string TwitterLinkValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Person/_Employee</para>
-	/// <summary>
-	public struct EmployeeItemConstants
-	{
-		public static ID TemplateID => new ID("{745652AE-3298-48B1-9BE1-99012D91F3AC}");
-		public static string TemplateName = "_Employee";
-
-		public struct Fields
-		{
-			public struct Biography
-			{
-				public static ID ID = new ID("{0CC9785E-54FE-4FAE-93E4-D0D2AE75F339}");
-				public static string FieldName = "Biography";
-			}
-			public struct BlogLink
-			{
-				public static ID ID = new ID("{69A846D9-4C7F-435C-A8DC-87E2D7359CFA}");
-				public static string FieldName = "BlogLink";
-			}
-			public struct Email
-			{
-				public static ID ID = new ID("{5978B330-1D46-4065-8751-F74BF17D815E}");
-				public static string FieldName = "Email";
-			}
-			public struct FacebookLink
-			{
-				public static ID ID = new ID("{D31889C0-E34C-4904-A6F3-F3D92D314AA9}");
-				public static string FieldName = "FacebookLink";
-			}
-			public struct LinkedInLink
-			{
-				public static ID ID = new ID("{2B13DFAB-3450-45EF-93F4-BEAA6F544FA6}");
-				public static string FieldName = "LinkedInLink";
-			}
-			public struct Mobile
-			{
-				public static ID ID = new ID("{25B4CEE3-A61A-4DC3-BB52-775DD509DBB5}");
-				public static string FieldName = "Mobile";
-			}
-			public struct Name
-			{
-				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
-				public static string FieldName = "Name";
-			}
-			public struct Picture
-			{
-				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
-				public static string FieldName = "Picture";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
-				public static string FieldName = "Summary";
-			}
-			public struct Telephone
-			{
-				public static ID ID = new ID("{8D0E8EE3-21C4-4AE2-A2F1-53D3F3EBE501}");
-				public static string FieldName = "Telephone";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
-				public static string FieldName = "Title";
-			}
-			public struct TwitterLink
-			{
-				public static ID ID = new ID("{6DE98EF7-1209-40A3-A63E-16DBEF015211}");
-				public static string FieldName = "TwitterLink";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -6239,10 +6165,10 @@ namespace Feature.Person
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("bloglink")]
-        public virtual IGeneralLinkFieldWrapper BlogLink
+        public virtual ICustomGeneralLinkFieldWrapper BlogLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("BlogLink", "bloglink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("BlogLink", "bloglink"); }
         }
 
         /// <summary>
@@ -6287,10 +6213,10 @@ namespace Feature.Person
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("facebooklink")]
-        public virtual IGeneralLinkFieldWrapper FacebookLink
+        public virtual ICustomGeneralLinkFieldWrapper FacebookLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("FacebookLink", "facebooklink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("FacebookLink", "facebooklink"); }
         }
 
         /// <summary>
@@ -6311,10 +6237,10 @@ namespace Feature.Person
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("linkedinlink")]
-        public virtual IGeneralLinkFieldWrapper LinkedInLink
+        public virtual ICustomGeneralLinkFieldWrapper LinkedInLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("LinkedInLink", "linkedinlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("LinkedInLink", "linkedinlink"); }
         }
 
         /// <summary>
@@ -6382,10 +6308,10 @@ namespace Feature.Person
         /// <para>Field: Picture</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Picture
+        public virtual ICustomImageFieldWrapper Picture
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Picture"); }
+            get { return GetField<CustomImageFieldWrapper>("Picture"); }
         }
 
         /// <summary>
@@ -6477,10 +6403,10 @@ namespace Feature.Person
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("twitterlink")]
-        public virtual IGeneralLinkFieldWrapper TwitterLink
+        public virtual ICustomGeneralLinkFieldWrapper TwitterLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TwitterLink", "twitterlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TwitterLink", "twitterlink"); }
         }
 
         /// <summary>
@@ -6496,6 +6422,80 @@ namespace Feature.Person
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Person/_Employee</para>
+	/// <summary>
+	public struct EmployeeItemConstants
+	{
+		public static ID TemplateID => new ID("{745652AE-3298-48B1-9BE1-99012D91F3AC}");
+		public static string TemplateName = "_Employee";
+
+		public struct Fields
+		{
+			public struct Biography
+			{
+				public static ID ID = new ID("{0CC9785E-54FE-4FAE-93E4-D0D2AE75F339}");
+				public static string FieldName = "Biography";
+			}
+			public struct BlogLink
+			{
+				public static ID ID = new ID("{69A846D9-4C7F-435C-A8DC-87E2D7359CFA}");
+				public static string FieldName = "BlogLink";
+			}
+			public struct Email
+			{
+				public static ID ID = new ID("{5978B330-1D46-4065-8751-F74BF17D815E}");
+				public static string FieldName = "Email";
+			}
+			public struct FacebookLink
+			{
+				public static ID ID = new ID("{D31889C0-E34C-4904-A6F3-F3D92D314AA9}");
+				public static string FieldName = "FacebookLink";
+			}
+			public struct LinkedInLink
+			{
+				public static ID ID = new ID("{2B13DFAB-3450-45EF-93F4-BEAA6F544FA6}");
+				public static string FieldName = "LinkedInLink";
+			}
+			public struct Mobile
+			{
+				public static ID ID = new ID("{25B4CEE3-A61A-4DC3-BB52-775DD509DBB5}");
+				public static string FieldName = "Mobile";
+			}
+			public struct Name
+			{
+				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
+				public static string FieldName = "Name";
+			}
+			public struct Picture
+			{
+				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
+				public static string FieldName = "Picture";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
+				public static string FieldName = "Summary";
+			}
+			public struct Telephone
+			{
+				public static ID ID = new ID("{8D0E8EE3-21C4-4AE2-A2F1-53D3F3EBE501}");
+				public static string FieldName = "Telephone";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
+				public static string FieldName = "Title";
+			}
+			public struct TwitterLink
+			{
+				public static ID ID = new ID("{6DE98EF7-1209-40A3-A63E-16DBEF015211}");
+				public static string FieldName = "TwitterLink";
+			}
+		}
 	}
     
 }
@@ -6537,7 +6537,7 @@ namespace Feature.Person
         /// <para>Field: Picture</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        IImageFieldWrapper Picture { get; }
+        ICustomImageFieldWrapper Picture { get; }
 		string PictureValue { get; }
 
         /// <summary>
@@ -6571,40 +6571,6 @@ namespace Feature.Person
 		string TitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Person/_Person</para>
-	/// <summary>
-	public struct PersonItemConstants
-	{
-		public static ID TemplateID => new ID("{7ACA6ECF-1A80-4E35-97F5-DBAA8E3EC617}");
-		public static string TemplateName = "_Person";
-
-		public struct Fields
-		{
-			public struct Name
-			{
-				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
-				public static string FieldName = "Name";
-			}
-			public struct Picture
-			{
-				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
-				public static string FieldName = "Picture";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -6652,10 +6618,10 @@ namespace Feature.Person
         /// <para>Field: Picture</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Picture
+        public virtual ICustomImageFieldWrapper Picture
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Picture"); }
+            get { return GetField<CustomImageFieldWrapper>("Picture"); }
         }
 
         /// <summary>
@@ -6719,6 +6685,40 @@ namespace Feature.Person
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Person/_Person</para>
+	/// <summary>
+	public struct PersonItemConstants
+	{
+		public static ID TemplateID => new ID("{7ACA6ECF-1A80-4E35-97F5-DBAA8E3EC617}");
+		public static string TemplateName = "_Person";
+
+		public struct Fields
+		{
+			public struct Name
+			{
+				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
+				public static string FieldName = "Name";
+			}
+			public struct Picture
+			{
+				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
+				public static string FieldName = "Picture";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
@@ -6770,50 +6770,6 @@ namespace Feature.Person
 		string QuoteValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Person/_Quote</para>
-	/// <summary>
-	public struct QuoteItemConstants
-	{
-		public static ID TemplateID => new ID("{755F1188-D385-4717-8681-EF45F2258575}");
-		public static string TemplateName = "_Quote";
-
-		public struct Fields
-		{
-			public struct CiteOrigin
-			{
-				public static ID ID = new ID("{BF83983A-473F-4A49-BE8E-7D563AA5687E}");
-				public static string FieldName = "Cite Origin";
-			}
-			public struct Name
-			{
-				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
-				public static string FieldName = "Name";
-			}
-			public struct Picture
-			{
-				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
-				public static string FieldName = "Picture";
-			}
-			public struct Quote
-			{
-				public static ID ID = new ID("{0DE53078-0DA4-40CC-BBCA-63AA96A0A1EF}");
-				public static string FieldName = "Quote";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -6885,10 +6841,10 @@ namespace Feature.Person
         /// <para>Field: Picture</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Picture
+        public virtual ICustomImageFieldWrapper Picture
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Picture"); }
+            get { return GetField<CustomImageFieldWrapper>("Picture"); }
         }
 
         /// <summary>
@@ -6976,6 +6932,50 @@ namespace Feature.Person
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Person/_Quote</para>
+	/// <summary>
+	public struct QuoteItemConstants
+	{
+		public static ID TemplateID => new ID("{755F1188-D385-4717-8681-EF45F2258575}");
+		public static string TemplateName = "_Quote";
+
+		public struct Fields
+		{
+			public struct CiteOrigin
+			{
+				public static ID ID = new ID("{BF83983A-473F-4A49-BE8E-7D563AA5687E}");
+				public static string FieldName = "Cite Origin";
+			}
+			public struct Name
+			{
+				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
+				public static string FieldName = "Name";
+			}
+			public struct Picture
+			{
+				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
+				public static string FieldName = "Picture";
+			}
+			public struct Quote
+			{
+				public static ID ID = new ID("{0DE53078-0DA4-40CC-BBCA-63AA96A0A1EF}");
+				public static string FieldName = "Quote";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
@@ -7014,30 +7014,6 @@ namespace Feature.Search
 		string ResultsOnPageValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Search/_PagedSearchResultsParameters</para>
-	/// <summary>
-	public struct PagedSearchResultsParametersItemConstants
-	{
-		public static ID TemplateID => new ID("{D1D3E60F-E571-48D2-84CF-B053EE660C13}");
-		public static string TemplateName = "_PagedSearchResultsParameters";
-
-		public struct Fields
-		{
-			public struct PagesToShow
-			{
-				public static ID ID = new ID("{D7DDE02F-B1F1-416D-91E0-7C3612EF4871}");
-				public static string FieldName = "PagesToShow";
-			}
-			public struct ResultsOnPage
-			{
-				public static ID ID = new ID("{FCC7E3B4-46AB-4A51-975F-A6B259B3D214}");
-				public static string FieldName = "ResultsOnPage";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -7097,6 +7073,30 @@ namespace Feature.Search
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Search/_PagedSearchResultsParameters</para>
+	/// <summary>
+	public struct PagedSearchResultsParametersItemConstants
+	{
+		public static ID TemplateID => new ID("{D1D3E60F-E571-48D2-84CF-B053EE660C13}");
+		public static string TemplateName = "_PagedSearchResultsParameters";
+
+		public struct Fields
+		{
+			public struct PagesToShow
+			{
+				public static ID ID = new ID("{D7DDE02F-B1F1-416D-91E0-7C3612EF4871}");
+				public static string FieldName = "PagesToShow";
+			}
+			public struct ResultsOnPage
+			{
+				public static ID ID = new ID("{FCC7E3B4-46AB-4A51-975F-A6B259B3D214}");
+				public static string FieldName = "ResultsOnPage";
+			}
+		}
+	}
     
 }
 #endregion
@@ -7126,25 +7126,6 @@ namespace Feature.Search
 		string SearchResultsPageValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Search/_SearchContext</para>
-	/// <summary>
-	public struct SearchContextItemConstants
-	{
-		public static ID TemplateID => new ID("{B524E8BE-A099-4A63-BE3F-DD4C42FD4185}");
-		public static string TemplateName = "_SearchContext";
-
-		public struct Fields
-		{
-			public struct SearchResultsPage
-			{
-				public static ID ID = new ID("{1C843E6A-02B9-4AA0-9FED-FDFDDC419AE3}");
-				public static string FieldName = "Search Results Page";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -7186,6 +7167,25 @@ namespace Feature.Search
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Search/_SearchContext</para>
+	/// <summary>
+	public struct SearchContextItemConstants
+	{
+		public static ID TemplateID => new ID("{B524E8BE-A099-4A63-BE3F-DD4C42FD4185}");
+		public static string TemplateName = "_SearchContext";
+
+		public struct Fields
+		{
+			public struct SearchResultsPage
+			{
+				public static ID ID = new ID("{1C843E6A-02B9-4AA0-9FED-FDFDDC419AE3}");
+				public static string FieldName = "Search Results Page";
+			}
+		}
 	}
     
 }
@@ -7238,30 +7238,6 @@ namespace Feature.Search
 		string SearchBoxTitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Search/_SearchResults</para>
-	/// <summary>
-	public struct SearchResultsItemConstants
-	{
-		public static ID TemplateID => new ID("{14E452CA-064D-48A8-9FF2-2744D10437A1}");
-		public static string TemplateName = "_SearchResults";
-
-		public struct Fields
-		{
-			public struct Root
-			{
-				public static ID ID = new ID("{CD904125-3AE5-4709-9E6D-71473C5D5007}");
-				public static string FieldName = "Root";
-			}
-			public struct SearchBoxTitle
-			{
-				public static ID ID = new ID("{80E30DD8-8021-45F5-9FE1-23D2702CC206}");
-				public static string FieldName = "SearchBoxTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -7330,6 +7306,30 @@ namespace Feature.Search
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Search/_SearchResults</para>
+	/// <summary>
+	public struct SearchResultsItemConstants
+	{
+		public static ID TemplateID => new ID("{14E452CA-064D-48A8-9FF2-2744D10437A1}");
+		public static string TemplateName = "_SearchResults";
+
+		public struct Fields
+		{
+			public struct Root
+			{
+				public static ID ID = new ID("{CD904125-3AE5-4709-9E6D-71473C5D5007}");
+				public static string FieldName = "Root";
+			}
+			public struct SearchBoxTitle
+			{
+				public static ID ID = new ID("{80E30DD8-8021-45F5-9FE1-23D2702CC206}");
+				public static string FieldName = "SearchBoxTitle";
+			}
+		}
+	}
     
 }
 #endregion
@@ -7370,7 +7370,7 @@ namespace Feature.Social
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        IImageFieldWrapper OpenGraphImage { get; }
+        ICustomImageFieldWrapper OpenGraphImage { get; }
 		string OpenGraphImageValue { get; }
 
         /// <summary>
@@ -7389,35 +7389,6 @@ namespace Feature.Social
 		string OpenGraphTitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Social/_OpenGraph</para>
-	/// <summary>
-	public struct OpenGraphItemConstants
-	{
-		public static ID TemplateID => new ID("{BDD24F35-05E8-4466-8798-7D3DD6A6C991}");
-		public static string TemplateName = "_OpenGraph";
-
-		public struct Fields
-		{
-			public struct OpenGraphDescription
-			{
-				public static ID ID = new ID("{A12D5346-87EE-484D-83C5-F1E8E1B99666}");
-				public static string FieldName = "OpenGraphDescription";
-			}
-			public struct OpenGraphImage
-			{
-				public static ID ID = new ID("{11F41661-E5FE-44E7-B8DA-7CFF2D39B4B2}");
-				public static string FieldName = "OpenGraphImage";
-			}
-			public struct OpenGraphTitle
-			{
-				public static ID ID = new ID("{0EE2F208-1FEE-42FC-8051-6696D49A92BF}");
-				public static string FieldName = "OpenGraphTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -7465,10 +7436,10 @@ namespace Feature.Social
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -7507,6 +7478,35 @@ namespace Feature.Social
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Social/_OpenGraph</para>
+	/// <summary>
+	public struct OpenGraphItemConstants
+	{
+		public static ID TemplateID => new ID("{BDD24F35-05E8-4466-8798-7D3DD6A6C991}");
+		public static string TemplateName = "_OpenGraph";
+
+		public struct Fields
+		{
+			public struct OpenGraphDescription
+			{
+				public static ID ID = new ID("{A12D5346-87EE-484D-83C5-F1E8E1B99666}");
+				public static string FieldName = "OpenGraphDescription";
+			}
+			public struct OpenGraphImage
+			{
+				public static ID ID = new ID("{11F41661-E5FE-44E7-B8DA-7CFF2D39B4B2}");
+				public static string FieldName = "OpenGraphImage";
+			}
+			public struct OpenGraphTitle
+			{
+				public static ID ID = new ID("{0EE2F208-1FEE-42FC-8051-6696D49A92BF}");
+				public static string FieldName = "OpenGraphTitle";
+			}
+		}
 	}
     
 }
@@ -7549,7 +7549,7 @@ namespace Feature.Social
         /// <para>Data type: General Link</para>
         /// </summary>
         [IndexField("twitterurl")]
-        IGeneralLinkFieldWrapper TwitterUrl { get; }
+        ICustomGeneralLinkFieldWrapper TwitterUrl { get; }
 		/// <summary>
 		/// <para>Template: _TwitterFeed</para>
         /// <para>Field: TwitterUrl</para>
@@ -7574,35 +7574,6 @@ namespace Feature.Social
 		string WidgetIdValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Social/_TwitterFeed</para>
-	/// <summary>
-	public struct TwitterFeedItemConstants
-	{
-		public static ID TemplateID => new ID("{89D988BC-A9A7-43F5-A9FD-A05B0B164720}");
-		public static string TemplateName = "_TwitterFeed";
-
-		public struct Fields
-		{
-			public struct FeedTitle
-			{
-				public static ID ID = new ID("{099E4085-150C-4073-88D9-8B159D9A8B01}");
-				public static string FieldName = "FeedTitle";
-			}
-			public struct TwitterUrl
-			{
-				public static ID ID = new ID("{92EF8986-45E2-42DE-913F-B91FD960297A}");
-				public static string FieldName = "TwitterUrl";
-			}
-			public struct WidgetId
-			{
-				public static ID ID = new ID("{D1CF33B1-8B8A-4AAB-AA7E-2460566BEDED}");
-				public static string FieldName = "WidgetId";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -7651,10 +7622,10 @@ namespace Feature.Social
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("twitterurl")]
-        public virtual IGeneralLinkFieldWrapper TwitterUrl
+        public virtual ICustomGeneralLinkFieldWrapper TwitterUrl
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TwitterUrl", "twitterurl"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TwitterUrl", "twitterurl"); }
         }
 
         /// <summary>
@@ -7695,6 +7666,35 @@ namespace Feature.Social
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Social/_TwitterFeed</para>
+	/// <summary>
+	public struct TwitterFeedItemConstants
+	{
+		public static ID TemplateID => new ID("{89D988BC-A9A7-43F5-A9FD-A05B0B164720}");
+		public static string TemplateName = "_TwitterFeed";
+
+		public struct Fields
+		{
+			public struct FeedTitle
+			{
+				public static ID ID = new ID("{099E4085-150C-4073-88D9-8B159D9A8B01}");
+				public static string FieldName = "FeedTitle";
+			}
+			public struct TwitterUrl
+			{
+				public static ID ID = new ID("{92EF8986-45E2-42DE-913F-B91FD960297A}");
+				public static string FieldName = "TwitterUrl";
+			}
+			public struct WidgetId
+			{
+				public static ID ID = new ID("{D1CF33B1-8B8A-4AAB-AA7E-2460566BEDED}");
+				public static string FieldName = "WidgetId";
+			}
+		}
+	}
     
 }
 #endregion
@@ -7725,30 +7725,6 @@ namespace Feature.Social
 		string TweetsToShowValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties</para>
-	/// <summary>
-	public struct TwitterFeedRenderingPropertiesItemConstants
-	{
-		public static ID TemplateID => new ID("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}");
-		public static string TemplateName = "_TwitterFeedRenderingProperties";
-
-		public struct Fields
-		{
-			public struct Background
-			{
-				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
-				public static string FieldName = "Background";
-			}
-			public struct TweetsToShow
-			{
-				public static ID ID = new ID("{084D873D-194D-456B-A1D8-328C048E5582}");
-				public static string FieldName = "TweetsToShow";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -7808,6 +7784,30 @@ namespace Feature.Social
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties</para>
+	/// <summary>
+	public struct TwitterFeedRenderingPropertiesItemConstants
+	{
+		public static ID TemplateID => new ID("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}");
+		public static string TemplateName = "_TwitterFeedRenderingProperties";
+
+		public struct Fields
+		{
+			public struct Background
+			{
+				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
+				public static string FieldName = "Background";
+			}
+			public struct TweetsToShow
+			{
+				public static ID ID = new ID("{084D873D-194D-456B-A1D8-328C048E5582}");
+				public static string FieldName = "TweetsToShow";
+			}
+		}
+	}
     
 }
 #endregion
@@ -7844,25 +7844,6 @@ namespace Feature.Teasers
 		string CssClassValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Teasers/Icon</para>
-	/// <summary>
-	public struct IconItemConstants
-	{
-		public static ID TemplateID => new ID("{E90D00B6-0BE9-48E0-9C3F-047274024270}");
-		public static string TemplateName = "Icon";
-
-		public struct Fields
-		{
-			public struct CssClass
-			{
-				public static ID ID = new ID("{585F89D1-570C-4F66-A6EC-195A8DA654E1}");
-				public static string FieldName = "CssClass";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -7906,6 +7887,25 @@ namespace Feature.Teasers
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Teasers/Icon</para>
+	/// <summary>
+	public struct IconItemConstants
+	{
+		public static ID TemplateID => new ID("{E90D00B6-0BE9-48E0-9C3F-047274024270}");
+		public static string TemplateName = "Icon";
+
+		public struct Fields
+		{
+			public struct CssClass
+			{
+				public static ID ID = new ID("{585F89D1-570C-4F66-A6EC-195A8DA654E1}");
+				public static string FieldName = "CssClass";
+			}
+		}
 	}
     
 }
@@ -7958,30 +7958,6 @@ namespace Feature.Teasers
 		long CountValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Teasers/_DynamicTeaser</para>
-	/// <summary>
-	public struct DynamicTeaserItemConstants
-	{
-		public static ID TemplateID => new ID("{20A56D46-F5E3-4DB8-8B96-081575363D44}");
-		public static string TemplateName = "_DynamicTeaser";
-
-		public struct Fields
-		{
-			public struct Active
-			{
-				public static ID ID = new ID("{9E942565-677F-491C-A0AC-6B930E37342A}");
-				public static string FieldName = "Active";
-			}
-			public struct Count
-			{
-				public static ID ID = new ID("{A33F9523-96C4-4E42-B6D7-1E861718D373}");
-				public static string FieldName = "Count";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -8050,6 +8026,30 @@ namespace Feature.Teasers
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Teasers/_DynamicTeaser</para>
+	/// <summary>
+	public struct DynamicTeaserItemConstants
+	{
+		public static ID TemplateID => new ID("{20A56D46-F5E3-4DB8-8B96-081575363D44}");
+		public static string TemplateName = "_DynamicTeaser";
+
+		public struct Fields
+		{
+			public struct Active
+			{
+				public static ID ID = new ID("{9E942565-677F-491C-A0AC-6B930E37342A}");
+				public static string FieldName = "Active";
+			}
+			public struct Count
+			{
+				public static ID ID = new ID("{A33F9523-96C4-4E42-B6D7-1E861718D373}");
+				public static string FieldName = "Count";
+			}
+		}
+	}
     
 }
 #endregion
@@ -8101,30 +8101,6 @@ namespace Feature.Teasers
 		string TeaserTitleValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Teasers/_Headline</para>
-	/// <summary>
-	public struct HeadlineItemConstants
-	{
-		public static ID TemplateID => new ID("{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}");
-		public static string TemplateName = "_Headline";
-
-		public struct Fields
-		{
-			public struct TeaserIcon
-			{
-				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
-				public static string FieldName = "Teaser Icon";
-			}
-			public struct TeaserTitle
-			{
-				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
-				public static string FieldName = "TeaserTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -8193,6 +8169,30 @@ namespace Feature.Teasers
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Teasers/_Headline</para>
+	/// <summary>
+	public struct HeadlineItemConstants
+	{
+		public static ID TemplateID => new ID("{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}");
+		public static string TemplateName = "_Headline";
+
+		public struct Fields
+		{
+			public struct TeaserIcon
+			{
+				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
+				public static string FieldName = "Teaser Icon";
+			}
+			public struct TeaserTitle
+			{
+				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
+				public static string FieldName = "TeaserTitle";
+			}
+		}
+	}
     
 }
 #endregion
@@ -8233,7 +8233,7 @@ namespace Feature.Teasers
         /// <para>Field: TeaserImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        IImageFieldWrapper TeaserImage { get; }
+        ICustomImageFieldWrapper TeaserImage { get; }
 		string TeaserImageValue { get; }
 
         /// <summary>
@@ -8242,7 +8242,7 @@ namespace Feature.Teasers
         /// <para>Data type: General Link</para>
         /// </summary>
         [IndexField("teaserlink")]
-        IGeneralLinkFieldWrapper TeaserLink { get; }
+        ICustomGeneralLinkFieldWrapper TeaserLink { get; }
 		/// <summary>
 		/// <para>Template: _TeaserContent</para>
         /// <para>Field: TeaserLink</para>
@@ -8267,50 +8267,6 @@ namespace Feature.Teasers
 		string TeaserSummaryValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Teasers/_TeaserContent</para>
-	/// <summary>
-	public struct TeaserContentItemConstants
-	{
-		public static ID TemplateID => new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
-		public static string TemplateName = "_TeaserContent";
-
-		public struct Fields
-		{
-			public struct TeaserIcon
-			{
-				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
-				public static string FieldName = "Teaser Icon";
-			}
-			public struct TeaserLabel
-			{
-				public static ID ID = new ID("{3F7E7E3A-4E8E-4639-B079-FC5AEFF172F5}");
-				public static string FieldName = "Teaser Label";
-			}
-			public struct TeaserImage
-			{
-				public static ID ID = new ID("{0F6B5546-E0AB-4487-81DE-640C1AA1B65B}");
-				public static string FieldName = "TeaserImage";
-			}
-			public struct TeaserLink
-			{
-				public static ID ID = new ID("{E8AB122C-6F54-4D4E-AEC6-F81ADDC558FC}");
-				public static string FieldName = "TeaserLink";
-			}
-			public struct TeaserSummary
-			{
-				public static ID ID = new ID("{13D97A52-7C4E-407C-960D-FADDE8A3C1B1}");
-				public static string FieldName = "TeaserSummary";
-			}
-			public struct TeaserTitle
-			{
-				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
-				public static string FieldName = "TeaserTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -8382,10 +8338,10 @@ namespace Feature.Teasers
         /// <para>Field: TeaserImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper TeaserImage
+        public virtual ICustomImageFieldWrapper TeaserImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("TeaserImage"); }
+            get { return GetField<CustomImageFieldWrapper>("TeaserImage"); }
         }
 
         /// <summary>
@@ -8405,10 +8361,10 @@ namespace Feature.Teasers
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("teaserlink")]
-        public virtual IGeneralLinkFieldWrapper TeaserLink
+        public virtual ICustomGeneralLinkFieldWrapper TeaserLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TeaserLink", "teaserlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TeaserLink", "teaserlink"); }
         }
 
         /// <summary>
@@ -8473,6 +8429,50 @@ namespace Feature.Teasers
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Teasers/_TeaserContent</para>
+	/// <summary>
+	public struct TeaserContentItemConstants
+	{
+		public static ID TemplateID => new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
+		public static string TemplateName = "_TeaserContent";
+
+		public struct Fields
+		{
+			public struct TeaserIcon
+			{
+				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
+				public static string FieldName = "Teaser Icon";
+			}
+			public struct TeaserLabel
+			{
+				public static ID ID = new ID("{3F7E7E3A-4E8E-4639-B079-FC5AEFF172F5}");
+				public static string FieldName = "Teaser Label";
+			}
+			public struct TeaserImage
+			{
+				public static ID ID = new ID("{0F6B5546-E0AB-4487-81DE-640C1AA1B65B}");
+				public static string FieldName = "TeaserImage";
+			}
+			public struct TeaserLink
+			{
+				public static ID ID = new ID("{E8AB122C-6F54-4D4E-AEC6-F81ADDC558FC}");
+				public static string FieldName = "TeaserLink";
+			}
+			public struct TeaserSummary
+			{
+				public static ID ID = new ID("{13D97A52-7C4E-407C-960D-FADDE8A3C1B1}");
+				public static string FieldName = "TeaserSummary";
+			}
+			public struct TeaserTitle
+			{
+				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
+				public static string FieldName = "TeaserTitle";
+			}
+		}
+	}
     
 }
 #endregion
@@ -8495,30 +8495,6 @@ namespace Feature.Teasers
 	public partial interface ITeasersParameters : IRenderingParameterWrapper, Foundation.Theming.IParametersTemplateFixedHeight, Foundation.Theming.IParametersTemplateHasBackground
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Teasers/_TeasersParameters</para>
-	/// <summary>
-	public struct TeasersParametersItemConstants
-	{
-		public static ID TemplateID => new ID("{20748D57-4EF6-49A8-B7E6-13818795E3B5}");
-		public static string TemplateName = "_TeasersParameters";
-
-		public struct Fields
-		{
-			public struct Background
-			{
-				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
-				public static string FieldName = "Background";
-			}
-			public struct FixedHeight
-			{
-				public static ID ID = new ID("{B8965F9D-DDB4-4B8F-BF40-AFCF3C9AE09F}");
-				public static string FieldName = "Fixed height";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -8578,6 +8554,30 @@ namespace Feature.Teasers
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Teasers/_TeasersParameters</para>
+	/// <summary>
+	public struct TeasersParametersItemConstants
+	{
+		public static ID TemplateID => new ID("{20748D57-4EF6-49A8-B7E6-13818795E3B5}");
+		public static string TemplateName = "_TeasersParameters";
+
+		public struct Fields
+		{
+			public struct Background
+			{
+				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
+				public static string FieldName = "Background";
+			}
+			public struct FixedHeight
+			{
+				public static ID ID = new ID("{B8965F9D-DDB4-4B8F-BF40-AFCF3C9AE09F}");
+				public static string FieldName = "Fixed height";
+			}
+		}
+	}
     
 }
 #endregion
@@ -8603,59 +8603,10 @@ namespace Feature.Teasers
         /// <para>Field: VideoLink</para>
         /// <para>Data type: link</para>
         /// </summary>
-        ITextFieldWrapper VideoLink { get; }
+        ICustomGeneralLinkFieldWrapper VideoLink { get; }
 		string VideoLinkValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Feature/Teasers/_TeaserVideoContent</para>
-	/// <summary>
-	public struct TeaserVideoContentItemConstants
-	{
-		public static ID TemplateID => new ID("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}");
-		public static string TemplateName = "_TeaserVideoContent";
-
-		public struct Fields
-		{
-			public struct TeaserIcon
-			{
-				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
-				public static string FieldName = "Teaser Icon";
-			}
-			public struct TeaserLabel
-			{
-				public static ID ID = new ID("{3F7E7E3A-4E8E-4639-B079-FC5AEFF172F5}");
-				public static string FieldName = "Teaser Label";
-			}
-			public struct TeaserImage
-			{
-				public static ID ID = new ID("{0F6B5546-E0AB-4487-81DE-640C1AA1B65B}");
-				public static string FieldName = "TeaserImage";
-			}
-			public struct TeaserLink
-			{
-				public static ID ID = new ID("{E8AB122C-6F54-4D4E-AEC6-F81ADDC558FC}");
-				public static string FieldName = "TeaserLink";
-			}
-			public struct TeaserSummary
-			{
-				public static ID ID = new ID("{13D97A52-7C4E-407C-960D-FADDE8A3C1B1}");
-				public static string FieldName = "TeaserSummary";
-			}
-			public struct TeaserTitle
-			{
-				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
-				public static string FieldName = "TeaserTitle";
-			}
-			public struct VideoLink
-			{
-				public static ID ID = new ID("{AC846A16-FD3F-4243-A21F-668A21010C44}");
-				public static string FieldName = "VideoLink";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -8727,10 +8678,10 @@ namespace Feature.Teasers
         /// <para>Field: TeaserImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper TeaserImage
+        public virtual ICustomImageFieldWrapper TeaserImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("TeaserImage"); }
+            get { return GetField<CustomImageFieldWrapper>("TeaserImage"); }
         }
 
         /// <summary>
@@ -8750,10 +8701,10 @@ namespace Feature.Teasers
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("teaserlink")]
-        public virtual IGeneralLinkFieldWrapper TeaserLink
+        public virtual ICustomGeneralLinkFieldWrapper TeaserLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TeaserLink", "teaserlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TeaserLink", "teaserlink"); }
         }
 
         /// <summary>
@@ -8821,10 +8772,10 @@ namespace Feature.Teasers
         /// <para>Field: VideoLink</para>
         /// <para>Data type: link</para>
         /// </summary>
-        public virtual ITextFieldWrapper VideoLink
+        public virtual ICustomGeneralLinkFieldWrapper VideoLink
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("VideoLink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("VideoLink"); }
         }
 
         /// <summary>
@@ -8839,6 +8790,55 @@ namespace Feature.Teasers
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Feature/Teasers/_TeaserVideoContent</para>
+	/// <summary>
+	public struct TeaserVideoContentItemConstants
+	{
+		public static ID TemplateID => new ID("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}");
+		public static string TemplateName = "_TeaserVideoContent";
+
+		public struct Fields
+		{
+			public struct TeaserIcon
+			{
+				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
+				public static string FieldName = "Teaser Icon";
+			}
+			public struct TeaserLabel
+			{
+				public static ID ID = new ID("{3F7E7E3A-4E8E-4639-B079-FC5AEFF172F5}");
+				public static string FieldName = "Teaser Label";
+			}
+			public struct TeaserImage
+			{
+				public static ID ID = new ID("{0F6B5546-E0AB-4487-81DE-640C1AA1B65B}");
+				public static string FieldName = "TeaserImage";
+			}
+			public struct TeaserLink
+			{
+				public static ID ID = new ID("{E8AB122C-6F54-4D4E-AEC6-F81ADDC558FC}");
+				public static string FieldName = "TeaserLink";
+			}
+			public struct TeaserSummary
+			{
+				public static ID ID = new ID("{13D97A52-7C4E-407C-960D-FADDE8A3C1B1}");
+				public static string FieldName = "TeaserSummary";
+			}
+			public struct TeaserTitle
+			{
+				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
+				public static string FieldName = "TeaserTitle";
+			}
+			public struct VideoLink
+			{
+				public static ID ID = new ID("{AC846A16-FD3F-4243-A21F-668A21010C44}");
+				public static string FieldName = "VideoLink";
+			}
+		}
 	}
     
 }
@@ -8862,20 +8862,6 @@ namespace Foundation.Assets
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Assets/Theme Folder</para>
-	/// <summary>
-	public struct ThemeFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{10059264-CD0B-47B9-8350-A31A90815921}");
-		public static string TemplateName = "Theme Folder";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/Assets/Theme Folder</para>
@@ -8894,6 +8880,20 @@ namespace Foundation.Assets
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Assets/Theme Folder</para>
+	/// <summary>
+	public struct ThemeFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{10059264-CD0B-47B9-8350-A31A90815921}");
+		public static string TemplateName = "Theme Folder";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -8916,40 +8916,6 @@ namespace Foundation.Assets
 	public partial interface ITheme : ICustomItemWrapper, Foundation.Assets.IRenderingAssets
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Assets/Theme</para>
-	/// <summary>
-	public struct ThemeItemConstants
-	{
-		public static ID TemplateID => new ID("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}");
-		public static string TemplateName = "Theme";
-
-		public struct Fields
-		{
-			public struct CssAssets
-			{
-				public static ID ID = new ID("{4867D192-326A-4AA4-81EF-EA430E224AFF}");
-				public static string FieldName = "Css assets";
-			}
-			public struct CssInline
-			{
-				public static ID ID = new ID("{FD0DEC96-B220-4196-B544-68B11EEE727A}");
-				public static string FieldName = "Css inline";
-			}
-			public struct JavaScriptAssets
-			{
-				public static ID ID = new ID("{E514A1EB-DDBA-44F7-8528-82CA2280F778}");
-				public static string FieldName = "JavaScript assets";
-			}
-			public struct JavaScriptInline
-			{
-				public static ID ID = new ID("{11421560-0BCB-403A-B099-8595C34341FD}");
-				public static string FieldName = "JavaScript inline";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -9066,6 +9032,40 @@ namespace Foundation.Assets
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Assets/Theme</para>
+	/// <summary>
+	public struct ThemeItemConstants
+	{
+		public static ID TemplateID => new ID("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}");
+		public static string TemplateName = "Theme";
+
+		public struct Fields
+		{
+			public struct CssAssets
+			{
+				public static ID ID = new ID("{4867D192-326A-4AA4-81EF-EA430E224AFF}");
+				public static string FieldName = "Css assets";
+			}
+			public struct CssInline
+			{
+				public static ID ID = new ID("{FD0DEC96-B220-4196-B544-68B11EEE727A}");
+				public static string FieldName = "Css inline";
+			}
+			public struct JavaScriptAssets
+			{
+				public static ID ID = new ID("{E514A1EB-DDBA-44F7-8528-82CA2280F778}");
+				public static string FieldName = "JavaScript assets";
+			}
+			public struct JavaScriptInline
+			{
+				public static ID ID = new ID("{11421560-0BCB-403A-B099-8595C34341FD}");
+				public static string FieldName = "JavaScript inline";
+			}
+		}
+	}
     
 }
 #endregion
@@ -9102,25 +9102,6 @@ namespace Foundation.Assets
 		Guid ThemeValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Assets/_HasTheme</para>
-	/// <summary>
-	public struct HasThemeItemConstants
-	{
-		public static ID TemplateID => new ID("{5B6F8720-3A93-4DA1-92A0-C3E85E01219A}");
-		public static string TemplateName = "_HasTheme";
-
-		public struct Fields
-		{
-			public struct Theme
-			{
-				public static ID ID = new ID("{53B5AF0A-265F-4E60-B2B2-4576CE0BECCF}");
-				public static string FieldName = "Theme";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -9164,6 +9145,25 @@ namespace Foundation.Assets
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Assets/_HasTheme</para>
+	/// <summary>
+	public struct HasThemeItemConstants
+	{
+		public static ID TemplateID => new ID("{5B6F8720-3A93-4DA1-92A0-C3E85E01219A}");
+		public static string TemplateName = "_HasTheme";
+
+		public struct Fields
+		{
+			public struct Theme
+			{
+				public static ID ID = new ID("{53B5AF0A-265F-4E60-B2B2-4576CE0BECCF}");
+				public static string FieldName = "Theme";
+			}
+		}
 	}
     
 }
@@ -9246,40 +9246,6 @@ namespace Foundation.Assets
 		string JavascriptCodeTopValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Assets/_PageAssets</para>
-	/// <summary>
-	public struct PageAssetsItemConstants
-	{
-		public static ID TemplateID => new ID("{91962B60-25F6-428F-8D10-02AA1E49D6A5}");
-		public static string TemplateName = "_PageAssets";
-
-		public struct Fields
-		{
-			public struct CssCode
-			{
-				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
-				public static string FieldName = "CssCode";
-			}
-			public struct InheritAssets
-			{
-				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
-				public static string FieldName = "InheritAssets";
-			}
-			public struct JavascriptCodeBottom
-			{
-				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
-				public static string FieldName = "JavascriptCodeBottom";
-			}
-			public struct JavascriptCodeTop
-			{
-				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
-				public static string FieldName = "JavascriptCodeTop";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -9396,6 +9362,40 @@ namespace Foundation.Assets
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Assets/_PageAssets</para>
+	/// <summary>
+	public struct PageAssetsItemConstants
+	{
+		public static ID TemplateID => new ID("{91962B60-25F6-428F-8D10-02AA1E49D6A5}");
+		public static string TemplateName = "_PageAssets";
+
+		public struct Fields
+		{
+			public struct CssCode
+			{
+				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
+				public static string FieldName = "CssCode";
+			}
+			public struct InheritAssets
+			{
+				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
+				public static string FieldName = "InheritAssets";
+			}
+			public struct JavascriptCodeBottom
+			{
+				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
+				public static string FieldName = "JavascriptCodeBottom";
+			}
+			public struct JavascriptCodeTop
+			{
+				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
+				public static string FieldName = "JavascriptCodeTop";
+			}
+		}
+	}
     
 }
 #endregion
@@ -9477,40 +9477,6 @@ namespace Foundation.Assets
 		string JavaScriptInlineValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Assets/_RenderingAssets</para>
-	/// <summary>
-	public struct RenderingAssetsItemConstants
-	{
-		public static ID TemplateID => new ID("{7CEAC341-B953-4C69-B907-EE44302BF6AE}");
-		public static string TemplateName = "_RenderingAssets";
-
-		public struct Fields
-		{
-			public struct CssAssets
-			{
-				public static ID ID = new ID("{4867D192-326A-4AA4-81EF-EA430E224AFF}");
-				public static string FieldName = "Css assets";
-			}
-			public struct CssInline
-			{
-				public static ID ID = new ID("{FD0DEC96-B220-4196-B544-68B11EEE727A}");
-				public static string FieldName = "Css inline";
-			}
-			public struct JavaScriptAssets
-			{
-				public static ID ID = new ID("{E514A1EB-DDBA-44F7-8528-82CA2280F778}");
-				public static string FieldName = "JavaScript assets";
-			}
-			public struct JavaScriptInline
-			{
-				public static ID ID = new ID("{11421560-0BCB-403A-B099-8595C34341FD}");
-				public static string FieldName = "JavaScript inline";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -9627,6 +9593,40 @@ namespace Foundation.Assets
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Assets/_RenderingAssets</para>
+	/// <summary>
+	public struct RenderingAssetsItemConstants
+	{
+		public static ID TemplateID => new ID("{7CEAC341-B953-4C69-B907-EE44302BF6AE}");
+		public static string TemplateName = "_RenderingAssets";
+
+		public struct Fields
+		{
+			public struct CssAssets
+			{
+				public static ID ID = new ID("{4867D192-326A-4AA4-81EF-EA430E224AFF}");
+				public static string FieldName = "Css assets";
+			}
+			public struct CssInline
+			{
+				public static ID ID = new ID("{FD0DEC96-B220-4196-B544-68B11EEE727A}");
+				public static string FieldName = "Css inline";
+			}
+			public struct JavaScriptAssets
+			{
+				public static ID ID = new ID("{E514A1EB-DDBA-44F7-8528-82CA2280F778}");
+				public static string FieldName = "JavaScript assets";
+			}
+			public struct JavaScriptInline
+			{
+				public static ID ID = new ID("{11421560-0BCB-403A-B099-8595C34341FD}");
+				public static string FieldName = "JavaScript inline";
+			}
+		}
+	}
     
 }
 #endregion
@@ -9663,25 +9663,6 @@ namespace Foundation.Dictionary
 		string PhraseValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryEntry</para>
-	/// <summary>
-	public struct DictionaryEntryItemConstants
-	{
-		public static ID TemplateID => new ID("{EC4DD3F2-590D-404B-9189-2A12679749CC}");
-		public static string TemplateName = "DictionaryEntry";
-
-		public struct Fields
-		{
-			public struct Phrase
-			{
-				public static ID ID = new ID("{DDACDD55-5B08-405F-9E58-04F09AED640A}");
-				public static string FieldName = "Phrase";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -9726,6 +9707,25 @@ namespace Foundation.Dictionary
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryEntry</para>
+	/// <summary>
+	public struct DictionaryEntryItemConstants
+	{
+		public static ID TemplateID => new ID("{EC4DD3F2-590D-404B-9189-2A12679749CC}");
+		public static string TemplateName = "DictionaryEntry";
+
+		public struct Fields
+		{
+			public struct Phrase
+			{
+				public static ID ID = new ID("{DDACDD55-5B08-405F-9E58-04F09AED640A}");
+				public static string FieldName = "Phrase";
+			}
+		}
+	}
     
 }
 #endregion
@@ -9748,20 +9748,6 @@ namespace Foundation.Dictionary
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryFolder</para>
-	/// <summary>
-	public struct DictionaryFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}");
-		public static string TemplateName = "DictionaryFolder";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/Dictionary/DictionaryFolder</para>
@@ -9780,6 +9766,20 @@ namespace Foundation.Dictionary
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryFolder</para>
+	/// <summary>
+	public struct DictionaryFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}");
+		public static string TemplateName = "DictionaryFolder";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -9817,25 +9817,6 @@ namespace Foundation.Indexing
 		bool IncludeInSearchResultsValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Indexing/_IndexedItem</para>
-	/// <summary>
-	public struct IndexedItemItemConstants
-	{
-		public static ID TemplateID => new ID("{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}");
-		public static string TemplateName = "_IndexedItem";
-
-		public struct Fields
-		{
-			public struct IncludeInSearchResults
-			{
-				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
-				public static string FieldName = "IncludeInSearchResults";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -9880,6 +9861,25 @@ namespace Foundation.Indexing
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Indexing/_IndexedItem</para>
+	/// <summary>
+	public struct IndexedItemItemConstants
+	{
+		public static ID TemplateID => new ID("{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}");
+		public static string TemplateName = "_IndexedItem";
+
+		public struct Fields
+		{
+			public struct IncludeInSearchResults
+			{
+				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
+				public static string FieldName = "IncludeInSearchResults";
+			}
+		}
+	}
     
 }
 #endregion
@@ -9902,20 +9902,6 @@ namespace Foundation.LocalDatasource
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder</para>
-	/// <summary>
-	public struct LocalDatasourceFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{FFF5F245-FFC0-4022-A998-9B07AA5E761F}");
-		public static string TemplateName = "Local Datasource Folder";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder</para>
@@ -9934,6 +9920,20 @@ namespace Foundation.LocalDatasource
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder</para>
+	/// <summary>
+	public struct LocalDatasourceFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{FFF5F245-FFC0-4022-A998-9B07AA5E761F}");
+		public static string TemplateName = "Local Datasource Folder";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -9972,30 +9972,6 @@ namespace Foundation.Multisite
 		string DatasourceTemplateValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Configuration</para>
-	/// <summary>
-	public struct DatasourceConfigurationItemConstants
-	{
-		public static ID TemplateID => new ID("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}");
-		public static string TemplateName = "Datasource Configuration";
-
-		public struct Fields
-		{
-			public struct DatasourceLocation
-			{
-				public static ID ID = new ID("{5FE1CC43-F86C-459C-A379-CD75950D85AF}");
-				public static string FieldName = "DatasourceLocation";
-			}
-			public struct DatasourceTemplate
-			{
-				public static ID ID = new ID("{498DD5B6-7DAE-44A7-9213-1D32596AD14F}");
-				public static string FieldName = "DatasourceTemplate";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -10060,6 +10036,30 @@ namespace Foundation.Multisite
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Configuration</para>
+	/// <summary>
+	public struct DatasourceConfigurationItemConstants
+	{
+		public static ID TemplateID => new ID("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}");
+		public static string TemplateName = "Datasource Configuration";
+
+		public struct Fields
+		{
+			public struct DatasourceLocation
+			{
+				public static ID ID = new ID("{5FE1CC43-F86C-459C-A379-CD75950D85AF}");
+				public static string FieldName = "DatasourceLocation";
+			}
+			public struct DatasourceTemplate
+			{
+				public static ID ID = new ID("{498DD5B6-7DAE-44A7-9213-1D32596AD14F}");
+				public static string FieldName = "DatasourceTemplate";
+			}
+		}
+	}
     
 }
 #endregion
@@ -10082,20 +10082,6 @@ namespace Foundation.Multisite
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Settings Folder</para>
-	/// <summary>
-	public struct DatasourceSettingsFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{7A98BE60-9F59-4064-82C2-58DA63562FA5}");
-		public static string TemplateName = "Datasource Settings Folder";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/Multisite/Datasource Settings Folder</para>
@@ -10114,6 +10100,20 @@ namespace Foundation.Multisite
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Settings Folder</para>
+	/// <summary>
+	public struct DatasourceSettingsFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{7A98BE60-9F59-4064-82C2-58DA63562FA5}");
+		public static string TemplateName = "Datasource Settings Folder";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -10137,20 +10137,6 @@ namespace Foundation.Multisite
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Multisite/Site Settings Root</para>
-	/// <summary>
-	public struct SiteSettingsRootItemConstants
-	{
-		public static ID TemplateID => new ID("{4C82B6DD-FE7C-4144-BCB3-F21B4080568F}");
-		public static string TemplateName = "Site Settings Root";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/Multisite/Site Settings Root</para>
@@ -10169,6 +10155,20 @@ namespace Foundation.Multisite
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Multisite/Site Settings Root</para>
+	/// <summary>
+	public struct SiteSettingsRootItemConstants
+	{
+		public static ID TemplateID => new ID("{4C82B6DD-FE7C-4144-BCB3-F21B4080568F}");
+		public static string TemplateName = "Site Settings Root";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -10192,20 +10192,6 @@ namespace Foundation.Multisite
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Multisite/_Site</para>
-	/// <summary>
-	public struct SiteItemConstants
-	{
-		public static ID TemplateID => new ID("{BB85C5C2-9F87-48CE-8012-AF67CF4F765D}");
-		public static string TemplateName = "_Site";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/Multisite/_Site</para>
@@ -10224,6 +10210,20 @@ namespace Foundation.Multisite
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Multisite/_Site</para>
+	/// <summary>
+	public struct SiteItemConstants
+	{
+		public static ID TemplateID => new ID("{BB85C5C2-9F87-48CE-8012-AF67CF4F765D}");
+		public static string TemplateName = "_Site";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -10247,20 +10247,6 @@ namespace Foundation.Multisite
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Multisite/_SiteSettings</para>
-	/// <summary>
-	public struct SiteSettingsItemConstants
-	{
-		public static ID TemplateID => new ID("{BCCFEBEA-DCCB-48FE-9570-6503829EC03F}");
-		public static string TemplateName = "_SiteSettings";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/Multisite/_SiteSettings</para>
@@ -10279,6 +10265,20 @@ namespace Foundation.Multisite
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Multisite/_SiteSettings</para>
+	/// <summary>
+	public struct SiteSettingsItemConstants
+	{
+		public static ID TemplateID => new ID("{BCCFEBEA-DCCB-48FE-9570-6503829EC03F}");
+		public static string TemplateName = "_SiteSettings";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -10303,20 +10303,6 @@ namespace Foundation.SitecoreExtensions
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder</para>
-	/// <summary>
-	public struct ParametersTemplateHasDynamicPlaceholderItemConstants
-	{
-		public static ID TemplateID => new ID("{8373E4E5-C79C-4123-9284-BABD9601C565}");
-		public static string TemplateName = "ParametersTemplate_HasDynamicPlaceholder";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder</para>
@@ -10330,6 +10316,20 @@ namespace Foundation.SitecoreExtensions
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder</para>
+	/// <summary>
+	public struct ParametersTemplateHasDynamicPlaceholderItemConstants
+	{
+		public static ID TemplateID => new ID("{8373E4E5-C79C-4123-9284-BABD9601C565}");
+		public static string TemplateName = "ParametersTemplate_HasDynamicPlaceholder";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -10354,20 +10354,6 @@ namespace Foundation.SitecoreExtensions
     {
     }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering</para>
-	/// <summary>
-	public struct ParametersTemplateQueryableDatasourceRenderingItemConstants
-	{
-		public static ID TemplateID => new ID("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}");
-		public static string TemplateName = "ParametersTemplate_QueryableDatasourceRendering";
-
-		public struct Fields
-		{
-		}
-	}
-
     /// <summary>
     /// <para>Template class</para>
     /// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering</para>
@@ -10381,6 +10367,20 @@ namespace Foundation.SitecoreExtensions
         }
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering</para>
+	/// <summary>
+	public struct ParametersTemplateQueryableDatasourceRenderingItemConstants
+	{
+		public static ID TemplateID => new ID("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}");
+		public static string TemplateName = "ParametersTemplate_QueryableDatasourceRendering";
+
+		public struct Fields
+		{
+		}
 	}
     
 }
@@ -10412,25 +10412,6 @@ namespace Foundation.Theming
 		bool FixedHeightValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight</para>
-	/// <summary>
-	public struct ParametersTemplateFixedHeightItemConstants
-	{
-		public static ID TemplateID => new ID("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}");
-		public static string TemplateName = "ParametersTemplate_FixedHeight";
-
-		public struct Fields
-		{
-			public struct FixedHeight
-			{
-				public static ID ID = new ID("{B8965F9D-DDB4-4B8F-BF40-AFCF3C9AE09F}");
-				public static string FieldName = "Fixed height";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -10468,6 +10449,25 @@ namespace Foundation.Theming
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight</para>
+	/// <summary>
+	public struct ParametersTemplateFixedHeightItemConstants
+	{
+		public static ID TemplateID => new ID("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}");
+		public static string TemplateName = "ParametersTemplate_FixedHeight";
+
+		public struct Fields
+		{
+			public struct FixedHeight
+			{
+				public static ID ID = new ID("{B8965F9D-DDB4-4B8F-BF40-AFCF3C9AE09F}");
+				public static string FieldName = "Fixed height";
+			}
+		}
+	}
     
 }
 #endregion
@@ -10498,25 +10498,6 @@ namespace Foundation.Theming
 		Guid BackgroundValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground</para>
-	/// <summary>
-	public struct ParametersTemplateHasBackgroundItemConstants
-	{
-		public static ID TemplateID => new ID("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}");
-		public static string TemplateName = "ParametersTemplate_HasBackground";
-
-		public struct Fields
-		{
-			public struct Background
-			{
-				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
-				public static string FieldName = "Background";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -10554,6 +10535,25 @@ namespace Foundation.Theming
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground</para>
+	/// <summary>
+	public struct ParametersTemplateHasBackgroundItemConstants
+	{
+		public static ID TemplateID => new ID("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}");
+		public static string TemplateName = "ParametersTemplate_HasBackground";
+
+		public struct Fields
+		{
+			public struct Background
+			{
+				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
+				public static string FieldName = "Background";
+			}
+		}
+	}
     
 }
 #endregion
@@ -10584,25 +10584,6 @@ namespace Foundation.Theming
 		bool ContainerIsFluidValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer</para>
-	/// <summary>
-	public struct ParametersTemplateHasContainerItemConstants
-	{
-		public static ID TemplateID => new ID("{29299E73-6841-44C1-A65F-0889011E2EEC}");
-		public static string TemplateName = "ParametersTemplate_HasContainer";
-
-		public struct Fields
-		{
-			public struct ContainerIsFluid
-			{
-				public static ID ID = new ID("{8F49D801-02B0-4DB7-90DB-5742D1662CF1}");
-				public static string FieldName = "ContainerIsFluid";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -10640,6 +10621,25 @@ namespace Foundation.Theming
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer</para>
+	/// <summary>
+	public struct ParametersTemplateHasContainerItemConstants
+	{
+		public static ID TemplateID => new ID("{29299E73-6841-44C1-A65F-0889011E2EEC}");
+		public static string TemplateName = "ParametersTemplate_HasContainer";
+
+		public struct Fields
+		{
+			public struct ContainerIsFluid
+			{
+				public static ID ID = new ID("{8F49D801-02B0-4DB7-90DB-5742D1662CF1}");
+				public static string FieldName = "ContainerIsFluid";
+			}
+		}
+	}
     
 }
 #endregion
@@ -10662,30 +10662,6 @@ namespace Foundation.Theming
 	public partial interface IParametersTemplateHasContainerWithBackground : IRenderingParameterWrapper, Foundation.Theming.IParametersTemplateHasBackground, Foundation.Theming.IParametersTemplateHasContainer
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground</para>
-	/// <summary>
-	public struct ParametersTemplateHasContainerWithBackgroundItemConstants
-	{
-		public static ID TemplateID => new ID("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}");
-		public static string TemplateName = "ParametersTemplate_HasContainerWithBackground";
-
-		public struct Fields
-		{
-			public struct Background
-			{
-				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
-				public static string FieldName = "Background";
-			}
-			public struct ContainerIsFluid
-			{
-				public static ID ID = new ID("{8F49D801-02B0-4DB7-90DB-5742D1662CF1}");
-				public static string FieldName = "ContainerIsFluid";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -10745,6 +10721,30 @@ namespace Foundation.Theming
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground</para>
+	/// <summary>
+	public struct ParametersTemplateHasContainerWithBackgroundItemConstants
+	{
+		public static ID TemplateID => new ID("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}");
+		public static string TemplateName = "ParametersTemplate_HasContainerWithBackground";
+
+		public struct Fields
+		{
+			public struct Background
+			{
+				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
+				public static string FieldName = "Background";
+			}
+			public struct ContainerIsFluid
+			{
+				public static ID ID = new ID("{8F49D801-02B0-4DB7-90DB-5742D1662CF1}");
+				public static string FieldName = "ContainerIsFluid";
+			}
+		}
+	}
     
 }
 #endregion
@@ -10781,25 +10781,6 @@ namespace Foundation.Theming
 		string ClassValue { get; }
 
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Foundation/Theming/Style</para>
-	/// <summary>
-	public struct StyleItemConstants
-	{
-		public static ID TemplateID => new ID("{C2AC5C42-A05C-4F51-854E-730C9BCA06D1}");
-		public static string TemplateName = "Style";
-
-		public struct Fields
-		{
-			public struct Class
-			{
-				public static ID ID = new ID("{CF1E34B0-27E7-4861-BECD-C0BC58295F77}");
-				public static string FieldName = "Class";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -10844,12 +10825,31 @@ namespace Foundation.Theming
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Foundation/Theming/Style</para>
+	/// <summary>
+	public struct StyleItemConstants
+	{
+		public static ID TemplateID => new ID("{C2AC5C42-A05C-4F51-854E-730C9BCA06D1}");
+		public static string TemplateName = "Style";
+
+		public struct Fields
+		{
+			public struct Class
+			{
+				public static ID ID = new ID("{CF1E34B0-27E7-4861-BECD-C0BC58295F77}");
+				public static string FieldName = "Class";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Demo Teaser (/sitecore/templates/Project/Common/Content Types/Demo Teaser)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10865,25 +10865,6 @@ namespace Project.Common
 	public partial interface IDemoTeaser : ICustomItemWrapper, Feature.Demo.IDemoContent
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Teaser</para>
-	/// <summary>
-	public struct DemoTeaserItemConstants
-	{
-		public static ID TemplateID => new ID("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}");
-		public static string TemplateName = "Demo Teaser";
-
-		public struct Fields
-		{
-			public struct HTMLContent
-			{
-				public static ID ID = new ID("{0BC0AEDF-A6D0-4F74-933C-BD1779CD40B2}");
-				public static string FieldName = "HTML Content";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -10928,12 +10909,31 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Teaser</para>
+	/// <summary>
+	public struct DemoTeaserItemConstants
+	{
+		public static ID TemplateID => new ID("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}");
+		public static string TemplateName = "Demo Teaser";
+
+		public struct Fields
+		{
+			public struct HTMLContent
+			{
+				public static ID ID = new ID("{0BC0AEDF-A6D0-4F74-933C-BD1779CD40B2}");
+				public static string FieldName = "HTML Content";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Campaign Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token)
-namespace Project.Common
+namespace Project.Common.ContentTypes.DemoTokens
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -10949,25 +10949,6 @@ namespace Project.Common
 	public partial interface ICampaignToken : ICustomItemWrapper, Feature.Demo.ICampaignToken, Feature.Demo.IToken
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token</para>
-	/// <summary>
-	public struct CampaignTokenItemConstants
-	{
-		public static ID TemplateID => new ID("{51B1726B-4290-4908-A2DA-B169194AE80C}");
-		public static string TemplateName = "Campaign Token";
-
-		public struct Fields
-		{
-			public struct TokenValue
-			{
-				public static ID ID = new ID("{3B485BD9-DEAE-4AAF-9C32-4106C4214162}");
-				public static string FieldName = "Token Value";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11012,12 +10993,31 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token</para>
+	/// <summary>
+	public struct CampaignTokenItemConstants
+	{
+		public static ID TemplateID => new ID("{51B1726B-4290-4908-A2DA-B169194AE80C}");
+		public static string TemplateName = "Campaign Token";
+
+		public struct Fields
+		{
+			public struct TokenValue
+			{
+				public static ID ID = new ID("{3B485BD9-DEAE-4AAF-9C32-4106C4214162}");
+				public static string FieldName = "Token Value";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Link Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token)
-namespace Project.Common
+namespace Project.Common.ContentTypes.DemoTokens
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11033,25 +11033,6 @@ namespace Project.Common
 	public partial interface ILinkToken : ICustomItemWrapper, Feature.Demo.ILinkToken, Feature.Demo.IToken
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token</para>
-	/// <summary>
-	public struct LinkTokenItemConstants
-	{
-		public static ID TemplateID => new ID("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}");
-		public static string TemplateName = "Link Token";
-
-		public struct Fields
-		{
-			public struct TokenValue
-			{
-				public static ID ID = new ID("{4A27A4AA-9201-4D1D-B612-F45DDA086C4C}");
-				public static string FieldName = "Token Value";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11076,10 +11057,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("token_value")]
-        public virtual IGeneralLinkFieldWrapper TokenValue
+        public virtual ICustomGeneralLinkFieldWrapper TokenValue
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("Token Value", "token_value"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("Token Value", "token_value"); }
         }
 
         /// <summary>
@@ -11096,12 +11077,31 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token</para>
+	/// <summary>
+	public struct LinkTokenItemConstants
+	{
+		public static ID TemplateID => new ID("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}");
+		public static string TemplateName = "Link Token";
+
+		public struct Fields
+		{
+			public struct TokenValue
+			{
+				public static ID ID = new ID("{4A27A4AA-9201-4D1D-B612-F45DDA086C4C}");
+				public static string FieldName = "Token Value";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Text Token (/sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token)
-namespace Project.Common
+namespace Project.Common.ContentTypes.DemoTokens
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11117,25 +11117,6 @@ namespace Project.Common
 	public partial interface ITextToken : ICustomItemWrapper, Feature.Demo.ITextToken, Feature.Demo.IToken
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token</para>
-	/// <summary>
-	public struct TextTokenItemConstants
-	{
-		public static ID TemplateID => new ID("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}");
-		public static string TemplateName = "Text Token";
-
-		public struct Fields
-		{
-			public struct TokenValue
-			{
-				public static ID ID = new ID("{7B9F4FE3-6285-4969-9784-B96D49973161}");
-				public static string FieldName = "Token Value";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11180,12 +11161,31 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token</para>
+	/// <summary>
+	public struct TextTokenItemConstants
+	{
+		public static ID TemplateID => new ID("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}");
+		public static string TemplateName = "Text Token";
+
+		public struct Fields
+		{
+			public struct TokenValue
+			{
+				public static ID ID = new ID("{7B9F4FE3-6285-4969-9784-B96D49973161}");
+				public static string FieldName = "Token Value";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Employee Folder (/sitecore/templates/Project/Common/Content Types/Employee Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11201,20 +11201,6 @@ namespace Project.Common
 	public partial interface IEmployeeFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Employee Folder</para>
-	/// <summary>
-	public struct EmployeeFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{F94F28F6-5B19-42F2-9164-1E21023E03EE}");
-		public static string TemplateName = "Employee Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11235,12 +11221,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Employee Folder</para>
+	/// <summary>
+	public struct EmployeeFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{F94F28F6-5B19-42F2-9164-1E21023E03EE}");
+		public static string TemplateName = "Employee Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Employee (/sitecore/templates/Project/Common/Content Types/Employee)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11256,80 +11256,6 @@ namespace Project.Common
 	public partial interface IEmployee : ICustomItemWrapper, Feature.Person.IEmployee, Feature.Person.IPerson
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Employee</para>
-	/// <summary>
-	public struct EmployeeItemConstants
-	{
-		public static ID TemplateID => new ID("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}");
-		public static string TemplateName = "Employee";
-
-		public struct Fields
-		{
-			public struct Biography
-			{
-				public static ID ID = new ID("{0CC9785E-54FE-4FAE-93E4-D0D2AE75F339}");
-				public static string FieldName = "Biography";
-			}
-			public struct BlogLink
-			{
-				public static ID ID = new ID("{69A846D9-4C7F-435C-A8DC-87E2D7359CFA}");
-				public static string FieldName = "BlogLink";
-			}
-			public struct Email
-			{
-				public static ID ID = new ID("{5978B330-1D46-4065-8751-F74BF17D815E}");
-				public static string FieldName = "Email";
-			}
-			public struct FacebookLink
-			{
-				public static ID ID = new ID("{D31889C0-E34C-4904-A6F3-F3D92D314AA9}");
-				public static string FieldName = "FacebookLink";
-			}
-			public struct LinkedInLink
-			{
-				public static ID ID = new ID("{2B13DFAB-3450-45EF-93F4-BEAA6F544FA6}");
-				public static string FieldName = "LinkedInLink";
-			}
-			public struct Mobile
-			{
-				public static ID ID = new ID("{25B4CEE3-A61A-4DC3-BB52-775DD509DBB5}");
-				public static string FieldName = "Mobile";
-			}
-			public struct Name
-			{
-				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
-				public static string FieldName = "Name";
-			}
-			public struct Picture
-			{
-				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
-				public static string FieldName = "Picture";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
-				public static string FieldName = "Summary";
-			}
-			public struct Telephone
-			{
-				public static ID ID = new ID("{8D0E8EE3-21C4-4AE2-A2F1-53D3F3EBE501}");
-				public static string FieldName = "Telephone";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
-				public static string FieldName = "Title";
-			}
-			public struct TwitterLink
-			{
-				public static ID ID = new ID("{6DE98EF7-1209-40A3-A63E-16DBEF015211}");
-				public static string FieldName = "TwitterLink";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11378,10 +11304,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("bloglink")]
-        public virtual IGeneralLinkFieldWrapper BlogLink
+        public virtual ICustomGeneralLinkFieldWrapper BlogLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("BlogLink", "bloglink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("BlogLink", "bloglink"); }
         }
 
         /// <summary>
@@ -11426,10 +11352,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("facebooklink")]
-        public virtual IGeneralLinkFieldWrapper FacebookLink
+        public virtual ICustomGeneralLinkFieldWrapper FacebookLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("FacebookLink", "facebooklink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("FacebookLink", "facebooklink"); }
         }
 
         /// <summary>
@@ -11450,10 +11376,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("linkedinlink")]
-        public virtual IGeneralLinkFieldWrapper LinkedInLink
+        public virtual ICustomGeneralLinkFieldWrapper LinkedInLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("LinkedInLink", "linkedinlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("LinkedInLink", "linkedinlink"); }
         }
 
         /// <summary>
@@ -11521,10 +11447,10 @@ namespace Project.Common
         /// <para>Field: Picture</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Picture
+        public virtual ICustomImageFieldWrapper Picture
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Picture"); }
+            get { return GetField<CustomImageFieldWrapper>("Picture"); }
         }
 
         /// <summary>
@@ -11616,10 +11542,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("twitterlink")]
-        public virtual IGeneralLinkFieldWrapper TwitterLink
+        public virtual ICustomGeneralLinkFieldWrapper TwitterLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TwitterLink", "twitterlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TwitterLink", "twitterlink"); }
         }
 
         /// <summary>
@@ -11636,12 +11562,86 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Employee</para>
+	/// <summary>
+	public struct EmployeeItemConstants
+	{
+		public static ID TemplateID => new ID("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}");
+		public static string TemplateName = "Employee";
+
+		public struct Fields
+		{
+			public struct Biography
+			{
+				public static ID ID = new ID("{0CC9785E-54FE-4FAE-93E4-D0D2AE75F339}");
+				public static string FieldName = "Biography";
+			}
+			public struct BlogLink
+			{
+				public static ID ID = new ID("{69A846D9-4C7F-435C-A8DC-87E2D7359CFA}");
+				public static string FieldName = "BlogLink";
+			}
+			public struct Email
+			{
+				public static ID ID = new ID("{5978B330-1D46-4065-8751-F74BF17D815E}");
+				public static string FieldName = "Email";
+			}
+			public struct FacebookLink
+			{
+				public static ID ID = new ID("{D31889C0-E34C-4904-A6F3-F3D92D314AA9}");
+				public static string FieldName = "FacebookLink";
+			}
+			public struct LinkedInLink
+			{
+				public static ID ID = new ID("{2B13DFAB-3450-45EF-93F4-BEAA6F544FA6}");
+				public static string FieldName = "LinkedInLink";
+			}
+			public struct Mobile
+			{
+				public static ID ID = new ID("{25B4CEE3-A61A-4DC3-BB52-775DD509DBB5}");
+				public static string FieldName = "Mobile";
+			}
+			public struct Name
+			{
+				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
+				public static string FieldName = "Name";
+			}
+			public struct Picture
+			{
+				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
+				public static string FieldName = "Picture";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
+				public static string FieldName = "Summary";
+			}
+			public struct Telephone
+			{
+				public static ID ID = new ID("{8D0E8EE3-21C4-4AE2-A2F1-53D3F3EBE501}");
+				public static string FieldName = "Telephone";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
+				public static string FieldName = "Title";
+			}
+			public struct TwitterLink
+			{
+				public static ID ID = new ID("{6DE98EF7-1209-40A3-A63E-16DBEF015211}");
+				public static string FieldName = "TwitterLink";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region FAQ Folder (/sitecore/templates/Project/Common/Content Types/FAQ Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11657,20 +11657,6 @@ namespace Project.Common
 	public partial interface IFAQFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Folder</para>
-	/// <summary>
-	public struct FAQFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{41DA2D61-D85A-40F1-BE69-DDD18DD1BC93}");
-		public static string TemplateName = "FAQ Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11691,12 +11677,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Folder</para>
+	/// <summary>
+	public struct FAQFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{41DA2D61-D85A-40F1-BE69-DDD18DD1BC93}");
+		public static string TemplateName = "FAQ Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region FAQ Group (/sitecore/templates/Project/Common/Content Types/FAQ Group)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11712,25 +11712,6 @@ namespace Project.Common
 	public partial interface IFAQGroup : ICustomItemWrapper, Feature.FAQ.IFAQGroup
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Group</para>
-	/// <summary>
-	public struct FAQGroupItemConstants
-	{
-		public static ID TemplateID => new ID("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}");
-		public static string TemplateName = "FAQ Group";
-
-		public struct Fields
-		{
-			public struct GroupMember
-			{
-				public static ID ID = new ID("{631DA648-E2A5-4E3B-9733-C9C066C41EAE}");
-				public static string FieldName = "Group Member";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11775,12 +11756,31 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Group</para>
+	/// <summary>
+	public struct FAQGroupItemConstants
+	{
+		public static ID TemplateID => new ID("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}");
+		public static string TemplateName = "FAQ Group";
+
+		public struct Fields
+		{
+			public struct GroupMember
+			{
+				public static ID ID = new ID("{631DA648-E2A5-4E3B-9733-C9C066C41EAE}");
+				public static string FieldName = "Group Member";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region FAQ (/sitecore/templates/Project/Common/Content Types/FAQ)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11796,30 +11796,6 @@ namespace Project.Common
 	public partial interface IFAQ : ICustomItemWrapper, Feature.FAQ.IFAQ
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ</para>
-	/// <summary>
-	public struct FAQItemConstants
-	{
-		public static ID TemplateID => new ID("{BFDC1F27-3D2D-495F-89A3-0951F882420B}");
-		public static string TemplateName = "FAQ";
-
-		public struct Fields
-		{
-			public struct Answer
-			{
-				public static ID ID = new ID("{57F39C75-51F0-4888-903E-724DFDCC8A38}");
-				public static string FieldName = "Answer";
-			}
-			public struct Question
-			{
-				public static ID ID = new ID("{9588B6D5-3E6A-4C16-BD37-98DA6F1DDE52}");
-				public static string FieldName = "Question";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11888,12 +11864,36 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ</para>
+	/// <summary>
+	public struct FAQItemConstants
+	{
+		public static ID TemplateID => new ID("{BFDC1F27-3D2D-495F-89A3-0951F882420B}");
+		public static string TemplateName = "FAQ";
+
+		public struct Fields
+		{
+			public struct Answer
+			{
+				public static ID ID = new ID("{57F39C75-51F0-4888-903E-724DFDCC8A38}");
+				public static string FieldName = "Answer";
+			}
+			public struct Question
+			{
+				public static ID ID = new ID("{9588B6D5-3E6A-4C16-BD37-98DA6F1DDE52}");
+				public static string FieldName = "Question";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Global Folder (/sitecore/templates/Project/Common/Content Types/Global Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11909,20 +11909,6 @@ namespace Project.Common
 	public partial interface IGlobalFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Global Folder</para>
-	/// <summary>
-	public struct GlobalFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{FD075CBC-572E-4D27-A09F-B780E8FF4741}");
-		public static string TemplateName = "Global Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -11943,12 +11929,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Global Folder</para>
+	/// <summary>
+	public struct GlobalFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{FD075CBC-572E-4D27-A09F-B780E8FF4741}");
+		public static string TemplateName = "Global Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Interest (/sitecore/templates/Project/Common/Content Types/Interest)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -11964,25 +11964,6 @@ namespace Project.Common
 	public partial interface IInterest : ICustomItemWrapper, Feature.Accounts.IInterest
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Interest</para>
-	/// <summary>
-	public struct InterestItemConstants
-	{
-		public static ID TemplateID => new ID("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}");
-		public static string TemplateName = "Interest";
-
-		public struct Fields
-		{
-			public struct Title
-			{
-				public static ID ID = new ID("{1FBE5200-2C62-4A32-BA84-CFFE3CF665D3}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12027,12 +12008,31 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Interest</para>
+	/// <summary>
+	public struct InterestItemConstants
+	{
+		public static ID TemplateID => new ID("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}");
+		public static string TemplateName = "Interest";
+
+		public struct Fields
+		{
+			public struct Title
+			{
+				public static ID ID = new ID("{1FBE5200-2C62-4A32-BA84-CFFE3CF665D3}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Interests Folder (/sitecore/templates/Project/Common/Content Types/Interests Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12048,20 +12048,6 @@ namespace Project.Common
 	public partial interface IInterestsFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Interests Folder</para>
-	/// <summary>
-	public struct InterestsFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{0DB13819-7DF3-4136-A4B9-0A22B1023EF7}");
-		public static string TemplateName = "Interests Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12082,12 +12068,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Interests Folder</para>
+	/// <summary>
+	public struct InterestsFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{0DB13819-7DF3-4136-A4B9-0A22B1023EF7}");
+		public static string TemplateName = "Interests Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Link Menu Item (/sitecore/templates/Project/Common/Content Types/Link Menu Item)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12103,50 +12103,6 @@ namespace Project.Common
 	public partial interface ILinkMenuItem : ICustomItemWrapper, Feature.Navigation.ILink, Feature.Navigation.ILinkMenuItem, Feature.Navigation.INavigable
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu Item</para>
-	/// <summary>
-	public struct LinkMenuItemItemConstants
-	{
-		public static ID TemplateID => new ID("{390333C8-751B-4332-84A3-6360B969A19F}");
-		public static string TemplateName = "Link Menu Item";
-
-		public struct Fields
-		{
-			public struct DividerBefore
-			{
-				public static ID ID = new ID("{4231CD60-47C1-42AD-B838-0A6F8F1C4CFB}");
-				public static string FieldName = "DividerBefore";
-			}
-			public struct Icon
-			{
-				public static ID ID = new ID("{2C24649E-4460-4114-B026-886CFBE1A96D}");
-				public static string FieldName = "Icon";
-			}
-			public struct Link
-			{
-				public static ID ID = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
-				public static string FieldName = "Link";
-			}
-			public struct NavigationTitle
-			{
-				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
-				public static string FieldName = "NavigationTitle";
-			}
-			public struct ShowChildren
-			{
-				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
-				public static string FieldName = "ShowChildren";
-			}
-			public struct ShowInNavigation
-			{
-				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
-				public static string FieldName = "ShowInNavigation";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12219,10 +12175,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("link")]
-        public virtual IGeneralLinkFieldWrapper Link
+        public virtual ICustomGeneralLinkFieldWrapper Link
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("Link", "link"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("Link", "link"); }
         }
 
         /// <summary>
@@ -12311,12 +12267,56 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu Item</para>
+	/// <summary>
+	public struct LinkMenuItemItemConstants
+	{
+		public static ID TemplateID => new ID("{390333C8-751B-4332-84A3-6360B969A19F}");
+		public static string TemplateName = "Link Menu Item";
+
+		public struct Fields
+		{
+			public struct DividerBefore
+			{
+				public static ID ID = new ID("{4231CD60-47C1-42AD-B838-0A6F8F1C4CFB}");
+				public static string FieldName = "DividerBefore";
+			}
+			public struct Icon
+			{
+				public static ID ID = new ID("{2C24649E-4460-4114-B026-886CFBE1A96D}");
+				public static string FieldName = "Icon";
+			}
+			public struct Link
+			{
+				public static ID ID = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
+				public static string FieldName = "Link";
+			}
+			public struct NavigationTitle
+			{
+				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
+				public static string FieldName = "NavigationTitle";
+			}
+			public struct ShowChildren
+			{
+				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
+				public static string FieldName = "ShowChildren";
+			}
+			public struct ShowInNavigation
+			{
+				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
+				public static string FieldName = "ShowInNavigation";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Link Menu (/sitecore/templates/Project/Common/Content Types/Link Menu)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12332,20 +12332,6 @@ namespace Project.Common
 	public partial interface ILinkMenu : ICustomItemWrapper, Feature.Navigation.INavigationRoot
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu</para>
-	/// <summary>
-	public struct LinkMenuItemConstants
-	{
-		public static ID TemplateID => new ID("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}");
-		public static string TemplateName = "Link Menu";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12366,12 +12352,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu</para>
+	/// <summary>
+	public struct LinkMenuItemConstants
+	{
+		public static ID TemplateID => new ID("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}");
+		public static string TemplateName = "Link Menu";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Login Teaser (/sitecore/templates/Project/Common/Content Types/Login Teaser)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12387,40 +12387,6 @@ namespace Project.Common
 	public partial interface ILoginTeaser : ICustomItemWrapper, Feature.Accounts.ILoginTeaser
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Login Teaser</para>
-	/// <summary>
-	public struct LoginTeaserItemConstants
-	{
-		public static ID TemplateID => new ID("{6E686B1C-1675-4263-AF03-DCE07827AFDD}");
-		public static string TemplateName = "Login Teaser";
-
-		public struct Fields
-		{
-			public struct LoggedInSummary
-			{
-				public static ID ID = new ID("{76183BC1-755C-428B-A35A-1425309990BE}");
-				public static string FieldName = "Logged In Summary";
-			}
-			public struct LoggedInTitle
-			{
-				public static ID ID = new ID("{39AABCF6-426C-4AD1-8B3D-A5135F219455}");
-				public static string FieldName = "Logged In Title";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{FFAB401B-8D7C-4172-A82A-AE32B7D2C6C1}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{D9843186-ED10-47D8-8CC7-511AC670B6B4}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12537,12 +12503,46 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Login Teaser</para>
+	/// <summary>
+	public struct LoginTeaserItemConstants
+	{
+		public static ID TemplateID => new ID("{6E686B1C-1675-4263-AF03-DCE07827AFDD}");
+		public static string TemplateName = "Login Teaser";
+
+		public struct Fields
+		{
+			public struct LoggedInSummary
+			{
+				public static ID ID = new ID("{76183BC1-755C-428B-A35A-1425309990BE}");
+				public static string FieldName = "Logged In Summary";
+			}
+			public struct LoggedInTitle
+			{
+				public static ID ID = new ID("{39AABCF6-426C-4AD1-8B3D-A5135F219455}");
+				public static string FieldName = "Logged In Title";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{FFAB401B-8D7C-4172-A82A-AE32B7D2C6C1}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{D9843186-ED10-47D8-8CC7-511AC670B6B4}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Map Point (/sitecore/templates/Project/Common/Content Types/Map Point)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12558,35 +12558,6 @@ namespace Project.Common
 	public partial interface IMapPoint : ICustomItemWrapper, Feature.Maps.IMapPoint
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Map Point</para>
-	/// <summary>
-	public struct MapPointItemConstants
-	{
-		public static ID TemplateID => new ID("{11C28D16-9B88-456E-A42B-D4B5A82867E3}");
-		public static string TemplateName = "Map Point";
-
-		public struct Fields
-		{
-			public struct MapPointAddress
-			{
-				public static ID ID = new ID("{0295C01D-214C-4C23-AFC2-3F0B4E88B643}");
-				public static string FieldName = "MapPointAddress";
-			}
-			public struct MapPointLocation
-			{
-				public static ID ID = new ID("{F686AC8E-1D33-45DB-8E1A-1B40CD491E7A}");
-				public static string FieldName = "MapPointLocation";
-			}
-			public struct MapPointName
-			{
-				public static ID ID = new ID("{F12C22BB-E57D-4FAB-96E1-1229E4E7FF0E}");
-				public static string FieldName = "MapPointName";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12677,12 +12648,41 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Map Point</para>
+	/// <summary>
+	public struct MapPointItemConstants
+	{
+		public static ID TemplateID => new ID("{11C28D16-9B88-456E-A42B-D4B5A82867E3}");
+		public static string TemplateName = "Map Point";
+
+		public struct Fields
+		{
+			public struct MapPointAddress
+			{
+				public static ID ID = new ID("{0295C01D-214C-4C23-AFC2-3F0B4E88B643}");
+				public static string FieldName = "MapPointAddress";
+			}
+			public struct MapPointLocation
+			{
+				public static ID ID = new ID("{F686AC8E-1D33-45DB-8E1A-1B40CD491E7A}");
+				public static string FieldName = "MapPointLocation";
+			}
+			public struct MapPointName
+			{
+				public static ID ID = new ID("{F12C22BB-E57D-4FAB-96E1-1229E4E7FF0E}");
+				public static string FieldName = "MapPointName";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Map Points Folder (/sitecore/templates/Project/Common/Content Types/Map Points Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12698,20 +12698,6 @@ namespace Project.Common
 	public partial interface IMapPointsFolder : ICustomItemWrapper, Feature.Maps.IMapPointsFolder
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Map Points Folder</para>
-	/// <summary>
-	public struct MapPointsFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{067EC866-B3FB-485B-BB49-6151FB086E78}");
-		public static string TemplateName = "Map Points Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12732,12 +12718,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Map Points Folder</para>
+	/// <summary>
+	public struct MapPointsFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{067EC866-B3FB-485B-BB49-6151FB086E78}");
+		public static string TemplateName = "Map Points Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Carousel (/sitecore/templates/Project/Common/Content Types/Media/Carousel)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12753,25 +12753,6 @@ namespace Project.Common
 	public partial interface ICarousel : ICustomItemWrapper, Feature.Media.IHasMediaSelector
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Carousel</para>
-	/// <summary>
-	public struct CarouselItemConstants
-	{
-		public static ID TemplateID => new ID("{C18D3794-D126-4548-BFC8-89358DE6E9C1}");
-		public static string TemplateName = "Carousel";
-
-		public struct Fields
-		{
-			public struct MediaSelector
-			{
-				public static ID ID = new ID("{72EA8682-24D2-4BEB-951C-3E2164974105}");
-				public static string FieldName = "MediaSelector";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12816,12 +12797,31 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Carousel</para>
+	/// <summary>
+	public struct CarouselItemConstants
+	{
+		public static ID TemplateID => new ID("{C18D3794-D126-4548-BFC8-89358DE6E9C1}");
+		public static string TemplateName = "Carousel";
+
+		public struct Fields
+		{
+			public struct MediaSelector
+			{
+				public static ID ID = new ID("{72EA8682-24D2-4BEB-951C-3E2164974105}");
+				public static string FieldName = "MediaSelector";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Image (/sitecore/templates/Project/Common/Content Types/Media/Image)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -12837,40 +12837,6 @@ namespace Project.Common
 	public partial interface IImage : ICustomItemWrapper, Feature.Media.IHasMedia, Feature.Media.IHasMediaImage
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Image</para>
-	/// <summary>
-	public struct ImageItemConstants
-	{
-		public static ID TemplateID => new ID("{F0369E1A-9030-4A05-A09C-EF09B664ED27}");
-		public static string TemplateName = "Image";
-
-		public struct Fields
-		{
-			public struct MediaDescription
-			{
-				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
-				public static string FieldName = "MediaDescription";
-			}
-			public struct MediaImage
-			{
-				public static ID ID = new ID("{9F51DEAD-AD6E-41C2-9759-7BE17EB474A4}");
-				public static string FieldName = "MediaImage";
-			}
-			public struct MediaThumbnail
-			{
-				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
-				public static string FieldName = "MediaThumbnail";
-			}
-			public struct MediaTitle
-			{
-				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
-				public static string FieldName = "MediaTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -12918,10 +12884,10 @@ namespace Project.Common
         /// <para>Field: MediaImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper MediaImage
+        public virtual ICustomImageFieldWrapper MediaImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("MediaImage"); }
+            get { return GetField<CustomImageFieldWrapper>("MediaImage"); }
         }
 
         /// <summary>
@@ -12940,10 +12906,10 @@ namespace Project.Common
         /// <para>Field: MediaThumbnail</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper MediaThumbnail
+        public virtual ICustomImageFieldWrapper MediaThumbnail
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("MediaThumbnail"); }
+            get { return GetField<CustomImageFieldWrapper>("MediaThumbnail"); }
         }
 
         /// <summary>
@@ -12983,12 +12949,46 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Image</para>
+	/// <summary>
+	public struct ImageItemConstants
+	{
+		public static ID TemplateID => new ID("{F0369E1A-9030-4A05-A09C-EF09B664ED27}");
+		public static string TemplateName = "Image";
+
+		public struct Fields
+		{
+			public struct MediaDescription
+			{
+				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
+				public static string FieldName = "MediaDescription";
+			}
+			public struct MediaImage
+			{
+				public static ID ID = new ID("{9F51DEAD-AD6E-41C2-9759-7BE17EB474A4}");
+				public static string FieldName = "MediaImage";
+			}
+			public struct MediaThumbnail
+			{
+				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
+				public static string FieldName = "MediaThumbnail";
+			}
+			public struct MediaTitle
+			{
+				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
+				public static string FieldName = "MediaTitle";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Media Background Folder (/sitecore/templates/Project/Common/Content Types/Media/Media Background Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13004,20 +13004,6 @@ namespace Project.Common
 	public partial interface IMediaBackgroundFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background Folder</para>
-	/// <summary>
-	public struct MediaBackgroundFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{82A6F39C-53E1-4ECA-8C27-69937CFF3B47}");
-		public static string TemplateName = "Media Background Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13038,12 +13024,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background Folder</para>
+	/// <summary>
+	public struct MediaBackgroundFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{82A6F39C-53E1-4ECA-8C27-69937CFF3B47}");
+		public static string TemplateName = "Media Background Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Media Background (/sitecore/templates/Project/Common/Content Types/Media/Media Background)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13059,20 +13059,6 @@ namespace Project.Common
 	public partial interface IMediaBackground : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background</para>
-	/// <summary>
-	public struct MediaBackgroundItemConstants
-	{
-		public static ID TemplateID => new ID("{42A10C41-5186-4A1E-AA7E-54EA00199C3F}");
-		public static string TemplateName = "Media Background";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13093,12 +13079,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background</para>
+	/// <summary>
+	public struct MediaBackgroundItemConstants
+	{
+		public static ID TemplateID => new ID("{42A10C41-5186-4A1E-AA7E-54EA00199C3F}");
+		public static string TemplateName = "Media Background";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Media Folder (/sitecore/templates/Project/Common/Content Types/Media/Media Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13114,20 +13114,6 @@ namespace Project.Common
 	public partial interface IMediaFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Folder</para>
-	/// <summary>
-	public struct MediaFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{920A1781-559F-4E1C-BB2E-6B9A2113FE6B}");
-		public static string TemplateName = "Media Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13148,12 +13134,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Folder</para>
+	/// <summary>
+	public struct MediaFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{920A1781-559F-4E1C-BB2E-6B9A2113FE6B}");
+		public static string TemplateName = "Media Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Video (/sitecore/templates/Project/Common/Content Types/Media/Video)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Media
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13169,40 +13169,6 @@ namespace Project.Common
 	public partial interface IVideo : ICustomItemWrapper, Feature.Media.IHasMedia, Feature.Media.IHasMediaVideo
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Video</para>
-	/// <summary>
-	public struct VideoItemConstants
-	{
-		public static ID TemplateID => new ID("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}");
-		public static string TemplateName = "Video";
-
-		public struct Fields
-		{
-			public struct MediaDescription
-			{
-				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
-				public static string FieldName = "MediaDescription";
-			}
-			public struct MediaThumbnail
-			{
-				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
-				public static string FieldName = "MediaThumbnail";
-			}
-			public struct MediaTitle
-			{
-				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
-				public static string FieldName = "MediaTitle";
-			}
-			public struct MediaVideoLink
-			{
-				public static ID ID = new ID("{2628705D-9434-4448-978C-C3BF166FA1EB}");
-				public static string FieldName = "MediaVideoLink";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13250,10 +13216,10 @@ namespace Project.Common
         /// <para>Field: MediaThumbnail</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper MediaThumbnail
+        public virtual ICustomImageFieldWrapper MediaThumbnail
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("MediaThumbnail"); }
+            get { return GetField<CustomImageFieldWrapper>("MediaThumbnail"); }
         }
 
         /// <summary>
@@ -13296,10 +13262,10 @@ namespace Project.Common
         /// <para>Field: MediaVideoLink</para>
         /// <para>Data type: link</para>
         /// </summary>
-        public virtual ITextFieldWrapper MediaVideoLink
+        public virtual ICustomGeneralLinkFieldWrapper MediaVideoLink
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("MediaVideoLink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("MediaVideoLink"); }
         }
 
         /// <summary>
@@ -13315,12 +13281,46 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Video</para>
+	/// <summary>
+	public struct VideoItemConstants
+	{
+		public static ID TemplateID => new ID("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}");
+		public static string TemplateName = "Video";
+
+		public struct Fields
+		{
+			public struct MediaDescription
+			{
+				public static ID ID = new ID("{302C9F8D-F703-4F76-A4AB-73D222648232}");
+				public static string FieldName = "MediaDescription";
+			}
+			public struct MediaThumbnail
+			{
+				public static ID ID = new ID("{4FF62B0A-D73B-4436-BEA2-023154F2FFC4}");
+				public static string FieldName = "MediaThumbnail";
+			}
+			public struct MediaTitle
+			{
+				public static ID ID = new ID("{63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}");
+				public static string FieldName = "MediaTitle";
+			}
+			public struct MediaVideoLink
+			{
+				public static ID ID = new ID("{2628705D-9434-4448-978C-C3BF166FA1EB}");
+				public static string FieldName = "MediaVideoLink";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region MetaKeyword Folder (/sitecore/templates/Project/Common/Content Types/MetaKeyword Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13336,20 +13336,6 @@ namespace Project.Common
 	public partial interface IMetaKeywordFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword Folder</para>
-	/// <summary>
-	public struct MetaKeywordFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{CD047791-C29A-4596-AEEE-DB5E70421C1F}");
-		public static string TemplateName = "MetaKeyword Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13370,12 +13356,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword Folder</para>
+	/// <summary>
+	public struct MetaKeywordFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{CD047791-C29A-4596-AEEE-DB5E70421C1F}");
+		public static string TemplateName = "MetaKeyword Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region MetaKeyword (/sitecore/templates/Project/Common/Content Types/MetaKeyword)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13391,25 +13391,6 @@ namespace Project.Common
 	public partial interface IMetaKeyword : ICustomItemWrapper, Feature.Metadata.IKeyword
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword</para>
-	/// <summary>
-	public struct MetaKeywordItemConstants
-	{
-		public static ID TemplateID => new ID("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}");
-		public static string TemplateName = "MetaKeyword";
-
-		public struct Fields
-		{
-			public struct Keyword
-			{
-				public static ID ID = new ID("{7BDBBA5F-C7E6-45C2-82F5-010DED013588}");
-				public static string FieldName = "Keyword";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13454,12 +13435,31 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword</para>
+	/// <summary>
+	public struct MetaKeywordItemConstants
+	{
+		public static ID TemplateID => new ID("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}");
+		public static string TemplateName = "MetaKeyword";
+
+		public struct Fields
+		{
+			public struct Keyword
+			{
+				public static ID ID = new ID("{7BDBBA5F-C7E6-45C2-82F5-010DED013588}");
+				public static string FieldName = "Keyword";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Navigation Link (/sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Navigation
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13475,40 +13475,6 @@ namespace Project.Common
 	public partial interface INavigationLink : ICustomItemWrapper, Feature.Navigation.ILink, Feature.Navigation.INavigable
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link</para>
-	/// <summary>
-	public struct NavigationLinkItemConstants
-	{
-		public static ID TemplateID => new ID("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}");
-		public static string TemplateName = "Navigation Link";
-
-		public struct Fields
-		{
-			public struct Link
-			{
-				public static ID ID = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
-				public static string FieldName = "Link";
-			}
-			public struct NavigationTitle
-			{
-				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
-				public static string FieldName = "NavigationTitle";
-			}
-			public struct ShowChildren
-			{
-				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
-				public static string FieldName = "ShowChildren";
-			}
-			public struct ShowInNavigation
-			{
-				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
-				public static string FieldName = "ShowInNavigation";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13533,10 +13499,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("link")]
-        public virtual IGeneralLinkFieldWrapper Link
+        public virtual ICustomGeneralLinkFieldWrapper Link
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("Link", "link"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("Link", "link"); }
         }
 
         /// <summary>
@@ -13625,12 +13591,46 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link</para>
+	/// <summary>
+	public struct NavigationLinkItemConstants
+	{
+		public static ID TemplateID => new ID("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}");
+		public static string TemplateName = "Navigation Link";
+
+		public struct Fields
+		{
+			public struct Link
+			{
+				public static ID ID = new ID("{FE71C30E-F07D-4052-8594-C3028CD76E1F}");
+				public static string FieldName = "Link";
+			}
+			public struct NavigationTitle
+			{
+				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
+				public static string FieldName = "NavigationTitle";
+			}
+			public struct ShowChildren
+			{
+				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
+				public static string FieldName = "ShowChildren";
+			}
+			public struct ShowInNavigation
+			{
+				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
+				public static string FieldName = "ShowInNavigation";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Registration Folder (/sitecore/templates/Project/Common/Content Types/Registration Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13646,20 +13646,6 @@ namespace Project.Common
 	public partial interface IRegistrationFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Registration Folder</para>
-	/// <summary>
-	public struct RegistrationFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{689BA377-E538-49ED-9DFC-4DCC398AB9AC}");
-		public static string TemplateName = "Registration Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13680,12 +13666,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Registration Folder</para>
+	/// <summary>
+	public struct RegistrationFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{689BA377-E538-49ED-9DFC-4DCC398AB9AC}");
+		public static string TemplateName = "Registration Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Service Email (/sitecore/templates/Project/Common/Content Types/Service Email)
-namespace Project.Common
+namespace Project.Common.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13701,35 +13701,6 @@ namespace Project.Common
 	public partial interface IServiceEmail : ICustomItemWrapper, Feature.Accounts.IMailTemplate
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Service Email</para>
-	/// <summary>
-	public struct ServiceEmailItemConstants
-	{
-		public static ID TemplateID => new ID("{6DB3BA22-5715-4529-A527-35B3AF083AE4}");
-		public static string TemplateName = "Service Email";
-
-		public struct Fields
-		{
-			public struct Body
-			{
-				public static ID ID = new ID("{1519CCAD-ED26-4F60-82CA-22079AF44D16}");
-				public static string FieldName = "Body";
-			}
-			public struct From
-			{
-				public static ID ID = new ID("{8605948C-60FB-46B8-8AAA-4C52561B53BC}");
-				public static string FieldName = "From";
-			}
-			public struct Subject
-			{
-				public static ID ID = new ID("{0F45DF05-546F-462D-97C0-BA4FB2B02564}");
-				public static string FieldName = "Subject";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13822,12 +13793,41 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Service Email</para>
+	/// <summary>
+	public struct ServiceEmailItemConstants
+	{
+		public static ID TemplateID => new ID("{6DB3BA22-5715-4529-A527-35B3AF083AE4}");
+		public static string TemplateName = "Service Email";
+
+		public struct Fields
+		{
+			public struct Body
+			{
+				public static ID ID = new ID("{1519CCAD-ED26-4F60-82CA-22079AF44D16}");
+				public static string FieldName = "Body";
+			}
+			public struct From
+			{
+				public static ID ID = new ID("{8605948C-60FB-46B8-8AAA-4C52561B53BC}");
+				public static string FieldName = "From";
+			}
+			public struct Subject
+			{
+				public static ID ID = new ID("{0F45DF05-546F-462D-97C0-BA4FB2B02564}");
+				public static string FieldName = "Subject";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Social Feeds Folder (/sitecore/templates/Project/Common/Content Types/Social/Social Feeds Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Social
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13843,20 +13843,6 @@ namespace Project.Common
 	public partial interface ISocialFeedsFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Social Feeds Folder</para>
-	/// <summary>
-	public struct SocialFeedsFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{4DE2D9D9-0781-47AD-8F5D-52F2AD920D83}");
-		public static string TemplateName = "Social Feeds Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13877,12 +13863,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Social Feeds Folder</para>
+	/// <summary>
+	public struct SocialFeedsFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{4DE2D9D9-0781-47AD-8F5D-52F2AD920D83}");
+		public static string TemplateName = "Social Feeds Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Twitter Feed (/sitecore/templates/Project/Common/Content Types/Social/Twitter Feed)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Social
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -13898,35 +13898,6 @@ namespace Project.Common
 	public partial interface ITwitterFeed : ICustomItemWrapper, Feature.Social.ITwitterFeed
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Twitter Feed</para>
-	/// <summary>
-	public struct TwitterFeedItemConstants
-	{
-		public static ID TemplateID => new ID("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}");
-		public static string TemplateName = "Twitter Feed";
-
-		public struct Fields
-		{
-			public struct FeedTitle
-			{
-				public static ID ID = new ID("{099E4085-150C-4073-88D9-8B159D9A8B01}");
-				public static string FieldName = "FeedTitle";
-			}
-			public struct TwitterUrl
-			{
-				public static ID ID = new ID("{92EF8986-45E2-42DE-913F-B91FD960297A}");
-				public static string FieldName = "TwitterUrl";
-			}
-			public struct WidgetId
-			{
-				public static ID ID = new ID("{D1CF33B1-8B8A-4AAB-AA7E-2460566BEDED}");
-				public static string FieldName = "WidgetId";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -13975,10 +13946,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("twitterurl")]
-        public virtual IGeneralLinkFieldWrapper TwitterUrl
+        public virtual ICustomGeneralLinkFieldWrapper TwitterUrl
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TwitterUrl", "twitterurl"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TwitterUrl", "twitterurl"); }
         }
 
         /// <summary>
@@ -14019,12 +13990,41 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Twitter Feed</para>
+	/// <summary>
+	public struct TwitterFeedItemConstants
+	{
+		public static ID TemplateID => new ID("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}");
+		public static string TemplateName = "Twitter Feed";
+
+		public struct Fields
+		{
+			public struct FeedTitle
+			{
+				public static ID ID = new ID("{099E4085-150C-4073-88D9-8B159D9A8B01}");
+				public static string FieldName = "FeedTitle";
+			}
+			public struct TwitterUrl
+			{
+				public static ID ID = new ID("{92EF8986-45E2-42DE-913F-B91FD960297A}");
+				public static string FieldName = "TwitterUrl";
+			}
+			public struct WidgetId
+			{
+				public static ID ID = new ID("{D1CF33B1-8B8A-4AAB-AA7E-2460566BEDED}");
+				public static string FieldName = "WidgetId";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Dynamic Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -14040,30 +14040,6 @@ namespace Project.Common
 	public partial interface IDynamicTeaser : ICustomItemWrapper, Feature.Teasers.IDynamicTeaser
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser</para>
-	/// <summary>
-	public struct DynamicTeaserItemConstants
-	{
-		public static ID TemplateID => new ID("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}");
-		public static string TemplateName = "Dynamic Teaser";
-
-		public struct Fields
-		{
-			public struct Active
-			{
-				public static ID ID = new ID("{9E942565-677F-491C-A0AC-6B930E37342A}");
-				public static string FieldName = "Active";
-			}
-			public struct Count
-			{
-				public static ID ID = new ID("{A33F9523-96C4-4E42-B6D7-1E861718D373}");
-				public static string FieldName = "Count";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -14132,12 +14108,36 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser</para>
+	/// <summary>
+	public struct DynamicTeaserItemConstants
+	{
+		public static ID TemplateID => new ID("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}");
+		public static string TemplateName = "Dynamic Teaser";
+
+		public struct Fields
+		{
+			public struct Active
+			{
+				public static ID ID = new ID("{9E942565-677F-491C-A0AC-6B930E37342A}");
+				public static string FieldName = "Active";
+			}
+			public struct Count
+			{
+				public static ID ID = new ID("{A33F9523-96C4-4E42-B6D7-1E861718D373}");
+				public static string FieldName = "Count";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Headline (/sitecore/templates/Project/Common/Content Types/Teasers/Headline)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -14153,30 +14153,6 @@ namespace Project.Common
 	public partial interface IHeadline : ICustomItemWrapper, Feature.Teasers.IHeadline
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Headline</para>
-	/// <summary>
-	public struct HeadlineItemConstants
-	{
-		public static ID TemplateID => new ID("{061574E1-59DD-4B62-9680-1C84EFBE6773}");
-		public static string TemplateName = "Headline";
-
-		public struct Fields
-		{
-			public struct TeaserIcon
-			{
-				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
-				public static string FieldName = "Teaser Icon";
-			}
-			public struct TeaserTitle
-			{
-				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
-				public static string FieldName = "TeaserTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -14245,12 +14221,36 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Headline</para>
+	/// <summary>
+	public struct HeadlineItemConstants
+	{
+		public static ID TemplateID => new ID("{061574E1-59DD-4B62-9680-1C84EFBE6773}");
+		public static string TemplateName = "Headline";
+
+		public struct Fields
+		{
+			public struct TeaserIcon
+			{
+				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
+				public static string FieldName = "Teaser Icon";
+			}
+			public struct TeaserTitle
+			{
+				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
+				public static string FieldName = "TeaserTitle";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Quote Folder (/sitecore/templates/Project/Common/Content Types/Teasers/Quote Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -14266,20 +14266,6 @@ namespace Project.Common
 	public partial interface IQuoteFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote Folder</para>
-	/// <summary>
-	public struct QuoteFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{A8F1B162-041F-46BF-81EB-5213AE8BC579}");
-		public static string TemplateName = "Quote Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -14300,12 +14286,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote Folder</para>
+	/// <summary>
+	public struct QuoteFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{A8F1B162-041F-46BF-81EB-5213AE8BC579}");
+		public static string TemplateName = "Quote Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Quote (/sitecore/templates/Project/Common/Content Types/Teasers/Quote)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -14321,50 +14321,6 @@ namespace Project.Common
 	public partial interface IQuote : ICustomItemWrapper, Feature.Person.IPerson, Feature.Person.IQuote
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote</para>
-	/// <summary>
-	public struct QuoteItemConstants
-	{
-		public static ID TemplateID => new ID("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}");
-		public static string TemplateName = "Quote";
-
-		public struct Fields
-		{
-			public struct CiteOrigin
-			{
-				public static ID ID = new ID("{BF83983A-473F-4A49-BE8E-7D563AA5687E}");
-				public static string FieldName = "Cite Origin";
-			}
-			public struct Name
-			{
-				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
-				public static string FieldName = "Name";
-			}
-			public struct Picture
-			{
-				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
-				public static string FieldName = "Picture";
-			}
-			public struct Quote
-			{
-				public static ID ID = new ID("{0DE53078-0DA4-40CC-BBCA-63AA96A0A1EF}");
-				public static string FieldName = "Quote";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -14436,10 +14392,10 @@ namespace Project.Common
         /// <para>Field: Picture</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Picture
+        public virtual ICustomImageFieldWrapper Picture
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Picture"); }
+            get { return GetField<CustomImageFieldWrapper>("Picture"); }
         }
 
         /// <summary>
@@ -14527,12 +14483,56 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote</para>
+	/// <summary>
+	public struct QuoteItemConstants
+	{
+		public static ID TemplateID => new ID("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}");
+		public static string TemplateName = "Quote";
+
+		public struct Fields
+		{
+			public struct CiteOrigin
+			{
+				public static ID ID = new ID("{BF83983A-473F-4A49-BE8E-7D563AA5687E}");
+				public static string FieldName = "Cite Origin";
+			}
+			public struct Name
+			{
+				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
+				public static string FieldName = "Name";
+			}
+			public struct Picture
+			{
+				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
+				public static string FieldName = "Picture";
+			}
+			public struct Quote
+			{
+				public static ID ID = new ID("{0DE53078-0DA4-40CC-BBCA-63AA96A0A1EF}");
+				public static string FieldName = "Quote";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Teaser Folder (/sitecore/templates/Project/Common/Content Types/Teasers/Teaser Folder)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -14548,20 +14548,6 @@ namespace Project.Common
 	public partial interface ITeaserFolder : ICustomItemWrapper
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser Folder</para>
-	/// <summary>
-	public struct TeaserFolderItemConstants
-	{
-		public static ID TemplateID => new ID("{29D4B405-39EB-487D-9D6B-3F8467AB167D}");
-		public static string TemplateName = "Teaser Folder";
-
-		public struct Fields
-		{
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -14582,12 +14568,26 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser Folder</para>
+	/// <summary>
+	public struct TeaserFolderItemConstants
+	{
+		public static ID TemplateID => new ID("{29D4B405-39EB-487D-9D6B-3F8467AB167D}");
+		public static string TemplateName = "Teaser Folder";
+
+		public struct Fields
+		{
+		}
+	}
     
 }
 #endregion
 
 #region Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Teaser)
-namespace Project.Common
+namespace Project.Common.ContentTypes.Teasers
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -14603,50 +14603,6 @@ namespace Project.Common
 	public partial interface ITeaser : ICustomItemWrapper, Feature.Teasers.IHeadline, Feature.Teasers.ITeaserContent
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser</para>
-	/// <summary>
-	public struct TeaserItemConstants
-	{
-		public static ID TemplateID => new ID("{C7D9D293-4EF8-4380-8E10-C4632E729F39}");
-		public static string TemplateName = "Teaser";
-
-		public struct Fields
-		{
-			public struct TeaserIcon
-			{
-				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
-				public static string FieldName = "Teaser Icon";
-			}
-			public struct TeaserLabel
-			{
-				public static ID ID = new ID("{3F7E7E3A-4E8E-4639-B079-FC5AEFF172F5}");
-				public static string FieldName = "Teaser Label";
-			}
-			public struct TeaserImage
-			{
-				public static ID ID = new ID("{0F6B5546-E0AB-4487-81DE-640C1AA1B65B}");
-				public static string FieldName = "TeaserImage";
-			}
-			public struct TeaserLink
-			{
-				public static ID ID = new ID("{E8AB122C-6F54-4D4E-AEC6-F81ADDC558FC}");
-				public static string FieldName = "TeaserLink";
-			}
-			public struct TeaserSummary
-			{
-				public static ID ID = new ID("{13D97A52-7C4E-407C-960D-FADDE8A3C1B1}");
-				public static string FieldName = "TeaserSummary";
-			}
-			public struct TeaserTitle
-			{
-				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
-				public static string FieldName = "TeaserTitle";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -14718,10 +14674,10 @@ namespace Project.Common
         /// <para>Field: TeaserImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper TeaserImage
+        public virtual ICustomImageFieldWrapper TeaserImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("TeaserImage"); }
+            get { return GetField<CustomImageFieldWrapper>("TeaserImage"); }
         }
 
         /// <summary>
@@ -14741,10 +14697,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("teaserlink")]
-        public virtual IGeneralLinkFieldWrapper TeaserLink
+        public virtual ICustomGeneralLinkFieldWrapper TeaserLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TeaserLink", "teaserlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TeaserLink", "teaserlink"); }
         }
 
         /// <summary>
@@ -14809,36 +14765,15 @@ namespace Project.Common
 
 	
 	}
-    
-}
-#endregion
-
-#region Video Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser)
-namespace Project.Common
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Video Teaser</para>
-    /// <para>ID: {ddbbf170-cfbd-439f-958c-a090bdf66d94}</para>
-    /// <para>Path: /sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser</para>
-    /// </summary>
-    [TemplateMapping("{DDBBF170-CFBD-439F-958C-A090BDF66D94}", "InterfaceMap")]
-	public partial interface IVideoTeaser : ICustomItemWrapper, Feature.Teasers.IHeadline, Feature.Teasers.ITeaserContent, Feature.Teasers.ITeaserVideoContent
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser</para>
 	/// <summary>
-	public struct VideoTeaserItemConstants
+	public struct TeaserItemConstants
 	{
-		public static ID TemplateID => new ID("{DDBBF170-CFBD-439F-958C-A090BDF66D94}");
-		public static string TemplateName = "Video Teaser";
+		public static ID TemplateID => new ID("{C7D9D293-4EF8-4380-8E10-C4632E729F39}");
+		public static string TemplateName = "Teaser";
 
 		public struct Fields
 		{
@@ -14872,13 +14807,29 @@ namespace Project.Common
 				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
 				public static string FieldName = "TeaserTitle";
 			}
-			public struct VideoLink
-			{
-				public static ID ID = new ID("{AC846A16-FD3F-4243-A21F-668A21010C44}");
-				public static string FieldName = "VideoLink";
-			}
 		}
 	}
+    
+}
+#endregion
+
+#region Video Teaser (/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser)
+namespace Project.Common.ContentTypes.Teasers
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Video Teaser</para>
+    /// <para>ID: {ddbbf170-cfbd-439f-958c-a090bdf66d94}</para>
+    /// <para>Path: /sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser</para>
+    /// </summary>
+    [TemplateMapping("{DDBBF170-CFBD-439F-958C-A090BDF66D94}", "InterfaceMap")]
+	public partial interface IVideoTeaser : ICustomItemWrapper, Feature.Teasers.IHeadline, Feature.Teasers.ITeaserContent, Feature.Teasers.ITeaserVideoContent
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -14950,10 +14901,10 @@ namespace Project.Common
         /// <para>Field: TeaserImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper TeaserImage
+        public virtual ICustomImageFieldWrapper TeaserImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("TeaserImage"); }
+            get { return GetField<CustomImageFieldWrapper>("TeaserImage"); }
         }
 
         /// <summary>
@@ -14973,10 +14924,10 @@ namespace Project.Common
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("teaserlink")]
-        public virtual IGeneralLinkFieldWrapper TeaserLink
+        public virtual ICustomGeneralLinkFieldWrapper TeaserLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TeaserLink", "teaserlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TeaserLink", "teaserlink"); }
         }
 
         /// <summary>
@@ -15044,10 +14995,10 @@ namespace Project.Common
         /// <para>Field: VideoLink</para>
         /// <para>Data type: link</para>
         /// </summary>
-        public virtual ITextFieldWrapper VideoLink
+        public virtual ICustomGeneralLinkFieldWrapper VideoLink
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("VideoLink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("VideoLink"); }
         }
 
         /// <summary>
@@ -15063,12 +15014,61 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser</para>
+	/// <summary>
+	public struct VideoTeaserItemConstants
+	{
+		public static ID TemplateID => new ID("{DDBBF170-CFBD-439F-958C-A090BDF66D94}");
+		public static string TemplateName = "Video Teaser";
+
+		public struct Fields
+		{
+			public struct TeaserIcon
+			{
+				public static ID ID = new ID("{3AF50903-63A9-464B-A375-B94983624E7D}");
+				public static string FieldName = "Teaser Icon";
+			}
+			public struct TeaserLabel
+			{
+				public static ID ID = new ID("{3F7E7E3A-4E8E-4639-B079-FC5AEFF172F5}");
+				public static string FieldName = "Teaser Label";
+			}
+			public struct TeaserImage
+			{
+				public static ID ID = new ID("{0F6B5546-E0AB-4487-81DE-640C1AA1B65B}");
+				public static string FieldName = "TeaserImage";
+			}
+			public struct TeaserLink
+			{
+				public static ID ID = new ID("{E8AB122C-6F54-4D4E-AEC6-F81ADDC558FC}");
+				public static string FieldName = "TeaserLink";
+			}
+			public struct TeaserSummary
+			{
+				public static ID ID = new ID("{13D97A52-7C4E-407C-960D-FADDE8A3C1B1}");
+				public static string FieldName = "TeaserSummary";
+			}
+			public struct TeaserTitle
+			{
+				public static ID ID = new ID("{4A59D072-5B41-4A79-A157-2B2CCAC10F2B}");
+				public static string FieldName = "TeaserTitle";
+			}
+			public struct VideoLink
+			{
+				public static ID ID = new ID("{AC846A16-FD3F-4243-A21F-668A21010C44}");
+				public static string FieldName = "VideoLink";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Demo Page (/sitecore/templates/Project/Common/Page Types/Demo Page)
-namespace Project.Common
+namespace Project.Common.PageTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -15084,35 +15084,6 @@ namespace Project.Common
 	public partial interface IDemoPage : ICustomItemWrapper, Feature.Demo.IDemoContent, Feature.Multisite.ISiteConfiguration, Foundation.Multisite.ISite
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Page Types/Demo Page</para>
-	/// <summary>
-	public struct DemoPageItemConstants
-	{
-		public static ID TemplateID => new ID("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}");
-		public static string TemplateName = "Demo Page";
-
-		public struct Fields
-		{
-			public struct HTMLContent
-			{
-				public static ID ID = new ID("{0BC0AEDF-A6D0-4F74-933C-BD1779CD40B2}");
-				public static string FieldName = "HTML Content";
-			}
-			public struct ShowInMenu
-			{
-				public static ID ID = new ID("{12537182-F35C-403F-AFB5-747D55C450B8}");
-				public static string FieldName = "ShowInMenu";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{F07811D3-41E9-440A-9D81-310C1D78BED6}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -15205,12 +15176,41 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Page Types/Demo Page</para>
+	/// <summary>
+	public struct DemoPageItemConstants
+	{
+		public static ID TemplateID => new ID("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}");
+		public static string TemplateName = "Demo Page";
+
+		public struct Fields
+		{
+			public struct HTMLContent
+			{
+				public static ID ID = new ID("{0BC0AEDF-A6D0-4F74-933C-BD1779CD40B2}");
+				public static string FieldName = "HTML Content";
+			}
+			public struct ShowInMenu
+			{
+				public static ID ID = new ID("{12537182-F35C-403F-AFB5-747D55C450B8}");
+				public static string FieldName = "ShowInMenu";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{F07811D3-41E9-440A-9D81-310C1D78BED6}");
+				public static string FieldName = "Title";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region ParametersTemplate_HasContainerWithDynamicPlaceholder (/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder)
-namespace Project.Common
+namespace Project.Common.Parameters
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -15227,30 +15227,6 @@ namespace Project.Common
 	public partial interface IParametersTemplateHasContainerWithDynamicPlaceholder : IRenderingParameterWrapper, Foundation.SitecoreExtensions.IParametersTemplateHasDynamicPlaceholder, Foundation.Theming.IParametersTemplateHasBackground, Foundation.Theming.IParametersTemplateHasContainer, Foundation.Theming.IParametersTemplateHasContainerWithBackground
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
-	/// <summary>
-	public struct ParametersTemplateHasContainerWithDynamicPlaceholderItemConstants
-	{
-		public static ID TemplateID => new ID("{4654D5F0-9B39-426A-992D-1D42E356FB0A}");
-		public static string TemplateName = "ParametersTemplate_HasContainerWithDynamicPlaceholder";
-
-		public struct Fields
-		{
-			public struct Background
-			{
-				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
-				public static string FieldName = "Background";
-			}
-			public struct ContainerIsFluid
-			{
-				public static ID ID = new ID("{8F49D801-02B0-4DB7-90DB-5742D1662CF1}");
-				public static string FieldName = "ContainerIsFluid";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -15310,12 +15286,36 @@ namespace Project.Common
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
+	/// <summary>
+	public struct ParametersTemplateHasContainerWithDynamicPlaceholderItemConstants
+	{
+		public static ID TemplateID => new ID("{4654D5F0-9B39-426A-992D-1D42E356FB0A}");
+		public static string TemplateName = "ParametersTemplate_HasContainerWithDynamicPlaceholder";
+
+		public struct Fields
+		{
+			public struct Background
+			{
+				public static ID ID = new ID("{32439F83-C2FC-46E8-8981-5D1CDF1B2742}");
+				public static string FieldName = "Background";
+			}
+			public struct ContainerIsFluid
+			{
+				public static ID ID = new ID("{8F49D801-02B0-4DB7-90DB-5742D1662CF1}");
+				public static string FieldName = "ContainerIsFluid";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Site Root (/sitecore/templates/Project/Habitat/Content Types/Site Root)
-namespace Project.Habitat
+namespace Project.Habitat.ContentTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -15331,135 +15331,6 @@ namespace Project.Habitat
 	public partial interface ISiteRoot : ICustomItemWrapper, Feature.Accounts.IAccountsSettings, Feature.Accounts.IProfileSettings, Feature.Demo.IProfilingSettings, Feature.Identity.IIdentity, Feature.Language.ILanguageSettings, Feature.Metadata.ISiteMetadata, Feature.Multisite.ISiteConfiguration, Feature.Search.ISearchContext, Foundation.Assets.IHasTheme, Foundation.Multisite.ISite
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Content Types/Site Root</para>
-	/// <summary>
-	public struct SiteRootItemConstants
-	{
-		public static ID TemplateID => new ID("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}");
-		public static string TemplateName = "Site Root";
-
-		public struct Fields
-		{
-			public struct AccountsDetailsPage
-			{
-				public static ID ID = new ID("{ED71D374-8C33-4561-991D-77482AE01330}");
-				public static string FieldName = "Accounts Details Page";
-			}
-			public struct AfterLoginPage
-			{
-				public static ID ID = new ID("{B128E2B3-3865-4F1C-A147-5F248676D3F5}");
-				public static string FieldName = "After Login Page";
-			}
-			public struct Copyright
-			{
-				public static ID ID = new ID("{02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}");
-				public static string FieldName = "Copyright";
-			}
-			public struct ForgotPasswordMailTemplate
-			{
-				public static ID ID = new ID("{365254C4-1C1C-493A-9710-671574717898}");
-				public static string FieldName = "Forgot Password Mail Template";
-			}
-			public struct ForgotPasswordPage
-			{
-				public static ID ID = new ID("{F3CD2BB8-472B-4DF0-87C0-A13098E391CA}");
-				public static string FieldName = "Forgot Password Page";
-			}
-			public struct InterestsFolder
-			{
-				public static ID ID = new ID("{021AA3F7-206F-4ACC-9538-F6D7FE86B168}");
-				public static string FieldName = "Interests Folder";
-			}
-			public struct LoginPage
-			{
-				public static ID ID = new ID("{60745023-FFD5-400E-8F80-4BCA9F2ABB29}");
-				public static string FieldName = "Login Page";
-			}
-			public struct Logo
-			{
-				public static ID ID = new ID("{E748D808-64C1-4DEC-9718-F35CF9689E4B}");
-				public static string FieldName = "Logo";
-			}
-			public struct LogoTagline
-			{
-				public static ID ID = new ID("{31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}");
-				public static string FieldName = "Logo Tagline";
-			}
-			public struct OrganisationAddress
-			{
-				public static ID ID = new ID("{A24DF48F-C8A3-4163-966C-8C24BD8760B2}");
-				public static string FieldName = "OrganisationAddress";
-			}
-			public struct OrganisationEmail
-			{
-				public static ID ID = new ID("{9C428556-5D7B-46AC-B0BB-B06A4F4C9591}");
-				public static string FieldName = "OrganisationEmail";
-			}
-			public struct OrganisationName
-			{
-				public static ID ID = new ID("{EFD4980A-030C-497C-8880-40B6030AC28B}");
-				public static string FieldName = "OrganisationName";
-			}
-			public struct OrganisationPhone
-			{
-				public static ID ID = new ID("{005ED83C-2D2F-4D07-A7A9-EB64D873DE46}");
-				public static string FieldName = "OrganisationPhone";
-			}
-			public struct RegisterOutcome
-			{
-				public static ID ID = new ID("{835FA523-D28A-46A2-A589-6AA4A5BF0846}");
-				public static string FieldName = "Register Outcome";
-			}
-			public struct RegisterPage
-			{
-				public static ID ID = new ID("{71962360-10D8-4B98-BB8D-57660CE11127}");
-				public static string FieldName = "Register Page";
-			}
-			public struct SearchResultsPage
-			{
-				public static ID ID = new ID("{1C843E6A-02B9-4AA0-9FED-FDFDDC419AE3}");
-				public static string FieldName = "Search Results Page";
-			}
-			public struct ShowInMenu
-			{
-				public static ID ID = new ID("{12537182-F35C-403F-AFB5-747D55C450B8}");
-				public static string FieldName = "ShowInMenu";
-			}
-			public struct SiteBrowserTitle
-			{
-				public static ID ID = new ID("{235AE392-97AC-4822-BE38-837DA3E7724E}");
-				public static string FieldName = "SiteBrowserTitle";
-			}
-			public struct SiteProfiles
-			{
-				public static ID ID = new ID("{2A84ECA4-68BB-4451-B4AC-98EA71A5A3DC}");
-				public static string FieldName = "SiteProfiles";
-			}
-			public struct SupportedLanguages
-			{
-				public static ID ID = new ID("{5F115B6D-6052-4C7E-B442-AE923A7E9BD2}");
-				public static string FieldName = "SupportedLanguages";
-			}
-			public struct Theme
-			{
-				public static ID ID = new ID("{53B5AF0A-265F-4E60-B2B2-4576CE0BECCF}");
-				public static string FieldName = "Theme";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{F07811D3-41E9-440A-9D81-310C1D78BED6}");
-				public static string FieldName = "Title";
-			}
-			public struct UserProfile
-			{
-				public static ID ID = new ID("{378B7D87-5775-4EB6-86B7-282D5359B1C6}");
-				public static string FieldName = "User Profile";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -15641,10 +15512,10 @@ namespace Project.Habitat
         /// <para>Field: Logo</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Logo
+        public virtual ICustomImageFieldWrapper Logo
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Logo"); }
+            get { return GetField<CustomImageFieldWrapper>("Logo"); }
         }
 
         /// <summary>
@@ -15711,10 +15582,10 @@ namespace Project.Habitat
         /// <para>Field: OrganisationEmail</para>
         /// <para>Data type: link</para>
         /// </summary>
-        public virtual ITextFieldWrapper OrganisationEmail
+        public virtual ICustomGeneralLinkFieldWrapper OrganisationEmail
         {
             [DebuggerStepThrough]
-            get { return GetField<TextFieldWrapper>("OrganisationEmail"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("OrganisationEmail"); }
         }
 
         /// <summary>
@@ -16014,12 +15885,141 @@ namespace Project.Habitat
 
 	
 	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Habitat/Content Types/Site Root</para>
+	/// <summary>
+	public struct SiteRootItemConstants
+	{
+		public static ID TemplateID => new ID("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}");
+		public static string TemplateName = "Site Root";
+
+		public struct Fields
+		{
+			public struct AccountsDetailsPage
+			{
+				public static ID ID = new ID("{ED71D374-8C33-4561-991D-77482AE01330}");
+				public static string FieldName = "Accounts Details Page";
+			}
+			public struct AfterLoginPage
+			{
+				public static ID ID = new ID("{B128E2B3-3865-4F1C-A147-5F248676D3F5}");
+				public static string FieldName = "After Login Page";
+			}
+			public struct Copyright
+			{
+				public static ID ID = new ID("{02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}");
+				public static string FieldName = "Copyright";
+			}
+			public struct ForgotPasswordMailTemplate
+			{
+				public static ID ID = new ID("{365254C4-1C1C-493A-9710-671574717898}");
+				public static string FieldName = "Forgot Password Mail Template";
+			}
+			public struct ForgotPasswordPage
+			{
+				public static ID ID = new ID("{F3CD2BB8-472B-4DF0-87C0-A13098E391CA}");
+				public static string FieldName = "Forgot Password Page";
+			}
+			public struct InterestsFolder
+			{
+				public static ID ID = new ID("{021AA3F7-206F-4ACC-9538-F6D7FE86B168}");
+				public static string FieldName = "Interests Folder";
+			}
+			public struct LoginPage
+			{
+				public static ID ID = new ID("{60745023-FFD5-400E-8F80-4BCA9F2ABB29}");
+				public static string FieldName = "Login Page";
+			}
+			public struct Logo
+			{
+				public static ID ID = new ID("{E748D808-64C1-4DEC-9718-F35CF9689E4B}");
+				public static string FieldName = "Logo";
+			}
+			public struct LogoTagline
+			{
+				public static ID ID = new ID("{31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}");
+				public static string FieldName = "Logo Tagline";
+			}
+			public struct OrganisationAddress
+			{
+				public static ID ID = new ID("{A24DF48F-C8A3-4163-966C-8C24BD8760B2}");
+				public static string FieldName = "OrganisationAddress";
+			}
+			public struct OrganisationEmail
+			{
+				public static ID ID = new ID("{9C428556-5D7B-46AC-B0BB-B06A4F4C9591}");
+				public static string FieldName = "OrganisationEmail";
+			}
+			public struct OrganisationName
+			{
+				public static ID ID = new ID("{EFD4980A-030C-497C-8880-40B6030AC28B}");
+				public static string FieldName = "OrganisationName";
+			}
+			public struct OrganisationPhone
+			{
+				public static ID ID = new ID("{005ED83C-2D2F-4D07-A7A9-EB64D873DE46}");
+				public static string FieldName = "OrganisationPhone";
+			}
+			public struct RegisterOutcome
+			{
+				public static ID ID = new ID("{835FA523-D28A-46A2-A589-6AA4A5BF0846}");
+				public static string FieldName = "Register Outcome";
+			}
+			public struct RegisterPage
+			{
+				public static ID ID = new ID("{71962360-10D8-4B98-BB8D-57660CE11127}");
+				public static string FieldName = "Register Page";
+			}
+			public struct SearchResultsPage
+			{
+				public static ID ID = new ID("{1C843E6A-02B9-4AA0-9FED-FDFDDC419AE3}");
+				public static string FieldName = "Search Results Page";
+			}
+			public struct ShowInMenu
+			{
+				public static ID ID = new ID("{12537182-F35C-403F-AFB5-747D55C450B8}");
+				public static string FieldName = "ShowInMenu";
+			}
+			public struct SiteBrowserTitle
+			{
+				public static ID ID = new ID("{235AE392-97AC-4822-BE38-837DA3E7724E}");
+				public static string FieldName = "SiteBrowserTitle";
+			}
+			public struct SiteProfiles
+			{
+				public static ID ID = new ID("{2A84ECA4-68BB-4451-B4AC-98EA71A5A3DC}");
+				public static string FieldName = "SiteProfiles";
+			}
+			public struct SupportedLanguages
+			{
+				public static ID ID = new ID("{5F115B6D-6052-4C7E-B442-AE923A7E9BD2}");
+				public static string FieldName = "SupportedLanguages";
+			}
+			public struct Theme
+			{
+				public static ID ID = new ID("{53B5AF0A-265F-4E60-B2B2-4576CE0BECCF}");
+				public static string FieldName = "Theme";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{F07811D3-41E9-440A-9D81-310C1D78BED6}");
+				public static string FieldName = "Title";
+			}
+			public struct UserProfile
+			{
+				public static ID ID = new ID("{378B7D87-5775-4EB6-86B7-282D5359B1C6}");
+				public static string FieldName = "User Profile";
+			}
+		}
+	}
     
 }
 #endregion
 
 #region Article (/sitecore/templates/Project/Habitat/Page Types/Article)
-namespace Project.Habitat
+namespace Project.Habitat.PageTypes
 {
     using Fortis.Model;
     using Fortis.Model.Fields;
@@ -16035,125 +16035,6 @@ namespace Project.Habitat
 	public partial interface IArticle : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
     {
     }
-
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Article</para>
-	/// <summary>
-	public struct ArticleItemConstants
-	{
-		public static ID TemplateID => new ID("{94A8C8E9-690B-4E65-98E7-F95800222767}");
-		public static string TemplateName = "Article";
-
-		public struct Fields
-		{
-			public struct Body
-			{
-				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
-				public static string FieldName = "Body";
-			}
-			public struct BrowserTitle
-			{
-				public static ID ID = new ID("{CA0479CE-0BFE-4522-83DE-BA688B380A78}");
-				public static string FieldName = "BrowserTitle";
-			}
-			public struct CanIndex
-			{
-				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
-				public static string FieldName = "CanIndex";
-			}
-			public struct CssCode
-			{
-				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
-				public static string FieldName = "CssCode";
-			}
-			public struct CustomMetaData
-			{
-				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
-				public static string FieldName = "CustomMetaData";
-			}
-			public struct Image
-			{
-				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
-				public static string FieldName = "Image";
-			}
-			public struct IncludeInSearchResults
-			{
-				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
-				public static string FieldName = "IncludeInSearchResults";
-			}
-			public struct InheritAssets
-			{
-				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
-				public static string FieldName = "InheritAssets";
-			}
-			public struct JavascriptCodeBottom
-			{
-				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
-				public static string FieldName = "JavascriptCodeBottom";
-			}
-			public struct JavascriptCodeTop
-			{
-				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
-				public static string FieldName = "JavascriptCodeTop";
-			}
-			public struct MetaDescription
-			{
-				public static ID ID = new ID("{BB7A38C0-323C-4F81-8EB9-288ABF7C4638}");
-				public static string FieldName = "MetaDescription";
-			}
-			public struct MetaKeywords
-			{
-				public static ID ID = new ID("{4B16F930-73C9-4643-BB1B-00F06E60A073}");
-				public static string FieldName = "MetaKeywords";
-			}
-			public struct NavigationTitle
-			{
-				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
-				public static string FieldName = "NavigationTitle";
-			}
-			public struct OpenGraphDescription
-			{
-				public static ID ID = new ID("{A12D5346-87EE-484D-83C5-F1E8E1B99666}");
-				public static string FieldName = "OpenGraphDescription";
-			}
-			public struct OpenGraphImage
-			{
-				public static ID ID = new ID("{11F41661-E5FE-44E7-B8DA-7CFF2D39B4B2}");
-				public static string FieldName = "OpenGraphImage";
-			}
-			public struct OpenGraphTitle
-			{
-				public static ID ID = new ID("{0EE2F208-1FEE-42FC-8051-6696D49A92BF}");
-				public static string FieldName = "OpenGraphTitle";
-			}
-			public struct SeoFollowLinks
-			{
-				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
-				public static string FieldName = "SeoFollowLinks";
-			}
-			public struct ShowChildren
-			{
-				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
-				public static string FieldName = "ShowChildren";
-			}
-			public struct ShowInNavigation
-			{
-				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
-				public static string FieldName = "ShowInNavigation";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
-				public static string FieldName = "Title";
-			}
-		}
-	}
 
     /// <summary>
     /// <para>Template class</para>
@@ -16297,10 +16178,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -16511,10 +16392,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -16674,36 +16555,15 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Edit Profile Page (/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Edit Profile Page</para>
-    /// <para>ID: {867f774a-195e-49d3-8e40-01f18410bb02}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Edit Profile Page</para>
-    /// </summary>
-    [TemplateMapping("{867F774A-195E-49D3-8E40-01F18410BB02}", "InterfaceMap")]
-	public partial interface IEditProfilePage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Article</para>
 	/// <summary>
-	public struct EditProfilePageItemConstants
+	public struct ArticleItemConstants
 	{
-		public static ID TemplateID => new ID("{867F774A-195E-49D3-8E40-01F18410BB02}");
-		public static string TemplateName = "Edit Profile Page";
+		public static ID TemplateID => new ID("{94A8C8E9-690B-4E65-98E7-F95800222767}");
+		public static string TemplateName = "Article";
 
 		public struct Fields
 		{
@@ -16722,6 +16582,11 @@ namespace Project.Habitat
 				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
 				public static string FieldName = "CanIndex";
 			}
+			public struct CssCode
+			{
+				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
+				public static string FieldName = "CssCode";
+			}
 			public struct CustomMetaData
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
@@ -16736,6 +16601,21 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
 				public static string FieldName = "IncludeInSearchResults";
+			}
+			public struct InheritAssets
+			{
+				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
+				public static string FieldName = "InheritAssets";
+			}
+			public struct JavascriptCodeBottom
+			{
+				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
+				public static string FieldName = "JavascriptCodeBottom";
+			}
+			public struct JavascriptCodeTop
+			{
+				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
+				public static string FieldName = "JavascriptCodeTop";
 			}
 			public struct MetaDescription
 			{
@@ -16794,6 +16674,27 @@ namespace Project.Habitat
 			}
 		}
 	}
+    
+}
+#endregion
+
+#region Edit Profile Page (/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Edit Profile Page</para>
+    /// <para>ID: {867f774a-195e-49d3-8e40-01f18410bb02}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Edit Profile Page</para>
+    /// </summary>
+    [TemplateMapping("{867F774A-195E-49D3-8E40-01F18410BB02}", "InterfaceMap")]
+	public partial interface IEditProfilePage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -16913,10 +16814,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -17055,10 +16956,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -17218,48 +17119,22 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Employee (/sitecore/templates/Project/Habitat/Page Types/Employee)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Employee</para>
-    /// <para>ID: {467c2144-4454-4518-b1de-e31b4cbbff33}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Employee</para>
-    /// </summary>
-    [TemplateMapping("{467C2144-4454-4518-B1DE-E31B4CBBFF33}", "InterfaceMap")]
-	public partial interface IEmployee : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.Person.IEmployee, Feature.Person.IPerson, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employee</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page</para>
 	/// <summary>
-	public struct EmployeeItemConstants
+	public struct EditProfilePageItemConstants
 	{
-		public static ID TemplateID => new ID("{467C2144-4454-4518-B1DE-E31B4CBBFF33}");
-		public static string TemplateName = "Employee";
+		public static ID TemplateID => new ID("{867F774A-195E-49D3-8E40-01F18410BB02}");
+		public static string TemplateName = "Edit Profile Page";
 
 		public struct Fields
 		{
-			public struct Biography
+			public struct Body
 			{
-				public static ID ID = new ID("{0CC9785E-54FE-4FAE-93E4-D0D2AE75F339}");
-				public static string FieldName = "Biography";
-			}
-			public struct BlogLink
-			{
-				public static ID ID = new ID("{69A846D9-4C7F-435C-A8DC-87E2D7359CFA}");
-				public static string FieldName = "BlogLink";
+				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
+				public static string FieldName = "Body";
 			}
 			public struct BrowserTitle
 			{
@@ -17271,50 +17146,20 @@ namespace Project.Habitat
 				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
 				public static string FieldName = "CanIndex";
 			}
-			public struct CssCode
-			{
-				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
-				public static string FieldName = "CssCode";
-			}
 			public struct CustomMetaData
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
 				public static string FieldName = "CustomMetaData";
 			}
-			public struct Email
+			public struct Image
 			{
-				public static ID ID = new ID("{5978B330-1D46-4065-8751-F74BF17D815E}");
-				public static string FieldName = "Email";
-			}
-			public struct FacebookLink
-			{
-				public static ID ID = new ID("{D31889C0-E34C-4904-A6F3-F3D92D314AA9}");
-				public static string FieldName = "FacebookLink";
+				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
+				public static string FieldName = "Image";
 			}
 			public struct IncludeInSearchResults
 			{
 				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
 				public static string FieldName = "IncludeInSearchResults";
-			}
-			public struct InheritAssets
-			{
-				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
-				public static string FieldName = "InheritAssets";
-			}
-			public struct JavascriptCodeBottom
-			{
-				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
-				public static string FieldName = "JavascriptCodeBottom";
-			}
-			public struct JavascriptCodeTop
-			{
-				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
-				public static string FieldName = "JavascriptCodeTop";
-			}
-			public struct LinkedInLink
-			{
-				public static ID ID = new ID("{2B13DFAB-3450-45EF-93F4-BEAA6F544FA6}");
-				public static string FieldName = "LinkedInLink";
 			}
 			public struct MetaDescription
 			{
@@ -17325,16 +17170,6 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{4B16F930-73C9-4643-BB1B-00F06E60A073}");
 				public static string FieldName = "MetaKeywords";
-			}
-			public struct Mobile
-			{
-				public static ID ID = new ID("{25B4CEE3-A61A-4DC3-BB52-775DD509DBB5}");
-				public static string FieldName = "Mobile";
-			}
-			public struct Name
-			{
-				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
-				public static string FieldName = "Name";
 			}
 			public struct NavigationTitle
 			{
@@ -17356,11 +17191,6 @@ namespace Project.Habitat
 				public static ID ID = new ID("{0EE2F208-1FEE-42FC-8051-6696D49A92BF}");
 				public static string FieldName = "OpenGraphTitle";
 			}
-			public struct Picture
-			{
-				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
-				public static string FieldName = "Picture";
-			}
 			public struct SeoFollowLinks
 			{
 				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
@@ -17378,26 +17208,37 @@ namespace Project.Habitat
 			}
 			public struct Summary
 			{
-				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
+				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
 				public static string FieldName = "Summary";
-			}
-			public struct Telephone
-			{
-				public static ID ID = new ID("{8D0E8EE3-21C4-4AE2-A2F1-53D3F3EBE501}");
-				public static string FieldName = "Telephone";
 			}
 			public struct Title
 			{
-				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
+				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
 				public static string FieldName = "Title";
-			}
-			public struct TwitterLink
-			{
-				public static ID ID = new ID("{6DE98EF7-1209-40A3-A63E-16DBEF015211}");
-				public static string FieldName = "TwitterLink";
 			}
 		}
 	}
+    
+}
+#endregion
+
+#region Employee (/sitecore/templates/Project/Habitat/Page Types/Employee)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Employee</para>
+    /// <para>ID: {467c2144-4454-4518-b1de-e31b4cbbff33}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Employee</para>
+    /// </summary>
+    [TemplateMapping("{467C2144-4454-4518-B1DE-E31B4CBBFF33}", "InterfaceMap")]
+	public partial interface IEmployee : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.Person.IEmployee, Feature.Person.IPerson, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -17446,10 +17287,10 @@ namespace Project.Habitat
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("bloglink")]
-        public virtual IGeneralLinkFieldWrapper BlogLink
+        public virtual ICustomGeneralLinkFieldWrapper BlogLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("BlogLink", "bloglink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("BlogLink", "bloglink"); }
         }
 
         /// <summary>
@@ -17590,10 +17431,10 @@ namespace Project.Habitat
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("facebooklink")]
-        public virtual IGeneralLinkFieldWrapper FacebookLink
+        public virtual ICustomGeneralLinkFieldWrapper FacebookLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("FacebookLink", "facebooklink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("FacebookLink", "facebooklink"); }
         }
 
         /// <summary>
@@ -17710,10 +17551,10 @@ namespace Project.Habitat
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("linkedinlink")]
-        public virtual IGeneralLinkFieldWrapper LinkedInLink
+        public virtual ICustomGeneralLinkFieldWrapper LinkedInLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("LinkedInLink", "linkedinlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("LinkedInLink", "linkedinlink"); }
         }
 
         /// <summary>
@@ -17877,10 +17718,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -17923,10 +17764,10 @@ namespace Project.Habitat
         /// <para>Field: Picture</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Picture
+        public virtual ICustomImageFieldWrapper Picture
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Picture"); }
+            get { return GetField<CustomImageFieldWrapper>("Picture"); }
         }
 
         /// <summary>
@@ -18090,10 +17931,10 @@ namespace Project.Habitat
         /// <para>Data type: General Link</para>
         /// </summary>
 		[IndexField("twitterlink")]
-        public virtual IGeneralLinkFieldWrapper TwitterLink
+        public virtual ICustomGeneralLinkFieldWrapper TwitterLink
         {
             [DebuggerStepThrough]
-            get { return GetField<GeneralLinkFieldWrapper>("TwitterLink", "twitterlink"); }
+            get { return GetField<CustomGeneralLinkFieldWrapper>("TwitterLink", "twitterlink"); }
         }
 
         /// <summary>
@@ -18110,43 +17951,27 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Employees folder (/sitecore/templates/Project/Habitat/Page Types/Employees folder)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Employees folder</para>
-    /// <para>ID: {51e2ff7f-6fb3-4470-91c8-d2ad97bf1eae}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Employees folder</para>
-    /// </summary>
-    [TemplateMapping("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}", "InterfaceMap")]
-	public partial interface IEmployeesFolder : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem, Project.Habitat.IArticle
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employees folder</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employee</para>
 	/// <summary>
-	public struct EmployeesFolderItemConstants
+	public struct EmployeeItemConstants
 	{
-		public static ID TemplateID => new ID("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}");
-		public static string TemplateName = "Employees folder";
+		public static ID TemplateID => new ID("{467C2144-4454-4518-B1DE-E31B4CBBFF33}");
+		public static string TemplateName = "Employee";
 
 		public struct Fields
 		{
-			public struct Body
+			public struct Biography
 			{
-				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
-				public static string FieldName = "Body";
+				public static ID ID = new ID("{0CC9785E-54FE-4FAE-93E4-D0D2AE75F339}");
+				public static string FieldName = "Biography";
+			}
+			public struct BlogLink
+			{
+				public static ID ID = new ID("{69A846D9-4C7F-435C-A8DC-87E2D7359CFA}");
+				public static string FieldName = "BlogLink";
 			}
 			public struct BrowserTitle
 			{
@@ -18168,10 +17993,15 @@ namespace Project.Habitat
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
 				public static string FieldName = "CustomMetaData";
 			}
-			public struct Image
+			public struct Email
 			{
-				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
-				public static string FieldName = "Image";
+				public static ID ID = new ID("{5978B330-1D46-4065-8751-F74BF17D815E}");
+				public static string FieldName = "Email";
+			}
+			public struct FacebookLink
+			{
+				public static ID ID = new ID("{D31889C0-E34C-4904-A6F3-F3D92D314AA9}");
+				public static string FieldName = "FacebookLink";
 			}
 			public struct IncludeInSearchResults
 			{
@@ -18193,6 +18023,11 @@ namespace Project.Habitat
 				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
 				public static string FieldName = "JavascriptCodeTop";
 			}
+			public struct LinkedInLink
+			{
+				public static ID ID = new ID("{2B13DFAB-3450-45EF-93F4-BEAA6F544FA6}");
+				public static string FieldName = "LinkedInLink";
+			}
 			public struct MetaDescription
 			{
 				public static ID ID = new ID("{BB7A38C0-323C-4F81-8EB9-288ABF7C4638}");
@@ -18202,6 +18037,16 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{4B16F930-73C9-4643-BB1B-00F06E60A073}");
 				public static string FieldName = "MetaKeywords";
+			}
+			public struct Mobile
+			{
+				public static ID ID = new ID("{25B4CEE3-A61A-4DC3-BB52-775DD509DBB5}");
+				public static string FieldName = "Mobile";
+			}
+			public struct Name
+			{
+				public static ID ID = new ID("{26CD59AB-3639-488F-BAFD-58D2B217755A}");
+				public static string FieldName = "Name";
 			}
 			public struct NavigationTitle
 			{
@@ -18223,6 +18068,11 @@ namespace Project.Habitat
 				public static ID ID = new ID("{0EE2F208-1FEE-42FC-8051-6696D49A92BF}");
 				public static string FieldName = "OpenGraphTitle";
 			}
+			public struct Picture
+			{
+				public static ID ID = new ID("{C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}");
+				public static string FieldName = "Picture";
+			}
 			public struct SeoFollowLinks
 			{
 				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
@@ -18240,16 +18090,47 @@ namespace Project.Habitat
 			}
 			public struct Summary
 			{
-				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
+				public static ID ID = new ID("{B897023C-15D2-49F3-8974-06FA5FB7AD00}");
 				public static string FieldName = "Summary";
+			}
+			public struct Telephone
+			{
+				public static ID ID = new ID("{8D0E8EE3-21C4-4AE2-A2F1-53D3F3EBE501}");
+				public static string FieldName = "Telephone";
 			}
 			public struct Title
 			{
-				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
+				public static ID ID = new ID("{76972FCD-4BB0-4255-864E-077745EFDF50}");
 				public static string FieldName = "Title";
+			}
+			public struct TwitterLink
+			{
+				public static ID ID = new ID("{6DE98EF7-1209-40A3-A63E-16DBEF015211}");
+				public static string FieldName = "TwitterLink";
 			}
 		}
 	}
+    
+}
+#endregion
+
+#region Employees folder (/sitecore/templates/Project/Habitat/Page Types/Employees folder)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Employees folder</para>
+    /// <para>ID: {51e2ff7f-6fb3-4470-91c8-d2ad97bf1eae}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Employees folder</para>
+    /// </summary>
+    [TemplateMapping("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}", "InterfaceMap")]
+	public partial interface IEmployeesFolder : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem, Project.Habitat.PageTypes.IArticle
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -18393,10 +18274,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -18607,10 +18488,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -18770,36 +18651,15 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Forgot Password Page (/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Forgot Password Page</para>
-    /// <para>ID: {8707a0b7-4a7d-44e4-abd6-a1ccb21049cf}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Forgot Password Page</para>
-    /// </summary>
-    [TemplateMapping("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}", "InterfaceMap")]
-	public partial interface IForgotPasswordPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employees folder</para>
 	/// <summary>
-	public struct ForgotPasswordPageItemConstants
+	public struct EmployeesFolderItemConstants
 	{
-		public static ID TemplateID => new ID("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}");
-		public static string TemplateName = "Forgot Password Page";
+		public static ID TemplateID => new ID("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}");
+		public static string TemplateName = "Employees folder";
 
 		public struct Fields
 		{
@@ -18818,6 +18678,11 @@ namespace Project.Habitat
 				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
 				public static string FieldName = "CanIndex";
 			}
+			public struct CssCode
+			{
+				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
+				public static string FieldName = "CssCode";
+			}
 			public struct CustomMetaData
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
@@ -18832,6 +18697,21 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
 				public static string FieldName = "IncludeInSearchResults";
+			}
+			public struct InheritAssets
+			{
+				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
+				public static string FieldName = "InheritAssets";
+			}
+			public struct JavascriptCodeBottom
+			{
+				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
+				public static string FieldName = "JavascriptCodeBottom";
+			}
+			public struct JavascriptCodeTop
+			{
+				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
+				public static string FieldName = "JavascriptCodeTop";
 			}
 			public struct MetaDescription
 			{
@@ -18890,6 +18770,27 @@ namespace Project.Habitat
 			}
 		}
 	}
+    
+}
+#endregion
+
+#region Forgot Password Page (/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Forgot Password Page</para>
+    /// <para>ID: {8707a0b7-4a7d-44e4-abd6-a1ccb21049cf}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Forgot Password Page</para>
+    /// </summary>
+    [TemplateMapping("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}", "InterfaceMap")]
+	public partial interface IForgotPasswordPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -19009,10 +18910,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -19151,10 +19052,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -19314,39 +19215,23 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Home (/sitecore/templates/Project/Habitat/Page Types/Home)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Home</para>
-    /// <para>ID: {4a8822cc-b418-4452-ab0f-8bb6df2f2114}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Home</para>
-    /// </summary>
-    [TemplateMapping("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}", "InterfaceMap")]
-	public partial interface IHome : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.Navigation.INavigationRoot, Feature.Social.IOpenGraph
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Home</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page</para>
 	/// <summary>
-	public struct HomeItemConstants
+	public struct ForgotPasswordPageItemConstants
 	{
-		public static ID TemplateID => new ID("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}");
-		public static string TemplateName = "Home";
+		public static ID TemplateID => new ID("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}");
+		public static string TemplateName = "Forgot Password Page";
 
 		public struct Fields
 		{
+			public struct Body
+			{
+				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
+				public static string FieldName = "Body";
+			}
 			public struct BrowserTitle
 			{
 				public static ID ID = new ID("{CA0479CE-0BFE-4522-83DE-BA688B380A78}");
@@ -19361,6 +19246,16 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
 				public static string FieldName = "CustomMetaData";
+			}
+			public struct Image
+			{
+				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
+				public static string FieldName = "Image";
+			}
+			public struct IncludeInSearchResults
+			{
+				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
+				public static string FieldName = "IncludeInSearchResults";
 			}
 			public struct MetaDescription
 			{
@@ -19407,8 +19302,39 @@ namespace Project.Habitat
 				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
 				public static string FieldName = "ShowInNavigation";
 			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
+				public static string FieldName = "Title";
+			}
 		}
 	}
+    
+}
+#endregion
+
+#region Home (/sitecore/templates/Project/Habitat/Page Types/Home)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Home</para>
+    /// <para>ID: {4a8822cc-b418-4452-ab0f-8bb6df2f2114}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Home</para>
+    /// </summary>
+    [TemplateMapping("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}", "InterfaceMap")]
+	public partial interface IHome : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.Navigation.INavigationRoot, Feature.Social.IOpenGraph
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -19600,10 +19526,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -19715,44 +19641,18 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Login Page (/sitecore/templates/Project/Habitat/Page Types/Login Page)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Login Page</para>
-    /// <para>ID: {ecc4e901-9c5f-4043-b11e-cfa868d1bb73}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Login Page</para>
-    /// </summary>
-    [TemplateMapping("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}", "InterfaceMap")]
-	public partial interface ILoginPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Login Page</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Home</para>
 	/// <summary>
-	public struct LoginPageItemConstants
+	public struct HomeItemConstants
 	{
-		public static ID TemplateID => new ID("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}");
-		public static string TemplateName = "Login Page";
+		public static ID TemplateID => new ID("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}");
+		public static string TemplateName = "Home";
 
 		public struct Fields
 		{
-			public struct Body
-			{
-				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
-				public static string FieldName = "Body";
-			}
 			public struct BrowserTitle
 			{
 				public static ID ID = new ID("{CA0479CE-0BFE-4522-83DE-BA688B380A78}");
@@ -19767,16 +19667,6 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
 				public static string FieldName = "CustomMetaData";
-			}
-			public struct Image
-			{
-				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
-				public static string FieldName = "Image";
-			}
-			public struct IncludeInSearchResults
-			{
-				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
-				public static string FieldName = "IncludeInSearchResults";
 			}
 			public struct MetaDescription
 			{
@@ -19823,18 +19713,29 @@ namespace Project.Habitat
 				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
 				public static string FieldName = "ShowInNavigation";
 			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
-				public static string FieldName = "Title";
-			}
 		}
 	}
+    
+}
+#endregion
+
+#region Login Page (/sitecore/templates/Project/Habitat/Page Types/Login Page)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Login Page</para>
+    /// <para>ID: {ecc4e901-9c5f-4043-b11e-cfa868d1bb73}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Login Page</para>
+    /// </summary>
+    [TemplateMapping("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}", "InterfaceMap")]
+	public partial interface ILoginPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -19954,10 +19855,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -20096,10 +19997,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -20259,36 +20160,15 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Map Page (/sitecore/templates/Project/Habitat/Page Types/Map Page)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Map Page</para>
-    /// <para>ID: {ee9e5bdb-7d71-48f7-b461-42bf9c2052ec}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Map Page</para>
-    /// </summary>
-    [TemplateMapping("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}", "InterfaceMap")]
-	public partial interface IMapPage : ICustomItemWrapper, Feature.Maps.IMapPoint, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Map Page</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Login Page</para>
 	/// <summary>
-	public struct MapPageItemConstants
+	public struct LoginPageItemConstants
 	{
-		public static ID TemplateID => new ID("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}");
-		public static string TemplateName = "Map Page";
+		public static ID TemplateID => new ID("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}");
+		public static string TemplateName = "Login Page";
 
 		public struct Fields
 		{
@@ -20307,11 +20187,6 @@ namespace Project.Habitat
 				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
 				public static string FieldName = "CanIndex";
 			}
-			public struct CssCode
-			{
-				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
-				public static string FieldName = "CssCode";
-			}
 			public struct CustomMetaData
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
@@ -20326,36 +20201,6 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
 				public static string FieldName = "IncludeInSearchResults";
-			}
-			public struct InheritAssets
-			{
-				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
-				public static string FieldName = "InheritAssets";
-			}
-			public struct JavascriptCodeBottom
-			{
-				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
-				public static string FieldName = "JavascriptCodeBottom";
-			}
-			public struct JavascriptCodeTop
-			{
-				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
-				public static string FieldName = "JavascriptCodeTop";
-			}
-			public struct MapPointAddress
-			{
-				public static ID ID = new ID("{0295C01D-214C-4C23-AFC2-3F0B4E88B643}");
-				public static string FieldName = "MapPointAddress";
-			}
-			public struct MapPointLocation
-			{
-				public static ID ID = new ID("{F686AC8E-1D33-45DB-8E1A-1B40CD491E7A}");
-				public static string FieldName = "MapPointLocation";
-			}
-			public struct MapPointName
-			{
-				public static ID ID = new ID("{F12C22BB-E57D-4FAB-96E1-1229E4E7FF0E}");
-				public static string FieldName = "MapPointName";
 			}
 			public struct MetaDescription
 			{
@@ -20414,6 +20259,27 @@ namespace Project.Habitat
 			}
 		}
 	}
+    
+}
+#endregion
+
+#region Map Page (/sitecore/templates/Project/Habitat/Page Types/Map Page)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Map Page</para>
+    /// <para>ID: {ee9e5bdb-7d71-48f7-b461-42bf9c2052ec}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Map Page</para>
+    /// </summary>
+    [TemplateMapping("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}", "InterfaceMap")]
+	public partial interface IMapPage : ICustomItemWrapper, Feature.Maps.IMapPoint, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -20557,10 +20423,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -20841,10 +20707,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -21004,39 +20870,23 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region News Article (/sitecore/templates/Project/Habitat/Page Types/News Article)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: News Article</para>
-    /// <para>ID: {b69277ad-e917-4b9f-9136-a12e0a3e462f}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/News Article</para>
-    /// </summary>
-    [TemplateMapping("{B69277AD-E917-4B9F-9136-A12E0A3E462F}", "InterfaceMap")]
-	public partial interface INewsArticle : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.News.INewsArticle, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/News Article</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Map Page</para>
 	/// <summary>
-	public struct NewsArticleItemConstants
+	public struct MapPageItemConstants
 	{
-		public static ID TemplateID => new ID("{B69277AD-E917-4B9F-9136-A12E0A3E462F}");
-		public static string TemplateName = "News Article";
+		public static ID TemplateID => new ID("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}");
+		public static string TemplateName = "Map Page";
 
 		public struct Fields
 		{
+			public struct Body
+			{
+				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
+				public static string FieldName = "Body";
+			}
 			public struct BrowserTitle
 			{
 				public static ID ID = new ID("{CA0479CE-0BFE-4522-83DE-BA688B380A78}");
@@ -21056,6 +20906,11 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
 				public static string FieldName = "CustomMetaData";
+			}
+			public struct Image
+			{
+				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
+				public static string FieldName = "Image";
 			}
 			public struct IncludeInSearchResults
 			{
@@ -21077,6 +20932,21 @@ namespace Project.Habitat
 				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
 				public static string FieldName = "JavascriptCodeTop";
 			}
+			public struct MapPointAddress
+			{
+				public static ID ID = new ID("{0295C01D-214C-4C23-AFC2-3F0B4E88B643}");
+				public static string FieldName = "MapPointAddress";
+			}
+			public struct MapPointLocation
+			{
+				public static ID ID = new ID("{F686AC8E-1D33-45DB-8E1A-1B40CD491E7A}");
+				public static string FieldName = "MapPointLocation";
+			}
+			public struct MapPointName
+			{
+				public static ID ID = new ID("{F12C22BB-E57D-4FAB-96E1-1229E4E7FF0E}");
+				public static string FieldName = "MapPointName";
+			}
 			public struct MetaDescription
 			{
 				public static ID ID = new ID("{BB7A38C0-323C-4F81-8EB9-288ABF7C4638}");
@@ -21087,30 +20957,10 @@ namespace Project.Habitat
 				public static ID ID = new ID("{4B16F930-73C9-4643-BB1B-00F06E60A073}");
 				public static string FieldName = "MetaKeywords";
 			}
-			public struct NewsBody
+			public struct NavigationTitle
 			{
-				public static ID ID = new ID("{801612C7-5E98-4E3C-80D2-A34D0EEBCBDA}");
-				public static string FieldName = "NewsBody";
-			}
-			public struct NewsDate
-			{
-				public static ID ID = new ID("{C464D2D7-3382-428A-BCDF-0963C60BA0E3}");
-				public static string FieldName = "NewsDate";
-			}
-			public struct NewsImage
-			{
-				public static ID ID = new ID("{3437EAAC-6EE8-460B-A33D-DA1F714B5A93}");
-				public static string FieldName = "NewsImage";
-			}
-			public struct NewsSummary
-			{
-				public static ID ID = new ID("{9D08271A-1672-44DD-B7EF-0A6EC34FCBA7}");
-				public static string FieldName = "NewsSummary";
-			}
-			public struct NewsTitle
-			{
-				public static ID ID = new ID("{BD9ECD4A-C0B0-4233-A3CD-D995519AC87B}");
-				public static string FieldName = "NewsTitle";
+				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
+				public static string FieldName = "NavigationTitle";
 			}
 			public struct OpenGraphDescription
 			{
@@ -21132,8 +20982,49 @@ namespace Project.Habitat
 				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
 				public static string FieldName = "SeoFollowLinks";
 			}
+			public struct ShowChildren
+			{
+				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
+				public static string FieldName = "ShowChildren";
+			}
+			public struct ShowInNavigation
+			{
+				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
+				public static string FieldName = "ShowInNavigation";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
+				public static string FieldName = "Title";
+			}
 		}
 	}
+    
+}
+#endregion
+
+#region News Article (/sitecore/templates/Project/Habitat/Page Types/News Article)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: News Article</para>
+    /// <para>ID: {b69277ad-e917-4b9f-9136-a12e0a3e462f}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/News Article</para>
+    /// </summary>
+    [TemplateMapping("{B69277AD-E917-4B9F-9136-A12E0A3E462F}", "InterfaceMap")]
+	public partial interface INewsArticle : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.News.INewsArticle, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -21445,10 +21336,10 @@ namespace Project.Habitat
         /// <para>Field: NewsImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper NewsImage
+        public virtual ICustomImageFieldWrapper NewsImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("NewsImage"); }
+            get { return GetField<CustomImageFieldWrapper>("NewsImage"); }
         }
 
         /// <summary>
@@ -21539,10 +21430,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -21606,44 +21497,18 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region News List (/sitecore/templates/Project/Habitat/Page Types/News List)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: News List</para>
-    /// <para>ID: {a99866e5-08e7-44d8-8a52-f8e26bcd3714}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/News List</para>
-    /// </summary>
-    [TemplateMapping("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}", "InterfaceMap")]
-	public partial interface INewsList : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.News.INewsFolder, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/News List</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/News Article</para>
 	/// <summary>
-	public struct NewsListItemConstants
+	public struct NewsArticleItemConstants
 	{
-		public static ID TemplateID => new ID("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}");
-		public static string TemplateName = "News List";
+		public static ID TemplateID => new ID("{B69277AD-E917-4B9F-9136-A12E0A3E462F}");
+		public static string TemplateName = "News Article";
 
 		public struct Fields
 		{
-			public struct Body
-			{
-				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
-				public static string FieldName = "Body";
-			}
 			public struct BrowserTitle
 			{
 				public static ID ID = new ID("{CA0479CE-0BFE-4522-83DE-BA688B380A78}");
@@ -21664,10 +21529,10 @@ namespace Project.Habitat
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
 				public static string FieldName = "CustomMetaData";
 			}
-			public struct Image
+			public struct IncludeInSearchResults
 			{
-				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
-				public static string FieldName = "Image";
+				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
+				public static string FieldName = "IncludeInSearchResults";
 			}
 			public struct InheritAssets
 			{
@@ -21694,10 +21559,30 @@ namespace Project.Habitat
 				public static ID ID = new ID("{4B16F930-73C9-4643-BB1B-00F06E60A073}");
 				public static string FieldName = "MetaKeywords";
 			}
-			public struct NavigationTitle
+			public struct NewsBody
 			{
-				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
-				public static string FieldName = "NavigationTitle";
+				public static ID ID = new ID("{801612C7-5E98-4E3C-80D2-A34D0EEBCBDA}");
+				public static string FieldName = "NewsBody";
+			}
+			public struct NewsDate
+			{
+				public static ID ID = new ID("{C464D2D7-3382-428A-BCDF-0963C60BA0E3}");
+				public static string FieldName = "NewsDate";
+			}
+			public struct NewsImage
+			{
+				public static ID ID = new ID("{3437EAAC-6EE8-460B-A33D-DA1F714B5A93}");
+				public static string FieldName = "NewsImage";
+			}
+			public struct NewsSummary
+			{
+				public static ID ID = new ID("{9D08271A-1672-44DD-B7EF-0A6EC34FCBA7}");
+				public static string FieldName = "NewsSummary";
+			}
+			public struct NewsTitle
+			{
+				public static ID ID = new ID("{BD9ECD4A-C0B0-4233-A3CD-D995519AC87B}");
+				public static string FieldName = "NewsTitle";
 			}
 			public struct OpenGraphDescription
 			{
@@ -21719,28 +21604,29 @@ namespace Project.Habitat
 				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
 				public static string FieldName = "SeoFollowLinks";
 			}
-			public struct ShowChildren
-			{
-				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
-				public static string FieldName = "ShowChildren";
-			}
-			public struct ShowInNavigation
-			{
-				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
-				public static string FieldName = "ShowInNavigation";
-			}
-			public struct Summary
-			{
-				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
-				public static string FieldName = "Summary";
-			}
-			public struct Title
-			{
-				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
-				public static string FieldName = "Title";
-			}
 		}
 	}
+    
+}
+#endregion
+
+#region News List (/sitecore/templates/Project/Habitat/Page Types/News List)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: News List</para>
+    /// <para>ID: {a99866e5-08e7-44d8-8a52-f8e26bcd3714}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/News List</para>
+    /// </summary>
+    [TemplateMapping("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}", "InterfaceMap")]
+	public partial interface INewsList : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.News.INewsFolder, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -21884,10 +21770,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -22074,10 +21960,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -22237,36 +22123,15 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Register Page (/sitecore/templates/Project/Habitat/Page Types/Register Page)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Register Page</para>
-    /// <para>ID: {6ef8f8a0-c567-495b-9e00-8775a268a486}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Register Page</para>
-    /// </summary>
-    [TemplateMapping("{6EF8F8A0-C567-495B-9E00-8775A268A486}", "InterfaceMap")]
-	public partial interface IRegisterPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Register Page</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/News List</para>
 	/// <summary>
-	public struct RegisterPageItemConstants
+	public struct NewsListItemConstants
 	{
-		public static ID TemplateID => new ID("{6EF8F8A0-C567-495B-9E00-8775A268A486}");
-		public static string TemplateName = "Register Page";
+		public static ID TemplateID => new ID("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}");
+		public static string TemplateName = "News List";
 
 		public struct Fields
 		{
@@ -22285,6 +22150,11 @@ namespace Project.Habitat
 				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
 				public static string FieldName = "CanIndex";
 			}
+			public struct CssCode
+			{
+				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
+				public static string FieldName = "CssCode";
+			}
 			public struct CustomMetaData
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
@@ -22295,10 +22165,20 @@ namespace Project.Habitat
 				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
 				public static string FieldName = "Image";
 			}
-			public struct IncludeInSearchResults
+			public struct InheritAssets
 			{
-				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
-				public static string FieldName = "IncludeInSearchResults";
+				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
+				public static string FieldName = "InheritAssets";
+			}
+			public struct JavascriptCodeBottom
+			{
+				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
+				public static string FieldName = "JavascriptCodeBottom";
+			}
+			public struct JavascriptCodeTop
+			{
+				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
+				public static string FieldName = "JavascriptCodeTop";
 			}
 			public struct MetaDescription
 			{
@@ -22357,6 +22237,27 @@ namespace Project.Habitat
 			}
 		}
 	}
+    
+}
+#endregion
+
+#region Register Page (/sitecore/templates/Project/Habitat/Page Types/Register Page)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Register Page</para>
+    /// <para>ID: {6ef8f8a0-c567-495b-9e00-8775a268a486}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Register Page</para>
+    /// </summary>
+    [TemplateMapping("{6EF8F8A0-C567-495B-9E00-8775A268A486}", "InterfaceMap")]
+	public partial interface IRegisterPage : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Indexing.IIndexedItem
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -22476,10 +22377,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -22618,10 +22519,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -22781,36 +22682,15 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Search Results (/sitecore/templates/Project/Habitat/Page Types/Search Results)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Search Results</para>
-    /// <para>ID: {92168572-385b-45f0-b40f-3d987ad20e5c}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Search Results</para>
-    /// </summary>
-    [TemplateMapping("{92168572-385B-45F0-B40F-3D987AD20E5C}", "InterfaceMap")]
-	public partial interface ISearchResults : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Search.ISearchResults, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Search Results</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Register Page</para>
 	/// <summary>
-	public struct SearchResultsItemConstants
+	public struct RegisterPageItemConstants
 	{
-		public static ID TemplateID => new ID("{92168572-385B-45F0-B40F-3D987AD20E5C}");
-		public static string TemplateName = "Search Results";
+		public static ID TemplateID => new ID("{6EF8F8A0-C567-495B-9E00-8775A268A486}");
+		public static string TemplateName = "Register Page";
 
 		public struct Fields
 		{
@@ -22829,11 +22709,6 @@ namespace Project.Habitat
 				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
 				public static string FieldName = "CanIndex";
 			}
-			public struct CssCode
-			{
-				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
-				public static string FieldName = "CssCode";
-			}
 			public struct CustomMetaData
 			{
 				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
@@ -22844,20 +22719,10 @@ namespace Project.Habitat
 				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
 				public static string FieldName = "Image";
 			}
-			public struct InheritAssets
+			public struct IncludeInSearchResults
 			{
-				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
-				public static string FieldName = "InheritAssets";
-			}
-			public struct JavascriptCodeBottom
-			{
-				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
-				public static string FieldName = "JavascriptCodeBottom";
-			}
-			public struct JavascriptCodeTop
-			{
-				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
-				public static string FieldName = "JavascriptCodeTop";
+				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
+				public static string FieldName = "IncludeInSearchResults";
 			}
 			public struct MetaDescription
 			{
@@ -22889,16 +22754,6 @@ namespace Project.Habitat
 				public static ID ID = new ID("{0EE2F208-1FEE-42FC-8051-6696D49A92BF}");
 				public static string FieldName = "OpenGraphTitle";
 			}
-			public struct Root
-			{
-				public static ID ID = new ID("{CD904125-3AE5-4709-9E6D-71473C5D5007}");
-				public static string FieldName = "Root";
-			}
-			public struct SearchBoxTitle
-			{
-				public static ID ID = new ID("{80E30DD8-8021-45F5-9FE1-23D2702CC206}");
-				public static string FieldName = "SearchBoxTitle";
-			}
 			public struct SeoFollowLinks
 			{
 				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
@@ -22926,6 +22781,27 @@ namespace Project.Habitat
 			}
 		}
 	}
+    
+}
+#endregion
+
+#region Search Results (/sitecore/templates/Project/Habitat/Page Types/Search Results)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Search Results</para>
+    /// <para>ID: {92168572-385b-45f0-b40f-3d987ad20e5c}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Search Results</para>
+    /// </summary>
+    [TemplateMapping("{92168572-385B-45F0-B40F-3D987AD20E5C}", "InterfaceMap")]
+	public partial interface ISearchResults : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Search.ISearchResults, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -23069,10 +22945,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -23259,10 +23135,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -23470,36 +23346,15 @@ namespace Project.Habitat
 
 	
 	}
-    
-}
-#endregion
-
-#region Section (/sitecore/templates/Project/Habitat/Page Types/Section)
-namespace Project.Habitat
-{
-    using Fortis.Model;
-    using Fortis.Model.Fields;
-    using Fortis.Providers;
-    using CustomWrappers;
-    /// <summary>
-    /// <para>Template interface</para>
-    /// <para>Template: Section</para>
-    /// <para>ID: {8ee208f9-a6a6-41e2-88a0-c188737a178c}</para>
-    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Section</para>
-    /// </summary>
-    [TemplateMapping("{8EE208F9-A6A6-41E2-88A0-C188737A178C}", "InterfaceMap")]
-	public partial interface ISection : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
-    {
-    }
 
 	/// <summary>
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para>/sitecore/templates/Project/Habitat/Page Types/Section</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Search Results</para>
 	/// <summary>
-	public struct SectionItemConstants
+	public struct SearchResultsItemConstants
 	{
-		public static ID TemplateID => new ID("{8EE208F9-A6A6-41E2-88A0-C188737A178C}");
-		public static string TemplateName = "Section";
+		public static ID TemplateID => new ID("{92168572-385B-45F0-B40F-3D987AD20E5C}");
+		public static string TemplateName = "Search Results";
 
 		public struct Fields
 		{
@@ -23532,11 +23387,6 @@ namespace Project.Habitat
 			{
 				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
 				public static string FieldName = "Image";
-			}
-			public struct IncludeInSearchResults
-			{
-				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
-				public static string FieldName = "IncludeInSearchResults";
 			}
 			public struct InheritAssets
 			{
@@ -23583,6 +23433,16 @@ namespace Project.Habitat
 				public static ID ID = new ID("{0EE2F208-1FEE-42FC-8051-6696D49A92BF}");
 				public static string FieldName = "OpenGraphTitle";
 			}
+			public struct Root
+			{
+				public static ID ID = new ID("{CD904125-3AE5-4709-9E6D-71473C5D5007}");
+				public static string FieldName = "Root";
+			}
+			public struct SearchBoxTitle
+			{
+				public static ID ID = new ID("{80E30DD8-8021-45F5-9FE1-23D2702CC206}");
+				public static string FieldName = "SearchBoxTitle";
+			}
 			public struct SeoFollowLinks
 			{
 				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
@@ -23610,6 +23470,27 @@ namespace Project.Habitat
 			}
 		}
 	}
+    
+}
+#endregion
+
+#region Section (/sitecore/templates/Project/Habitat/Page Types/Section)
+namespace Project.Habitat.PageTypes
+{
+    using Fortis.Model;
+    using Fortis.Model.Fields;
+    using Fortis.Providers;
+    using CustomWrappers;
+    /// <summary>
+    /// <para>Template interface</para>
+    /// <para>Template: Section</para>
+    /// <para>ID: {8ee208f9-a6a6-41e2-88a0-c188737a178c}</para>
+    /// <para>Path: /sitecore/templates/Project/Habitat/Page Types/Section</para>
+    /// </summary>
+    [TemplateMapping("{8EE208F9-A6A6-41E2-88A0-C188737A178C}", "InterfaceMap")]
+	public partial interface ISection : ICustomItemWrapper, Feature.Metadata.IPageMetadata, Feature.Navigation.INavigable, Feature.PageContent.IHasPageContent, Feature.Social.IOpenGraph, Foundation.Assets.IPageAssets, Foundation.Indexing.IIndexedItem
+    {
+    }
 
     /// <summary>
     /// <para>Template class</para>
@@ -23753,10 +23634,10 @@ namespace Project.Habitat
         /// <para>Field: Image</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper Image
+        public virtual ICustomImageFieldWrapper Image
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("Image"); }
+            get { return GetField<CustomImageFieldWrapper>("Image"); }
         }
 
         /// <summary>
@@ -23967,10 +23848,10 @@ namespace Project.Habitat
         /// <para>Field: OpenGraphImage</para>
         /// <para>Data type: Image</para>
         /// </summary>
-        public virtual IImageFieldWrapper OpenGraphImage
+        public virtual ICustomImageFieldWrapper OpenGraphImage
         {
             [DebuggerStepThrough]
-            get { return GetField<ImageFieldWrapper>("OpenGraphImage"); }
+            get { return GetField<CustomImageFieldWrapper>("OpenGraphImage"); }
         }
 
         /// <summary>
@@ -24129,6 +24010,125 @@ namespace Project.Habitat
 		}
 
 	
+	}
+
+	/// <summary>
+	/// <para>Constants struct for accessing template ID and field ID and names.</para>
+	/// <para>/sitecore/templates/Project/Habitat/Page Types/Section</para>
+	/// <summary>
+	public struct SectionItemConstants
+	{
+		public static ID TemplateID => new ID("{8EE208F9-A6A6-41E2-88A0-C188737A178C}");
+		public static string TemplateName = "Section";
+
+		public struct Fields
+		{
+			public struct Body
+			{
+				public static ID ID = new ID("{D74F396D-5C5E-4916-BD0A-BFD58B6B1967}");
+				public static string FieldName = "Body";
+			}
+			public struct BrowserTitle
+			{
+				public static ID ID = new ID("{CA0479CE-0BFE-4522-83DE-BA688B380A78}");
+				public static string FieldName = "BrowserTitle";
+			}
+			public struct CanIndex
+			{
+				public static ID ID = new ID("{683D7237-206A-488F-9DEE-4A4E41FB161D}");
+				public static string FieldName = "CanIndex";
+			}
+			public struct CssCode
+			{
+				public static ID ID = new ID("{06A96EFC-F2E5-45C3-A7DC-4DDDFA366CC0}");
+				public static string FieldName = "CssCode";
+			}
+			public struct CustomMetaData
+			{
+				public static ID ID = new ID("{167ABA77-5172-42AF-9F9E-00299113839E}");
+				public static string FieldName = "CustomMetaData";
+			}
+			public struct Image
+			{
+				public static ID ID = new ID("{9492E0BB-9DF9-46E7-8188-EC795C4ADE44}");
+				public static string FieldName = "Image";
+			}
+			public struct IncludeInSearchResults
+			{
+				public static ID ID = new ID("{8D5C486E-A0E3-4DBE-9A4A-CDFF93594BDA}");
+				public static string FieldName = "IncludeInSearchResults";
+			}
+			public struct InheritAssets
+			{
+				public static ID ID = new ID("{F19E8A50-9950-4861-9E66-9598A1898E71}");
+				public static string FieldName = "InheritAssets";
+			}
+			public struct JavascriptCodeBottom
+			{
+				public static ID ID = new ID("{B3BA9EA9-D0A1-49DF-9F4B-28FA5D353DC8}");
+				public static string FieldName = "JavascriptCodeBottom";
+			}
+			public struct JavascriptCodeTop
+			{
+				public static ID ID = new ID("{D79D9DDD-2774-42F4-94C3-50C892F6E13D}");
+				public static string FieldName = "JavascriptCodeTop";
+			}
+			public struct MetaDescription
+			{
+				public static ID ID = new ID("{BB7A38C0-323C-4F81-8EB9-288ABF7C4638}");
+				public static string FieldName = "MetaDescription";
+			}
+			public struct MetaKeywords
+			{
+				public static ID ID = new ID("{4B16F930-73C9-4643-BB1B-00F06E60A073}");
+				public static string FieldName = "MetaKeywords";
+			}
+			public struct NavigationTitle
+			{
+				public static ID ID = new ID("{1B483E91-D8C4-4D19-BA03-462074B55936}");
+				public static string FieldName = "NavigationTitle";
+			}
+			public struct OpenGraphDescription
+			{
+				public static ID ID = new ID("{A12D5346-87EE-484D-83C5-F1E8E1B99666}");
+				public static string FieldName = "OpenGraphDescription";
+			}
+			public struct OpenGraphImage
+			{
+				public static ID ID = new ID("{11F41661-E5FE-44E7-B8DA-7CFF2D39B4B2}");
+				public static string FieldName = "OpenGraphImage";
+			}
+			public struct OpenGraphTitle
+			{
+				public static ID ID = new ID("{0EE2F208-1FEE-42FC-8051-6696D49A92BF}");
+				public static string FieldName = "OpenGraphTitle";
+			}
+			public struct SeoFollowLinks
+			{
+				public static ID ID = new ID("{0DCA829C-9FCE-41F5-9990-C6182FEFE905}");
+				public static string FieldName = "SeoFollowLinks";
+			}
+			public struct ShowChildren
+			{
+				public static ID ID = new ID("{68016087-AA00-45D6-922A-678475C50D4A}");
+				public static string FieldName = "ShowChildren";
+			}
+			public struct ShowInNavigation
+			{
+				public static ID ID = new ID("{5585A30D-B115-4753-93CE-422C3455DEB2}");
+				public static string FieldName = "ShowInNavigation";
+			}
+			public struct Summary
+			{
+				public static ID ID = new ID("{AC3FD4DB-8266-476D-9635-67814D91E901}");
+				public static string FieldName = "Summary";
+			}
+			public struct Title
+			{
+				public static ID ID = new ID("{C30A013F-3CC8-4961-9837-1C483277084A}");
+				public static string FieldName = "Title";
+			}
+		}
 	}
     
 }

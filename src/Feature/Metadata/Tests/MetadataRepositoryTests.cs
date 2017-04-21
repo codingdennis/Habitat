@@ -9,7 +9,6 @@
     using Sitecore.Foundation.Testing.Attributes;
     using Xunit;
     using Fortis.Foundation.CodeGen.Templates.Feature.Metadata;
-    using Fortis.Foundation.CodeGen.Templates.Project.Common;
     using Fortis.Model;
     using Fortis.Mvc.Providers;
     using Fortis.Providers;
@@ -33,18 +32,18 @@
                 }
             );
 
-            db.Add(new DbItem(keyword1ItemName, keyword1Id, MetaKeywordItemConstants.TemplateID)
+            db.Add(new DbItem(keyword1ItemName, keyword1Id, KeywordItemConstants.TemplateID)
                 {
-                    new DbField(MetaKeywordItemConstants.Fields.Keyword.FieldName)
+                    new DbField(KeywordItemConstants.Fields.Keyword.FieldName)
                     {
                         {"en", keyword1ItemName}
                     }
                 }
             );
 
-            db.Add(new DbItem(keyword2ItemName, keyword2Id, MetaKeywordItemConstants.TemplateID)
+            db.Add(new DbItem(keyword2ItemName, keyword2Id, KeywordItemConstants.TemplateID)
                 {
-                    new DbField(MetaKeywordItemConstants.Fields.Keyword.FieldName)
+                    new DbField(KeywordItemConstants.Fields.Keyword.FieldName)
                     {
                         {"en", keyword2ItemName}
                     }

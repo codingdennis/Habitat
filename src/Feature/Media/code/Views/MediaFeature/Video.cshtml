@@ -1,31 +1,31 @@
 ﻿@using Sitecore.Data.Items
-@using Sitecore.Feature.Media
 @using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.Dictionary.Repositories
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
-@using Sitecore.Mvc.Extensions
 @using Sitecore.Resources.Media
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
+@model IRenderingModel<IItemWrapper, IVideo>
 
-@if (Model == null || (!Model.Item?.IsDerived(Templates.HasMediaVideo.ID) ?? true))
+@if (Model == null || (!Model.RenderingItem?.IsDerived(VideoItemConstants.TemplateID) ?? true))
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasMediaVideo.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(VideoItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 @{
     const int DefaultWidth = 750;
-    var thumbnail = Html.Sitecore().ImageField(Templates.HasMedia.Fields.Thumbnail.ToString(), Model.Item, mw: DefaultWidth, cssClass: "img-responsive");
+    var thumbnail = Model.RenderingItem?.MediaThumbnail.Render(new {@class = "img-responsive", mw = DefaultWidth});
 }
 
-@if ((!Model.Item.FieldHasValue(Templates.HasMediaVideo.Fields.VideoLink) || string.IsNullOrWhiteSpace(thumbnail?.ToString())) && !Sitecore.Context.PageMode.IsExperienceEditorEditing)
+@if ((!Model.RenderingItem.MediaVideoLink.HasValue || string.IsNullOrWhiteSpace(thumbnail?.ToString())) && !Sitecore.Context.PageMode.IsExperienceEditorEditing)
 {
     return;
 }
 
 <div>
     <div class="embed-responsive embed-responsive-16by9">
-        @if (Model.Item.LinkFieldOptions(Templates.HasMediaVideo.Fields.VideoLink, LinkFieldOption.LinkType) == "external")
+        @if (Model.RenderingItem.MediaVideoLink.IsExternal)
         {
             if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
             {
@@ -34,20 +34,19 @@
             }
             else
             {
-                <iframe width="@DefaultWidth" height="@(DefaultWidth / 16 * 9)" src="@Model.Item.LinkFieldUrl(Templates.HasMediaVideo.Fields.VideoLink)"></iframe>
+                <iframe width="@DefaultWidth" height="@(DefaultWidth / 16 * 9)" src="@Model.RenderingItem.MediaVideoLink.Url"></iframe>
             }
         }
         else
         {
-            MediaItem mediaItem = Model.Item.TargetItem(Templates.HasMediaVideo.Fields.VideoLink);
-            if (mediaItem == null)
+            if (!Model.RenderingItem.MediaVideoLink.IsMediaLink)
             {
                 @thumbnail
             }
             else
             {
-                <video width="@DefaultWidth" height="@(DefaultWidth / 16 * 9)" autoplay loop poster="@Model.Item.MediaUrl(Templates.HasMedia.Fields.Thumbnail)">
-                    <source src="@MediaManager.GetMediaUrl(mediaItem)" type="@mediaItem.MimeType">
+                <video width="@DefaultWidth" height="@(DefaultWidth / 16 * 9)" autoplay loop poster="@Model.RenderingItem.MediaThumbnail.GetSourceUri()">
+                    <source src="@Model.RenderingItem.MediaVideoLink.Url" type="@Model.RenderingItem.MediaVideoLink.MediaMimeType">
                     @thumbnail
                 </video>
             }

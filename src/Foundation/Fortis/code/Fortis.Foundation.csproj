@@ -157,8 +157,12 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomWrappers\CustomGeneralLinkFieldWrapper.cs" />
+    <Compile Include="CustomWrappers\CustomImageFieldWrapper.cs" />
     <Compile Include="CustomWrappers\CustomItemWrapper.cs" />
     <Compile Include="CustomWrappers\CustomRenderingParameterWrapper.cs" />
+    <Compile Include="CustomWrappers\ICustomGeneralLinkFieldWrapper.cs" />
+    <Compile Include="CustomWrappers\ICustomImageFieldWrapper.cs" />
     <Compile Include="CustomWrappers\ICustomItemWrapper.cs" />
     <Compile Include="CustomWrappers\ICustomRenderingParameterWrapper.cs" />
     <Compile Include="CustomWrappers\IFortisItem.cs" />

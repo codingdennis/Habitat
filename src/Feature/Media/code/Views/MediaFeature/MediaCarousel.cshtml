@@ -1,5 +1,4 @@
 ﻿@using Sitecore.Data.Fields
-@using Sitecore.Feature.Media 
 @using Sitecore.Feature.Media.Repositories
 @using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
@@ -7,16 +6,21 @@
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.Theming.Extensions
 @using Sitecore.Resources.Media
-@model Sitecore.Mvc.Presentation.RenderingModel
-@if (!Model?.Item?.IsDerived(Templates.HasMediaSelector.ID) ?? true)
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Media
+@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
+@using Sitecore.ContentSearch.Linq.Extensions
+@using Sitecore.ContentSearch.Utilities
+@model IRenderingModel<IItemWrapper, ICarousel, IRenderingParameterWrapper>
+@if (!Model?.RenderingItem?.IsDerived(CarouselItemConstants.TemplateID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasMediaSelector.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
 @{
   var carouselId = "carousel" + Guid.NewGuid().ToString("N");
-  var elements = MediaSelectorElementsRepository.Get(Model.Item).ToArray();
+  var elements = MediaSelectorElementsRepository.Get(Model.RenderingItem).ToArray();
   int? carouselHeight = null;
 }
 <div id="@carouselId" class="carousel slide" data-ride="carousel" @(Sitecore.Context.PageMode.IsExperienceEditor ? "data-interval" : "")>
@@ -24,11 +28,10 @@
     @for (var i = 0; i < elements.Length; i++)
     {
         <li data-target="#@carouselId" data-slide-to="@i" class="@elements[i].Active"></li>
-        int height;
-        var field = elements[i].Item.IsDerived(Templates.HasMediaVideo.ID) ? Templates.HasMedia.Fields.Thumbnail : Templates.HasMediaImage.Fields.Image;
-        if (int.TryParse(((ImageField)elements[i].Item.Fields[field]).Height, out height) && height > (carouselHeight ?? 0))
+        var imageField = elements[i].Item.IsDerived(HasMediaVideoItemConstants.TemplateID) ? (elements[i].Item as IHasMedia)?.MediaThumbnail : (elements[i].Item as IHasMediaImage)?.MediaImage;
+        if (imageField?.Height > (carouselHeight ?? 0))
         {
-            carouselHeight = height;
+            carouselHeight = imageField.Height;
         }
     }
   </ol>
@@ -38,27 +41,27 @@
     {
       <div class="item @element.Active">
         @{
-          var style = "background-image: ";
-          var field = element.Item.IsDerived(Templates.HasMediaVideo.ID) ? Templates.HasMedia.Fields.Thumbnail : Templates.HasMediaImage.Fields.Image;
-          style += element.Item.ImageUrl(field, new MediaUrlOptions()).ToCssUrlValue();
-          var fixedHeight = Model.Rendering.IsFixedHeight();
-          if (fixedHeight && carouselHeight.HasValue)
-          {
-              style += "; height:" + carouselHeight + "px;";
-          }
+            var style = "background-image: ";
+            var imageField = element.Item.IsDerived(HasMediaVideoItemConstants.TemplateID) ? (element.Item as IHasMedia)?.MediaThumbnail : (element.Item as IHasMediaImage)?.MediaImage;
+            style += imageField?.GetSourceUri().ToCssUrlValue();
+            var fixedHeight = false;//Model.Rendering.IsFixedHeight();
+            if (fixedHeight && carouselHeight.HasValue)
+            {
+                style += "; height:" + carouselHeight + "px;";
+            }
         }
 
         <div class="jumbotron bg-media" style="@style">
-          @if (element.Item.IsDerived(Templates.HasMediaVideo.ID))
+          @if (element.Item.IsDerived(HasMediaVideoItemConstants.TemplateID))
           {
             <video autoplay="" loop="" muted="" class="video-bg img-responsive">
-              <source src="@element.Item.MediaUrl(Templates.HasMediaVideo.Fields.VideoLink)" type="video/mp4">
+              <source src="@((element.Item as IHasMediaVideo)?.MediaVideoLink.Url)" type="video/mp4">
             </video>
           }
 
-          <h3>@Html.Sitecore().Field(Templates.HasMedia.Fields.Title, element.Item)</h3>
+          <h3>@((element.Item as IHasMedia)?.MediaTitle)</h3>
           <div class="lead">
-            @Html.Sitecore().Field(Templates.HasMedia.Fields.Description, element.Item)
+            @((element.Item as IHasMedia)?.MediaDescription)
           </div>
         </div>
       </div>
