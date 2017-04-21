@@ -4,9 +4,9 @@
 @using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
 @using Sitecore.Resources.Media
 @model IRenderingModel<IItemWrapper, IImage>
-@if (!Model?.RenderingItem?.IsDerived(ImageItemConstants.TemplateID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(ImageConstants.TemplateID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(ImageItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(ImageConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 

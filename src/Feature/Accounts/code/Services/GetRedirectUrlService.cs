@@ -40,9 +40,9 @@
             switch (status)
             {
                 case AuthenticationStatus.Unauthenticated:
-                    return this.accountsSettingsService.GetPageLinkOrDefault(Context.Item, AccountsSettingsItemConstants.Fields.LoginPage.ID, Context.Site.GetRootItem());
+                    return this.accountsSettingsService.GetPageLinkOrDefault(Context.Item, AccountsSettingsConstants.Fields.LoginPage.ID, Context.Site.GetRootItem());
                 case AuthenticationStatus.Authenticated:
-                    return this.accountsSettingsService.GetPageLinkOrDefault(Context.Item, AccountsSettingsItemConstants.Fields.AfterLoginPage.ID, Context.Site.GetRootItem());
+                    return this.accountsSettingsService.GetPageLinkOrDefault(Context.Item, AccountsSettingsConstants.Fields.AfterLoginPage.ID, Context.Site.GetRootItem());
                 default:
                     throw new ArgumentOutOfRangeException(nameof(status), status, null);
             }

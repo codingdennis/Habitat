@@ -7,9 +7,9 @@
 @using Fortis.Foundation.CodeGen.Templates.Feature.Media
 @using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
 @model IRenderingModel<IItemWrapper, ICarousel>
-@if (!Model?.RenderingItem?.IsDerived(CarouselItemConstants.TemplateID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(CarouselConstants.TemplateID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 
@@ -32,12 +32,12 @@
       <div class="item @element.Active">
         @{
           var style = "background-image: ";
-          var imageField = element.Item.IsDerived(HasMediaVideoItemConstants.TemplateID) ? (element.Item as IHasMedia)?.MediaThumbnail : (element.Item as IHasMediaImage)?.MediaImage;
+          var imageField = element.Item.IsDerived(HasMediaVideoConstants.TemplateID) ? (element.Item as IHasMedia)?.MediaThumbnail : (element.Item as IHasMediaImage)?.MediaImage;
           style += imageField?.GetSourceUri().ToCssUrlValue();
         }
 
         <div class="jumbotron jumbotron-xl bg-media" style="@style">
-          @if (element.Item.IsDerived(HasMediaVideoItemConstants.TemplateID))
+          @if (element.Item.IsDerived(HasMediaVideoConstants.TemplateID))
           {
             var videoItem = element.Item as IHasMediaVideo;  
             <video autoplay="" loop="" muted="" class="video-bg">

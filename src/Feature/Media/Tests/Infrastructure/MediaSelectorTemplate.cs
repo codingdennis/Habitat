@@ -5,9 +5,9 @@ namespace Sitecore.Feature.Media.Tests.Infrastructure
 
     public class MediaSelectorTemplate : DbTemplate
     {
-        public MediaSelectorTemplate() : base(HasMediaSelectorItemConstants.TemplateID)
+        public MediaSelectorTemplate() : base(HasMediaSelectorConstants.TemplateID)
         {
-            base.Add(HasMediaSelectorItemConstants.Fields.MediaSelector.ID);
+            base.Add(HasMediaSelectorConstants.Fields.MediaSelector.ID);
         }
     }
 }

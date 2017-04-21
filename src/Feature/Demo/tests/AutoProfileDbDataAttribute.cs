@@ -11,9 +11,9 @@ namespace Sitecore.Feature.Demo.Tests
         public AutoProfileDbDataAttribute()
         {
             var db = Fixture.Create<Db>();
-            db.Add(new DbTemplate(ProfilingSettingsItemConstants.TemplateID)
+            db.Add(new DbTemplate(ProfilingSettingsConstants.TemplateID)
             {
-                new DbField(ProfilingSettingsItemConstants.Fields.SiteProfiles.ID)
+                new DbField(ProfilingSettingsConstants.Fields.SiteProfiles.ID)
             });
 
             db.Add(new DbTemplate(ProfileItem.TemplateID)

@@ -49,19 +49,19 @@
         private SiteContext BuildSiteContext(Db db, Db coreDb, ID profileId, ID interestFolder, IEnumerable<string> interests)
         {
             var interestItem = new DbItem("InterestsFolder", interestFolder);
-            interests.Select(i => new DbItem(i) {TemplateID = InterestItemConstants.TemplateID, Fields = {new DbField("Title", InterestItemConstants.Fields.Title.ID) {Value = i}}})
+            interests.Select(i => new DbItem(i) {TemplateID = InterestConstants.TemplateID, Fields = {new DbField("Title", InterestConstants.Fields.Title.ID) {Value = i}}})
                 .ToList().ForEach(x => interestItem.Add(x));
 
             db.Add(new DbItem("siteroot")
             {
-                TemplateID = ProfileSettingsItemConstants.TemplateID,
+                TemplateID = ProfileSettingsConstants.TemplateID,
                 Fields =
                 {
-                    new DbField("UserProfile", ProfileSettingsItemConstants.Fields.UserProfile.ID)
+                    new DbField("UserProfile", ProfileSettingsConstants.Fields.UserProfile.ID)
                     {
                         Value = profileId.ToString()
                     },
-                    new DbField("InterestsFolder", ProfileSettingsItemConstants.Fields.InterestsFolder.ID)
+                    new DbField("InterestsFolder", ProfileSettingsConstants.Fields.InterestsFolder.ID)
                     {
                         Value = interestFolder.ToString()
                     }

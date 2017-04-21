@@ -23,27 +23,27 @@
             var keyword1Id = ID.NewID;
             var keyword2Id = ID.NewID;
 
-            db.Add(new DbItem(contextItemName, contextItemId, PageMetadataItemConstants.TemplateID)
+            db.Add(new DbItem(contextItemName, contextItemId, PageMetadataConstants.TemplateID)
                 {
-                   new DbField(PageMetadataItemConstants.Fields.MetaKeywords.FieldName)
+                   new DbField(PageMetadataConstants.Fields.MetaKeywords.FieldName)
                    {
                      {"en", $"{keyword1Id}|{keyword2Id}"}
                    }
                 }
             );
 
-            db.Add(new DbItem(keyword1ItemName, keyword1Id, KeywordItemConstants.TemplateID)
+            db.Add(new DbItem(keyword1ItemName, keyword1Id, KeywordConstants.TemplateID)
                 {
-                    new DbField(KeywordItemConstants.Fields.Keyword.FieldName)
+                    new DbField(KeywordConstants.Fields.Keyword.FieldName)
                     {
                         {"en", keyword1ItemName}
                     }
                 }
             );
 
-            db.Add(new DbItem(keyword2ItemName, keyword2Id, KeywordItemConstants.TemplateID)
+            db.Add(new DbItem(keyword2ItemName, keyword2Id, KeywordConstants.TemplateID)
                 {
-                    new DbField(KeywordItemConstants.Fields.Keyword.FieldName)
+                    new DbField(KeywordConstants.Fields.Keyword.FieldName)
                     {
                         {"en", keyword2ItemName}
                     }
@@ -64,7 +64,7 @@
         {
             var contextItemId = ID.NewID;
 
-            db.Add(new DbItem(contextItemName, contextItemId, PageMetadataItemConstants.TemplateID));
+            db.Add(new DbItem(contextItemName, contextItemId, PageMetadataConstants.TemplateID));
 
             var itemFactory = this.GetItemFactory();
             var contextItem = itemFactory.Select<IPageMetadata>(contextItemId.Guid);
@@ -77,9 +77,9 @@
         {
             var contextItemId = ID.NewID;
 
-            db.Add(new DbItem("context", contextItemId, SiteMetadataItemConstants.TemplateID));
+            db.Add(new DbItem("context", contextItemId, SiteMetadataConstants.TemplateID));
             var contextItem = db.GetItem(contextItemId);
-            var child = contextItem.Add("child", new TemplateID(PageMetadataItemConstants.TemplateID));
+            var child = contextItem.Add("child", new TemplateID(PageMetadataConstants.TemplateID));
             var itemFactory = this.GetItemFactory();
             var keywordsModel = MetadataRepository.Get(itemFactory.Select<IPageMetadata>(child.ID.Guid));
 

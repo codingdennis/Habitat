@@ -55,9 +55,9 @@ namespace Sitecore.Feature.Demo.Controllers
         public ActionResult DemoContent()
         {
             var item = RenderingContext.Current?.Rendering?.Item ?? RenderingContext.Current?.ContextItem;
-            if (item == null || !item.IsDerived(DemoContentItemConstants.TemplateID))
+            if (item == null || !item.IsDerived(DemoContentConstants.TemplateID))
             {
-                throw new InvalidDataSourceItemException($"Item should be not null and derived from {DemoContentItemConstants.TemplateName} {DemoContentItemConstants.TemplateID} template");
+                throw new InvalidDataSourceItemException($"Item should be not null and derived from {DemoContentConstants.TemplateName} {DemoContentConstants.TemplateID} template");
             }
 
             return this.View("DemoContent", new DemoContent(item));

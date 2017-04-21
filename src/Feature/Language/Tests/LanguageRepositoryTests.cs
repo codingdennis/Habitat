@@ -2,6 +2,7 @@
 {
   using System.Linq;
   using FluentAssertions;
+  using Fortis.Foundation.CodeGen.Templates.Feature.Language;
   using Sitecore.Collections;
   using Sitecore.Data;
   using Sitecore.FakeDb;
@@ -32,7 +33,7 @@
     {
       template.BaseIDs = new[]
       {
-        Templates.Site.ID, Feature.Language.Templates.LanguageSettings.ID
+        Templates.Site.ID, LanguageSettingsConstants.TemplateID
       };
 
       var languageItem = new DbItem("en");
@@ -41,7 +42,7 @@
 
       var siteRootItem = new DbItem(rootName, ID.NewID, template.ID)
       {
-        new DbField(Feature.Language.Templates.LanguageSettings.Fields.SupportedLanguages)
+        new DbField(LanguageSettingsConstants.Fields.SupportedLanguages.ID)
         {
           {
             "en", languageItem.ID.ToString()
@@ -63,7 +64,7 @@
     {
       template.BaseIDs = new[]
       {
-        Templates.Site.ID, Feature.Language.Templates.LanguageSettings.ID
+        Templates.Site.ID, LanguageSettingsConstants.TemplateID
       };
 
       var languageItem = new DbItem("en");
@@ -71,7 +72,7 @@
 
       var siteRootItem = new DbItem(rootName, ID.NewID, template.ID)
       {
-        new DbField(Feature.Language.Templates.LanguageSettings.Fields.SupportedLanguages)
+        new DbField(LanguageSettingsConstants.Fields.SupportedLanguages.ID)
         {
           {
             "en", ""

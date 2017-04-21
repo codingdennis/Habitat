@@ -18,15 +18,15 @@
 
     public IEnumerable<ID> SupportedTemplates => new[]
     {
-      HasPageContentItemConstants.TemplateID
+      HasPageContentConstants.TemplateID
     };
 
     public Expression<Func<SearchResultItem, bool>> GetQueryPredicate(IQuery query)
     {
       var fieldNames = new[] {
-          HasPageContentItemConstants.Fields.Title.FieldName,
-          HasPageContentItemConstants.Fields.Summary.FieldName,
-          HasPageContentItemConstants.Fields.Body.FieldName
+          HasPageContentConstants.Fields.Title.FieldName,
+          HasPageContentConstants.Fields.Summary.FieldName,
+          HasPageContentConstants.Fields.Body.FieldName
       };
       return GetFreeTextPredicateService.GetFreeTextPredicate(fieldNames, query);
     }
@@ -34,8 +34,8 @@
     public void FormatResult(SearchResultItem item, ISearchResult formattedResult)
     {
       var contentItem = item.GetItem();
-      formattedResult.Title = FieldRenderer.Render(contentItem, HasPageContentItemConstants.Fields.Title.FieldName);
-      formattedResult.Description = FieldRenderer.Render(contentItem, HasPageContentItemConstants.Fields.Summary.FieldName);
+      formattedResult.Title = FieldRenderer.Render(contentItem, HasPageContentConstants.Fields.Title.FieldName);
+      formattedResult.Description = FieldRenderer.Render(contentItem, HasPageContentConstants.Fields.Summary.FieldName);
     }
   }
 }

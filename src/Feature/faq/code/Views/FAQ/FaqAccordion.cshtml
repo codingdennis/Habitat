@@ -7,9 +7,9 @@
 @using Fortis.Foundation.CodeGen.Templates.Feature.FAQ
 @model IRenderingModel<IFAQ, IFAQGroup>
 
-@if (!Model?.RenderingItem?.IsDerived(FAQGroupItemConstants.TemplateID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(FAQGroupConstants.TemplateID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(FAQGroupItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(FAQGroupConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 

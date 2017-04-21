@@ -27,12 +27,12 @@
             var siteContext = new SiteContext();
             var siteDefinition = siteContext.GetSiteDefinition(Context.Item);
 
-            if (siteDefinition?.Item == null || !siteDefinition.Item.IsDerived(LanguageSettingsItemConstants.TemplateID))
+            if (siteDefinition?.Item == null || !siteDefinition.Item.IsDerived(LanguageSettingsConstants.TemplateID))
             {
                 return languages;
             }
 
-            var supportedLanguagesField = new MultilistField(siteDefinition.Item.Fields[LanguageSettingsItemConstants.Fields.SupportedLanguages.ID]);
+            var supportedLanguagesField = new MultilistField(siteDefinition.Item.Fields[LanguageSettingsConstants.Fields.SupportedLanguages.ID]);
             if (supportedLanguagesField.Count == 0)
             {
                 return Enumerable.Empty<Language>();

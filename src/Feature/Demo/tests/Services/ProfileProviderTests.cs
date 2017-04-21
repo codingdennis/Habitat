@@ -28,9 +28,9 @@ namespace Sitecore.Feature.Demo.Tests.Services
         {
             var profileItem = new DbItem("profile", ID.NewID, new TemplateID(ProfileItem.TemplateID));
             db.Add(profileItem);
-            var profileSettingItem = new DbItem("profileSetting", ID.NewID, new TemplateID(ProfilingSettingsItemConstants.TemplateID))
+            var profileSettingItem = new DbItem("profileSetting", ID.NewID, new TemplateID(ProfilingSettingsConstants.TemplateID))
             {
-                {ProfilingSettingsItemConstants.Fields.SiteProfiles.ID, profileItem.ID.ToString()}
+                {ProfilingSettingsConstants.Fields.SiteProfiles.ID, profileItem.ID.ToString()}
             };
             db.Add(profileSettingItem);
 
@@ -58,7 +58,7 @@ namespace Sitecore.Feature.Demo.Tests.Services
         [AutoProfileDbData]
         public void LoadProfiles_SettingsIsEmpty_ShouldReturnExistentProfilesEnumerable([Content] Item item, CurrentInteraction currentInteraction, ITracker tracker, Analytics.Tracking.Profile profile)
         {
-            var profileSettingItem = item.Add("profileSetting", new TemplateID(ProfilingSettingsItemConstants.TemplateID));
+            var profileSettingItem = item.Add("profileSetting", new TemplateID(ProfilingSettingsConstants.TemplateID));
             var profileItem = item.Add("profile", new TemplateID(ProfileItem.TemplateID));
 
 

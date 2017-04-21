@@ -69,10 +69,10 @@
             {
                 Fields =
                 {
-                    new DbField("FirstName", UserProfileItemConstants.Fields.FirstName.ID),
-                    new DbField("LastName", UserProfileItemConstants.Fields.LastName.ID),
-                    new DbField("Phone", UserProfileItemConstants.Fields.Phone.ID),
-                    new DbField("Interest", UserProfileItemConstants.Fields.Interest.ID)
+                    new DbField("FirstName", UserProfileConstants.Fields.FirstName.ID),
+                    new DbField("LastName", UserProfileConstants.Fields.LastName.ID),
+                    new DbField("Phone", UserProfileConstants.Fields.Phone.ID),
+                    new DbField("Interest", UserProfileConstants.Fields.Interest.ID)
                 }
             });
             profileSettingsService.GetUserDefaultProfile().Returns(db.GetItem(id));
@@ -93,10 +93,10 @@
             {
                 Fields =
                 {
-                    new DbField("FirstName", UserProfileItemConstants.Fields.FirstName.ID),
-                    new DbField("LastName", UserProfileItemConstants.Fields.LastName.ID),
-                    new DbField("Phone", UserProfileItemConstants.Fields.Phone.ID),
-                    new DbField("Interest", UserProfileItemConstants.Fields.Interest.ID)
+                    new DbField("FirstName", UserProfileConstants.Fields.FirstName.ID),
+                    new DbField("LastName", UserProfileConstants.Fields.LastName.ID),
+                    new DbField("Phone", UserProfileConstants.Fields.Phone.ID),
+                    new DbField("Interest", UserProfileConstants.Fields.Interest.ID)
                 }
             });
             profileSettingsService.GetUserDefaultProfile().Returns(db.GetItem(id));

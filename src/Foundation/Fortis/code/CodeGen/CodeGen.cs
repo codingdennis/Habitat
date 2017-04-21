@@ -1,7 +1,7 @@
 ﻿
 /*
  * Fortis Template Models for Habitat, based on Unicorn serialization.
- * Generated at 04/20/2017 15:00:47
+ * Generated at 04/21/2017 13:02:32
  *
  * To regenerate after template changes, right-click on CodeGen.tt and select Run Custom Tool.
  */
@@ -214,7 +214,7 @@ namespace Feature.Accounts
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_UserProfile</para>
 	/// <summary>
-	public struct UserProfileItemConstants
+	public struct UserProfileConstants
 	{
 		public static ID TemplateID => new ID("{696D276B-786A-4D1E-B8BB-8E139DB7BE7C}");
 		public static string TemplateName = "_UserProfile";
@@ -508,7 +508,7 @@ namespace Feature.Accounts
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_AccountsSettings</para>
 	/// <summary>
-	public struct AccountsSettingsItemConstants
+	public struct AccountsSettingsConstants
 	{
 		public static ID TemplateID => new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
 		public static string TemplateName = "_AccountsSettings";
@@ -637,7 +637,7 @@ namespace Feature.Accounts
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_Interest</para>
 	/// <summary>
-	public struct InterestItemConstants
+	public struct InterestConstants
 	{
 		public static ID TemplateID => new ID("{C9B1855E-CA80-4414-B5BA-956CB67DC5A9}");
 		public static string TemplateName = "_Interest";
@@ -853,7 +853,7 @@ namespace Feature.Accounts
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_LoginTeaser</para>
 	/// <summary>
-	public struct LoginTeaserItemConstants
+	public struct LoginTeaserConstants
 	{
 		public static ID TemplateID => new ID("{EF38D9E6-313C-491C-8648-79436D10091C}");
 		public static string TemplateName = "_LoginTeaser";
@@ -1045,7 +1045,7 @@ namespace Feature.Accounts
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_MailTemplate</para>
 	/// <summary>
-	public struct MailTemplateItemConstants
+	public struct MailTemplateConstants
 	{
 		public static ID TemplateID => new ID("{26DF8F38-7E1B-43D2-85DD-68DF05FA276B}");
 		public static string TemplateName = "_MailTemplate";
@@ -1193,7 +1193,7 @@ namespace Feature.Accounts
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Accounts/_ProfileSettings</para>
 	/// <summary>
-	public struct ProfileSettingsItemConstants
+	public struct ProfileSettingsConstants
 	{
 		public static ID TemplateID => new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
 		public static string TemplateName = "_ProfileSettings";
@@ -1297,7 +1297,7 @@ namespace Feature.Demo
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_CampaignToken</para>
 	/// <summary>
-	public struct CampaignTokenItemConstants
+	public struct CampaignTokenConstants
 	{
 		public static ID TemplateID => new ID("{01628DCB-611F-495E-A1DA-E89027AB7035}");
 		public static string TemplateName = "_CampaignToken";
@@ -1396,7 +1396,7 @@ namespace Feature.Demo
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_DemoContent</para>
 	/// <summary>
-	public struct DemoContentItemConstants
+	public struct DemoContentConstants
 	{
 		public static ID TemplateID => new ID("{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}");
 		public static string TemplateName = "_DemoContent";
@@ -1495,7 +1495,7 @@ namespace Feature.Demo
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_LinkToken</para>
 	/// <summary>
-	public struct LinkTokenItemConstants
+	public struct LinkTokenConstants
 	{
 		public static ID TemplateID => new ID("{359AD0B9-20B5-49E7-A430-891D6E67BC5C}");
 		public static string TemplateName = "_LinkToken";
@@ -1594,7 +1594,7 @@ namespace Feature.Demo
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_ProfilingSettings</para>
 	/// <summary>
-	public struct ProfilingSettingsItemConstants
+	public struct ProfilingSettingsConstants
 	{
 		public static ID TemplateID => new ID("{C6D4DDD5-B912-4C1A-A3A3-E1D90E4D0939}");
 		public static string TemplateName = "_ProfilingSettings";
@@ -1693,7 +1693,7 @@ namespace Feature.Demo
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_TextToken</para>
 	/// <summary>
-	public struct TextTokenItemConstants
+	public struct TextTokenConstants
 	{
 		public static ID TemplateID => new ID("{327D6873-A384-435A-BE87-7E869782B243}");
 		public static string TemplateName = "_TextToken";
@@ -1753,7 +1753,7 @@ namespace Feature.Demo
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Demo/_Token</para>
 	/// <summary>
-	public struct TokenItemConstants
+	public struct TokenConstants
 	{
 		public static ID TemplateID => new ID("{A7EBF38A-5F66-4579-92D1-568A8BA50293}");
 		public static string TemplateName = "_Token";
@@ -1847,7 +1847,7 @@ namespace Feature.FAQ
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/FAQ/_FAQ Group</para>
 	/// <summary>
-	public struct FAQGroupItemConstants
+	public struct FAQGroupConstants
 	{
 		public static ID TemplateID => new ID("{3AF7DB6C-A602-4ABC-8D63-19E2D2C6726B}");
 		public static string TemplateName = "_FAQ Group";
@@ -1985,7 +1985,7 @@ namespace Feature.FAQ
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/FAQ/_FAQ</para>
 	/// <summary>
-	public struct FAQItemConstants
+	public struct FAQConstants
 	{
 		public static ID TemplateID => new ID("{9544F0B3-FD5E-4301-9DDE-9E73D2C3F7BA}");
 		public static string TemplateName = "_FAQ";
@@ -2305,7 +2305,7 @@ namespace Feature.Identity
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Identity/_Identity</para>
 	/// <summary>
-	public struct IdentityItemConstants
+	public struct IdentityConstants
 	{
 		public static ID TemplateID => new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
 		public static string TemplateName = "_Identity";
@@ -2434,7 +2434,7 @@ namespace Feature.Language
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Language/_LanguageSettings</para>
 	/// <summary>
-	public struct LanguageSettingsItemConstants
+	public struct LanguageSettingsConstants
 	{
 		public static ID TemplateID => new ID("{748EBA96-3F0C-4F45-8AFB-DE8DCC707B84}");
 		public static string TemplateName = "_LanguageSettings";
@@ -2533,7 +2533,7 @@ namespace Feature.Maps
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Maps/Map Type</para>
 	/// <summary>
-	public struct MapTypeItemConstants
+	public struct MapTypeConstants
 	{
 		public static ID TemplateID => new ID("{04C34CF5-B7EA-4408-88E8-5FC851173DBD}");
 		public static string TemplateName = "Map Type";
@@ -2701,7 +2701,7 @@ namespace Feature.Maps
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapPoint</para>
 	/// <summary>
-	public struct MapPointItemConstants
+	public struct MapPointConstants
 	{
 		public static ID TemplateID => new ID("{1E6A8C8C-6646-4776-8AB4-615265669633}");
 		public static string TemplateName = "_MapPoint";
@@ -2771,7 +2771,7 @@ namespace Feature.Maps
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapPoints Folder</para>
 	/// <summary>
-	public struct MapPointsFolderItemConstants
+	public struct MapPointsFolderConstants
 	{
 		public static ID TemplateID => new ID("{31713995-C6BF-4CCB-8807-198493508AFA}");
 		public static string TemplateName = "_MapPoints Folder";
@@ -3092,7 +3092,7 @@ namespace Feature.Maps
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Maps/_MapRenderingParameters</para>
 	/// <summary>
-	public struct MapRenderingParametersItemConstants
+	public struct MapRenderingParametersConstants
 	{
 		public static ID TemplateID => new ID("{D77856C3-8A5E-452C-8854-F2965EDF25E0}");
 		public static string TemplateName = "_MapRenderingParameters";
@@ -3192,7 +3192,7 @@ namespace Feature.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/Background Type Folder</para>
 	/// <summary>
-	public struct BackgroundTypeFolderItemConstants
+	public struct BackgroundTypeFolderConstants
 	{
 		public static ID TemplateID => new ID("{1FD75C49-F524-4C15-9F82-DCB2D4CF2FA9}");
 		public static string TemplateName = "Background Type Folder";
@@ -3286,7 +3286,7 @@ namespace Feature.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/Background Type</para>
 	/// <summary>
-	public struct BackgroundTypeItemConstants
+	public struct BackgroundTypeConstants
 	{
 		public static ID TemplateID => new ID("{55A5BDAD-EB69-40F5-8195-CDA182E48EE4}");
 		public static string TemplateName = "Background Type";
@@ -3432,7 +3432,7 @@ namespace Feature.Media.ParametersTemplates
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/ParametersTemplate_SectionBackground</para>
 	/// <summary>
-	public struct ParametersTemplateSectionBackgroundItemConstants
+	public struct ParametersTemplateSectionBackgroundConstants
 	{
 		public static ID TemplateID => new ID("{B962A806-D708-4001-B0A3-3FA31F2263C5}");
 		public static string TemplateName = "ParametersTemplate_SectionBackground";
@@ -3520,7 +3520,7 @@ namespace Feature.Media.ParametersTemplates
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/ParametersTemplates/_MediaParameters</para>
 	/// <summary>
-	public struct MediaParametersItemConstants
+	public struct MediaParametersConstants
 	{
 		public static ID TemplateID => new ID("{5DF30DC0-E2FC-4921-B8F2-C54FAC1BD03E}");
 		public static string TemplateName = "_MediaParameters";
@@ -3688,7 +3688,7 @@ namespace Feature.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMedia</para>
 	/// <summary>
-	public struct HasMediaItemConstants
+	public struct HasMediaConstants
 	{
 		public static ID TemplateID => new ID("{A44E450E-BA3F-4FAF-9C53-C63241CC34EB}");
 		public static string TemplateName = "_HasMedia";
@@ -3858,7 +3858,7 @@ namespace Feature.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaImage</para>
 	/// <summary>
-	public struct HasMediaImageItemConstants
+	public struct HasMediaImageConstants
 	{
 		public static ID TemplateID => new ID("{FAE0C913-1600-4EBA-95A9-4D6FD7407E25}");
 		public static string TemplateName = "_HasMediaImage";
@@ -3972,7 +3972,7 @@ namespace Feature.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaSelector</para>
 	/// <summary>
-	public struct HasMediaSelectorItemConstants
+	public struct HasMediaSelectorConstants
 	{
 		public static ID TemplateID => new ID("{AE4635AF-CFBF-4BF6-9B50-00BE23A910C0}");
 		public static string TemplateName = "_HasMediaSelector";
@@ -4132,7 +4132,7 @@ namespace Feature.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_HasMediaVideo</para>
 	/// <summary>
-	public struct HasMediaVideoItemConstants
+	public struct HasMediaVideoConstants
 	{
 		public static ID TemplateID => new ID("{5A1B724B-B396-4C48-A833-655CD19018E1}");
 		public static string TemplateName = "_HasMediaVideo";
@@ -4246,7 +4246,7 @@ namespace Feature.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Media/_MediaSiteExtension</para>
 	/// <summary>
-	public struct MediaSiteExtensionItemConstants
+	public struct MediaSiteExtensionConstants
 	{
 		public static ID TemplateID => new ID("{D339E56B-6A8A-46BD-A7D3-C9725D50DD4A}");
 		public static string TemplateName = "_MediaSiteExtension";
@@ -4345,7 +4345,7 @@ namespace Feature.Metadata
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_Keyword</para>
 	/// <summary>
-	public struct KeywordItemConstants
+	public struct KeywordConstants
 	{
 		public static ID TemplateID => new ID("{409F883A-0DC8-431A-9508-7316B59B92BE}");
 		public static string TemplateName = "_Keyword";
@@ -4639,7 +4639,7 @@ namespace Feature.Metadata
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_PageMetadata</para>
 	/// <summary>
-	public struct PageMetadataItemConstants
+	public struct PageMetadataConstants
 	{
 		public static ID TemplateID => new ID("{D88CCD80-D851-470D-AF11-701FF23504E7}");
 		public static string TemplateName = "_PageMetadata";
@@ -4763,7 +4763,7 @@ namespace Feature.Metadata
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Metadata/_SiteMetadata</para>
 	/// <summary>
-	public struct SiteMetadataItemConstants
+	public struct SiteMetadataConstants
 	{
 		public static ID TemplateID => new ID("{CF38E914-9298-47CC-9205-210553E79F97}");
 		public static string TemplateName = "_SiteMetadata";
@@ -4901,7 +4901,7 @@ namespace Feature.Multisite
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Multisite/_SiteConfiguration</para>
 	/// <summary>
-	public struct SiteConfigurationItemConstants
+	public struct SiteConfigurationConstants
 	{
 		public static ID TemplateID => new ID("{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}");
 		public static string TemplateName = "_SiteConfiguration";
@@ -5005,7 +5005,7 @@ namespace Feature.Navigation
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_Link</para>
 	/// <summary>
-	public struct LinkItemConstants
+	public struct LinkConstants
 	{
 		public static ID TemplateID => new ID("{A16B74E9-01B8-439C-B44E-42B3FB2EE14B}");
 		public static string TemplateName = "_Link";
@@ -5167,7 +5167,7 @@ namespace Feature.Navigation
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_LinkMenuItem</para>
 	/// <summary>
-	public struct LinkMenuItemItemConstants
+	public struct LinkMenuItemConstants
 	{
 		public static ID TemplateID => new ID("{18BAF6B0-E0D6-4CCE-9184-A4849343E7E4}");
 		public static string TemplateName = "_LinkMenuItem";
@@ -5354,7 +5354,7 @@ namespace Feature.Navigation
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_Navigable</para>
 	/// <summary>
-	public struct NavigableItemConstants
+	public struct NavigableConstants
 	{
 		public static ID TemplateID => new ID("{A1CBA309-D22B-46D5-80F8-2972C185363F}");
 		public static string TemplateName = "_Navigable";
@@ -5424,7 +5424,7 @@ namespace Feature.Navigation
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Navigation/_NavigationRoot</para>
 	/// <summary>
-	public struct NavigationRootItemConstants
+	public struct NavigationRootConstants
 	{
 		public static ID TemplateID => new ID("{F9F4FC05-98D0-4C62-860F-F08AE7F0EE25}");
 		public static string TemplateName = "_NavigationRoot";
@@ -5665,7 +5665,7 @@ namespace Feature.News
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/News/_NewsArticle</para>
 	/// <summary>
-	public struct NewsArticleItemConstants
+	public struct NewsArticleConstants
 	{
 		public static ID TemplateID => new ID("{2F75C8AF-35FC-4A88-B585-7595203F442C}");
 		public static string TemplateName = "_NewsArticle";
@@ -5745,7 +5745,7 @@ namespace Feature.News
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/News/_NewsFolder</para>
 	/// <summary>
-	public struct NewsFolderItemConstants
+	public struct NewsFolderConstants
 	{
 		public static ID TemplateID => new ID("{74889B26-061C-4D6A-8CDB-422665FC34EC}");
 		public static string TemplateName = "_NewsFolder";
@@ -5947,7 +5947,7 @@ namespace Feature.PageContent
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/PageContent/_HasPageContent</para>
 	/// <summary>
-	public struct HasPageContentItemConstants
+	public struct HasPageContentConstants
 	{
 		public static ID TemplateID => new ID("{AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}");
 		public static string TemplateName = "_HasPageContent";
@@ -6428,7 +6428,7 @@ namespace Feature.Person
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Person/_Employee</para>
 	/// <summary>
-	public struct EmployeeItemConstants
+	public struct EmployeeConstants
 	{
 		public static ID TemplateID => new ID("{745652AE-3298-48B1-9BE1-99012D91F3AC}");
 		public static string TemplateName = "_Employee";
@@ -6690,7 +6690,7 @@ namespace Feature.Person
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Person/_Person</para>
 	/// <summary>
-	public struct PersonItemConstants
+	public struct PersonConstants
 	{
 		public static ID TemplateID => new ID("{7ACA6ECF-1A80-4E35-97F5-DBAA8E3EC617}");
 		public static string TemplateName = "_Person";
@@ -6937,7 +6937,7 @@ namespace Feature.Person
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Person/_Quote</para>
 	/// <summary>
-	public struct QuoteItemConstants
+	public struct QuoteConstants
 	{
 		public static ID TemplateID => new ID("{755F1188-D385-4717-8681-EF45F2258575}");
 		public static string TemplateName = "_Quote";
@@ -7078,7 +7078,7 @@ namespace Feature.Search
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Search/_PagedSearchResultsParameters</para>
 	/// <summary>
-	public struct PagedSearchResultsParametersItemConstants
+	public struct PagedSearchResultsParametersConstants
 	{
 		public static ID TemplateID => new ID("{D1D3E60F-E571-48D2-84CF-B053EE660C13}");
 		public static string TemplateName = "_PagedSearchResultsParameters";
@@ -7173,7 +7173,7 @@ namespace Feature.Search
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Search/_SearchContext</para>
 	/// <summary>
-	public struct SearchContextItemConstants
+	public struct SearchContextConstants
 	{
 		public static ID TemplateID => new ID("{B524E8BE-A099-4A63-BE3F-DD4C42FD4185}");
 		public static string TemplateName = "_SearchContext";
@@ -7311,7 +7311,7 @@ namespace Feature.Search
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Search/_SearchResults</para>
 	/// <summary>
-	public struct SearchResultsItemConstants
+	public struct SearchResultsConstants
 	{
 		public static ID TemplateID => new ID("{14E452CA-064D-48A8-9FF2-2744D10437A1}");
 		public static string TemplateName = "_SearchResults";
@@ -7484,7 +7484,7 @@ namespace Feature.Social
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Social/_OpenGraph</para>
 	/// <summary>
-	public struct OpenGraphItemConstants
+	public struct OpenGraphConstants
 	{
 		public static ID TemplateID => new ID("{BDD24F35-05E8-4466-8798-7D3DD6A6C991}");
 		public static string TemplateName = "_OpenGraph";
@@ -7671,7 +7671,7 @@ namespace Feature.Social
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Social/_TwitterFeed</para>
 	/// <summary>
-	public struct TwitterFeedItemConstants
+	public struct TwitterFeedConstants
 	{
 		public static ID TemplateID => new ID("{89D988BC-A9A7-43F5-A9FD-A05B0B164720}");
 		public static string TemplateName = "_TwitterFeed";
@@ -7789,7 +7789,7 @@ namespace Feature.Social
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Social/_TwitterFeedRenderingProperties</para>
 	/// <summary>
-	public struct TwitterFeedRenderingPropertiesItemConstants
+	public struct TwitterFeedRenderingPropertiesConstants
 	{
 		public static ID TemplateID => new ID("{9EEE8077-990F-4FDE-95FB-C7B9819DF913}");
 		public static string TemplateName = "_TwitterFeedRenderingProperties";
@@ -7893,7 +7893,7 @@ namespace Feature.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/Icon</para>
 	/// <summary>
-	public struct IconItemConstants
+	public struct IconConstants
 	{
 		public static ID TemplateID => new ID("{E90D00B6-0BE9-48E0-9C3F-047274024270}");
 		public static string TemplateName = "Icon";
@@ -8031,7 +8031,7 @@ namespace Feature.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_DynamicTeaser</para>
 	/// <summary>
-	public struct DynamicTeaserItemConstants
+	public struct DynamicTeaserConstants
 	{
 		public static ID TemplateID => new ID("{20A56D46-F5E3-4DB8-8B96-081575363D44}");
 		public static string TemplateName = "_DynamicTeaser";
@@ -8174,7 +8174,7 @@ namespace Feature.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_Headline</para>
 	/// <summary>
-	public struct HeadlineItemConstants
+	public struct HeadlineConstants
 	{
 		public static ID TemplateID => new ID("{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}");
 		public static string TemplateName = "_Headline";
@@ -8434,7 +8434,7 @@ namespace Feature.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeaserContent</para>
 	/// <summary>
-	public struct TeaserContentItemConstants
+	public struct TeaserContentConstants
 	{
 		public static ID TemplateID => new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
 		public static string TemplateName = "_TeaserContent";
@@ -8559,7 +8559,7 @@ namespace Feature.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeasersParameters</para>
 	/// <summary>
-	public struct TeasersParametersItemConstants
+	public struct TeasersParametersConstants
 	{
 		public static ID TemplateID => new ID("{20748D57-4EF6-49A8-B7E6-13818795E3B5}");
 		public static string TemplateName = "_TeasersParameters";
@@ -8796,7 +8796,7 @@ namespace Feature.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Feature/Teasers/_TeaserVideoContent</para>
 	/// <summary>
-	public struct TeaserVideoContentItemConstants
+	public struct TeaserVideoContentConstants
 	{
 		public static ID TemplateID => new ID("{04075EB6-6D94-4BF2-9AEB-D29A89CDBA00}");
 		public static string TemplateName = "_TeaserVideoContent";
@@ -8886,7 +8886,7 @@ namespace Foundation.Assets
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/Theme Folder</para>
 	/// <summary>
-	public struct ThemeFolderItemConstants
+	public struct ThemeFolderConstants
 	{
 		public static ID TemplateID => new ID("{10059264-CD0B-47B9-8350-A31A90815921}");
 		public static string TemplateName = "Theme Folder";
@@ -9037,7 +9037,7 @@ namespace Foundation.Assets
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/Theme</para>
 	/// <summary>
-	public struct ThemeItemConstants
+	public struct ThemeConstants
 	{
 		public static ID TemplateID => new ID("{1C87EA50-CC18-48CC-86DE-592E274D0C4F}");
 		public static string TemplateName = "Theme";
@@ -9151,7 +9151,7 @@ namespace Foundation.Assets
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_HasTheme</para>
 	/// <summary>
-	public struct HasThemeItemConstants
+	public struct HasThemeConstants
 	{
 		public static ID TemplateID => new ID("{5B6F8720-3A93-4DA1-92A0-C3E85E01219A}");
 		public static string TemplateName = "_HasTheme";
@@ -9367,7 +9367,7 @@ namespace Foundation.Assets
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_PageAssets</para>
 	/// <summary>
-	public struct PageAssetsItemConstants
+	public struct PageAssetsConstants
 	{
 		public static ID TemplateID => new ID("{91962B60-25F6-428F-8D10-02AA1E49D6A5}");
 		public static string TemplateName = "_PageAssets";
@@ -9598,7 +9598,7 @@ namespace Foundation.Assets
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Assets/_RenderingAssets</para>
 	/// <summary>
-	public struct RenderingAssetsItemConstants
+	public struct RenderingAssetsConstants
 	{
 		public static ID TemplateID => new ID("{7CEAC341-B953-4C69-B907-EE44302BF6AE}");
 		public static string TemplateName = "_RenderingAssets";
@@ -9712,7 +9712,7 @@ namespace Foundation.Dictionary
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryEntry</para>
 	/// <summary>
-	public struct DictionaryEntryItemConstants
+	public struct DictionaryEntryConstants
 	{
 		public static ID TemplateID => new ID("{EC4DD3F2-590D-404B-9189-2A12679749CC}");
 		public static string TemplateName = "DictionaryEntry";
@@ -9772,7 +9772,7 @@ namespace Foundation.Dictionary
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Dictionary/DictionaryFolder</para>
 	/// <summary>
-	public struct DictionaryFolderItemConstants
+	public struct DictionaryFolderConstants
 	{
 		public static ID TemplateID => new ID("{98E4BDC6-9B43-4EB2-BAA3-D4303C35852E}");
 		public static string TemplateName = "DictionaryFolder";
@@ -9866,7 +9866,7 @@ namespace Foundation.Indexing
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Indexing/_IndexedItem</para>
 	/// <summary>
-	public struct IndexedItemItemConstants
+	public struct IndexedItemConstants
 	{
 		public static ID TemplateID => new ID("{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}");
 		public static string TemplateName = "_IndexedItem";
@@ -9926,7 +9926,7 @@ namespace Foundation.LocalDatasource
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder</para>
 	/// <summary>
-	public struct LocalDatasourceFolderItemConstants
+	public struct LocalDatasourceFolderConstants
 	{
 		public static ID TemplateID => new ID("{FFF5F245-FFC0-4022-A998-9B07AA5E761F}");
 		public static string TemplateName = "Local Datasource Folder";
@@ -10041,7 +10041,7 @@ namespace Foundation.Multisite
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Configuration</para>
 	/// <summary>
-	public struct DatasourceConfigurationItemConstants
+	public struct DatasourceConfigurationConstants
 	{
 		public static ID TemplateID => new ID("{C82DC5FF-09EF-4403-96D3-3CAF377B8C5B}");
 		public static string TemplateName = "Datasource Configuration";
@@ -10106,7 +10106,7 @@ namespace Foundation.Multisite
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Datasource Settings Folder</para>
 	/// <summary>
-	public struct DatasourceSettingsFolderItemConstants
+	public struct DatasourceSettingsFolderConstants
 	{
 		public static ID TemplateID => new ID("{7A98BE60-9F59-4064-82C2-58DA63562FA5}");
 		public static string TemplateName = "Datasource Settings Folder";
@@ -10161,7 +10161,7 @@ namespace Foundation.Multisite
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/Site Settings Root</para>
 	/// <summary>
-	public struct SiteSettingsRootItemConstants
+	public struct SiteSettingsRootConstants
 	{
 		public static ID TemplateID => new ID("{4C82B6DD-FE7C-4144-BCB3-F21B4080568F}");
 		public static string TemplateName = "Site Settings Root";
@@ -10216,7 +10216,7 @@ namespace Foundation.Multisite
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/_Site</para>
 	/// <summary>
-	public struct SiteItemConstants
+	public struct SiteConstants
 	{
 		public static ID TemplateID => new ID("{BB85C5C2-9F87-48CE-8012-AF67CF4F765D}");
 		public static string TemplateName = "_Site";
@@ -10271,7 +10271,7 @@ namespace Foundation.Multisite
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Multisite/_SiteSettings</para>
 	/// <summary>
-	public struct SiteSettingsItemConstants
+	public struct SiteSettingsConstants
 	{
 		public static ID TemplateID => new ID("{BCCFEBEA-DCCB-48FE-9570-6503829EC03F}");
 		public static string TemplateName = "_SiteSettings";
@@ -10322,7 +10322,7 @@ namespace Foundation.SitecoreExtensions
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder</para>
 	/// <summary>
-	public struct ParametersTemplateHasDynamicPlaceholderItemConstants
+	public struct ParametersTemplateHasDynamicPlaceholderConstants
 	{
 		public static ID TemplateID => new ID("{8373E4E5-C79C-4123-9284-BABD9601C565}");
 		public static string TemplateName = "ParametersTemplate_HasDynamicPlaceholder";
@@ -10373,7 +10373,7 @@ namespace Foundation.SitecoreExtensions
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering</para>
 	/// <summary>
-	public struct ParametersTemplateQueryableDatasourceRenderingItemConstants
+	public struct ParametersTemplateQueryableDatasourceRenderingConstants
 	{
 		public static ID TemplateID => new ID("{4738312C-22B8-4E77-9B9C-86BCDCEE6635}");
 		public static string TemplateName = "ParametersTemplate_QueryableDatasourceRendering";
@@ -10454,7 +10454,7 @@ namespace Foundation.Theming
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_FixedHeight</para>
 	/// <summary>
-	public struct ParametersTemplateFixedHeightItemConstants
+	public struct ParametersTemplateFixedHeightConstants
 	{
 		public static ID TemplateID => new ID("{329421CF-B99C-4E7A-AF71-F7FA7DC42BF1}");
 		public static string TemplateName = "ParametersTemplate_FixedHeight";
@@ -10540,7 +10540,7 @@ namespace Foundation.Theming
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasBackground</para>
 	/// <summary>
-	public struct ParametersTemplateHasBackgroundItemConstants
+	public struct ParametersTemplateHasBackgroundConstants
 	{
 		public static ID TemplateID => new ID("{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}");
 		public static string TemplateName = "ParametersTemplate_HasBackground";
@@ -10626,7 +10626,7 @@ namespace Foundation.Theming
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainer</para>
 	/// <summary>
-	public struct ParametersTemplateHasContainerItemConstants
+	public struct ParametersTemplateHasContainerConstants
 	{
 		public static ID TemplateID => new ID("{29299E73-6841-44C1-A65F-0889011E2EEC}");
 		public static string TemplateName = "ParametersTemplate_HasContainer";
@@ -10726,7 +10726,7 @@ namespace Foundation.Theming
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/ParametersTemplate_HasContainerWithBackground</para>
 	/// <summary>
-	public struct ParametersTemplateHasContainerWithBackgroundItemConstants
+	public struct ParametersTemplateHasContainerWithBackgroundConstants
 	{
 		public static ID TemplateID => new ID("{3CA3A190-897A-4EC9-8EB5-9DE2C3636569}");
 		public static string TemplateName = "ParametersTemplate_HasContainerWithBackground";
@@ -10830,7 +10830,7 @@ namespace Foundation.Theming
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Foundation/Theming/Style</para>
 	/// <summary>
-	public struct StyleItemConstants
+	public struct StyleConstants
 	{
 		public static ID TemplateID => new ID("{C2AC5C42-A05C-4F51-854E-730C9BCA06D1}");
 		public static string TemplateName = "Style";
@@ -10914,7 +10914,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Teaser</para>
 	/// <summary>
-	public struct DemoTeaserItemConstants
+	public struct DemoTeaserConstants
 	{
 		public static ID TemplateID => new ID("{B4F6F114-E653-4A22-86C5-499E0BD99D9A}");
 		public static string TemplateName = "Demo Teaser";
@@ -10998,7 +10998,7 @@ namespace Project.Common.ContentTypes.DemoTokens
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Campaign Token</para>
 	/// <summary>
-	public struct CampaignTokenItemConstants
+	public struct CampaignTokenConstants
 	{
 		public static ID TemplateID => new ID("{51B1726B-4290-4908-A2DA-B169194AE80C}");
 		public static string TemplateName = "Campaign Token";
@@ -11082,7 +11082,7 @@ namespace Project.Common.ContentTypes.DemoTokens
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token</para>
 	/// <summary>
-	public struct LinkTokenItemConstants
+	public struct LinkTokenConstants
 	{
 		public static ID TemplateID => new ID("{7DEFAA26-ED9D-4495-B5F0-0A7620403842}");
 		public static string TemplateName = "Link Token";
@@ -11166,7 +11166,7 @@ namespace Project.Common.ContentTypes.DemoTokens
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Demo Tokens/Text Token</para>
 	/// <summary>
-	public struct TextTokenItemConstants
+	public struct TextTokenConstants
 	{
 		public static ID TemplateID => new ID("{3F3CAE5E-63D2-4F75-95D9-23EB01827AA9}");
 		public static string TemplateName = "Text Token";
@@ -11226,7 +11226,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Employee Folder</para>
 	/// <summary>
-	public struct EmployeeFolderItemConstants
+	public struct EmployeeFolderConstants
 	{
 		public static ID TemplateID => new ID("{F94F28F6-5B19-42F2-9164-1E21023E03EE}");
 		public static string TemplateName = "Employee Folder";
@@ -11567,7 +11567,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Employee</para>
 	/// <summary>
-	public struct EmployeeItemConstants
+	public struct EmployeeConstants
 	{
 		public static ID TemplateID => new ID("{9671E92A-4AD3-46DF-AFF1-1542FD3D5BD9}");
 		public static string TemplateName = "Employee";
@@ -11682,7 +11682,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Folder</para>
 	/// <summary>
-	public struct FAQFolderItemConstants
+	public struct FAQFolderConstants
 	{
 		public static ID TemplateID => new ID("{41DA2D61-D85A-40F1-BE69-DDD18DD1BC93}");
 		public static string TemplateName = "FAQ Folder";
@@ -11761,7 +11761,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ Group</para>
 	/// <summary>
-	public struct FAQGroupItemConstants
+	public struct FAQGroupConstants
 	{
 		public static ID TemplateID => new ID("{BA1EB1BD-E705-4BE6-A432-06B7F1B2F2CC}");
 		public static string TemplateName = "FAQ Group";
@@ -11869,7 +11869,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/FAQ</para>
 	/// <summary>
-	public struct FAQItemConstants
+	public struct FAQConstants
 	{
 		public static ID TemplateID => new ID("{BFDC1F27-3D2D-495F-89A3-0951F882420B}");
 		public static string TemplateName = "FAQ";
@@ -11934,7 +11934,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Global Folder</para>
 	/// <summary>
-	public struct GlobalFolderItemConstants
+	public struct GlobalFolderConstants
 	{
 		public static ID TemplateID => new ID("{FD075CBC-572E-4D27-A09F-B780E8FF4741}");
 		public static string TemplateName = "Global Folder";
@@ -12013,7 +12013,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Interest</para>
 	/// <summary>
-	public struct InterestItemConstants
+	public struct InterestConstants
 	{
 		public static ID TemplateID => new ID("{4176BFC2-7814-4FA5-ABCF-7FA0714BF05F}");
 		public static string TemplateName = "Interest";
@@ -12073,7 +12073,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Interests Folder</para>
 	/// <summary>
-	public struct InterestsFolderItemConstants
+	public struct InterestsFolderConstants
 	{
 		public static ID TemplateID => new ID("{0DB13819-7DF3-4136-A4B9-0A22B1023EF7}");
 		public static string TemplateName = "Interests Folder";
@@ -12272,7 +12272,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu Item</para>
 	/// <summary>
-	public struct LinkMenuItemItemConstants
+	public struct LinkMenuItemConstants
 	{
 		public static ID TemplateID => new ID("{390333C8-751B-4332-84A3-6360B969A19F}");
 		public static string TemplateName = "Link Menu Item";
@@ -12357,7 +12357,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Link Menu</para>
 	/// <summary>
-	public struct LinkMenuItemConstants
+	public struct LinkMenuConstants
 	{
 		public static ID TemplateID => new ID("{AC7394D5-2AA7-4FDB-A7D8-B1B87F9FA661}");
 		public static string TemplateName = "Link Menu";
@@ -12508,7 +12508,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Login Teaser</para>
 	/// <summary>
-	public struct LoginTeaserItemConstants
+	public struct LoginTeaserConstants
 	{
 		public static ID TemplateID => new ID("{6E686B1C-1675-4263-AF03-DCE07827AFDD}");
 		public static string TemplateName = "Login Teaser";
@@ -12653,7 +12653,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Map Point</para>
 	/// <summary>
-	public struct MapPointItemConstants
+	public struct MapPointConstants
 	{
 		public static ID TemplateID => new ID("{11C28D16-9B88-456E-A42B-D4B5A82867E3}");
 		public static string TemplateName = "Map Point";
@@ -12723,7 +12723,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Map Points Folder</para>
 	/// <summary>
-	public struct MapPointsFolderItemConstants
+	public struct MapPointsFolderConstants
 	{
 		public static ID TemplateID => new ID("{067EC866-B3FB-485B-BB49-6151FB086E78}");
 		public static string TemplateName = "Map Points Folder";
@@ -12802,7 +12802,7 @@ namespace Project.Common.ContentTypes.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Carousel</para>
 	/// <summary>
-	public struct CarouselItemConstants
+	public struct CarouselConstants
 	{
 		public static ID TemplateID => new ID("{C18D3794-D126-4548-BFC8-89358DE6E9C1}");
 		public static string TemplateName = "Carousel";
@@ -12954,7 +12954,7 @@ namespace Project.Common.ContentTypes.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Image</para>
 	/// <summary>
-	public struct ImageItemConstants
+	public struct ImageConstants
 	{
 		public static ID TemplateID => new ID("{F0369E1A-9030-4A05-A09C-EF09B664ED27}");
 		public static string TemplateName = "Image";
@@ -13029,7 +13029,7 @@ namespace Project.Common.ContentTypes.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background Folder</para>
 	/// <summary>
-	public struct MediaBackgroundFolderItemConstants
+	public struct MediaBackgroundFolderConstants
 	{
 		public static ID TemplateID => new ID("{82A6F39C-53E1-4ECA-8C27-69937CFF3B47}");
 		public static string TemplateName = "Media Background Folder";
@@ -13084,7 +13084,7 @@ namespace Project.Common.ContentTypes.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Background</para>
 	/// <summary>
-	public struct MediaBackgroundItemConstants
+	public struct MediaBackgroundConstants
 	{
 		public static ID TemplateID => new ID("{42A10C41-5186-4A1E-AA7E-54EA00199C3F}");
 		public static string TemplateName = "Media Background";
@@ -13139,7 +13139,7 @@ namespace Project.Common.ContentTypes.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Media Folder</para>
 	/// <summary>
-	public struct MediaFolderItemConstants
+	public struct MediaFolderConstants
 	{
 		public static ID TemplateID => new ID("{920A1781-559F-4E1C-BB2E-6B9A2113FE6B}");
 		public static string TemplateName = "Media Folder";
@@ -13286,7 +13286,7 @@ namespace Project.Common.ContentTypes.Media
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Media/Video</para>
 	/// <summary>
-	public struct VideoItemConstants
+	public struct VideoConstants
 	{
 		public static ID TemplateID => new ID("{F1C095E2-B3E0-46D0-B838-02A9E8B880D9}");
 		public static string TemplateName = "Video";
@@ -13361,7 +13361,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword Folder</para>
 	/// <summary>
-	public struct MetaKeywordFolderItemConstants
+	public struct MetaKeywordFolderConstants
 	{
 		public static ID TemplateID => new ID("{CD047791-C29A-4596-AEEE-DB5E70421C1F}");
 		public static string TemplateName = "MetaKeyword Folder";
@@ -13440,7 +13440,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/MetaKeyword</para>
 	/// <summary>
-	public struct MetaKeywordItemConstants
+	public struct MetaKeywordConstants
 	{
 		public static ID TemplateID => new ID("{18CDD4CE-CDBE-4BDC-9D5A-6249F7F0EC17}");
 		public static string TemplateName = "MetaKeyword";
@@ -13596,7 +13596,7 @@ namespace Project.Common.ContentTypes.Navigation
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Navigation/Navigation Link</para>
 	/// <summary>
-	public struct NavigationLinkItemConstants
+	public struct NavigationLinkConstants
 	{
 		public static ID TemplateID => new ID("{8FF3D369-A508-4D2F-84A5-9B6C6BF5E537}");
 		public static string TemplateName = "Navigation Link";
@@ -13671,7 +13671,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Registration Folder</para>
 	/// <summary>
-	public struct RegistrationFolderItemConstants
+	public struct RegistrationFolderConstants
 	{
 		public static ID TemplateID => new ID("{689BA377-E538-49ED-9DFC-4DCC398AB9AC}");
 		public static string TemplateName = "Registration Folder";
@@ -13798,7 +13798,7 @@ namespace Project.Common.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Service Email</para>
 	/// <summary>
-	public struct ServiceEmailItemConstants
+	public struct ServiceEmailConstants
 	{
 		public static ID TemplateID => new ID("{6DB3BA22-5715-4529-A527-35B3AF083AE4}");
 		public static string TemplateName = "Service Email";
@@ -13868,7 +13868,7 @@ namespace Project.Common.ContentTypes.Social
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Social Feeds Folder</para>
 	/// <summary>
-	public struct SocialFeedsFolderItemConstants
+	public struct SocialFeedsFolderConstants
 	{
 		public static ID TemplateID => new ID("{4DE2D9D9-0781-47AD-8F5D-52F2AD920D83}");
 		public static string TemplateName = "Social Feeds Folder";
@@ -13995,7 +13995,7 @@ namespace Project.Common.ContentTypes.Social
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Social/Twitter Feed</para>
 	/// <summary>
-	public struct TwitterFeedItemConstants
+	public struct TwitterFeedConstants
 	{
 		public static ID TemplateID => new ID("{773A96F7-2752-4DA2-A2F5-6119A21A24F3}");
 		public static string TemplateName = "Twitter Feed";
@@ -14113,7 +14113,7 @@ namespace Project.Common.ContentTypes.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser</para>
 	/// <summary>
-	public struct DynamicTeaserItemConstants
+	public struct DynamicTeaserConstants
 	{
 		public static ID TemplateID => new ID("{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}");
 		public static string TemplateName = "Dynamic Teaser";
@@ -14226,7 +14226,7 @@ namespace Project.Common.ContentTypes.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Headline</para>
 	/// <summary>
-	public struct HeadlineItemConstants
+	public struct HeadlineConstants
 	{
 		public static ID TemplateID => new ID("{061574E1-59DD-4B62-9680-1C84EFBE6773}");
 		public static string TemplateName = "Headline";
@@ -14291,7 +14291,7 @@ namespace Project.Common.ContentTypes.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote Folder</para>
 	/// <summary>
-	public struct QuoteFolderItemConstants
+	public struct QuoteFolderConstants
 	{
 		public static ID TemplateID => new ID("{A8F1B162-041F-46BF-81EB-5213AE8BC579}");
 		public static string TemplateName = "Quote Folder";
@@ -14488,7 +14488,7 @@ namespace Project.Common.ContentTypes.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Quote</para>
 	/// <summary>
-	public struct QuoteItemConstants
+	public struct QuoteConstants
 	{
 		public static ID TemplateID => new ID("{40AD8A9B-C75C-428D-9E1A-51372B21F63E}");
 		public static string TemplateName = "Quote";
@@ -14573,7 +14573,7 @@ namespace Project.Common.ContentTypes.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser Folder</para>
 	/// <summary>
-	public struct TeaserFolderItemConstants
+	public struct TeaserFolderConstants
 	{
 		public static ID TemplateID => new ID("{29D4B405-39EB-487D-9D6B-3F8467AB167D}");
 		public static string TemplateName = "Teaser Folder";
@@ -14770,7 +14770,7 @@ namespace Project.Common.ContentTypes.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Teaser</para>
 	/// <summary>
-	public struct TeaserItemConstants
+	public struct TeaserConstants
 	{
 		public static ID TemplateID => new ID("{C7D9D293-4EF8-4380-8E10-C4632E729F39}");
 		public static string TemplateName = "Teaser";
@@ -15019,7 +15019,7 @@ namespace Project.Common.ContentTypes.Teasers
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Content Types/Teasers/Video Teaser</para>
 	/// <summary>
-	public struct VideoTeaserItemConstants
+	public struct VideoTeaserConstants
 	{
 		public static ID TemplateID => new ID("{DDBBF170-CFBD-439F-958C-A090BDF66D94}");
 		public static string TemplateName = "Video Teaser";
@@ -15181,7 +15181,7 @@ namespace Project.Common.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Page Types/Demo Page</para>
 	/// <summary>
-	public struct DemoPageItemConstants
+	public struct DemoPageConstants
 	{
 		public static ID TemplateID => new ID("{49C651BA-4004-40A9-9B0F-E95D0573F3AE}");
 		public static string TemplateName = "Demo Page";
@@ -15291,7 +15291,7 @@ namespace Project.Common.Parameters
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder</para>
 	/// <summary>
-	public struct ParametersTemplateHasContainerWithDynamicPlaceholderItemConstants
+	public struct ParametersTemplateHasContainerWithDynamicPlaceholderConstants
 	{
 		public static ID TemplateID => new ID("{4654D5F0-9B39-426A-992D-1D42E356FB0A}");
 		public static string TemplateName = "ParametersTemplate_HasContainerWithDynamicPlaceholder";
@@ -15890,7 +15890,7 @@ namespace Project.Habitat.ContentTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Content Types/Site Root</para>
 	/// <summary>
-	public struct SiteRootItemConstants
+	public struct SiteRootConstants
 	{
 		public static ID TemplateID => new ID("{0643D9D4-F30B-4B07-91D0-289CC324C9CF}");
 		public static string TemplateName = "Site Root";
@@ -16560,7 +16560,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Article</para>
 	/// <summary>
-	public struct ArticleItemConstants
+	public struct ArticleConstants
 	{
 		public static ID TemplateID => new ID("{94A8C8E9-690B-4E65-98E7-F95800222767}");
 		public static string TemplateName = "Article";
@@ -17124,7 +17124,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Edit Profile Page</para>
 	/// <summary>
-	public struct EditProfilePageItemConstants
+	public struct EditProfilePageConstants
 	{
 		public static ID TemplateID => new ID("{867F774A-195E-49D3-8E40-01F18410BB02}");
 		public static string TemplateName = "Edit Profile Page";
@@ -17956,7 +17956,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employee</para>
 	/// <summary>
-	public struct EmployeeItemConstants
+	public struct EmployeeConstants
 	{
 		public static ID TemplateID => new ID("{467C2144-4454-4518-B1DE-E31B4CBBFF33}");
 		public static string TemplateName = "Employee";
@@ -18656,7 +18656,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Employees folder</para>
 	/// <summary>
-	public struct EmployeesFolderItemConstants
+	public struct EmployeesFolderConstants
 	{
 		public static ID TemplateID => new ID("{51E2FF7F-6FB3-4470-91C8-D2AD97BF1EAE}");
 		public static string TemplateName = "Employees folder";
@@ -19220,7 +19220,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Forgot Password Page</para>
 	/// <summary>
-	public struct ForgotPasswordPageItemConstants
+	public struct ForgotPasswordPageConstants
 	{
 		public static ID TemplateID => new ID("{8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}");
 		public static string TemplateName = "Forgot Password Page";
@@ -19646,7 +19646,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Home</para>
 	/// <summary>
-	public struct HomeItemConstants
+	public struct HomeConstants
 	{
 		public static ID TemplateID => new ID("{4A8822CC-B418-4452-AB0F-8BB6DF2F2114}");
 		public static string TemplateName = "Home";
@@ -20165,7 +20165,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Login Page</para>
 	/// <summary>
-	public struct LoginPageItemConstants
+	public struct LoginPageConstants
 	{
 		public static ID TemplateID => new ID("{ECC4E901-9C5F-4043-B11E-CFA868D1BB73}");
 		public static string TemplateName = "Login Page";
@@ -20875,7 +20875,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Map Page</para>
 	/// <summary>
-	public struct MapPageItemConstants
+	public struct MapPageConstants
 	{
 		public static ID TemplateID => new ID("{EE9E5BDB-7D71-48F7-B461-42BF9C2052EC}");
 		public static string TemplateName = "Map Page";
@@ -21502,7 +21502,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/News Article</para>
 	/// <summary>
-	public struct NewsArticleItemConstants
+	public struct NewsArticleConstants
 	{
 		public static ID TemplateID => new ID("{B69277AD-E917-4B9F-9136-A12E0A3E462F}");
 		public static string TemplateName = "News Article";
@@ -22128,7 +22128,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/News List</para>
 	/// <summary>
-	public struct NewsListItemConstants
+	public struct NewsListConstants
 	{
 		public static ID TemplateID => new ID("{A99866E5-08E7-44D8-8A52-F8E26BCD3714}");
 		public static string TemplateName = "News List";
@@ -22687,7 +22687,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Register Page</para>
 	/// <summary>
-	public struct RegisterPageItemConstants
+	public struct RegisterPageConstants
 	{
 		public static ID TemplateID => new ID("{6EF8F8A0-C567-495B-9E00-8775A268A486}");
 		public static string TemplateName = "Register Page";
@@ -23351,7 +23351,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Search Results</para>
 	/// <summary>
-	public struct SearchResultsItemConstants
+	public struct SearchResultsConstants
 	{
 		public static ID TemplateID => new ID("{92168572-385B-45F0-B40F-3D987AD20E5C}");
 		public static string TemplateName = "Search Results";
@@ -24016,7 +24016,7 @@ namespace Project.Habitat.PageTypes
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para>/sitecore/templates/Project/Habitat/Page Types/Section</para>
 	/// <summary>
-	public struct SectionItemConstants
+	public struct SectionConstants
 	{
 		public static ID TemplateID => new ID("{8EE208F9-A6A6-41E2-88A0-C188737A178C}");
 		public static string TemplateName = "Section";

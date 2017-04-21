@@ -8,13 +8,13 @@
 
 @{
     var item = Html.Sitecore().CurrentItem;
-    var titleField = LoginTeaserItemConstants.Fields.Title.ID;
-    var summaryField = LoginTeaserItemConstants.Fields.Summary.ID;
+    var titleField = LoginTeaserConstants.Fields.Title.ID;
+    var summaryField = LoginTeaserConstants.Fields.Summary.ID;
     var isLoggedIn = Sitecore.Context.IsLoggedIn && Sitecore.Context.PageMode.IsNormal;
     if (isLoggedIn)
     {
-        titleField = LoginTeaserItemConstants.Fields.LoggedInTitle.ID;
-        summaryField = LoginTeaserItemConstants.Fields.LoggedInSummary.ID;
+        titleField = LoginTeaserConstants.Fields.LoggedInTitle.ID;
+        summaryField = LoginTeaserConstants.Fields.LoggedInSummary.ID;
     }
 }
 
@@ -40,10 +40,10 @@
                 @Html.Sitecore().Dictionary("/Accounts/Login/Logged In Fields Description", "These fields are shown when the user is logged in.")
             </label>
             <h4>
-                @Html.Sitecore().Field(LoginTeaserItemConstants.Fields.LoggedInTitle.ID, item)
+                @Html.Sitecore().Field(LoginTeaserConstants.Fields.LoggedInTitle.ID, item)
             </h4>
             <p>
-                @Html.Sitecore().Field(LoginTeaserItemConstants.Fields.LoggedInSummary.ID, item, new
+                @Html.Sitecore().Field(LoginTeaserConstants.Fields.LoggedInSummary.ID, item, new
                                                                                            {
                                                                                                linebreaks = "<br>"
                                                                                            })
@@ -67,8 +67,8 @@
             </div>
             @Html.ValidationMessage("invalidCredentials", new { @class = "alert alert-danger" }, "div")
             <input type="submit" class="btn btn-primary btn-block" value="@Html.Sitecore().Dictionary("/Accounts/Login/Login", "Login")" />
-            <a href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsItemConstants.Fields.RegisterPage.ID)" class="btn btn-link btn-block">@Html.Sitecore().DictionaryField("/Accounts/Login/Register", "Register")</a>
-            <a href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsItemConstants.Fields.ForgotPasswordPage.ID)" class="btn btn-link btn-block">@Html.Sitecore().DictionaryField("/Accounts/Login/Forgot Your Password", "Forgot your password?")</a>
+            <a href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsConstants.Fields.RegisterPage.ID)" class="btn btn-link btn-block">@Html.Sitecore().DictionaryField("/Accounts/Login/Register", "Register")</a>
+            <a href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsConstants.Fields.ForgotPasswordPage.ID)" class="btn btn-link btn-block">@Html.Sitecore().DictionaryField("/Accounts/Login/Forgot Your Password", "Forgot your password?")</a>
         }
     }
     else
@@ -86,7 +86,7 @@
                 <label class="control-label">@Html.Sitecore().DictionaryField("/Accounts/Accounts Menu/Email", "E-mail")</label>
                 <div class="form-control-static">@Sitecore.Context.User.Profile.Email</div>
             </div>
-            <a class="btn btn-block btn-primary" href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(item, AccountsSettingsItemConstants.Fields.AccountsDetailsPage.ID)">@Html.Sitecore().DictionaryField("/Accounts/Accounts Menu/Edit Details", "Edit details")</a>
+            <a class="btn btn-block btn-primary" href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(item, AccountsSettingsConstants.Fields.AccountsDetailsPage.ID)">@Html.Sitecore().DictionaryField("/Accounts/Accounts Menu/Edit Details", "Edit details")</a>
             <button type="submit" class="btn btn-block btn-default">@Html.Sitecore().Dictionary("/Accounts/Accounts Menu/Logout", "Logout")</button>
         }
     }

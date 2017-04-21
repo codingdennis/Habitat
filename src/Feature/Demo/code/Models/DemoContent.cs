@@ -20,7 +20,7 @@ namespace Sitecore.Feature.Demo.Models
         {
             get
             {
-                var content = this.Item[DemoContentItemConstants.Fields.HTMLContent.ID];
+                var content = this.Item[DemoContentConstants.Fields.HTMLContent.ID];
                 return this.ReplaceTokens(content);
             }
         }
@@ -34,7 +34,7 @@ namespace Sitecore.Feature.Demo.Models
 
         private string[] GetReplacementTokens()
         {
-            return this.Item.Children.Where(i => i.IsDerived(TokenItemConstants.TemplateID)).SelectMany(i => new[] {$"${i.Name}", i[TextTokenItemConstants.Fields.TokenValue.ID]}).ToArray();
+            return this.Item.Children.Where(i => i.IsDerived(TokenConstants.TemplateID)).SelectMany(i => new[] {$"${i.Name}", i[TextTokenConstants.Fields.TokenValue.ID]}).ToArray();
         }
     }
 }

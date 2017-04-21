@@ -5,9 +5,9 @@
 @using Fortis.Foundation.CodeGen.Templates.Feature.PageContent
 @model IRenderingModel<IHasPageContent, IHasPageContent>
 
-@if (!Model?.RenderingItem?.IsDerived(HasPageContentItemConstants.TemplateID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(HasPageContentConstants.TemplateID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(HasPageContentItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(HasPageContentConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 

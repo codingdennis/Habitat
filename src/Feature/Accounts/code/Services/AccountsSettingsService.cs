@@ -56,14 +56,14 @@
                 throw new ItemNotFoundException("Page with accounts settings isn't specified");
             }
 
-            ReferenceField field = item.Fields[AccountsSettingsItemConstants.Fields.RegisterOutcome.ID];
+            ReferenceField field = item.Fields[AccountsSettingsConstants.Fields.RegisterOutcome.ID];
             return field?.TargetID;
         }
 
         public MailMessage GetForgotPasswordMailTemplate()
         {
             var settingsItem = this.GetAccountsSettingsItem(null);
-            InternalLinkField link = settingsItem.Fields[AccountsSettingsItemConstants.Fields.ForgotPasswordMailTemplate.ID];
+            InternalLinkField link = settingsItem.Fields[AccountsSettingsConstants.Fields.ForgotPasswordMailTemplate.ID];
             var mailTemplateItem = link.TargetItem;
 
             if (mailTemplateItem == null)
@@ -71,15 +71,15 @@
                 throw new ItemNotFoundException($"Could not find mail template item with {link.TargetID} ID");
             }
 
-            var fromMail = mailTemplateItem.Fields[MailTemplateItemConstants.Fields.From.ID];
+            var fromMail = mailTemplateItem.Fields[MailTemplateConstants.Fields.From.ID];
 
             if (string.IsNullOrEmpty(fromMail.Value))
             {
                 throw new InvalidValueException("'From' field in mail template should be set");
             }
 
-            var body = mailTemplateItem.Fields[MailTemplateItemConstants.Fields.Body.ID];
-            var subject = mailTemplateItem.Fields[MailTemplateItemConstants.Fields.Subject.ID];
+            var body = mailTemplateItem.Fields[MailTemplateConstants.Fields.Body.ID];
+            var subject = mailTemplateItem.Fields[MailTemplateConstants.Fields.Subject.ID];
 
             return new MailMessage
             {
@@ -95,9 +95,9 @@
 
             if (contextItem != null)
             {
-                item = contextItem.GetAncestorOrSelfOfTemplate(AccountsSettingsItemConstants.TemplateID);
+                item = contextItem.GetAncestorOrSelfOfTemplate(AccountsSettingsConstants.TemplateID);
             }
-            item = item ?? Context.Site.GetContextItem(AccountsSettingsItemConstants.TemplateID);
+            item = item ?? Context.Site.GetContextItem(AccountsSettingsConstants.TemplateID);
 
             return item;
         }

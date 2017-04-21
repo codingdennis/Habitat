@@ -4,9 +4,9 @@
 @using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
 @model IRenderingModel<IItemWrapper, IVideo>
 
-@if (!Model?.RenderingItem?.IsDerived(VideoItemConstants.TemplateID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(VideoConstants.TemplateID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(VideoItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(VideoConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 

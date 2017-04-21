@@ -5,9 +5,9 @@ namespace Sitecore.Feature.Media.Tests.Infrastructure
 
     public class VideoTemplate : DbTemplate
     {
-        public VideoTemplate() : base(HasMediaVideoItemConstants.TemplateID)
+        public VideoTemplate() : base(HasMediaVideoConstants.TemplateID)
         {
-            base.Add(HasMediaVideoItemConstants.Fields.MediaVideoLink.ID);
+            base.Add(HasMediaVideoConstants.Fields.MediaVideoLink.ID);
         }
     }
 }

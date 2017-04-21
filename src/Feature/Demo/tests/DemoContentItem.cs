@@ -7,7 +7,7 @@
     public class DemoContentItem : DbItem
     {
         public DemoContentItem(string name, ID id)
-            : base(name, id, DemoContentItemConstants.TemplateID)
+            : base(name, id, DemoContentConstants.TemplateID)
         {
         }
     }

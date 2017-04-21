@@ -20,7 +20,7 @@
                 var item = GetSettingsItem(Context.Item);
                 Assert.IsNotNull(item, "Page with profile settings isn't specified");
                 var database = Database.GetDatabase(Settings.ProfileItemDatabase);
-                var profileField = item.Fields[ProfileSettingsItemConstants.Fields.UserProfile.ID];
+                var profileField = item.Fields[ProfileSettingsConstants.Fields.UserProfile.ID];
                 var targetItem = database.GetItem(profileField.Value);
 
                 return targetItem;
@@ -31,7 +31,7 @@
         {
             var item = GetSettingsItem(null);
 
-            return item?.TargetItem(ProfileSettingsItemConstants.Fields.InterestsFolder.ID)?.Children.Where(i => i.IsDerived(InterestItemConstants.TemplateID))?.Select(i => i.Fields[InterestItemConstants.Fields.Title.ID].Value) ?? Enumerable.Empty<string>();
+            return item?.TargetItem(ProfileSettingsConstants.Fields.InterestsFolder.ID)?.Children.Where(i => i.IsDerived(InterestConstants.TemplateID))?.Select(i => i.Fields[InterestConstants.Fields.Title.ID].Value) ?? Enumerable.Empty<string>();
         }
 
         private static Item GetSettingsItem(Item contextItem)
@@ -40,9 +40,9 @@
 
             if (contextItem != null)
             {
-                item = contextItem.GetAncestorOrSelfOfTemplate(ProfileSettingsItemConstants.TemplateID);
+                item = contextItem.GetAncestorOrSelfOfTemplate(ProfileSettingsConstants.TemplateID);
             }
-            item = item ?? Context.Site.GetContextItem(ProfileSettingsItemConstants.TemplateID);
+            item = item ?? Context.Site.GetContextItem(ProfileSettingsConstants.TemplateID);
 
             return item;
         }

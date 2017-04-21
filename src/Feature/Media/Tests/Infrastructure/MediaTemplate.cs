@@ -5,12 +5,12 @@ namespace Sitecore.Feature.Media.Tests.Infrastructure
 
     public class MediaTemplate : DbTemplate
     {
-        public MediaTemplate() : base(HasMediaItemConstants.TemplateID)
+        public MediaTemplate() : base(HasMediaConstants.TemplateID)
         {
-            base.Add(HasMediaItemConstants.Fields.MediaThumbnail.ID);
+            base.Add(HasMediaConstants.Fields.MediaThumbnail.ID);
             base.BaseIDs = new[]
             {
-                HasMediaVideoItemConstants.TemplateID
+                HasMediaVideoConstants.TemplateID
             };
         }
     }

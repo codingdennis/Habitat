@@ -27,9 +27,9 @@
         public void GetAll_PointItemPassed_ShouldReturnSinglePoint(Db db)
         {
             var itemid = ID.NewID;
-            db.Add(new DbItem("point", itemid, MapPointItemConstants.TemplateID)
+            db.Add(new DbItem("point", itemid, MapPointConstants.TemplateID)
             {
-                {MapPointItemConstants.Fields.MapPointName.ID, "nameField"}
+                {MapPointConstants.Fields.MapPointName.ID, "nameField"}
             });
             var repository = new MapPointRepository();
             var actual = repository.GetAll(db.GetItem(itemid));
@@ -52,7 +52,7 @@
         public void GetAll_PointFolderItemPassed_ShouldCallSearchService(Db db, [Substitute] Foundation.Indexing.Repositories.ISearchServiceRepository searchRepo, [Substitute] Foundation.Indexing.Services.SearchService service)
         {
             var itemid = ID.NewID;
-            db.Add(new DbItem("point", itemid, MapPointsFolderItemConstants.TemplateID));
+            db.Add(new DbItem("point", itemid, MapPointsFolderConstants.TemplateID));
             searchRepo.Get().Returns(service);
             var repository = new MapPointRepository(searchRepo);
             repository.GetAll(db.GetItem(itemid));
@@ -65,7 +65,7 @@
         public void GetAll_PointFolderItemPassed_ShouldReturnsItemsFromSearchService([FakeDb.AutoFixture.Content] Data.Items.Item[] items, Db db, [Substitute] Foundation.Indexing.Repositories.ISearchServiceRepository searchRepo, [Substitute] Foundation.Indexing.Services.SearchService service, Foundation.Indexing.Models.ISearchResults results, Foundation.Indexing.Models.ISearchResult result)
         {
             var itemid = ID.NewID;
-            db.Add(new DbItem("point", itemid, MapPointsFolderItemConstants.TemplateID));
+            db.Add(new DbItem("point", itemid, MapPointsFolderConstants.TemplateID));
             searchRepo.Get().Returns(service);
             service.FindAll().Returns(results);
             var searchResutls = items.Select(x =>

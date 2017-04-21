@@ -20,10 +20,10 @@
 
         protected Item profile;
         protected virtual Item Profile => this.profile ?? (this.profile = this.profileSettingsService.GetUserDefaultProfile());
-        protected virtual string FirstName => this.GetUserProfileFieldName(UserProfileItemConstants.Fields.FirstName.ID);
-        protected virtual string LastName => this.GetUserProfileFieldName(UserProfileItemConstants.Fields.LastName.ID);
-        protected virtual string PhoneNumber => this.GetUserProfileFieldName(UserProfileItemConstants.Fields.Phone.ID);
-        protected virtual string Interest => this.GetUserProfileFieldName(UserProfileItemConstants.Fields.Interest.ID);
+        protected virtual string FirstName => this.GetUserProfileFieldName(UserProfileConstants.Fields.FirstName.ID);
+        protected virtual string LastName => this.GetUserProfileFieldName(UserProfileConstants.Fields.LastName.ID);
+        protected virtual string PhoneNumber => this.GetUserProfileFieldName(UserProfileConstants.Fields.Phone.ID);
+        protected virtual string Interest => this.GetUserProfileFieldName(UserProfileConstants.Fields.Interest.ID);
 
         public UserProfileService() : this(new ProfileSettingsService(), new UserProfileProvider())
         {

@@ -185,7 +185,7 @@ public void GenerateTemplate(ITemplate template)
 	/// <para>Constants struct for accessing template ID and field ID and names.</para>
 	/// <para><#= template.Path #></para>
 	/// <summary>
-	public struct <#=ClassItemName(template.Name)#>Constants
+	public struct <#=ClassName(template.Name)#>Constants
 	{
 		public static ID TemplateID => new ID("<#=template.Id.ToUpper()#>");
 		public static string TemplateName = "<#=template.Name#>";

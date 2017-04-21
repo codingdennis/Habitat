@@ -41,7 +41,7 @@
             parentMock.Setup(x => x.MediaSelector).Returns(listFieldMock.Object);
 
             var childMock = new Mock<IHasMediaVideo>();
-            childMock.Setup(x => x.TemplateId).Returns(HasMediaVideoItemConstants.TemplateID.Guid);
+            childMock.Setup(x => x.TemplateId).Returns(HasMediaVideoConstants.TemplateID.Guid);
 
             parentMock.Setup(x => x.Children<ICustomItemWrapper>(false)).Returns(
                 () => new[] {childMock.Object}

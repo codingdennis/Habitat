@@ -11,7 +11,7 @@
     {
         private readonly Foundation.Indexing.Repositories.ISearchServiceRepository searchServiceRepository;
 
-        public MapPointRepository() : this(new Foundation.Indexing.Repositories.SearchServiceRepository(new Foundation.Indexing.Models.SearchSettingsBase {Templates = new[] {MapPointItemConstants.TemplateID}}))
+        public MapPointRepository() : this(new Foundation.Indexing.Repositories.SearchServiceRepository(new Foundation.Indexing.Models.SearchSettingsBase {Templates = new[] {MapPointConstants.TemplateID}}))
         {
         }
 
@@ -26,14 +26,14 @@
             {
                 throw new ArgumentNullException(nameof(contextItem));
             }
-            if (contextItem.IsDerived(MapPointItemConstants.TemplateID))
+            if (contextItem.IsDerived(MapPointConstants.TemplateID))
             {
                 return new List<MapPoint>
                 {
                     new MapPoint(contextItem)
                 };
             }
-            if (!contextItem.IsDerived(MapPointsFolderItemConstants.TemplateID))
+            if (!contextItem.IsDerived(MapPointsFolderConstants.TemplateID))
             {
                 throw new ArgumentException("Item must derive from MapPointsFolder or MapPoint", nameof(contextItem));
             }

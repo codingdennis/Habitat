@@ -4,7 +4,7 @@
 @{
     const int DefaultColumns = 4;
 
-    var children = Model.PageItem.Children<IHasPageContent>().Where(i => i.IsDerived(HasPageContentItemConstants.TemplateID) && i.HasContextLanguage()).ToArray();
+    var children = Model.PageItem.Children<IHasPageContent>().Where(i => i.IsDerived(HasPageContentConstants.TemplateID) && i.HasContextLanguage()).ToArray();
     var numColumns = children.Length >= DefaultColumns ? DefaultColumns : (children.Length <= 2 ? 2 : children.Length);
 }
 

@@ -39,6 +39,6 @@
                                                     }, "p")
   </div>
   <button type="button" class="btn btn-block btn-primary" onclick="login('loginModal')">@Html.Sitecore().DictionaryField("/Accounts/Login/Login", "Login")</button>
-  <a class="btn btn-block btn-default" href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsItemConstants.Fields.ForgotPasswordPage.ID)">@Html.Sitecore().DictionaryField("/Accounts/Login/Forgot Your Password", "Forgot your password?")</a>
-  <a class="btn btn-block btn-default" href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsItemConstants.Fields.RegisterPage.ID)">@Html.Sitecore().DictionaryField("/Accounts/Login/Register", "Register")</a>
+  <a class="btn btn-block btn-default" href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsConstants.Fields.ForgotPasswordPage.ID)">@Html.Sitecore().DictionaryField("/Accounts/Login/Forgot Your Password", "Forgot your password?")</a>
+  <a class="btn btn-block btn-default" href="@AccountsSettingsService.Instance.GetPageLinkOrDefault(Sitecore.Context.Item, AccountsSettingsConstants.Fields.RegisterPage.ID)">@Html.Sitecore().DictionaryField("/Accounts/Login/Register", "Register")</a>
 </div>

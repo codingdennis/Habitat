@@ -9,9 +9,9 @@
 
         public MapPoint(Data.Items.Item item)
         {
-            this.Name = item[MapPointItemConstants.Fields.MapPointName.ID];
-            this.Address = item[MapPointItemConstants.Fields.MapPointAddress.ID];
-            this.Location = item[MapPointItemConstants.Fields.MapPointLocation.ID];
+            this.Name = item[MapPointConstants.Fields.MapPointName.ID];
+            this.Address = item[MapPointConstants.Fields.MapPointAddress.ID];
+            this.Location = item[MapPointConstants.Fields.MapPointLocation.ID];
         }
 
         public string Name { get; set; }

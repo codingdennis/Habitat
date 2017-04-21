@@ -17,12 +17,12 @@
     {
         public IEnumerable<ProfileItem> GetSiteProfiles()
         {
-            var settingsItem = Context.Site.GetContextItem(ProfilingSettingsItemConstants.TemplateID);
+            var settingsItem = Context.Site.GetContextItem(ProfilingSettingsConstants.TemplateID);
             if (settingsItem == null)
             {
                 return Enumerable.Empty<ProfileItem>();
             }
-            MultilistField profiles = settingsItem.Fields[ProfilingSettingsItemConstants.Fields.SiteProfiles.ID];
+            MultilistField profiles = settingsItem.Fields[ProfilingSettingsConstants.Fields.SiteProfiles.ID];
             return profiles.GetItems().Select(i => new ProfileItem(i));
         }
 

@@ -7,9 +7,9 @@
 @using Fortis.Foundation.CodeGen.Templates.Feature.Media
 @using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
 @model IRenderingModel<IItemWrapper, ICarousel>
-@if (!Model?.RenderingItem?.IsDerived(CarouselItemConstants.TemplateID) ?? true)
+@if (!Model?.RenderingItem?.IsDerived(CarouselConstants.TemplateID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselItemConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 @{
@@ -22,8 +22,8 @@
 <div class="block-grid-lg-4 block-grid-md-3 block-grid-sm-2 block-grid-xs-1" id="@galleryId">
     @foreach (var element in elements)
     {
-        var isVideo = element.Item.IsDerived(HasMediaVideoItemConstants.TemplateID);
-        var isImage = element.Item.IsDerived(HasMediaImageItemConstants.TemplateID);
+        var isVideo = element.Item.IsDerived(HasMediaVideoConstants.TemplateID);
+        var isImage = element.Item.IsDerived(HasMediaImageConstants.TemplateID);
 
         var thumbnail = isImage ? (element.Item as IHasMediaImage)?.MediaImage?.Render(new { @class = "img-responsive", mw = thumbnailWidth }) :
                                   (element.Item as IHasMedia)?.MediaThumbnail?.Render(new { @class = "img-responsive", mw = thumbnailWidth });

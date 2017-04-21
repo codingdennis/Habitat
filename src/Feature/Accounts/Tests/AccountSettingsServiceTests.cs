@@ -123,30 +123,30 @@
             }
             db.Add(new DbItem("siteroot")
             {
-                TemplateID = AccountsSettingsItemConstants.TemplateID,
+                TemplateID = AccountsSettingsConstants.TemplateID,
                 Fields =
                 {
-                    new DbField("ForgotPasswordMailTemplate", AccountsSettingsItemConstants.Fields.ForgotPasswordMailTemplate.ID)
+                    new DbField("ForgotPasswordMailTemplate", AccountsSettingsConstants.Fields.ForgotPasswordMailTemplate.ID)
                     {
                         Value = template.ToString()
                     },
-                    new DbField("RegisterOutcome", AccountsSettingsItemConstants.Fields.RegisterOutcome.ID)
+                    new DbField("RegisterOutcome", AccountsSettingsConstants.Fields.RegisterOutcome.ID)
                     {
                         Value = outcomeID.ToString()
                     }
                 },
                 Children =
                 {
-                    new DbItem("mailtemplate", template, MailTemplateItemConstants.TemplateID)
+                    new DbItem("mailtemplate", template, MailTemplateConstants.TemplateID)
                     {
                         {
-                            MailTemplateItemConstants.Fields.Body.ID, body
+                            MailTemplateConstants.Fields.Body.ID, body
                         },
                         {
-                            MailTemplateItemConstants.Fields.From.ID, from
+                            MailTemplateConstants.Fields.From.ID, from
                         },
                         {
-                            MailTemplateItemConstants.Fields.Subject.ID, subj
+                            MailTemplateConstants.Fields.Subject.ID, subj
                         }
                     },
                     new DbItem("outcome", outcomeID)

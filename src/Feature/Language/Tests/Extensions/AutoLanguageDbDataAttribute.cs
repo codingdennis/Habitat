@@ -1,25 +1,26 @@
 namespace Sitecore.Feature.Language.Tests.Extensions
 {
-  using Ploeh.AutoFixture;
-  using Sitecore.FakeDb;
-  using Sitecore.Foundation.Multisite;
-  using Sitecore.Foundation.Testing.Attributes;
+    using Ploeh.AutoFixture;
+    using Sitecore.FakeDb;
+    using Sitecore.Foundation.Multisite;
+    using Sitecore.Foundation.Testing.Attributes;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Language;
 
-  public class AutoLanguageDbDataAttribute : AutoDbDataAttribute
-  {
-    public AutoLanguageDbDataAttribute()
+    public class AutoLanguageDbDataAttribute : AutoDbDataAttribute
     {
-      var db = this.Fixture.Create<Db>();
-      db.Add(new DbTemplate(Templates.Site.ID));
-      db.Add(new DbTemplate(Language.Templates.LanguageSettings.ID)
-      {
-        Fields =
+        public AutoLanguageDbDataAttribute()
         {
-          {
-            Language.Templates.LanguageSettings.Fields.SupportedLanguages, string.Empty
-          }
+            var db = this.Fixture.Create<Db>();
+            db.Add(new DbTemplate(Templates.Site.ID));
+            db.Add(new DbTemplate(LanguageSettingsConstants.TemplateID)
+            {
+                Fields =
+                {
+                    {
+                        LanguageSettingsConstants.Fields.SupportedLanguages.ID, string.Empty
+                    }
+                }
+            });
         }
-      });
     }
-  }
 }
