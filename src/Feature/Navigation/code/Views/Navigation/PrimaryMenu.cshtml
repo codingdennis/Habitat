@@ -1,43 +1,46 @@
-﻿@using Sitecore.Feature.Navigation
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
+﻿@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Fortis.Foundation.CodeGen.Templates.Feature.Navigation
 @model Sitecore.Feature.Navigation.Models.NavigationItems
 
 <div class="collapse navbar-collapse" id="siteNavbar">
   <ul class="nav navbar-nav">
     @if (Model?.Items != null)
     {
-      foreach (var item in Model.Items)
-      {
-        var hasChildren = item.Children != null && item.Children.Items.Any() && item.ShowChildren;
-        var cssClass = "";
-        if (hasChildren)
+        foreach (var item in Model.Items)
         {
-          cssClass += " dropdown";
-        }
+            var navigableItem = (INavigable)item.Item;
+            var hasChildren = (item.Children != null && item.Children.Items.Any());
+            var cssClass = "";
+            if (hasChildren)
+            {
+                cssClass += " dropdown";
+            }
 
-        <li class="@cssClass">
-          @if (hasChildren)
-          {
-            <a href="@item.Url" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              @foreach (var subitem in item.Children.Items)
-              {
-                <li class="@(subitem.IsActive ? "active" : "")">
-                  <a href="@subitem.Url" target="@subitem.Target">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, subitem.Item)</a>
-                </li>
-              }
-            </ul>
-          }
-          else
-          {
-            <a class="text-uppercase" href="@item.Url" target="@item.Target">
-              @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)
-            </a>
-          }
-        </li>
-      }
+            <li class="@cssClass">
+                @if (hasChildren)
+                {
+                    <a href="@item.Url" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        @navigableItem.NavigationTitle<span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        @foreach (var subitem in item.Children.Items)
+                        {
+                            var @childItem = (INavigable)subitem.Item;
+                            <li class="@(subitem.IsActive ? "active" : "")">
+                                <a href="@subitem.Url" target="@subitem.Target">@childItem.NavigationTitle</a>
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <a class="text-uppercase" href="@item.Url" target="@item.Target">
+                        @navigableItem.NavigationTitle
+                    </a>
+                }
+            </li>
+        }
     }
   </ul>
 </div>

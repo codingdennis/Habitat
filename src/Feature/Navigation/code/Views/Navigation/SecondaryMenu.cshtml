@@ -1,7 +1,7 @@
-﻿@using Sitecore.Feature.Navigation
-@using Sitecore.Foundation.Alerts.Extensions
+﻿@using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Fortis.Foundation.CodeGen.Templates.Feature.Navigation
 @model Sitecore.Feature.Navigation.Models.NavigationItem
 @{
   if (Model?.Children == null || !Model.Children.Items.Any())
@@ -9,10 +9,12 @@
     @Html.PageEditorInfo(Html.Sitecore().Dictionary("/Navigation/SecondaryMenu/No menu items", "No menu items found"))
     return;
   }
+
+  var navigableItem = (INavigable)Model.Item;
 }
 
 <h4>
-  <a href="@Model.Url" target="@Model.Target">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, Model.Item)</a>
+  <a href="@Model.Url" target="@Model.Target">@navigableItem.NavigationTitle</a>
 </h4>
 <div class="sidebar sidebar-static">
   @if (Model.Children != null)
