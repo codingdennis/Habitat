@@ -3,6 +3,7 @@
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Foundation.Theming.Extensions
 @using Fortis.Model
 @using Fortis.Foundation.CodeGen.Templates.Feature.Media
 @using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
@@ -39,7 +40,7 @@
             var style = "background-image: ";
             var imageField = element.Item.IsDerived(HasMediaVideoConstants.TemplateID) ? (element.Item as IHasMedia)?.MediaThumbnail : (element.Item as IHasMediaImage)?.MediaImage;
             style += imageField?.GetSourceUri().ToCssUrlValue();
-            var fixedHeight = false;//Model.Rendering.IsFixedHeight();
+            var fixedHeight = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.IsFixedHeight();
             if (fixedHeight && carouselHeight.HasValue)
             {
                 style += "; height:" + carouselHeight + "px;";
