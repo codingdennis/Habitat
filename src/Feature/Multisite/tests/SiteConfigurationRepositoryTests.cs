@@ -16,6 +16,7 @@
     using Sitecore.Foundation.Testing.Attributes;
     using Sitecore.Web;
     using Xunit;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Multisite;
 
     public class SiteConfigurationRepositoryTests
     {
@@ -34,9 +35,9 @@
             var id = ID.NewID;
             var db = new Db
             {
-                new DbItem(name, id, Multisite.Templates.SiteConfiguration.ID)
+                new DbItem(name, id, SiteConfigurationConstants.TemplateID)
                 {
-                    new SharedDbField(Multisite.Templates.SiteConfiguration.Fields.ShowInMenu) {Value = "1"}
+                    new SharedDbField(SiteConfigurationConstants.Fields.ShowInMenu.ID) {Value = "1"}
                 }
             };
             var item = db.GetItem(id);

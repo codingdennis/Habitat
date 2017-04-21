@@ -9,6 +9,7 @@
     using Sitecore.Foundation.Multisite.Providers;
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
     using Sitecore.Globalization;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Multisite;
 
     public class SiteConfigurationRepository : ISiteConfigurationRepository
     {
@@ -36,7 +37,7 @@
 
         private bool IsSiteConfigurationItem(Item item)
         {
-            return item.IsDerived(Multisite.Templates.SiteConfiguration.ID);
+            return item.IsDerived(SiteConfigurationConstants.TemplateID);
         }
 
         private SiteConfigurations Create(IEnumerable<SiteDefinition> definitions)
@@ -55,7 +56,7 @@
                 HostName = siteConfiguration.HostName,
                 Name = siteConfiguration.Name,
                 Title = GetSiteTitle(siteConfiguration),
-                ShowInMenu = siteConfiguration.Item.Fields[Multisite.Templates.SiteConfiguration.Fields.ShowInMenu].IsChecked(),
+                ShowInMenu = siteConfiguration.Item.Fields[SiteConfigurationConstants.Fields.ShowInMenu.ID].IsChecked(),
                 IsCurrent = siteConfiguration.IsCurrent
             };
         }
@@ -77,7 +78,7 @@
         {
             var siteItem = GetSiteItemInSiteLanguage(siteConfiguration);
 
-            var title = (siteItem ?? siteConfiguration.Item)[Multisite.Templates.SiteConfiguration.Fields.Title];
+            var title = (siteItem ?? siteConfiguration.Item)[SiteConfigurationConstants.Fields.Title.ID];
             if (string.IsNullOrEmpty(title))
                 title = siteConfiguration.Name;
             return title;
