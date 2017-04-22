@@ -84,10 +84,10 @@ public void GenerateTemplate(ITemplate template)
     /// <para>Path: <#= template.Path #></para>
     /// </summary>
     [TemplateMapping("<#= template.Id.ToUpper() #>", "<#=isRenderingParametersTemplate? "InterfaceRenderingParameter" : "InterfaceMap" #>")]
-	public partial interface <#= InterfaceName(template.Name) #> : <#=isRenderingParametersTemplate? "IRenderingParameterWrapper" : "ICustomItemWrapper" #><#+
+    public partial interface <#= InterfaceName(template.Name) #> : <#=isRenderingParametersTemplate? "IRenderingParameterWrapper" : "ICustomItemWrapper" #><#+
     foreach (var baseTemplate in template.BaseTemplates)
     {
-		#>, <#= ModuleNamespace(baseTemplate.Path) + "." + InterfaceName(baseTemplate.Name)  #><#+
+        #>, <#= ModuleNamespace(baseTemplate.Path) + "." + InterfaceName(baseTemplate.Name)  #><#+
     }
 #>
 
@@ -102,18 +102,19 @@ public void GenerateTemplate(ITemplate template)
         [IndexField("<#= field.Name.Replace(" ", "_").ToLowerInvariant() + GetFieldTypeSearchAffix(field.TypeKey) #>")]
 <#+     }#>
         <#= GetFieldWrapperTypeInterface(field.TypeKey) #> <#= TitleCase(field.Name) #> { get; }
+
 <#+     if (!isRenderingParametersTemplate && IsSupportedSearchFieldType(field.TypeKey)) { #>
-		/// <summary>
-		/// <para>Template: <#= template.Name #></para>
+        /// <summary>
+        /// <para>Template: <#= template.Name #></para>
         /// <para>Field: <#= TitleCase(field.Name) #></para>
         /// <para>Data type: <#= field.TypeName #></para>
-		/// </summary>
-		[IndexField("<#= field.Name.Replace(" ", "_").ToLowerInvariant() #>")]
+        /// </summary>
+        [IndexField("<#= field.Name.Replace(" ", "_").ToLowerInvariant() #>")]
 <#+     } #>
 <#+     if (ShouldObsoleteValueField(field.TypeKey)) { #>
-		[Obsolete("Do not use value properties for <#= field.TypeName #> fields")]
+        [Obsolete("Do not use value properties for <#= field.TypeName #> fields")]
 <#+     } #>
-		<#= GetReturnType(GetFieldWrapperType(field.TypeKey)) #> <#= TitleCase(field.Name) #>Value { get; }
+        <#= GetReturnType(GetFieldWrapperType(field.TypeKey)) #> <#= TitleCase(field.Name) #>Value { get; }
 
 <#+ } #>
     }
@@ -122,10 +123,10 @@ public void GenerateTemplate(ITemplate template)
     /// <para>Template class</para>
     /// <para><#= template.Path #></para>
     /// </summary>
-	[PredefinedQuery("TemplateId", ComparisonType.Equal, "<#= template.Id.ToUpper() #>", typeof(Guid))]
-	[TemplateMapping("<#= template.Id.ToUpper() #>", "<#= GetTemplateMappingType(isRenderingParametersTemplate, false) #>")]
-	internal partial class <#= ClassItemName(template.Name) #> : <#= GetBaseTemplateClass(isRenderingParametersTemplate) #>, <#= InterfaceName(template.Name) #>
-	{
+    [PredefinedQuery("TemplateId", ComparisonType.Equal, "<#= template.Id.ToUpper() #>", typeof(Guid))]
+    [TemplateMapping("<#= template.Id.ToUpper() #>", "<#= GetTemplateMappingType(isRenderingParametersTemplate, false) #>")]
+    internal partial class <#= ClassItemName(template.Name) #> : <#= GetBaseTemplateClass(isRenderingParametersTemplate) #>, <#= InterfaceName(template.Name) #>
+    {
 <#+ if (!isRenderingParametersTemplate) { #>
         private Item _item = null;
         public <#= ClassItemName(template.Name) #>(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
@@ -149,7 +150,7 @@ public void GenerateTemplate(ITemplate template)
         /// <para>Data type: <#= field.TypeName #></para>
         /// </summary>
 <#+ if (!isRenderingParametersTemplate && IsSupportedSearchFieldType(field.TypeKey)) { #>
-		[IndexField("<#= field.Name.Replace(" ", "_").ToLowerInvariant() + GetFieldTypeSearchAffix(field.TypeKey) #>")]
+        [IndexField("<#= field.Name.Replace(" ", "_").ToLowerInvariant() + GetFieldTypeSearchAffix(field.TypeKey) #>")]
 <#+ } #>
         public virtual <#= GetFieldWrapperTypeInterface(field.TypeKey) #> <#= TitleCase(field.Name) #>
         {
@@ -168,44 +169,43 @@ public void GenerateTemplate(ITemplate template)
         /// <para>Data type: <#= field.TypeName #></para>
         /// </summary>
 <#+ if (!isRenderingParametersTemplate && IsSupportedSearchFieldType(field.TypeKey)) { #>
-		[IndexField("<#= field.Name.Replace(" ", "_").ToLowerInvariant() #>")]
+        [IndexField("<#= field.Name.Replace(" ", "_").ToLowerInvariant() #>")]
 <#+ } #>
         public <#= GetReturnType(GetFieldWrapperType(field.TypeKey)) #> <#= TitleCase(field.Name) #>Value
         {
             [DebuggerStepThrough]
             get { return this.<#= TitleCase(field.Name) #>.Value; }
-		}
-
+        }
 <#+
     } // End of fields loop
 #>	
-	}
+    }
 
-	/// <summary>
-	/// <para>Constants struct for accessing template ID and field ID and names.</para>
-	/// <para><#= template.Path #></para>
-	/// <summary>
-	public struct <#=ClassName(template.Name)#>Constants
-	{
-		public static ID TemplateID => new ID("<#=template.Id.ToUpper()#>");
-		public static string TemplateName = "<#=template.Name#>";
+    /// <summary>
+    /// <para>Constants class for accessing template ID and field ID and names.</para>
+    /// <para><#= template.Path #></para>
+    /// <summary>
+    public static class <#=ClassName(template.Name)#>Constants
+    {
+        public static readonly ID TemplateID = new ID("<#=template.Id.ToUpper()#>");
+        public const string TemplateName = "<#=template.Name#>";
 
-		public struct Fields
-		{
+        public struct Fields
+        {
 <#+
 	foreach(var field in template.CombinedFields)
 	{
 #>
-			public struct <#=TitleCase(field.Name)#>
-			{
-				public static ID ID = new ID("<#=field.Id.ToUpper()#>");
-				public static string FieldName = "<#=field.Name#>";
-			}
+            public struct <#=TitleCase(field.Name)#>
+            {
+                public static readonly ID ID = new ID("<#=field.Id.ToUpper()#>");
+                public const string FieldName = "<#=field.Name#>";
+            }
 <#+
-	}
+    }
 #>
-		}
-	}
+        }
+    }
 <#+    
 } // End of GenerateTemplate method
 
