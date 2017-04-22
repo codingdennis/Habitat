@@ -15,12 +15,12 @@
     {
         public IItemFactory ItemFactory { get; }
         private readonly INavigationRoot _navigationRoot;
-        private INavigable _contextItem;
+        private ICustomItemWrapper _contextItem;
 
         public NavigationRepository(Item contextItem, IItemFactory itemFactory)
         {
             this.ItemFactory = itemFactory;
-            this._contextItem = itemFactory.GetContextItem<INavigable>();
+            this._contextItem = itemFactory.GetContextItem<ICustomItemWrapper>();
 
             this._navigationRoot = this.GetNavigationRoot();
             if (this._navigationRoot == null)
@@ -31,7 +31,8 @@
 
         public INavigationRoot GetNavigationRoot()
         {
-            return this._contextItem.AncestorOrSelf<INavigationRoot>();
+            var navRoot = this._contextItem?.AncestorOrSelf<INavigationRoot>() ?? this.ItemFactory.GetSiteHome<IItemWrapper>().AncestorOrSelf<INavigationRoot>();
+            return navRoot;
         }
 
         public NavigationItems GetBreadcrumb()
@@ -71,10 +72,10 @@
             navItems?.Items?.Insert(0, navigationItem);
         }
 
-        private bool IncludeInNavigation(ICustomItemWrapper item, bool forceShowInMenu = false)
+        private bool IncludeInNavigation(IItemWrapper item, bool forceShowInMenu = false)
         {
             var navigableItem = item as INavigable;
-            return (navigableItem == null? false : item.HasContextLanguage() && (forceShowInMenu || navigableItem.ShowInNavigationValue));
+            return (navigableItem == null? false : navigableItem.HasContextLanguage() && (forceShowInMenu || navigableItem.ShowInNavigationValue));
         }
 
         public NavigationItem GetSecondaryMenuItem()
@@ -107,15 +108,16 @@
 
         private IEnumerable<NavigationItem> GetNavigationHierarchy(bool forceShowInMenu = false)
         {
-            var item = this._contextItem;
-            while (item != null)
+            var item = this._contextItem as IItemWrapper;
+            var siteRoot = this.ItemFactory.GetSiteRoot<IItemWrapper>();
+            while (item.ItemID != siteRoot.ItemID)
             {
                 if (this.IncludeInNavigation(item, forceShowInMenu))
                 {
-                    yield return this.CreateNavigationItem(item, 0);
+                    yield return this.CreateNavigationItem(item as ICustomItemWrapper, 0);
                 }
 
-                item = item.Parent<INavigable>(false);
+                item = item.Parent<IItemWrapper>();
             }
         }
 
