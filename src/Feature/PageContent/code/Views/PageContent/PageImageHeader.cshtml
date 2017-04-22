@@ -2,7 +2,7 @@
 @using Fortis.Foundation.CodeGen.Templates.Feature.PageContent
 @model IRenderingModel<IHasPageContent, IHasPageContent>
 
-@if (Model.PageItem.Image.HasValue)
+@if (!string.IsNullOrWhiteSpace(Model.PageItem?.ImageValue))
 {
   var image = Model.PageItem.Image.GetSourceUri();
   <header class="page-header bg-media bg-parallax" style="background-image: url('@image')">
