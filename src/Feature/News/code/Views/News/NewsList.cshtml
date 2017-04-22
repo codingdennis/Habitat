@@ -1,5 +1,6 @@
 ﻿@using Sitecore.Feature.News
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Fortis.Foundation.CodeGen.Templates.Feature.News
 @model IEnumerable<Sitecore.Data.Items.Item>
 <ul class="media-list media-list-divided">
   @foreach (var item in Model)
@@ -7,24 +8,24 @@
     <li class="media">
       <div class="media-left">
         <a href="@item.Url()">
-          @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.Image, item, mw: 150)
+          @Html.Sitecore().ImageField(NewsArticleConstants.Fields.NewsImage.ID, item, mw: 150)
         </a>
       </div>
 
       <div class="media-body">
         <div class="label label-info">
-          @Html.Sitecore().Field(Templates.NewsArticle.Fields.Date.ToString(), item, new
+          @Html.Sitecore().Field(NewsArticleConstants.Fields.NewsDate.ID, item, new
                                                                                      {
                                                                                        format = "MMMM dd, yyyy"
                                                                                      })
         </div>
         <h3 class="media-title">
           <a href="@item.Url()">
-            @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, item)
+            @Html.Sitecore().Field(NewsArticleConstants.Fields.NewsTitle.ID, item)
           </a>
         </h3>
         <p>
-          @Html.Sitecore().Field(Templates.NewsArticle.Fields.Summary, item)
+          @Html.Sitecore().Field(NewsArticleConstants.Fields.NewsSummary.ID, item)
         </p>
       </div>
     </li>

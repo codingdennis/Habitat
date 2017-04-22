@@ -2,14 +2,16 @@
 @using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.News
+@model IRenderingModel<INewsArticle, INewsArticle>
 
-@if (!Model?.Item?.IsDerived(Templates.NewsArticle.ID) ?? true)
+@if (Model.PageItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.NewsArticle.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(NewsArticleConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
 <div class="thumbnail m-b-1">
-  @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.Image, Model.Item, mw: 500)
+  @Model.PageItem.NewsImage.Render(new { mw = 500} )
 </div>
