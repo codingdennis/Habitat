@@ -105,7 +105,6 @@
   <ItemGroup>
     <Compile Include="Models\TwitterFeedRenderingProperties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Social.Serialization.config" />
@@ -127,9 +126,17 @@
       <Project>{5CF5FA06-AB27-4DF5-A471-ED57EF3E4AE9}</Project>
       <Name>Sitecore.Foundation.Alerts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Fortis\code\Fortis.Foundation.csproj">
+      <Project>{36bb1038-e47d-4276-b238-9aa8a6c818d0}</Project>
+      <Name>Fortis.Foundation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj">
       <Project>{b535703f-8d07-4f23-a533-2974bb4cc7b1}</Project>
       <Name>Sitecore.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Theming\code\Sitecore.Foundation.Theming.csproj">
+      <Project>{98de0d1d-26f1-4cca-847c-4e0fc2dba5fc}</Project>
+      <Name>Sitecore.Foundation.Theming</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
