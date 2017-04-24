@@ -6,11 +6,10 @@
 @using Sitecore.Foundation.Theming.Extensions
 @using Fortis.Model
 @using Fortis.Foundation.CodeGen.Templates.Feature.Media
-@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
-@model IRenderingModel<IItemWrapper, ICarousel, IRenderingParameterWrapper>
-@if (!Model?.RenderingItem?.IsDerived(CarouselConstants.TemplateID) ?? true)
+@model IRenderingModel<IItemWrapper, IHasMediaSelector, IRenderingParameterWrapper>
+@if (Model.RenderingItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(HasMediaSelectorConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 

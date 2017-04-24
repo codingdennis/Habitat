@@ -3,7 +3,6 @@ namespace Sitecore.Feature.Navigation.Repositories
     using Sitecore.Data.Items;
     using Sitecore.Feature.Navigation.Models;
     using Fortis.Foundation.CodeGen.Templates.Feature.Navigation;
-    using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes;
     using Fortis.Model;
 
     public interface INavigationRepository
@@ -13,6 +12,6 @@ namespace Sitecore.Feature.Navigation.Repositories
         NavigationItems GetBreadcrumb();
         NavigationItems GetPrimaryMenu();
         NavigationItem GetSecondaryMenuItem();
-        NavigationItems GetLinkMenuItems(ILinkMenu menuItem);
+        NavigationItems GetLinkMenuItems(INavigationRoot menuItem);
     }
 }

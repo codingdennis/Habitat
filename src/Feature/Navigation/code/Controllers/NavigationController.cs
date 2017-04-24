@@ -5,8 +5,8 @@
     using Sitecore.Foundation.Alerts.Extensions;
     using Sitecore.Foundation.Alerts.Models;
     using Sitecore.Foundation.Dictionary.Repositories;
-    using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes;
     using Fortis.Model;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Navigation;
     using IItemFactory = Fortis.Model.IItemFactory;
 
     public class NavigationController : Controller
@@ -48,7 +48,7 @@
             {
                 return null;
             }
-            var renderingModel = this._itemFactory.GetRenderingContextItems<IItemWrapper, ILinkMenu>();
+            var renderingModel = this._itemFactory.GetRenderingContextItems<IItemWrapper, INavigationRoot>();
             var items = this._navigationRepository.GetLinkMenuItems(renderingModel.RenderingItem);
             return this.View(items);
         }
@@ -59,7 +59,7 @@
             {
                 return Context.PageMode.IsExperienceEditor ? this.InfoMessage(new InfoMessage(DictionaryPhraseRepository.Current.Get("/Navigation/Link Menu/No Items", "This menu has no items."), InfoMessage.MessageType.Warning)) : null;
             }
-            var renderingModel = this._itemFactory.GetRenderingContextItems<IItemWrapper, ILinkMenu>();
+            var renderingModel = this._itemFactory.GetRenderingContextItems<IItemWrapper, INavigationRoot>();
             var items = this._navigationRepository.GetLinkMenuItems(renderingModel.RenderingItem);
             return this.View("LinkMenu", items);
         }

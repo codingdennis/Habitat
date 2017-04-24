@@ -5,11 +5,10 @@
 @using Sitecore.Resources.Media
 @using Fortis.Model
 @using Fortis.Foundation.CodeGen.Templates.Feature.Media
-@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
-@model IRenderingModel<IItemWrapper, ICarousel>
-@if (!Model?.RenderingItem?.IsDerived(CarouselConstants.TemplateID) ?? true)
+@model IRenderingModel<IItemWrapper, IHasMediaSelector>
+@if (Model.RenderingItem == null)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(HasMediaSelectorConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 @{
@@ -58,7 +57,8 @@
                     else
                     {
                         var imageItem = element.Item as IHasMediaImage;
-                        <a href="@imageItem?.MediaImage.GetSourceUri(new MediaUrlOptions(maxWidth, 0, false))" data-type="image" data-title="@imageItem.MediaTitleValue" data-footer="@Html.Encode(imageItem.MediaDescriptionValue)" data-toggle="lightbox" data-gallery="@galleryId">
+                        var url = imageItem?.MediaImage.GetSourceUri(new MediaUrlOptions(maxWidth, 0, false));
+                        <a href="@url" data-type="image" data-title="@imageItem.MediaTitleValue" data-footer="@Html.Encode(imageItem.MediaDescriptionValue)" data-toggle="lightbox" data-gallery="@galleryId">
                             @thumbnail
                         </a>
                     }

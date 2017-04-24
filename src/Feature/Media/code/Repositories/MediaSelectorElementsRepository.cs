@@ -3,13 +3,12 @@
     using System;
     using System.Collections.Generic;
     using Fortis.Foundation.CodeGen.Templates.Feature.Media;
-    using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media;
     using Fortis.Foundation.CustomWrappers;
     using Models;
 
     public static class MediaSelectorElementsRepository
     {
-        public static IEnumerable<MediaSelectorElement> Get([NotNull] ICarousel item)
+        public static IEnumerable<MediaSelectorElement> Get([NotNull] IHasMediaSelector item)
         {
             if (item == null)
                 throw new ArgumentNullException(nameof(item));

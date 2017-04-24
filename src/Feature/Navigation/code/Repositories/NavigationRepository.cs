@@ -7,7 +7,6 @@
     using Sitecore.Feature.Navigation.Models;
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
     using Fortis.Foundation.CodeGen.Templates.Feature.Navigation;
-    using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes;
     using Fortis.Foundation.CustomWrappers;
     using Fortis.Model;
 
@@ -84,7 +83,7 @@
             return rootItem == null ? null : this.CreateNavigationItem(rootItem, 0, 3);
         }
 
-        public NavigationItems GetLinkMenuItems(ILinkMenu menuRoot)
+        public NavigationItems GetLinkMenuItems(INavigationRoot menuRoot)
         {
             if (menuRoot == null)
             {
@@ -123,9 +122,7 @@
 
         private NavigationItem CreateNavigationItem(ICustomItemWrapper item, int level, int maxLevel = -1)
         {
-            var targetItem = item.IsDerived(Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.LinkMenuItemConstants.TemplateID) ? 
-                ((Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.ILinkMenuItem)item).Link.GetTarget<INavigable>() : 
-                item;
+            var targetItem = item.IsDerived(LinkMenuItemConstants.TemplateID) ? ((ILinkMenuItem)item).Link.GetTarget<INavigable>() : item;
             return new NavigationItem
                    {
                        Item = item,

@@ -1,12 +1,12 @@
 ﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Fortis.Model
-@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
-@model IRenderingModel<IItemWrapper, IVideo>
+@using Fortis.Foundation.CodeGen.Templates.Feature.Media
+@model IRenderingModel<IItemWrapper, IHasMediaVideo>
 
-@if (!Model?.RenderingItem?.IsDerived(VideoConstants.TemplateID) ?? true)
+@if (Model.RenderingItem == null)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(VideoConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(HasMediaVideoConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
     return;
 }
 
