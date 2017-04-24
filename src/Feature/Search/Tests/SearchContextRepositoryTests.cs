@@ -1,59 +1,60 @@
 ﻿namespace Sitecore.Feature.Search.Tests
 {
-  using FluentAssertions;
-  using Sitecore.Data;
-  using Sitecore.Data.Items;
-  using Sitecore.FakeDb;
-  using Sitecore.Feature.Search.Models;
-  using Sitecore.Feature.Search.Repositories;
-  using Sitecore.Foundation.Testing.Attributes;
-  using Sitecore.Mvc.Common;
-  using Sitecore.Mvc.Presentation;
-  using Xunit;
+    using FluentAssertions;
+    using Sitecore.Data;
+    using Sitecore.Data.Items;
+    using Sitecore.FakeDb;
+    using Sitecore.Feature.Search.Models;
+    using Sitecore.Feature.Search.Repositories;
+    using Sitecore.Foundation.Testing.Attributes;
+    using Sitecore.Mvc.Common;
+    using Sitecore.Mvc.Presentation;
+    using Xunit;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Search;
 
-  public class SearchContextRepositoryTests
-  {
-    [Theory]
-    [AutoDbData]
-    public void Get_ShouldReturnSearchContext()
+    public class SearchContextRepositoryTests
     {
-      var itemId = ID.NewID;
-      var db = new Db
+        [Theory]
+        [AutoDbData]
+        public void Get_ShouldReturnSearchContext()
+        {
+            var itemId = ID.NewID;
+            var db = new Db
                {
-                 new DbItem("item", itemId, Templates.SearchResults.ID)
+                 new DbItem("item", itemId, SearchResultsConstants.TemplateID)
                  {
-                   {Templates.SearchResults.Fields.Root, itemId.ToString()}
+                   {SearchResultsConstants.Fields.Root.ID, itemId.ToString()}
                  }
                };
-      var testItem = db.GetItem(itemId);
-      var context = new RenderingContext
-                    {
-                      Rendering = new Rendering
-                                  {
-                                    Item = testItem
-                                  }
-                    };
-      ContextService.Get().Push(context);
-      var repository = new SearchContextRepository();
-      var searchContext = repository.Get();
-      searchContext.Should().BeOfType<SearchContext>();
-    }
+            var testItem = db.GetItem(itemId);
+            var context = new RenderingContext
+            {
+                Rendering = new Rendering
+                {
+                    Item = testItem
+                }
+            };
+            ContextService.Get().Push(context);
+            var repository = new SearchContextRepository();
+            var searchContext = repository.Get();
+            searchContext.Should().BeOfType<SearchContext>();
+        }
 
-    [Theory]
-    [AutoDbData]
-    public void Get_NoRenderingContextNoItemSiteContextNoDefaultSearchQuery_ShouldReturnNull()
-    {
-      var context = new RenderingContext
-                    {
-                      Rendering = new Rendering
-                                  {
-                                    Item = null
-                      }
-                    };
-      ContextService.Get().Push(context);
-      var repository = new SearchContextRepository();
-      var searchContext = repository.Get();
-      searchContext.Should().BeNull();
+        [Theory]
+        [AutoDbData]
+        public void Get_NoRenderingContextNoItemSiteContextNoDefaultSearchQuery_ShouldReturnNull()
+        {
+            var context = new RenderingContext
+            {
+                Rendering = new Rendering
+                {
+                    Item = null
+                }
+            };
+            ContextService.Get().Push(context);
+            var repository = new SearchContextRepository();
+            var searchContext = repository.Get();
+            searchContext.Should().BeNull();
+        }
     }
-  }
 }
