@@ -1,14 +1,13 @@
-﻿@using Sitecore.Feature.Person
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
-@using Sitecore.Foundation.SitecoreExtensions.Repositories
+@using Fortis.Foundation.CodeGen.Templates.Feature.Person
 @model IEnumerable<Sitecore.Data.Items.Item>
 
-@if (Model == null || !Model.All(i => i.IsDerived(Templates.Person.ID)))
+@if (Model == null || !Model.All(i => i.IsDerived(PersonConstants.TemplateID)))
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Person.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Html.Sitecore().CurrentItem?.ID, Html.Sitecore().CurrentRendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(PersonConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Html.Sitecore().CurrentItem?.ID, Html.Sitecore().CurrentRendering.Item?.ID)
   return;
 }
 
@@ -19,32 +18,32 @@
       <div style="max-width: 100%">
         <div class="mosaic mosaic-bar-bottom" style="max-width: 100%">
           <div class="mosaic-overlay">
-            <label>@item.Field(Templates.Person.Fields.Title)</label>
+            <label>@item.Field(PersonConstants.Fields.Title.ID)</label>
             <h4>
-              @item.Field(Templates.Person.Fields.Name)
+              @item.Field(PersonConstants.Fields.Name.ID)
             </h4>
             <div class="btn-group-xs">
-              @if (Sitecore.Context.PageMode.IsExperienceEditor || item.FieldHasValue(Templates.Employee.Fields.BlogLink))
+              @if (Sitecore.Context.PageMode.IsExperienceEditor || item.FieldHasValue(EmployeeConstants.Fields.BlogLink.ID))
               {
-                <a href="@item.LinkFieldUrl(Templates.Employee.Fields.BlogLink)" target="_blank" class="btn btn-info">
+                <a href="@item.LinkFieldUrl(EmployeeConstants.Fields.BlogLink.ID)" target="_blank" class="btn btn-info">
                   <i class="fa fa-globe"></i>
                 </a>
               }
-              @if (Sitecore.Context.PageMode.IsExperienceEditor || item.FieldHasValue(Templates.Employee.Fields.TwitterLink))
+              @if (Sitecore.Context.PageMode.IsExperienceEditor || item.FieldHasValue(EmployeeConstants.Fields.TwitterLink.ID))
               {
-                <a href="@item.LinkFieldUrl(Templates.Employee.Fields.TwitterLink)" target="_blank" class="btn btn-social-icon btn-twitter">
+                <a href="@item.LinkFieldUrl(EmployeeConstants.Fields.TwitterLink.ID)" target="_blank" class="btn btn-social-icon btn-twitter">
                   <i class="fa fa-twitter"></i>
                 </a>
               }
-              @if (Sitecore.Context.PageMode.IsExperienceEditor || item.FieldHasValue(Templates.Employee.Fields.FacebookLink))
+              @if (Sitecore.Context.PageMode.IsExperienceEditor || item.FieldHasValue(EmployeeConstants.Fields.FacebookLink.ID))
               {
-                <a href="@item.LinkFieldUrl(Templates.Employee.Fields.FacebookLink)" target="_blank" class="btn btn-social-icon btn-facebook">
+                <a href="@item.LinkFieldUrl(EmployeeConstants.Fields.FacebookLink.ID)" target="_blank" class="btn btn-social-icon btn-facebook">
                   <i class="fa fa-facebook"></i>
                 </a>
               }
-              @if (Sitecore.Context.PageMode.IsExperienceEditor || item.FieldHasValue(Templates.Employee.Fields.LinkedInLink))
+              @if (Sitecore.Context.PageMode.IsExperienceEditor || item.FieldHasValue(EmployeeConstants.Fields.LinkedInLink.ID))
               {
-                <a href="@item.LinkFieldUrl(Templates.Employee.Fields.LinkedInLink)" target="_blank" class="btn btn-social-icon btn-linkedin">
+                <a href="@item.LinkFieldUrl(EmployeeConstants.Fields.LinkedInLink.ID)" target="_blank" class="btn btn-social-icon btn-linkedin">
                   <i class="fa fa-linkedin"></i>
                 </a>
               }
@@ -55,7 +54,7 @@
           </div>
           <div class="mosaic-backdrop">
             <a href="@item.Url()">
-              @Html.Sitecore().ImageField(Templates.Person.Fields.Picture, item, mw: 750, cssClass: "img-responsive")
+              @Html.Sitecore().ImageField(PersonConstants.Fields.Picture.ID, item, mw: 750, cssClass: "img-responsive")
             </a>
           </div>
         </div>

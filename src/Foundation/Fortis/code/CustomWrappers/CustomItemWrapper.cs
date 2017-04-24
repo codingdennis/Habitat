@@ -75,6 +75,8 @@ namespace Fortis.Foundation.CustomWrappers
 
         public bool HasContextLanguage() => (GetItem().Versions.GetLatestVersion()?.Versions.Count > 0);
 
+        public bool HasLayout() => (GetItem()?.Visualization?.Layout != null);
+
         private Item GetItem() => (Original as Item);
     }
 }

@@ -1,30 +1,31 @@
-﻿@using Sitecore.Feature.Person
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Repositories
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Person
+@model IRenderingModel<IItemWrapper, IPerson>
 
-@if (!Model?.Item?.IsDerived(Templates.Person.ID) ?? true)
+@if (Model.RenderingItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Person.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(PersonConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
 <div class="mosaic mosaic-bar-bottom mosaic-overlay-show">
   <div class="mosaic-overlay">
-    <label>@Model.Item.Field(Templates.Person.Fields.Title)</label>
+    <label>@Model.RenderingItem.Title</label>
     <h4>
-      @Model.Item.Field(Templates.Person.Fields.Name)
+      @Model.RenderingItem.Name
     </h4>
-    <a href="@Model.Item.Url()" target="_blank" class="btn btn-primary text-uppercase btn-xs">
+    <a href="@Model.RenderingItem.GenerateUrl()" target="_blank" class="btn btn-primary text-uppercase btn-xs">
       @Html.Sitecore().Dictionary("/Person/EmployeeList/Read More", "Read more")
     </a>
   </div>
   <div class="mosaic-backdrop">
-    <a href="@Model.Item.Url()">
-      @Html.Sitecore().ImageField(Templates.Person.Fields.Picture, Model.Item, mw: 750, cssClass: "img-responsive")
+    <a href="@Model.RenderingItem.GenerateUrl()">
+      @Model.RenderingItem.Picture.Render(new { @class = "img-responsive", mw = 750 })
     </a>
   </div>
 </div>

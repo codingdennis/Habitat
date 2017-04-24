@@ -1,101 +1,101 @@
-﻿@using Sitecore.Feature.Person
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.Theming.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CustomWrappers
+@using Fortis.Foundation.CodeGen.Templates.Feature.Person
+@model IRenderingModel<ICustomItemWrapper, IEmployee>
 
 @{
-
-    if (!Model?.Item?.IsDerived(Templates.Employee.ID) ?? true)
+    if (Model.RenderingItem == null)
     {
-        @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Employee.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+        @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(EmployeeConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
         return;
     }
 
-    var pageUrl = Model.Item.HasLayout() ? Model?.Item?.Url() : null;
+    var pageUrl = Model.RenderingItem.HasLayout() ? Model?.RenderingItem?.GenerateUrl() : null;
 }
 
-<aside class="@Model.Rendering.GetBackgroundClass()">
+<aside class="@Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.GetBackgroundClass()">
     <div class="mosaic mosaic-bar-bottom mosaic-overlay-show">
         <div class="mosaic-overlay">
-            <label>@Model.Item.Field(Templates.Person.Fields.Title)</label>
+            <label>@Model.RenderingItem.Title</label>
             <h4>
-                @Model.Item.Field(Templates.Person.Fields.Name)
+                @Model.RenderingItem.Name
             </h4>
         </div>
         <div class="mosaic-backdrop">
             @if (pageUrl != null)
             {
                 <a href="@pageUrl">
-                    @Html.Sitecore().ImageField(Templates.Person.Fields.Picture, Model.Item, mw: 750, cssClass: "img-responsive")
+                    @Model.RenderingItem.Picture.Render(new { @class = "img-responsive", mw = 750 })
                 </a>
             }
             else
             {
-                @Html.Sitecore().ImageField(Templates.Person.Fields.Picture, Model.Item, mw: 750, cssClass: "img-responsive")
+                @Model.RenderingItem.Picture.Render(new { @class = "img-responsive", mw = 750 })
             }
         </div>
     </div>
 
     <div class="caption text-center">
         <ul class="list list-unstyled">
-            @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.Item.FieldHasValue(Templates.Employee.Fields.Telephone))
+            @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.RenderingItem.Telephone.HasValue)
             {
                 <li>
-                    <a href="tel:@Model.Item[Templates.Employee.Fields.Telephone]" class="btn btn-link" role="button">
-                        <span class="fa fa-phone fa-lg"></span> @Model.Item.Field(Templates.Employee.Fields.Telephone)
+                    <a href="tel:@Model.RenderingItem.TelephoneValue" class="btn btn-link" role="button">
+                        <span class="fa fa-phone fa-lg"></span> @Model.RenderingItem.Telephone
                     </a>
                 </li>
             }
-            @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.Item.FieldHasValue(Templates.Employee.Fields.Mobile))
+            @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.RenderingItem.Mobile.HasValue)
             {
                 <li>
-                    <a href="tel:@Model.Item[Templates.Employee.Fields.Mobile]" class="btn btn-link" role="button">
-                        <span class="fa fa-mobile fa-lg"></span> @Model.Item.Field(Templates.Employee.Fields.Mobile)
+                    <a href="tel:@Model.RenderingItem.MobileValue" class="btn btn-link" role="button">
+                        <span class="fa fa-mobile fa-lg"></span> @Model.RenderingItem.Mobile
                     </a>
                 </li>
             }
-            @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.Item.FieldHasValue(Templates.Employee.Fields.Email))
+            @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.RenderingItem.Email.HasValue)
             {
                 <li>
-                    <a href="mailto:@Model.Item[Templates.Employee.Fields.Email]" class="btn btn-link" role="button">
-                        <span class="fa fa-envelope fa-lg"></span> @Model.Item.Field(Templates.Employee.Fields.Email)
+                    <a href="mailto:@Model.RenderingItem.EmailValue" class="btn btn-link" role="button">
+                        <span class="fa fa-envelope fa-lg"></span> @Model.RenderingItem.Email
                     </a>
                 </li>
             }
         </ul>
         <div>
             <span class="btn-group">
-                @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.Item.FieldHasValue(Templates.Employee.Fields.BlogLink))
+                @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.RenderingItem.BlogLink.HasValue)
                 {
-                    <a href="@Model.Item.LinkFieldUrl(Templates.Employee.Fields.BlogLink)" target="_blank" class="btn btn-info">
+                    <a href="@Model.RenderingItem.BlogLink.Url" target="_blank" class="btn btn-info">
                         <i class="fa fa-globe"></i>
                     </a>
                 }
-                @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.Item.FieldHasValue(Templates.Employee.Fields.TwitterLink))
+                @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.RenderingItem.TwitterLink.HasValue)
                 {
-                    <a href="@Model.Item.LinkFieldUrl(Templates.Employee.Fields.TwitterLink)" target="_blank" class="btn btn-social-icon btn-twitter">
+                    <a href="@Model.RenderingItem.TwitterLink.Url" target="_blank" class="btn btn-social-icon btn-twitter">
                         <i class="fa fa-twitter"></i>
                     </a>
                 }
-                @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.Item.FieldHasValue(Templates.Employee.Fields.FacebookLink))
+                @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.RenderingItem.FacebookLink.HasValue)
                 {
-                    <a href="@Model.Item.LinkFieldUrl(Templates.Employee.Fields.FacebookLink)" target="_blank" class="btn btn-social-icon btn-facebook">
+                    <a href="@Model.RenderingItem.FacebookLink.Url" target="_blank" class="btn btn-social-icon btn-facebook">
                         <i class="fa fa-facebook"></i>
                     </a>
                 }
-                @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.Item.FieldHasValue(Templates.Employee.Fields.LinkedInLink))
+                @if (Sitecore.Context.PageMode.IsExperienceEditor || Model.RenderingItem.LinkedInLink.HasValue)
                 {
-                    <a href="@Model.Item.LinkFieldUrl(Templates.Employee.Fields.LinkedInLink)" target="_blank" class="btn btn-social-icon btn-linkedin">
+                    <a href="@Model.RenderingItem.LinkedInLink.Url" target="_blank" class="btn btn-social-icon btn-linkedin">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 }
             </span>
             @if (pageUrl != null)
             {
-
                 <a href="@pageUrl" class="btn btn-default">
                     @Html.Sitecore().Dictionary("/Person/EmployeeContactTeaser/Read more", "Read more")
                 </a>

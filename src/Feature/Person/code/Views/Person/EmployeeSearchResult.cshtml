@@ -1,11 +1,11 @@
-﻿@using Sitecore.Feature.Person
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
+﻿@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Fortis.Foundation.CodeGen.Templates.Feature.Person
 @model Sitecore.Foundation.Indexing.Models.ISearchResult
 <div class="media">
   <div class="media-body ">
     <div>
       <span class="label label-info">@Model.ContentType</span>
-      <span class="label label-default">@Model.Item.Field(Templates.Person.Fields.Title)</span>
+      <span class="label label-default">@Model.Item.Field(PersonConstants.Fields.Title.ID)</span>
     </div>
     <h2 class="media-title">
       <a href="@Model.Url">@Html.Raw(Model.Title)</a>
@@ -15,37 +15,37 @@
       @Html.Raw(Model.Description)
     }
     <ul class="nav nav-pills">
-      @if (Model.Item.FieldHasValue(Templates.Employee.Fields.Telephone))
+      @if (Model.Item.FieldHasValue(EmployeeConstants.Fields.Telephone.ID))
       {
         <li>
-          <a href="tel:@Model.Item[Templates.Employee.Fields.Telephone]">
-            <i class="fa fa-phone"></i> @Model.Item.Field(Templates.Employee.Fields.Telephone)
+          <a href="tel:@Model.Item[EmployeeConstants.Fields.Telephone.ID]">
+            <i class="fa fa-phone"></i> @Model.Item.Field(EmployeeConstants.Fields.Telephone.ID)
           </a>
         </li>
       }
-      @if (Model.Item.FieldHasValue(Templates.Employee.Fields.Mobile))
+      @if (Model.Item.FieldHasValue(EmployeeConstants.Fields.Mobile.ID))
       {
         <li>
-          <a href="tel:@Model.Item[Templates.Employee.Fields.Mobile]">
-            <i class="fa fa-mobile"></i> @Model.Item.Field(Templates.Employee.Fields.Mobile)
+          <a href="tel:@Model.Item[EmployeeConstants.Fields.Mobile.ID]">
+            <i class="fa fa-mobile"></i> @Model.Item.Field(EmployeeConstants.Fields.Mobile.ID)
           </a>
         </li>
       }
-      @if (Model.Item.FieldHasValue(Templates.Employee.Fields.Email))
+      @if (Model.Item.FieldHasValue(EmployeeConstants.Fields.Email.ID))
       {
         <li>
-          <a href="mailto:@Model.Item[Templates.Employee.Fields.Email]">
-            <i class="fa fa-envelope"></i> @Model.Item.Field(Templates.Employee.Fields.Email)
+          <a href="mailto:@Model.Item[EmployeeConstants.Fields.Email.ID]">
+            <i class="fa fa-envelope"></i> @Model.Item.Field(EmployeeConstants.Fields.Email.ID)
           </a>
         </li>
       }
     </ul>
   </div>
-  @if (Model.Item.FieldHasValue(Templates.Person.Fields.Picture))
+  @if (Model.Item.FieldHasValue(PersonConstants.Fields.Picture.ID))
   {
     <div class="media-left">
       <a href="@Model.Url">
-        @Html.Sitecore().ImageField(Templates.Person.Fields.Picture, Model.Item, mw: 150)
+        @Html.Sitecore().ImageField(PersonConstants.Fields.Picture.ID, Model.Item, mw: 150)
       </a>
     </div>
   }
