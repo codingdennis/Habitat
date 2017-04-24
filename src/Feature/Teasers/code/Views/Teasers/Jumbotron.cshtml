@@ -6,51 +6,57 @@
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.Theming.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
-@if (!Model?.Item?.IsDerived(Templates.TeaserContent.ID) ?? true)
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Teasers
+@model IRenderingModel<IItemWrapper, ITeaserContent>
+@if (Model.RenderingItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.TeaserContent.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
-  return;
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(TeaserContentConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+    return;
 }
 
 @{
-  var fixedHeight = Model.Rendering.IsFixedHeight();
-  var height = Model.Rendering.GetHeight();
-  var style = Model.Item.ImageUrl(Templates.TeaserContent.Fields.Image).ToCssUrlValue();
-  if (fixedHeight)
-  {
-    if (height == 0)
+    var fixedHeight = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.IsFixedHeight();
+    var height = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.GetHeight();
+    var style = Model.RenderingItem.TeaserImage.GetSourceUri().ToCssUrlValue();
+    if (fixedHeight)
     {
-      int.TryParse(((ImageField)Model.Item.Fields[Templates.TeaserContent.Fields.Image]).Height, out height);
+        if (height == 0)
+        {
+            height = Model.RenderingItem.TeaserImage.Height;
+        }
+        style += "; height:" + height + "px;";
     }
-    style += "; height:" + height + "px;";
-  }
 
-  var isMedia = Model.Item.FieldHasValue(Templates.TeaserContent.Fields.Image) || Model.Item.FieldHasValue(Templates.TeaserVideoContent.Fields.VideoLink);
+    // Video Content Teaser is not yet used on Habitat
+    ITeaserVideoContent videoRenderingItem = null;
+    if (Model.RenderingItem.IsDerived(TeaserVideoContentConstants.TemplateID))
+    {
+        videoRenderingItem = (ITeaserVideoContent)Model.RenderingItem;
+    }
+
+    var isMedia = Model.RenderingItem.TeaserImage.HasValue || (videoRenderingItem != null && videoRenderingItem.VideoLink.HasValue);
 }
 
-<div class="jumbotron text-center @(isMedia ? "bg-media" : Model.Rendering.GetBackgroundClass())" style="background-image: @style">
-  @if (Model.Item.IsDerived(Templates.TeaserVideoContent.ID))
+<div class="jumbotron text-center @(isMedia ? "bg-media" : Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.GetBackgroundClass())" style="background-image: @style">
+  @if (videoRenderingItem != null)
   {
     <video autoplay="" loop="" muted="" class="video-bg img-responsive">
-      <source src="@Model.Item.MediaUrl(Templates.TeaserVideoContent.Fields.VideoLink)" type="video/mp4">
+      <source src="@videoRenderingItem.VideoLink.Url" type="video/mp4">
     </video>
   }
 
-  @if (Model.Item.FieldHasValue(Templates.TeaserContent.Fields.Label) || Sitecore.Context.PageMode.IsExperienceEditor)
+  @if (Model.RenderingItem.TeaserLabel.HasValue || Sitecore.Context.PageMode.IsExperienceEditor)
   {
     <span class="label">
-      @Html.Sitecore().Field(Templates.TeaserContent.Fields.Label, Model.Item)
+      @Model.RenderingItem.TeaserLabel
     </span>
   }
   <h2>
-    @Html.Sitecore().Field(Templates.TeaserHeadline.Fields.Title, Model.Item)
+    @Model.RenderingItem.TeaserTitle
   </h2>
   <p class="">
-    @Html.Sitecore().Field(Templates.TeaserContent.Fields.Summary, Model.Item, new { linebreaks = "<br/>" })
+    @Model.RenderingItem.TeaserSummary.Render(new { linebreaks = "<br>" })
   </p>
-  @Html.Sitecore().Field(Templates.TeaserContent.Fields.Link, Model.Item, new
-{
-  @class = "btn btn-primary btn-lg"
-})
+  @Model.RenderingItem.TeaserLink.Render(new { @class = "btn btn-primary btn-lg" })
 </div>
