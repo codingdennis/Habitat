@@ -6,25 +6,32 @@
     using Sitecore.Data.Items;
     using Sitecore.Feature.Navigation.Models;
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Navigation;
+    using Fortis.Foundation.CustomWrappers;
+    using Fortis.Model;
 
     public class NavigationRepository : INavigationRepository
     {
-        public Item ContextItem { get; }
-        public Item NavigationRoot { get; }
+        public IItemFactory ItemFactory { get; }
+        private readonly INavigationRoot _navigationRoot;
+        private ICustomItemWrapper _contextItem;
 
-        public NavigationRepository(Item contextItem)
+        public NavigationRepository(Item contextItem, IItemFactory itemFactory)
         {
-            this.ContextItem = contextItem;
-            this.NavigationRoot = this.GetNavigationRoot(this.ContextItem);
-            if (this.NavigationRoot == null)
+            this.ItemFactory = itemFactory;
+            this._contextItem = itemFactory.GetContextItem<ICustomItemWrapper>();
+
+            this._navigationRoot = this.GetNavigationRoot();
+            if (this._navigationRoot == null)
             {
-                throw new InvalidOperationException($"Cannot determine navigation root from '{this.ContextItem.Paths.FullPath}'");
+                throw new InvalidOperationException($"Cannot determine navigation root from '{((Item)this._contextItem.Original).Paths.FullPath}'");
             }
         }
 
-        public Item GetNavigationRoot(Item contextItem)
+        public INavigationRoot GetNavigationRoot()
         {
-            return contextItem.GetAncestorOrSelfOfTemplate(Templates.NavigationRoot.ID) ?? Context.Site.GetContextItem(Templates.NavigationRoot.ID);
+            var navRoot = this._contextItem?.AncestorOrSelf<INavigationRoot>() ?? this.ItemFactory.GetSiteHome<IItemWrapper>().AncestorOrSelf<INavigationRoot>();
+            return navRoot;
         }
 
         public NavigationItems GetBreadcrumb()
@@ -45,7 +52,7 @@
 
         public NavigationItems GetPrimaryMenu()
         {
-            var navItems = this.GetChildNavigationItems(this.NavigationRoot, 0, 1);
+            var navItems = this.GetChildNavigationItems(this._navigationRoot, 0, 1);
 
             this.AddRootToPrimaryMenu(navItems);
             return navItems;
@@ -53,20 +60,21 @@
 
         private void AddRootToPrimaryMenu(NavigationItems navItems)
         {
-            if (!this.IncludeInNavigation(this.NavigationRoot))
+            if (!this.IncludeInNavigation(this._navigationRoot))
             {
                 return;
             }
 
-            var navigationItem = this.CreateNavigationItem(this.NavigationRoot, 0, 0);
+            var navigationItem = this.CreateNavigationItem(this._navigationRoot, 0, 0);
             //Root navigation item is only active when we are actually on the root item
-            navigationItem.IsActive = this.ContextItem.ID == this.NavigationRoot.ID;
+            navigationItem.IsActive = this._contextItem.ItemID == this._navigationRoot.ItemID;
             navItems?.Items?.Insert(0, navigationItem);
         }
 
-        private bool IncludeInNavigation(Item item, bool forceShowInMenu = false)
+        private bool IncludeInNavigation(IItemWrapper item, bool forceShowInMenu = false)
         {
-            return item.HasContextLanguage() && item.IsDerived(Templates.Navigable.ID) && (forceShowInMenu || MainUtil.GetBool(item[Templates.Navigable.Fields.ShowInNavigation], false));
+            var navigableItem = item as INavigable;
+            return (navigableItem == null? false : navigableItem.HasContextLanguage() && (forceShowInMenu || navigableItem.ShowInNavigationValue));
         }
 
         public NavigationItem GetSecondaryMenuItem()
@@ -75,7 +83,7 @@
             return rootItem == null ? null : this.CreateNavigationItem(rootItem, 0, 3);
         }
 
-        public NavigationItems GetLinkMenuItems(Item menuRoot)
+        public NavigationItems GetLinkMenuItems(INavigationRoot menuRoot)
         {
             if (menuRoot == null)
             {
@@ -84,63 +92,64 @@
             return this.GetChildNavigationItems(menuRoot, 0, 0);
         }
 
-        private Item GetSecondaryMenuRoot()
+        private ICustomItemWrapper GetSecondaryMenuRoot()
         {
             return this.FindActivePrimaryMenuItem();
         }
 
-        private Item FindActivePrimaryMenuItem()
+        private ICustomItemWrapper FindActivePrimaryMenuItem()
         {
             var primaryMenuItems = this.GetPrimaryMenu();
             //Find the active primary menu item
-            var activePrimaryMenuItem = primaryMenuItems.Items.FirstOrDefault(i => i.Item.ID != this.NavigationRoot.ID && i.IsActive);
+            var activePrimaryMenuItem = primaryMenuItems.Items.FirstOrDefault(i => i.Item.ItemID != this._navigationRoot.ItemID && i.IsActive);
             return activePrimaryMenuItem?.Item;
         }
 
         private IEnumerable<NavigationItem> GetNavigationHierarchy(bool forceShowInMenu = false)
         {
-            var item = this.ContextItem;
-            while (item != null)
+            var item = this._contextItem as IItemWrapper;
+            var siteRoot = this.ItemFactory.GetSiteRoot<IItemWrapper>();
+            while (item.ItemID != siteRoot.ItemID)
             {
                 if (this.IncludeInNavigation(item, forceShowInMenu))
                 {
-                    yield return this.CreateNavigationItem(item, 0);
+                    yield return this.CreateNavigationItem(item as ICustomItemWrapper, 0);
                 }
 
-                item = item.Parent;
+                item = item.Parent<IItemWrapper>();
             }
         }
 
-        private NavigationItem CreateNavigationItem(Item item, int level, int maxLevel = -1)
+        private NavigationItem CreateNavigationItem(ICustomItemWrapper item, int level, int maxLevel = -1)
         {
-            var targetItem = item.IsDerived(Templates.Link.ID) ? item.TargetItem(Templates.Link.Fields.Link) : item;
+            var targetItem = item.IsDerived(LinkMenuItemConstants.TemplateID) ? ((ILinkMenuItem)item).Link.GetTarget<INavigable>() : item;
             return new NavigationItem
                    {
                        Item = item,
-                       Url = item.IsDerived(Templates.Link.ID) ? item.LinkFieldUrl(Templates.Link.Fields.Link) : item.Url(),
-                       Target = item.IsDerived(Templates.Link.ID) ? item.LinkFieldTarget(Templates.Link.Fields.Link) : "",
+                       Url = item.IsDerived(LinkConstants.TemplateID) ? ((ILink)item).Link.Url : item.GenerateUrl(),
+                       Target = item.IsDerived(LinkConstants.TemplateID) ? ((ILink)item).Link.Target : "",
                        IsActive = this.IsItemActive(targetItem ?? item),
                        Children = this.GetChildNavigationItems(item, level + 1, maxLevel),
-                       ShowChildren = !item.IsDerived(Templates.Navigable.ID) || item.Fields[Templates.Navigable.Fields.ShowChildren].IsChecked()
+                       ShowChildren = !item.IsDerived(NavigableConstants.TemplateID) || ((INavigable)item).ShowChildrenValue
                    };
         }
 
-        private NavigationItems GetChildNavigationItems(Item parentItem, int level, int maxLevel)
+        private NavigationItems GetChildNavigationItems(ICustomItemWrapper parentItem, int level, int maxLevel)
         {
             if (level > maxLevel || !parentItem.HasChildren)
             {
                 return null;
             }
-            var childItems = parentItem.Children.Where(item => this.IncludeInNavigation(item)).Select(i => this.CreateNavigationItem(i, level, maxLevel));
+            var childItems = parentItem.Children<INavigable>().Where(item => this.IncludeInNavigation(item)).Select(i => this.CreateNavigationItem(i, level, maxLevel));
             return new NavigationItems
                    {
                        Items = childItems.ToList()
                    };
         }
 
-        private bool IsItemActive(Item item)
+        private bool IsItemActive(ICustomItemWrapper item)
         {
-            return this.ContextItem.ID == item.ID || this.ContextItem.Axes.GetAncestors().Any(a => a.ID == item.ID);
+            return this._contextItem.ItemID == item.ItemID || (this._contextItem.Original as Item).Axes.GetAncestors().Any(a => a.ID.Guid == item.ItemID);
         }
     }
 }

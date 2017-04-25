@@ -1,5 +1,5 @@
-﻿@using Sitecore.Feature.Navigation
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
+﻿@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Fortis.Foundation.CodeGen.Templates.Feature.Navigation
 @model Sitecore.Feature.Navigation.Models.NavigationItems
 
 @{
@@ -12,19 +12,23 @@
 <ul class="nav nav-stacked">
   @foreach (var item in Model.Items)
   {
-    if (item.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
-    {
-      <li class="divider"></li>
-    }
-    <li>
-      <a href="@item.Url" target="@item.Target" title="@item.Item[Templates.Navigable.Fields.NavigationTitle]">
-        @if (!string.IsNullOrWhiteSpace(item.Item[Templates.LinkMenuItem.Fields.Icon]))
-        {
-          <i class="fa fa-@item.Item[Templates.LinkMenuItem.Fields.Icon]"></i>@:&nbsp;
-        }
+      var linkMenuItem = (ILinkMenuItem)item.Item;
+      var navigableItem = (INavigable)item.Item;
 
-        <span>@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)</span>
-      </a>
-    </li>
+      if (linkMenuItem.DividerBeforeValue)
+      {
+          <li class="divider"></li>
+      }
+      <li>
+          <a href="@item.Url" target="@item.Target" title="@navigableItem.NavigationTitleValue">
+              @if (!string.IsNullOrWhiteSpace(linkMenuItem.IconValue))
+              {
+                  <i class="fa fa-@linkMenuItem.IconValue"></i>
+                  @:&nbsp;
+              }
+
+              <span>@navigableItem.NavigationTitle</span>
+          </a>
+      </li>
   }
 </ul>

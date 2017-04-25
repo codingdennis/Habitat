@@ -1,26 +1,26 @@
-﻿@using Sitecore.Feature.Person
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Person
+@model IRenderingModel<IPerson, IPerson>
 
-@if (!Model?.Item?.IsDerived(Templates.Person.ID) ?? true)
+@if (Model.PageItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Person.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(PersonConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
 <div class="container">
-  @Html.Sitecore().ImageField(Templates.Person.Fields.Picture, Model.Item, mw: 300, cssClass: "img-responsive img-circle center-block")
+  @Model.PageItem.Picture.Render(new { @class= "img-responsive img-circle center-block", mw = 300 })
   <h1 class="text-center">
-    @Model.Item.Field(Templates.Person.Fields.Name)
+    @Model.PageItem.Name
     <br>
     <small>
-      <span class="label label-default">@Model.Item.Field(Templates.Person.Fields.Title)</span>
+      <span class="label label-default">@Model.PageItem.Title</span>
     </small>
     <br>
     <small>
-      @Model.Item.Field(Templates.Person.Fields.Summary)
+      @Model.PageItem.Summary
     </small>
   </h1>
 </div>

@@ -3,13 +3,13 @@
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Foundation.Theming.Extensions
 @using Fortis.Model
 @using Fortis.Foundation.CodeGen.Templates.Feature.Media
-@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
-@model IRenderingModel<IItemWrapper, ICarousel, IRenderingParameterWrapper>
-@if (!Model?.RenderingItem?.IsDerived(CarouselConstants.TemplateID) ?? true)
+@model IRenderingModel<IItemWrapper, IHasMediaSelector, IRenderingParameterWrapper>
+@if (Model.RenderingItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(CarouselConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(HasMediaSelectorConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
@@ -39,7 +39,7 @@
             var style = "background-image: ";
             var imageField = element.Item.IsDerived(HasMediaVideoConstants.TemplateID) ? (element.Item as IHasMedia)?.MediaThumbnail : (element.Item as IHasMediaImage)?.MediaImage;
             style += imageField?.GetSourceUri().ToCssUrlValue();
-            var fixedHeight = false;//Model.Rendering.IsFixedHeight();
+            var fixedHeight = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.IsFixedHeight();
             if (fixedHeight && carouselHeight.HasValue)
             {
                 style += "; height:" + carouselHeight + "px;";

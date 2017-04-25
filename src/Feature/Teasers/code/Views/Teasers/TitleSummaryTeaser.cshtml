@@ -3,37 +3,36 @@
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.Theming.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
-@if (!Model?.Item?.IsDerived(Templates.TeaserContent.ID) ?? true)
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Teasers
+@model IRenderingModel<IItemWrapper, ITeaserContent>
+@if (Model.RenderingItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.TeaserContent.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(TeaserContentConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
-<div class="well @Model.Rendering.GetBackgroundClass()">
-  @if (Model.Item.FieldHasValue(Templates.TeaserContent.Fields.Label) || Sitecore.Context.PageMode.IsExperienceEditor)
+<div class="well @Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.GetBackgroundClass()">
+  @if (Model.RenderingItem.TeaserLabel.HasValue || Sitecore.Context.PageMode.IsExperienceEditor)
   {
     <span class="label">
-      @Html.Sitecore().Field(Templates.TeaserContent.Fields.Label.ToString(), Model.Item)
+      @Model.RenderingItem.TeaserLabel
     </span>
   }
-  @if (Model.Item.FieldHasValue(Templates.TeaserHeadline.Fields.Title) || Sitecore.Context.PageMode.IsExperienceEditor)
+  @if (Model.RenderingItem.TeaserTitle.HasValue || Sitecore.Context.PageMode.IsExperienceEditor)
   {
     <h4>
-      @Html.Sitecore().Field(Templates.TeaserHeadline.Fields.Title, Model.Item)
+      @Model.RenderingItem.TeaserTitle
     </h4>
   }
-  @if (Model.Item.FieldHasValue(Templates.TeaserContent.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
+  @if (Model.RenderingItem.TeaserSummary.HasValue || Sitecore.Context.PageMode.IsExperienceEditor)
   {
     <p>
-      @Html.Sitecore().Field(Templates.TeaserContent.Fields.Summary, Model.Item, new {linebreaks="<br/>"})
+      @Model.RenderingItem.TeaserSummary.Render(new { linebreaks = "<br>" })
     </p>
   }
-  @if (Model.Item.FieldHasValue(Templates.TeaserContent.Fields.Link) || Sitecore.Context.PageMode.IsExperienceEditor)
+  @if (Model.RenderingItem.TeaserLink.HasValue || Sitecore.Context.PageMode.IsExperienceEditor)
   {
-    @Html.Sitecore().Field(Templates.TeaserContent.Fields.Link, Model.Item, new
-{
-  @class = "btn btn-default"
-})
+    @Model.RenderingItem.TeaserLink.Render(new { @class = "btn btn-default" })
   }
 </div>

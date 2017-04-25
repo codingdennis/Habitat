@@ -1,26 +1,27 @@
-﻿@using Sitecore.Feature.Teasers
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Teasers
+@model IRenderingModel<IItemWrapper, ITeaserContent>
 
-@if (!Model?.Item?.IsDerived(Templates.TeaserContent.ID) ?? true)
+@if (Model.RenderingItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.TeaserContent.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(TeaserContentConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
-<div class="jumbotron jumbotron-xl bg-media" style="background-image: @Model.Item.ImageUrl(Templates.TeaserContent.Fields.Image).ToCssUrlValue()">
+<div class="jumbotron jumbotron-xl bg-media" style="background-image: @Model.RenderingItem.TeaserImage.GetSourceUri().ToCssUrlValue()">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>@Html.Sitecore().Field(Templates.TeaserHeadline.Fields.Title.ToString(), Model.Item)</h1>
+        <h1>@Model.RenderingItem.TeaserTitle</h1>
 
         <p class="lead">
-          @Html.Sitecore().Field(Templates.TeaserContent.Fields.Summary.ToString(), Model.Item, new { linebreaks = "<br/>" })
+          @Model.RenderingItem.TeaserSummary.Render(new { linebreaks = "<br>" })
         </p>
 
-        @Html.Sitecore().Field(Templates.TeaserContent.Fields.Link.ToString(), Model.Item, new { @class = "btn btn-hollow btn-lg" })
+        @Model.RenderingItem.TeaserLink.Render(new { @class = "btn btn-hollow btn-lg" })
       </div>
     </div>
   </div>

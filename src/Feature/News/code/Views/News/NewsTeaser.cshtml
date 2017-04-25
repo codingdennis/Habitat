@@ -5,35 +5,35 @@
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Repositories
 @using Sitecore.Foundation.Theming.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
-@if (!Model?.Item?.IsDerived(Templates.NewsArticle.ID) ?? true)
+@using Sitecore.Mvc.Presentation
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.News
+@model IRenderingModel<IItemWrapper, INewsArticle>
+@if (!Model?.RenderingItem?.IsDerived(NewsArticleConstants.TemplateID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.NewsArticle.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(NewsArticleConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
-<div class="thumbnail @Model.Rendering.GetBackgroundClass() m-b-1">
+<div class="thumbnail @Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.GetBackgroundClass() m-b-1">
   <header class="thumbnail-header">
     <span class="label">
-      @Html.Sitecore().Field(Templates.NewsArticle.Fields.Date.ToString(), new
-                                                                           {
-                                                                             format = "MMMM dd, yyyy"
-                                                                           })
+      @Model.RenderingItem.NewsDate.Render(new { format = "MMMM dd, yyyy"} )
     </span>
     <h3>
-      @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, Model.Item)
+      @Model.RenderingItem.NewsTitle
     </h3>
   </header>
   <div>
-    <a href="@Model.Item.Url()">
-      @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.Image, Model.Item, mw: 750, cssClass: "img-responsive")
+    <a href="@Model.RenderingItem.GenerateUrl()">
+      @Model.RenderingItem.NewsImage.Render(new { @class = "img-responsive", mw = 750 })
     </a>
   </div>
   <div class="caption">
     <p>
-      @Html.Sitecore().Field(Templates.NewsArticle.Fields.Summary, Model.Item)
+      @Model.RenderingItem.NewsSummary
     </p>
-    <a href="@Html.Sitecore().CurrentRendering.Item.Url()" class="btn btn-default">
+    <a href="@Model.RenderingItem.GenerateUrl()" class="btn btn-default">
       @Html.Sitecore().Dictionary("/news/news teaser/read more", "Read more")
     </a>
   </div>

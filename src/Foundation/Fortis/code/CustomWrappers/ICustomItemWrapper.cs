@@ -13,5 +13,6 @@ namespace Fortis.Foundation.CustomWrappers
         bool IsHidden { get; }
         bool IsDerived(ID templateId);
         bool HasContextLanguage();
+        bool HasLayout();
     }
 }

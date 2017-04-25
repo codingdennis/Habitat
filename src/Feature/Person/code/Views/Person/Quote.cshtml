@@ -1,28 +1,29 @@
-﻿@using Sitecore.Feature.Person
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.Theming.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Person
+@model IRenderingModel<IItemWrapper, IQuote>
 
-@if (!Model?.Item?.IsDerived(Templates.Quote.ID) ?? true)
+@if (Model.RenderingItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Quote.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(QuoteConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
-<blockquote class="blockquote-center @Model.Rendering.GetBackgroundClass()">
+<blockquote class="blockquote-center @Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.GetBackgroundClass()">
   <header>
-    @Html.Sitecore().ImageField(Templates.Person.Fields.Picture, Model.Item, 150, cssClass: "img-responsive")
+    @Model.RenderingItem.Picture.Render(new { @class = "img-responsive", mh = 150 })
     <p>
-      @Model.Item.Field(Templates.Person.Fields.Name)
+      @Model.RenderingItem.Name
     </p>
     <p>
-      @Model.Item.Field(Templates.Person.Fields.Title)@(Sitecore.Context.PageMode.IsExperienceEditor || (Model.Item.FieldHasValue(Templates.Person.Fields.Title) && Model.Item.FieldHasValue(Templates.Quote.Fields.CiteOrigin)) ? ", " : "")
-      @Model.Item.Field(Templates.Quote.Fields.CiteOrigin)
+      @Model.RenderingItem.Title@(Sitecore.Context.PageMode.IsExperienceEditor || (Model.RenderingItem.Title.HasValue && Model.RenderingItem.CiteOrigin.HasValue) ? ", " : "")
+      @Model.RenderingItem.CiteOrigin
     </p>
   </header>
   <p>
-    @Model.Item.Field(Templates.Quote.Fields.Quote)
+    @Model.RenderingItem.Quote
   </p>
 </blockquote>

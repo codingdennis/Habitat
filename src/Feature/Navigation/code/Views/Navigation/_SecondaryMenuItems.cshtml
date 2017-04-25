@@ -1,5 +1,5 @@
-﻿@using Sitecore.Feature.Navigation
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
+﻿@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Fortis.Foundation.CodeGen.Templates.Feature.Navigation
 @model Sitecore.Feature.Navigation.Models.NavigationItems
 
 @{
@@ -12,12 +12,13 @@
 <ul class="nav nav-pills nav-stacked">
   @foreach (var item in Model.Items)
   {
+    var navigableItem = (INavigable)item.Item;
     var hasChildren = item.IsActive && item.Children != null && item.Children.Items.Any();
     var itemClass = item.IsActive ? "active" : string.Empty;
     itemClass += item.IsActive && hasChildren ? " open" : string.Empty;
     <li class="@itemClass">
       <a href="@item.Url" target="@item.Target">
-        @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)
+        @navigableItem.NavigationTitle
       </a>
       @if (hasChildren)
       {

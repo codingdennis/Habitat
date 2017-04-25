@@ -1,12 +1,12 @@
 ﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Fortis.Model
-@using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media
+@using Fortis.Foundation.CodeGen.Templates.Feature.Media
 @using Sitecore.Resources.Media
-@model IRenderingModel<IItemWrapper, IImage>
-@if (!Model?.RenderingItem?.IsDerived(ImageConstants.TemplateID) ?? true)
+@model IRenderingModel<IItemWrapper, IHasMediaImage>
+@if (Model.RenderingItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(ImageConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(HasMediaImageConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 

@@ -1,29 +1,28 @@
-﻿@using Sitecore.Feature.News
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
-@if (!Model?.Item?.IsDerived(Templates.NewsArticle.ID) ?? true)
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.News
+@model IRenderingModel<INewsArticle, INewsArticle>
+@if (Model.PageItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.NewsArticle.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(NewsArticleConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
 <div class="container">
   <div class="label label-info">
     <time>
-      @Html.Sitecore().Field(Templates.NewsArticle.Fields.Date.ToString(), new
-                                                                           {
-                                                                             format = "MMMM dd, yyyy"
-                                                                           })</time>
+      @Model.PageItem.NewsDate.Render(new { format = "MMMM dd, yyyy" })
+    </time>
   </div>
   <h1>
-    @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, Model.Item)
-    @if (Model.Item.FieldHasValue(Templates.NewsArticle.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
+    @Model.PageItem.NewsTitle
+    @if (Model.PageItem.NewsSummary.HasValue || Sitecore.Context.PageMode.IsExperienceEditor)
     {
       <br/>
       <small>
-        @Html.Sitecore().Field(Templates.NewsArticle.Fields.Summary, Model.Item)
+        @Model.PageItem.NewsSummary
       </small>
     }
   </h1>

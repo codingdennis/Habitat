@@ -68,7 +68,7 @@ Languages:
     - ID: "d31889c0-e34c-4904-a6f3-f3d92d314aa9"
       Hint: FacebookLink
       Value: |
-        <link text="" linktype="external" url="www.facebook.com" anchor="" title="" class="" querystring="" target="" id="" />
+        <link linktype="external" url="http://www.facebook.com" anchor="" target="" />
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -136,4 +136,4 @@ Languages:
     - ID: "d31889c0-e34c-4904-a6f3-f3d92d314aa9"
       Hint: FacebookLink
       Value: |
-        <link text="" linktype="external" url="www.facebook.com" anchor="" title="" class="" querystring="" target="" id="" />
+        <link linktype="external" url="http://www.facebook.com" anchor="" target="" />

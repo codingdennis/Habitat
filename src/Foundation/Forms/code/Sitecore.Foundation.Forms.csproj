@@ -65,6 +65,10 @@
       <HintPath>..\..\..\..\packages\Sitecore.Forms.Core.NoReferences.8.2.161129\lib\NET452\Sitecore.Forms.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.Forms.Mvc, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Forms.Mvc.NoReferences.8.2.161129\lib\NET452\Sitecore.Forms.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.2.161115\lib\NET452\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
@@ -101,6 +105,7 @@
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\Form\Index.cshtml" />
+    <Content Include="Views\Web.config" />
     <None Include="web.config.transform" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

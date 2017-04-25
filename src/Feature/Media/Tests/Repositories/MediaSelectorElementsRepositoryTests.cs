@@ -1,30 +1,22 @@
 ﻿namespace Sitecore.Feature.Media.Tests.Repositories
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
     using FluentAssertions;
     using Fortis.Foundation.CodeGen.Templates.Feature.Media;
-    using Sitecore.Data;
-    using Sitecore.Data.Items;
-    using Sitecore.FakeDb;
     using Sitecore.FakeDb.AutoFixture;
     using Sitecore.Feature.Media.Repositories;
-    using Sitecore.Feature.Media.Tests.Infrastructure;
     using Sitecore.Foundation.Testing.Attributes;
     using Xunit;
-    using Fortis.Foundation.CodeGen.Templates.Project.Common.ContentTypes.Media;
     using Fortis.Foundation.CustomWrappers;
-    using Fortis.Model;
     using Fortis.Model.Fields;
-    using Fortis.Providers;
     using Moq;
-    
+
     public class MediaSelectorElementsRepositoryTests
     {
         [Theory]
         [AutoDbData]
-        public void Get_NoItemsInRepo_ShouldReturnEmpty([Content] ICarousel item)
+        public void Get_NoItemsInRepo_ShouldReturnEmpty([Content] IHasMediaSelector item)
         {
             // substitute the original provider with the mocked one
             MediaSelectorElementsRepository.Get(item).Count().Should().Be(0);
@@ -33,7 +25,7 @@
         [Fact]
         public void Get_NoVideoItemsInRepo_ShouldReturnEmpty()
         {
-            var parentMock = new Mock<ICarousel>();
+            var parentMock = new Mock<IHasMediaSelector>();
 
             var listFieldMock = new Mock<IListFieldWrapper>();
             listFieldMock.Setup(x => x.GetItems<ICustomItemWrapper>()).Returns(() => null);
@@ -65,7 +57,7 @@
                 return linkMock.Object;
             });
             
-            var carouselMock = new Mock<ICarousel>();
+            var carouselMock = new Mock<IHasMediaSelector>();
             carouselMock.Setup(x => x.MediaSelector.GetItems<ICustomItemWrapper>()).Returns(
                 () => new[] {childVideoMock.Object}
             );
@@ -92,7 +84,7 @@
                 return thumbnailMock.Object;
             });
 
-            var carouselMock = new Mock<ICarousel>();
+            var carouselMock = new Mock<IHasMediaSelector>();
             carouselMock.Setup(x => x.MediaSelector.GetItems<ICustomItemWrapper>()).Returns(
                 () => new[] { childMediaMock.Object }
             );
@@ -112,7 +104,7 @@
             childMediaMock.Setup(x => x.MediaVideoLink.HasValue).Returns(false);
             childMediaMock.Setup(x => x.MediaThumbnail.HasValue).Returns(false);
 
-            var carouselMock = new Mock<ICarousel>();
+            var carouselMock = new Mock<IHasMediaSelector>();
             carouselMock.Setup(x => x.MediaSelector.GetItems<ICustomItemWrapper>()).Returns(
                 () => new[] { childMediaMock.Object }
             );

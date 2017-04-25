@@ -1,77 +1,78 @@
 ﻿namespace Sitecore.Feature.Teasers.Models
 {
-  using System;
-  using System.Collections.Generic;
-  using System.Linq;
-  using Sitecore.Data.Items;
-  using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Sitecore.Data.Items;
+    using Sitecore.Foundation.SitecoreExtensions.Extensions;
+    using Fortis.Foundation.CodeGen.Templates.Feature.Teasers;
 
-  public class DynamicTeaserModel
-  {
-    private DynamicTeaserItem[] _items;
-
-    public DynamicTeaserModel([NotNull] Item dynamicTeaser)
+    public class DynamicTeaserModel
     {
-      if (dynamicTeaser == null)
-      {
-        throw new ArgumentNullException(nameof(dynamicTeaser));
-      }
-      this.Item = dynamicTeaser;
-      this.Id = $"accordion-{Guid.NewGuid().ToString("N")}";
-    }
+        private DynamicTeaserItem[] _items;
 
-    public Item Item { get; set; }
-
-    public string Id { get; private set; }
-
-    public IEnumerable<DynamicTeaserItem> Items
-    {
-      get
-      {
-        if (this._items != null)
+        public DynamicTeaserModel([NotNull] Item dynamicTeaser)
         {
-          return this._items;
+            if (dynamicTeaser == null)
+            {
+                throw new ArgumentNullException(nameof(dynamicTeaser));
+            }
+            this.Item = dynamicTeaser;
+            this.Id = $"accordion-{Guid.NewGuid().ToString("N")}";
         }
-        this._items = this.CreateDynamicTeaserItems();
-        this.SetActiveItem(this._items);
-        return this._items;
-      }
-    }
 
-    private DynamicTeaserItem[] CreateDynamicTeaserItems()
-    {
-      var childItems = this.Item.Children.Where(i => i.IsDerived(Templates.TeaserHeadline.ID)).ToArray();
-      DynamicTeaserItem[] returnItems = {};
-      if (childItems.Any())
-      {
-        returnItems = childItems.Select(i => new DynamicTeaserItem(i)).ToArray();
-      }
-      else
-      {
-        var count = this.Item.GetInteger(Templates.DynamicTeaser.Fields.Count);
-        if (count.HasValue)
-        {
-          returnItems = new object[count.Value].Select(o => new DynamicTeaserItem()).ToArray();
-        }
-      }
-      return returnItems;
-    }
+        public Item Item { get; set; }
 
-    private void SetActiveItem(IReadOnlyList<DynamicTeaserItem> items)
-    {
-      if (!items.Any())
-        return;
-      var active = this.Item.GetInteger(Templates.DynamicTeaser.Fields.Active);
-      if (active.HasValue)
-      {
-        var activeItem = items.ElementAtOrDefault(active.Value);
-        if (activeItem != null)
+        public string Id { get; private set; }
+
+        public IEnumerable<DynamicTeaserItem> Items
         {
-          activeItem.IsActive = true;
-          return;
+            get
+            {
+                if (this._items != null)
+                {
+                    return this._items;
+                }
+                this._items = this.CreateDynamicTeaserItems();
+                this.SetActiveItem(this._items);
+                return this._items;
+            }
         }
-      }
-      items[0].IsActive = true;
+
+        private DynamicTeaserItem[] CreateDynamicTeaserItems()
+        {
+            var childItems = this.Item.Children.Where(i => i.IsDerived(HeadlineConstants.TemplateID)).ToArray();
+            DynamicTeaserItem[] returnItems = { };
+            if (childItems.Any())
+            {
+                returnItems = childItems.Select(i => new DynamicTeaserItem(i)).ToArray();
+            }
+            else
+            {
+                var count = this.Item.GetInteger(DynamicTeaserConstants.Fields.Count.ID);
+                if (count.HasValue)
+                {
+                    returnItems = new object[count.Value].Select(o => new DynamicTeaserItem()).ToArray();
+                }
+            }
+            return returnItems;
+        }
+
+        private void SetActiveItem(IReadOnlyList<DynamicTeaserItem> items)
+        {
+            if (!items.Any())
+                return;
+            var active = this.Item.GetInteger(DynamicTeaserConstants.Fields.Active.ID);
+            if (active.HasValue)
+            {
+                var activeItem = items.ElementAtOrDefault(active.Value);
+                if (activeItem != null)
+                {
+                    activeItem.IsActive = true;
+                    return;
+                }
+            }
+            items[0].IsActive = true;
+        }
     }
-  }
 }

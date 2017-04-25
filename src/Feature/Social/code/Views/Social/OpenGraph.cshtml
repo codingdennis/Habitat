@@ -1,23 +1,19 @@
-﻿@using Sitecore.Feature.Social
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@using Sitecore.Links
 @using Sitecore.Resources.Media
-@model Sitecore.Mvc.Presentation.RenderingModel
-@if (!Model?.Item?.IsDerived(Templates.OpenGraph.ID) ?? true)
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Social
+@model IRenderingModel<IOpenGraph, IOpenGraph>
+@if (Model.PageItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.OpenGraph.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(OpenGraphConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
-<meta property="og:title" content="@Html.Sitecore().Field(Templates.OpenGraph.Fields.Title, @Model.Item)"/>
-<meta property="og:image" content="@Model.Item.ImageUrl(Templates.OpenGraph.Fields.Image, new MediaUrlOptions
+<meta property="og:title" content="@Model.PageItem.OpenGraphTitle"/>
+<meta property="og:image" content="@Model.PageItem.OpenGraphImage.GetSourceUri(new MediaUrlOptions
                                    {
                                      AbsolutePath = true
                                    })"/>
-<meta property="og:description" content="@Html.Sitecore().Field(Templates.OpenGraph.Fields.Description, @Model.Item)"/>
-<meta property="og:url" content="@Model.Item.Url(new UrlOptions
-                                 {
-                                   AlwaysIncludeServerUrl = true
-                                 })"/>
+<meta property="og:description" content="@Model.PageItem.OpenGraphDescription"/>
+<meta property="og:url" content="@Model.PageItem.GenerateUrl(true)"/>

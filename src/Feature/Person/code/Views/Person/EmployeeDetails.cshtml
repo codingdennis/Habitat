@@ -1,13 +1,13 @@
-﻿@using Sitecore.Feature.Person
-@using Sitecore.Foundation.Alerts
+﻿@using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Fortis.Model
+@using Fortis.Foundation.CodeGen.Templates.Feature.Person
+@model IRenderingModel<IEmployee, IEmployee>
 
-@if (!Model?.Item?.IsDerived(Templates.Employee.ID) ?? true)
+@if (Model.PageItem == null)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Employee.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(EmployeeConstants.TemplateID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.PageItem?.ItemID, Model.RenderingItem?.ItemID)
   return;
 }
 
-@Model.Item.Field(Templates.Employee.Fields.Biography)
+@Model.PageItem.Biography
