@@ -14,6 +14,7 @@
     using Sitecore.Diagnostics;
     using Sitecore.Foundation.Indexing.Models;
     using Sitecore.Foundation.Indexing.Repositories;
+    using Fortis.Foundation.CodeGen.Templates.Foundation.Indexing;
 
     public class SearchService
     {
@@ -136,7 +137,7 @@
         private Expression<Func<IndexedItem, bool>> GetPredicateForItemDerivesFromIndexedItem()
         {
             var templatePredicate = PredicateBuilder.True<IndexedItem>();
-            templatePredicate = templatePredicate.And(i => i.AllTemplates.Contains(IdHelper.NormalizeGuid(Templates.IndexedItem.ID)));
+            templatePredicate = templatePredicate.And(i => i.AllTemplates.Contains(IdHelper.NormalizeGuid(IndexedItemConstants.TemplateID)));
             return templatePredicate;
         }
 

@@ -168,12 +168,15 @@
     <Compile Include="Services\SearchIndexResolver.cs" />
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\DependencyInjection\code\Sitecore.Foundation.DependencyInjection.csproj">
       <Project>{366148B7-2392-4F42-80D6-786B7A3682AE}</Project>
       <Name>Sitecore.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fortis\code\Fortis.Foundation.csproj">
+      <Project>{36bb1038-e47d-4276-b238-9aa8a6c818d0}</Project>
+      <Name>Fortis.Foundation</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj">
       <Project>{B535703F-8D07-4F23-A533-2974BB4CC7B1}</Project>
