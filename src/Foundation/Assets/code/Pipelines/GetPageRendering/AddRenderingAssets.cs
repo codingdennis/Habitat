@@ -8,6 +8,7 @@
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
     using Sitecore.Mvc.Pipelines.Response.GetPageRendering;
     using Sitecore.Mvc.Presentation;
+    using Fortis.Foundation.CodeGen.Templates.Foundation.Assets;
 
     public class AddRenderingAssets : GetPageRenderingProcessor
     {
@@ -32,7 +33,7 @@
 
         protected static void AddAssetsFromItem(Item renderingItem)
         {
-            if (!renderingItem.IsDerived(Templates.RenderingAssets.ID))
+            if (!renderingItem.IsDerived(RenderingAssetsConstants.TemplateID))
                 return;
             AddScriptAssetsFromRendering(renderingItem);
             AddInlineScriptFromRendering(renderingItem);
@@ -42,7 +43,7 @@
 
         private static void AddInlineStylingFromAssets(Item renderingItem)
         {
-            var cssInline = renderingItem[Templates.RenderingAssets.Fields.InlineStyling];
+            var cssInline = renderingItem[RenderingAssetsConstants.Fields.CssInline.ID];
             if (string.IsNullOrEmpty(cssInline))
             {
                 return;
@@ -53,7 +54,7 @@
 
         private static void AddStylingAssetsFromRendering(Item renderingItem)
         {
-            var cssAssets = renderingItem[Templates.RenderingAssets.Fields.StylingFiles];
+            var cssAssets = renderingItem[RenderingAssetsConstants.Fields.CssAssets.ID];
             foreach (var cssAsset in cssAssets.Split(';', ',', '\n'))
             {
                 AssetRepository.Current.AddStylingFile(cssAsset, true);
@@ -62,7 +63,7 @@
 
         private static void AddInlineScriptFromRendering(Item renderingItem)
         {
-            var javaScriptInline = renderingItem[Templates.RenderingAssets.Fields.InlineScript];
+            var javaScriptInline = renderingItem[RenderingAssetsConstants.Fields.JavaScriptInline.ID];
             if (!string.IsNullOrEmpty(javaScriptInline))
             {
                 var asset = AssetRepository.Current.AddInlineScript(javaScriptInline, ScriptLocation.Body, true);
@@ -72,7 +73,7 @@
 
         private static void AddScriptAssetsFromRendering(Item renderingItem)
         {
-            var javaScriptAssets = renderingItem[Templates.RenderingAssets.Fields.ScriptFiles];
+            var javaScriptAssets = renderingItem[RenderingAssetsConstants.Fields.JavaScriptAssets.ID];
             foreach (var javaScriptAsset in javaScriptAssets.Split(';', ',', '\n'))
             {
                 AssetRepository.Current.AddScriptFile(javaScriptAsset, true);

@@ -8,6 +8,7 @@
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
     using Sitecore.Mvc.Pipelines.Response.GetPageRendering;
     using Sitecore.Mvc.Presentation;
+    using Fortis.Foundation.CodeGen.Templates.Foundation.Assets;
 
     public class AddPageAssets : GetPageRenderingProcessor
     {
@@ -18,17 +19,17 @@
 
         protected void AddAssets(Item item)
         {
-            var styling = this.GetPageAssetValue(item, Templates.PageAssets.Fields.CssCode);
+            var styling = this.GetPageAssetValue(item, PageAssetsConstants.Fields.CssCode.ID);
             if (!string.IsNullOrWhiteSpace(styling))
             {
                 AssetRepository.Current.AddInlineStyling(styling, true);
             }
-            var scriptBottom = this.GetPageAssetValue(item, Templates.PageAssets.Fields.JavascriptCodeBottom);
+            var scriptBottom = this.GetPageAssetValue(item, PageAssetsConstants.Fields.JavascriptCodeBottom.ID);
             if (!string.IsNullOrWhiteSpace(scriptBottom))
             {
                 AssetRepository.Current.AddInlineScript(scriptBottom, ScriptLocation.Body, true);
             }
-            var scriptHead = this.GetPageAssetValue(item, Templates.PageAssets.Fields.JavascriptCodeTop);
+            var scriptHead = this.GetPageAssetValue(item, PageAssetsConstants.Fields.JavascriptCodeTop.ID);
             if (!string.IsNullOrWhiteSpace(scriptHead))
             {
                 AssetRepository.Current.AddInlineScript(scriptHead, ScriptLocation.Head, true);
@@ -37,7 +38,7 @@
 
         private string GetPageAssetValue(Item item, ID assetField)
         {
-            if (item.IsDerived(Templates.PageAssets.ID))
+            if (item.IsDerived(PageAssetsConstants.TemplateID))
             {
                 var assetValue = item[assetField];
                 if (!string.IsNullOrWhiteSpace(assetValue))
@@ -51,7 +52,7 @@
 
         private static string GetInheritedPageAssetValue(Item item, ID assetField)
         {
-            var inheritedAssetItem = item.Axes.GetAncestors().FirstOrDefault(i => i.IsDerived(Templates.PageAssets.ID) && MainUtil.GetBool(item[Templates.PageAssets.Fields.InheritAssets], false) && string.IsNullOrWhiteSpace(item[assetField]));
+            var inheritedAssetItem = item.Axes.GetAncestors().FirstOrDefault(i => i.IsDerived(PageAssetsConstants.TemplateID) && MainUtil.GetBool(item[PageAssetsConstants.Fields.InheritAssets.ID], false) && string.IsNullOrWhiteSpace(item[assetField]));
             return inheritedAssetItem?[assetField];
         }
     }
