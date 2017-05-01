@@ -21,6 +21,4 @@ This branch is a fork of the original Habitat that has been updated to integrate
 As Habitat has a already-working generic search implementation and it works pretty well so there is no intention to update or create a Fortis version of the search engine / providers. For the ones who are interested, Fortis also supports Sitecore search via either Fortis.Search.Lucene or Fortis.Search.Solr.
 
 ### Progress
-All Feature modules are now using Fortis (except anything that is utilising the search functionalities mentioned above, ah, and the way it dynamic teaser is done in the Teasers module).
-
-The rest are still working in progress.
+All modules are now using Fortis (except anything that is utilising the search functionalities mentioned above, ah, and the way the dynamic teaser is done in the Teasers module).
