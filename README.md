@@ -11,7 +11,7 @@ For more information, please check out the [Habitat Wiki](../../wiki)
 
 ## Fortis
 
-This branch is a fork of the original Habitat that has been updated to integrate with Fortis and also updated to work with latest Sitecore version which at the moment is Sitecore 8.2 Update 3. If you need to work with Sitecore 8.2 Update 1 please use the feature/fortis-integration branch instead.
+This branch is a fork of the original Habitat that has been updated to integrate with Fortis and also updated to work with latest Sitecore version which at the moment is Sitecore 8.2 Update 3. If you need to work with Sitecore 8.2 Update 1 please use the feature/fortis-integration branch instead. Make sure you use WFFM 8.2 Update 3 as well.
 
 A Fortis foundation module has been added in and it is responsible for:
 
