@@ -1,5 +1,6 @@
 ﻿namespace Sitecore.Feature.Metadata.Tests
 {
+    using System;
     using System.Linq;
     using FluentAssertions;
     using Sitecore.Data;
@@ -12,6 +13,7 @@
     using Fortis.Model;
     using Fortis.Mvc.Providers;
     using Fortis.Providers;
+    using Moq;
 
     public class MetadataRepositoryTests
     {
@@ -71,19 +73,19 @@
             contextItem.ItemID.Should().Be(contextItemId.Guid);
         }
 
-        [Theory]
-        [AutoDbData]
-        public void Get_ContextItemParentIsMatchingTemplate_ShouldReturnParent(Db db)
+        [Fact]
+        public void Get_ContextItemParentIsMatchingTemplate_ShouldReturnParent()
         {
-            var contextItemId = ID.NewID;
+            var parent = new Mock<ISiteMetadata>();
+            var newID = Guid.NewGuid();
+            parent.Setup(x => x.ItemID).Returns(newID);
 
-            db.Add(new DbItem("context", contextItemId, SiteMetadataConstants.TemplateID));
-            var contextItem = db.GetItem(contextItemId);
-            var child = contextItem.Add("child", new TemplateID(PageMetadataConstants.TemplateID));
-            var itemFactory = this.GetItemFactory();
-            var keywordsModel = MetadataRepository.Get(itemFactory.Select<IPageMetadata>(child.ID.Guid));
-
-            keywordsModel.ItemID.Should().Be(contextItemId.Guid);
+            var item = new Mock<IPageMetadata>();
+            item.Setup(x => x.ItemID).Returns(newID);
+            item.Setup(x => x.AncestorOrSelf<ISiteMetadata>()).Returns(parent.Object);
+            
+            var keywordsModel = MetadataRepository.Get(item.Object);
+            keywordsModel.ItemID.Should().Be(newID);
         }
 
         private IItemFactory GetItemFactory()

@@ -14,12 +14,13 @@
 
     public class MediaSelectorElementsRepositoryTests
     {
-        [Theory]
-        [AutoDbData]
-        public void Get_NoItemsInRepo_ShouldReturnEmpty([Content] IHasMediaSelector item)
+        [Fact]
+        public void Get_NoItemsInRepo_ShouldReturnEmpty()
         {
             // substitute the original provider with the mocked one
-            MediaSelectorElementsRepository.Get(item).Count().Should().Be(0);
+            var item = new Mock<IHasMediaSelector>();
+            item.Setup(x => x.MediaSelector.GetItems<ICustomItemWrapper>()).Returns(Enumerable.Empty<ICustomItemWrapper>());
+            MediaSelectorElementsRepository.Get(item.Object)?.Count().Should().Be(0);
         }
 
         [Fact]
@@ -39,7 +40,7 @@
                 () => new[] {childMock.Object}
             );
 
-            MediaSelectorElementsRepository.Get(parentMock.Object).Count().Should().Be(0);
+            MediaSelectorElementsRepository.Get(parentMock.Object)?.Count().Should().Be(0);
         }
 
         [Fact]
